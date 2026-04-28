@@ -1,0 +1,45 @@
+{
+  "name": "extreme_frontier",
+  "_comment": "Tier 3 — extreme and rare biomes far from spawn. Use this for the bleeding-edge exotic content. Ends at infinity.",
+  "minDistance": 10000,
+  "maxDistanceInfinite": true,
+  "allowedBiomes": [
+    "minecraft:mushroom_fields",
+    "minecraft:deep_frozen_ocean",
+    "minecraft:ice_spikes",
+    "minecraft:eroded_badlands",
+    "minecraft:jagged_peaks",
+    "minecraft:frozen_peaks",
+    "minecraft:stony_peaks",
+
+    "terralith:skylands",
+    "terralith:skylands_autumn",
+    "terralith:skylands_winter",
+    "terralith:skylands_spring",
+    "terralith:skylands_summer",
+    "terralith:volcanic_peaks",
+    "terralith:volcanic_crater",
+    "terralith:volcanic_plains",
+    "terralith:lost_city",
+    "terralith:shattered_savanna",
+    "terralith:haze_mountain",
+    "terralith:scarlet_mountains",
+    "terralith:painted_mountains",
+    "terralith:emerald_peaks",
+    "terralith:glacial_chasm",
+    "terralith:frozen_cliffs",
+    "terralith:white_cliffs",
+    "terralith:granite_cliffs",
+    "terralith:basalt_cliffs",
+    "terralith:stony_spires",
+    "terralith:sandstone_valley"
+  ],
+  "allowedPrefixes": [],
+  "fallbackBiomes": [
+    "minecraft:eroded_badlands",
+    "minecraft:mushroom_fields",
+    "minecraft:ice_spikes",
+    "minecraft:frozen_peaks",
+    "minecraft:jagged_peaks"
+  ]
+}

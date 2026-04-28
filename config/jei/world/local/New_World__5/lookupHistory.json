@@ -1,0 +1,12 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"offroad:monstrous_tire"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:industrial_pipe"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:lithium_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:crushed_raw_lithium"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:deepslate_lithium_ore"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:engine_cylinder","components":{"tfmg:fuels":{"naphtha":"fluid.tfmg.naphtha","gasoline":"fluid.tfmg.gasoline","kerosene":"fluid.tfmg.kerosene"},"tfmg:fuel_tags":{"naphtha":"c:naphtha","gasoline":"c:gasoline","kerosene":"c:kerosene"}}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:spark_plug"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:diesel_engine_cylinder","components":{"tfmg:fuels":{"diesel":"fluid.tfmg.diesel"},"tfmg:fuel_tags":{"diesel":"c:diesel"}}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:simple_engine_cylinder","components":{"tfmg:fuels":{"furnace_gas":"fluid.tfmg.furnace_gas","creosote":"fluid.tfmg.creosote"},"tfmg:fuel_tags":{"furnace_gas":"c:furnace_gas","creosote":"c:creosote"}}},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

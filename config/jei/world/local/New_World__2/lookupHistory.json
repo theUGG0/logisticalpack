@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"aeronautics:adjustable_burner"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeronautics:propeller_bearing"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

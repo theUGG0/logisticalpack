@@ -1,0 +1,17 @@
+filename = 'Create Vanilla+ Flintl0cks.zip'
+name = 'Flintl0cks - Reposition'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Create Vanilla+ Flintl0cks.zip'
+
+[download]
+hash = '349fb17bf8b733a2a9f5c0b579056fd14c9442ae'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5968586
+project-id = 1153969

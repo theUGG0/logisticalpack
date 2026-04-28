@@ -1,0 +1,17 @@
+filename = 'CustomNPCs-Unofficial-NeoForge-1.21.1.20241226.jar'
+name = 'CustomNPCs-Unofficial'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'NeoForge-1.21.1.20241226'
+
+[download]
+hash = 'b310a567d938480ed82b285da26e8b5e6925b2450fbcb4fb2ce4bc654465b4f2bee953bfcb32ac0a8e5a0b626bbe2ac13d89c10e59d3d04b8ef996465c78a8bf'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/vFAmwl6B/versions/5gdSEvLv/CustomNPCs-Unofficial-NeoForge-1.21.1.20241226.jar'
+
+[update.modrinth]
+mod-id = 'vFAmwl6B'
+version = '5gdSEvLv'

@@ -1,0 +1,47 @@
+		[waterworks.client.chartplotter]
+			#If true, the chart plotter auto-scales range to include route points.
+			autoRange = true
+			#If true, the chart plotter rotates so ship heading is up.
+			headingUp = false
+			#If true, the chart plotter renders the topo/bathymetry overlay by default.
+			topoEnabled = false
+			#If true, the chart plotter stays centered on the ship (disables panning until turned off).
+			followShip = false
+			#Manual range in meters used when autoRange is false.
+			# Default: 500.0
+			# Range: 50.0 ~ 5000.0
+			manualRangeMeters = 500.0
+
+		[waterworks.client.periscope]
+			#If true, renders a simple periscope reticle while using the periscope view.
+			reticleEnabled = true
+			#Maximum extra camera raise above the mast tip (in blocks).
+			# Default: 1.6
+			# Range: 0.0 ~ 6.0
+			maxHeadRaiseBlocks = 1.6
+			#Base camera offset above the mast tip (in blocks).
+			# Default: 0.35
+			# Range: 0.0 ~ 2.0
+			eyeOffsetBlocks = 0.35
+			#FOV multiplier while in periscope view (lower = more zoom).
+			# Default: 0.65
+			# Range: 0.2 ~ 1.0
+			fovMultiplier = 0.65
+
+		[waterworks.client.waterOcclusion]
+			#If true, culls rendering of world water inside sealed/dry ship interiors.
+			#This is a client-only visual fix; the server simulation remains authoritative.
+			enabled = true
+			#If true, applies shader-driven visual wave displacement to ocean water.
+			visualWavesEnabled = false
+			#If true, renders a Waterworks ocean surface mesh over open ocean using the shared wave field.
+			#When enabled, the old fluid-shader displacement path is disabled to avoid double-stacking waves.
+			visualOceanMeshEnabled = true
+			#Client multiplier for visual wave displacement strength.
+			# Default: 1.8
+			# Range: 0.0 ~ 3.0
+			visualWavesStrength = 1.8
+
+		[waterworks.client.debugOverlay]
+			#If true, shows the Waterworks debug overlay (requires server debug telemetry).
+			enabled = false

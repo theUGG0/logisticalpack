@@ -1,0 +1,20 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"createbigcannons:molten_bronze"},"type":"fluid_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:flowing_molten_bronze"},"type":"fluid_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:bronze_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"enchanting_overhauled:disturbed_enchanting_table"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"enchanting_overhauled:deactivated_enchanting_table"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:nethersteel_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:molten_nethersteel"},"type":"fluid_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:unbored_medium_nethersteel_cannon_layer"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:medium_nethersteel_cannon_layer"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:nethersteel_cannon_chamber"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:cast_iron_cannon_chamber"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:steel_cannon_chamber"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:bronze_cannon_chamber"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:cast_iron_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeronautics:end_stone_powder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeronautics:levitite_blend"},"type":"fluid_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeronautics:levitite_blend_bucket"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

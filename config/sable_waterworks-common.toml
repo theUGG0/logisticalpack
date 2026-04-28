@@ -1,0 +1,844 @@
+[waterworks]
+	#Front-only water drag coefficient (lower = less drag, higher top speed).
+	# Default: 4.0
+	# Range: 0.01 ~ 32.0
+	waterDragMultiplier = 4.0
+	#Sideways drag multiplier to reduce sliding and make turning feel heavier.
+	# Default: 128.0
+	# Range: 0.0 ~ 128.0
+	lateralDragMultiplier = 128.0
+	#Vertical drag multiplier to reduce bobbing while in water.
+	# Default: 38.0
+	# Range: 0.0 ~ 128.0
+	heaveDragMultiplier = 38.0
+	#Linear vertical damping to calm low-speed bobbing in water.
+	# Default: 12.0
+	# Range: 0.0 ~ 128.0
+	heaveLinearDampingMultiplier = 12.0
+	#Angular damping strength to counter ship rotation while in water.
+	# Default: 2.4
+	# Range: 0.0 ~ 32.0
+	rotationDampingStrength = 2.4
+	#Yaw damping strength scaled by ship size and forward speed.
+	# Default: 12.0
+	# Range: 0.0 ~ 128.0
+	turnDampingStrength = 12.0
+	#Minimum speed factor used for yaw damping to prevent dime-turns at low speed.
+	# Default: 2.0
+	# Range: 0.0 ~ 10.0
+	turnDampingMinSpeed = 2.0
+	#Exponent applied to forward speed when scaling yaw damping (higher = much slower turns at speed).
+	# Default: 2.0
+	# Range: 1.0 ~ 4.0
+	turnDampingSpeedExponent = 2.0
+	#Extra pitch/roll damping strength to reduce rocking.
+	# Default: 6.0
+	# Range: 0.0 ~ 64.0
+	pitchRollDampingStrength = 6.0
+	#Upright stabilizer torque to nudge ships level (pitch/roll).
+	# Default: 0.4
+	# Range: 0.0 ~ 64.0
+	uprightStabilizerStrength = 0.4
+	#Gyro stabilizer strength applied to all rotation axes while in water.
+	# Default: 0.6
+	# Range: 0.0 ~ 64.0
+	gyroStabilizerStrength = 0.6
+	#Multiplier applied to stabilization when a helm is present and assist is enabled.
+	# Default: 4.0
+	# Range: 0.0 ~ 10.0
+	helmAssistMultiplier = 4.0
+	#Additional drag coefficient applied briefly when a ship starts moving in water.
+	# Default: 2.0
+	# Range: 0.0 ~ 64.0
+	launchDragMultiplier = 2.0
+	#How long the launch drag lasts, in ticks.
+	# Default: 8
+	# Range: 0 ~ 200
+	launchDragTicks = 8
+	#Minimum speed required to trigger launch drag.
+	# Default: 0.1
+	# Range: 0.0 ~ 5.0
+	launchSpeedThreshold = 0.1
+	#Scales drag forces by ship mass (forceMultiplier = max(1, mass * value)).
+	# Default: 2.0E-4
+	# Range: 0.0 ~ 1.0
+	massDragMultiplier = 2.0E-4
+	#Maximum scale factor applied by massDragMultiplier.
+	# Default: 3.0
+	# Range: 1.0 ~ 50.0
+	massDragMaxScale = 3.0
+	#If true, use the legacy FloodingController sinking/buoyancy system instead of the new ShipFloodSimService.
+	useLegacyFloodingController = false
+	#Enable ship flooding and sinking based on interior water samples.
+	floodingEnabled = true
+	#Sampling grid size for interior water checks (per axis).
+	# Default: 4
+	# Range: 1 ~ 8
+	floodSampleGrid = 4
+	#Vertical sampling layers for interior water checks.
+	# Default: 3
+	# Range: 1 ~ 8
+	floodSampleLayers = 3
+	#Inset from the ship AABB when sampling interior water, in blocks.
+	# Default: 0.75
+	# Range: 0.0 ~ 8.0
+	floodSampleMargin = 0.75
+	#Upper height fraction of the ship volume to scan for flooding.
+	# Default: 0.6
+	# Range: 0.1 ~ 1.0
+	floodSampleHeightFraction = 0.6
+	#How quickly flooding ramps up when interior water is detected.
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	floodRiseRate = 0.2
+	#How quickly flooding drains when no interior water is detected.
+	# Default: 0.08
+	# Range: 0.0 ~ 1.0
+	floodFallRate = 0.08
+	#Fraction of buoyancy lost at full flooding (1.0 = zero buoyancy).
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	floodBuoyancyLoss = 1.0
+	#Minimum buoyancy factor to clamp to after flooding is applied.
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	floodBuoyancyMin = 0.0
+	#Extra downward force multiplier applied per flooded fraction (0 disables).
+	# Default: 0.18
+	# Range: 0.0 ~ 10.0
+	floodExtraWeightMultiplier = 0.18
+	#Liquid overlap required before sampling interior water (use 0 to always sample).
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	floodLiquidOverlapThreshold = 0.02
+	#Flooding fraction that triggers the helm alarm indicator.
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	floodAlarmThreshold = 0.35
+	#Actively adjusts buoyantFactor on healthy ships to achieve a target draft (helps ships not ride unrealistically high).
+	waterlineCalibrationEnabled = true
+	#Target Sable liquidOverlap fraction when afloat (higher = sits lower in water).
+	# Default: 0.26
+	# Range: 0.0 ~ 1.0
+	waterlineTargetLiquidOverlap = 0.26
+	#How fast buoyantFactor is adjusted per tick toward the target waterline (0 disables adjustment).
+	# Default: 0.06
+	# Range: 0.0 ~ 1.0
+	waterlineAdjustRate = 0.06
+	#Minimum buoyantFactor the waterline calibration may set.
+	# Default: 0.05
+	# Range: 0.0 ~ 10.0
+	waterlineMinBuoyantFactor = 0.05
+	#Maximum buoyantFactor the waterline calibration may set.
+	# Default: 3.0
+	# Range: 0.0 ~ 10.0
+	waterlineMaxBuoyantFactor = 3.0
+	#Minimum liquidOverlap required before waterline calibration activates (prevents adjustments while fully out of water).
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	waterlineMinContactOverlap = 0.01
+	#If true, waterline calibration only runs when there are no active leaks (avoids fighting sinking behavior).
+	waterlineOnlyWhenNoLeaks = true
+	#If another mod overwrites buoyantFactor (e.g. Eureka), pause waterline calibration for this many ticks to avoid fighting.
+	# Default: 120
+	# Range: 0 ~ 1200
+	waterlineExternalOverrideCooldownTicks = 120
+	#Enable the sampled buoyancy model (displaced volume + COB).
+	#When enabled, Waterworks applies buoyancy forces directly instead of relying on Sable buoyantFactor.
+	wwBuoyancyEnabled = true
+	#If true, forces Sable buoyantFactor to 0 when WW buoyancy is enabled (prevents double buoyancy).
+	wwBuoyancyDisableVsBuoyancy = true
+	#Sample spacing (in blocks) for buoyancy volume estimation.
+	# Default: 1.0
+	# Range: 0.25 ~ 4.0
+	wwBuoyancySampleResolution = 1.0
+	#Maximum samples per ship per tick for buoyancy estimation.
+	# Default: 4096
+	# Range: 128 ~ 65536
+	wwBuoyancyMaxSamples = 4096
+	#Water density used for buoyancy force computation (kg/m^3-ish).
+	# Default: 1000.0
+	# Range: 50.0 ~ 10000.0
+	wwBuoyancyWaterDensity = 1000.0
+	#Global multiplier applied to buoyancy force (tune if mass units differ).
+	# Default: 1.0
+	# Range: 0.01 ~ 10.0
+	wwBuoyancyForceMultiplier = 1.0
+	#Exponential smoothing factor for buoyancy volume/COB (0 = frozen, 1 = no smoothing).
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	wwBuoyancySmoothing = 0.35
+	#Vertical damping strength applied when submerged (scaled by mass).
+	# Default: 1.65
+	# Range: 0.0 ~ 20.0
+	wwBuoyancyVerticalDamping = 1.65
+	#Angular damping strength applied when submerged (scaled by mass).
+	# Default: 0.7
+	# Range: 0.0 ~ 20.0
+	wwBuoyancyAngularDamping = 0.7
+	#If true, flooded compartment fill reduces trapped-air displacement (Phase 5 coupling).
+	wwBuoyancyUseFloodFill = false
+	#Server-side debug logging for buoyancy/flooding telemetry.
+	wwDebugLogEnabled = false
+	#Server-side debug logging interval (ticks).
+	# Default: 40
+	# Range: 1 ~ 2000
+	wwDebugLogIntervalTicks = 40
+	#Max compartments to print in debug logs per ship.
+	# Default: 128
+	# Range: 4 ~ 512
+	wwDebugLogMaxCompartments = 128
+	#Max breaches to print in debug logs per ship.
+	# Default: 16
+	# Range: 0 ~ 128
+	wwDebugLogMaxBreaches = 16
+	#Max leaks to print in debug logs per ship.
+	# Default: 16
+	# Range: 0 ~ 128
+	wwDebugLogMaxLeaks = 16
+	#Enable dev-only test ship spawner command.
+	wwDevTestShipsEnabled = false
+	#Enable submarine systems: pressure-induced leaks, finite oxygen/CO2, ballast tanks, periscope helpers.
+	submarineEnabled = true
+	#Depth below sea level (blocks) where pressure-induced leak generation begins.
+	# Default: 18.0
+	# Range: 0.0 ~ 512.0
+	subPressureLeakStartDepth = 18.0
+	#Base chance per tick to generate a new pressure leak when deep (scaled by depth beyond start).
+	# Default: 0.0025
+	# Range: 0.0 ~ 1.0
+	subPressureLeakChancePerTick = 0.0025
+	#Max number of concurrently active pressure-generated leaks per ship.
+	# Default: 10
+	# Range: 0 ~ 256
+	subPressureLeakMaxActive = 10
+	#Minimum leak rate (flood fraction per tick) for pressure-generated leaks.
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	subPressureLeakRateMin = 0.01
+	#Maximum leak rate (flood fraction per tick) for pressure-generated leaks.
+	# Default: 0.06
+	# Range: 0.0 ~ 1.0
+	subPressureLeakRateMax = 0.06
+	#Depth below sea level where badly built submarines can begin catastrophic implosion.
+	# Default: 36.0
+	# Range: 0.0 ~ 512.0
+	subImplosionStartDepth = 36.0
+	#Minimum sampled hull integrity needed to resist implosion at the configured depth.
+	# Default: 0.62
+	# Range: 0.0 ~ 1.0
+	subImplosionHullMinIntegrity = 0.62
+	#Base implosion chance per tick once depth and hull weakness exceed safe limits.
+	# Default: 0.004
+	# Range: 0.0 ~ 1.0
+	subImplosionChancePerTick = 0.004
+	#How many severe breaches are spawned when a submarine implodes.
+	# Default: 6
+	# Range: 1 ~ 64
+	subImplosionBreachBurst = 6
+	#Base oxygen consumption per player per tick (fraction of full tank).
+	# Default: 1.388888888888889E-4
+	# Range: 0.0 ~ 1.0
+	subO2UsePerPlayerPerTick = 1.388888888888889E-4
+	#O2 refill per tick when surfaced (top of ship at/above sea level).
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	subO2SurfaceRefillPerTick = 0.01
+	#CO2 generation per player per tick (fraction).
+	# Default: 2.0833333333333335E-4
+	# Range: 0.0 ~ 1.0
+	subCO2GenPerPlayerPerTick = 2.0833333333333335E-4
+	#CO2 venting per tick when surfaced.
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	subCO2SurfaceVentPerTick = 0.02
+	#CO2 alarm threshold (fraction).
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	subCO2AlarmThreshold = 0.35
+	#O2 added per tick per life support unit (server-side).
+	# Default: 0.002
+	# Range: 0.0 ~ 1.0
+	subLifeSupportO2PerTick = 0.002
+	#CO2 removed per tick per life support unit (server-side).
+	# Default: 0.003
+	# Range: 0.0 ~ 1.0
+	subLifeSupportCO2ScrubPerTick = 0.003
+	#If true, divers accumulate decompression load and can get the bends after surfacing too fast.
+	subBendsEnabled = true
+	#Depth below sea level where decompression loading starts building on players.
+	# Default: 10.0
+	# Range: 0.0 ~ 256.0
+	subBendsStartDepth = 10.0
+	#Base decompression load added per tick while diving below the bends start depth.
+	# Default: 0.0011
+	# Range: 0.0 ~ 1.0
+	subBendsLoadRate = 0.0011
+	#How quickly decompression load bleeds off when safe near the surface.
+	# Default: 0.0025
+	# Range: 0.0 ~ 1.0
+	subBendsRecoveryRate = 0.0025
+	#Upward ascent speed in blocks/tick above which decompression stress ramps harder.
+	# Default: 0.22
+	# Range: 0.0 ~ 5.0
+	subBendsAscentThreshold = 0.22
+	#Decompression stress threshold where players begin taking periodic damage.
+	# Default: 0.7
+	# Range: 0.0 ~ 1.0
+	subBendsDamageThreshold = 0.7
+	#Ballast tank fill rate per tick (0..1 fraction).
+	# Default: 0.008
+	# Range: 0.0 ~ 1.0
+	subBallastFillRate = 0.008
+	#Ballast tank blow (drain) rate per tick (0..1 fraction).
+	# Default: 0.012
+	# Range: 0.0 ~ 1.0
+	subBallastBlowRate = 0.012
+	#Extra downward force multiplier from ballast fill (scaled by ship mass).
+	# Default: 2.2
+	# Range: 0.0 ~ 50.0
+	subBallastForceMultiplier = 2.2
+	#Enable physical water inside ships (Waterworks ship water pockets).
+	#When enabled, pumps will remove real water blocks in ship space, and weight/listing follows the physical water.
+	usePhysicalWater = true
+	#Enable the new compartment-authoritative flooding simulation (breaches+pumps -> CompartmentController fill).
+	#If false, the legacy CompartmentController leak/pump fill updates are used instead.
+	wwCompartmentSimEnabled = true
+	#Per-ship block change budget per tick for the PhysicalWaterLayer.
+	#Lower = less lag, slower visual convergence.
+	# Default: 12
+	# Range: 0 ~ 256
+	wwPhysicalWaterBlockBudgetPerShip = 12
+	#How often (in ticks) PhysicalWaterLayer materialises ship water blocks. Higher = less CPU/block updates, slower visual convergence.
+	# Default: 4
+	# Range: 1 ~ 200
+	wwPhysicalWaterTickInterval = 4
+	#Performance profile preset.
+	#0=custom (use exact values below), 1=low (max performance), 2=balanced, 3=high (best visual fidelity).
+	# Default: 2
+	# Range: 0 ~ 3
+	wwPerfProfile = 2
+	#Enable low-overhead periodic performance metrics logs (debug level).
+	wwPerfMetricsEnabled = false
+	#Interval in ticks for periodic performance metrics logs.
+	# Default: 200
+	# Range: 20 ~ 24000
+	wwPerfMetricsIntervalTicks = 200
+	#Coefficient converting breach openness/pressure into compartment fill inflow (blocks/tick-ish).
+	# Default: 0.85
+	# Range: 0.0 ~ 50.0
+	wwBreachInflowCoeff = 0.85
+	#Coefficient converting breach openness/head into compartment fill outflow (blocks/tick-ish).
+	# Default: 0.55
+	# Range: 0.0 ~ 50.0
+	wwBreachOutflowCoeff = 0.55
+	#If true, server sends hull water occlusion masks to clients for rendering cull.
+	wwWaterOcclusionServerEnabled = true
+	#How often (in ticks) to broadcast occlusion masks per ship (lower = more accurate, higher = less bandwidth).
+	# Default: 8
+	# Range: 1 ~ 200
+	wwWaterOcclusionSendIntervalTicks = 8
+	#Compartments with fill fraction below this are considered dry for occlusion purposes.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	wwWaterOcclusionDryThreshold = 0.25
+	#Max distance (in blocks) from ship center to send occlusion masks to a player.
+	# Default: 128
+	# Range: 16 ~ 2048
+	wwWaterOcclusionSendRangeBlocks = 128
+	#Radius (in blocks) sampled around a bilge pump for local water detection.
+	# Default: 2.5
+	# Range: 0.5 ~ 12.0
+	pumpSampleRadius = 2.5
+	#Sampling grid size for bilge pump water checks.
+	# Default: 3
+	# Range: 1 ~ 8
+	pumpSampleGrid = 3
+	#Vertical sampling layers for bilge pump water checks.
+	# Default: 3
+	# Range: 1 ~ 8
+	pumpSampleLayers = 3
+	#Minimum local water fraction required for a pump to be considered active.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	pumpActiveThreshold = 0.05
+	#Flood fraction removed per tick per active pump water fraction (0 disables pumps).
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	pumpDrainRate = 0.02
+	#Radius (in blocks) around a bilge pump to actively remove shipyard water blocks.
+	# Default: 3
+	# Range: 1 ~ 12
+	pumpPhysicalDrainRadius = 3
+	#Max shipyard water blocks removed per pump per tick while active.
+	# Default: 24
+	# Range: 1 ~ 4096
+	pumpPhysicalDrainBlocksPerTick = 24
+	#Spawn bubble/splash particles at active breaches.
+	breachParticlesEnabled = true
+	#Particles per leak per tick (server-side).
+	# Default: 2
+	# Range: 0 ~ 256
+	breachParticlesPerTick = 2
+	#Chance per tick to place a source water block at a breach (physical-water mode only).
+	#Higher = faster flooding via vanilla fluid spread in shipyard.
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	breachPhysicalWaterSourceChance = 0.15
+	#How long bulkhead doors stay open before auto-closing (0 disables).
+	# Default: 60
+	# Range: 0 ~ 600
+	bulkheadAutoCloseTicks = 60
+	#How much closed bulkheads slow flooding rise (0 = no effect, 1 = max).
+	# Default: 0.6
+	# Range: 0.0 ~ 1.0
+	bulkheadFloodRiseDamping = 0.6
+	#Enable the custom front-only water drag applied to ValkyrienSkies ships.
+	enableCustomWaterDrag = false
+	#Cell size for compartment flooding grid, in blocks.
+	# Default: 1.5
+	# Range: 0.5 ~ 16.0
+	compartmentCellSize = 1.5
+	#Maximum number of cells per axis for compartment flooding grid.
+	# Default: 32
+	# Range: 1 ~ 512
+	compartmentMaxCells = 32
+	#Sampling grid size within a compartment cell.
+	# Default: 2
+	# Range: 1 ~ 8
+	compartmentSampleGrid = 2
+	#Vertical sampling layers within a compartment cell.
+	# Default: 1
+	# Range: 1 ~ 8
+	compartmentSampleLayers = 1
+	#How often to resample compartment flooding targets per ship (in ticks). Higher = less CPU cost, slower response.
+	# Default: 4
+	# Range: 1 ~ 20
+	compartmentSamplePeriodTicks = 4
+	#Rate at which water spreads between adjacent compartment cells per tick.
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	compartmentSpreadRate = 0.15
+	#Vertical spread multiplier when water would move upward (lower = slower upward flow).
+	# Default: 0.35
+	# Range: 0.0 ~ 4.0
+	compartmentSpreadUpMultiplier = 0.35
+	#Vertical spread multiplier when water would move downward (higher = faster down-flow).
+	# Default: 1.35
+	# Range: 0.0 ~ 4.0
+	compartmentSpreadDownMultiplier = 1.35
+	#Enable the more realistic sinking/stability model (distributed flood weight, stability torques, seabed grounding).
+	stabilityEnabled = true
+	#Distributed extra downward force applied based on flooded fraction (scaled by ship mass).
+	# Default: 2.4
+	# Range: 0.0 ~ 50.0
+	stabilityFloodForceMultiplier = 2.4
+	#Stride used when applying distributed flood-weight forces (higher = fewer force application points, cheaper).
+	# Default: 4
+	# Range: 1 ~ 16
+	stabilityFloodForceStride = 4
+	#Maximum number of distributed flood-weight force points applied per tick (caps CPU cost on very large ships).
+	# Default: 96
+	# Range: 8 ~ 4096
+	stabilityFloodForceMaxPoints = 96
+	#Differential buoyancy force strength used to generate roll/pitch moments (net force is kept ~0).
+	# Default: 0.8
+	# Range: 0.0 ~ 64.0
+	stabilityBuoyancyDiffStrength = 0.8
+	#Probe grid resolution across the ship footprint for differential buoyancy.
+	# Default: 2
+	# Range: 1 ~ 12
+	stabilityBuoyancyProbeGrid = 2
+	#Righting moment strength (torque) applied as a function of tilt angle (scaled by ship mass).
+	# Default: 0.6
+	# Range: 0.0 ~ 64.0
+	stabilityRightingStrength = 0.6
+	#Approximate vanishing stability angle in degrees (righting tends to 0 near this angle).
+	# Default: 70.0
+	# Range: 5.0 ~ 179.0
+	stabilityVanishAngleDeg = 70.0
+	#How strongly the model encourages capsize past the vanishing angle.
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	stabilityCapsizeStrength = 0.25
+	#Stability penalty applied as flooding increases (0 = none, 1 = max).
+	# Default: 0.65
+	# Range: 0.0 ~ 1.0
+	stabilityFloodStabilityPenalty = 0.65
+	#Stability penalty applied for partially filled columns (free-surface effect).
+	# Default: 0.55
+	# Range: 0.0 ~ 1.0
+	stabilityFreeSurfacePenalty = 0.55
+	#Seabed grounding spring strength (scaled by ship mass).
+	# Default: 10.0
+	# Range: 0.0 ~ 200.0
+	stabilitySeabedSpring = 10.0
+	#Seabed grounding damping strength (scaled by ship mass).
+	# Default: 6.0
+	# Range: 0.0 ~ 200.0
+	stabilitySeabedDamping = 6.0
+	#How many seabed contact points to sample under the hull.
+	# Default: 6
+	# Range: 0 ~ 12
+	stabilitySeabedPoints = 6
+
+	[waterworks.wwCurrents]
+		#Enable ocean current forces and chartplotter current vector readout.
+		enabled = true
+		#Base current speed in meters/second (scaled by noise field).
+		# Default: 0.45
+		# Range: 0.0 ~ 5.0
+		baseSpeed = 0.45
+		#Spatial scale in blocks for the current noise field (larger = slower variation).
+		# Default: 320.0
+		# Range: 32.0 ~ 4096.0
+		scaleBlocks = 320.0
+		#Temporal scale in ticks for current drift (larger = slower change).
+		# Default: 2400
+		# Range: 20 ~ 24000
+		timeScaleTicks = 2400
+		#How much the current direction oscillates over time (radians).
+		# Default: 0.55
+		# Range: 0.0 ~ 3.141592653589793
+		turnAmplitude = 0.55
+		#Force multiplier for pushing ships toward the current velocity (scaled by mass).
+		# Default: 0.18
+		# Range: 0.0 ~ 5.0
+		forceMultiplier = 0.18
+		#Minimum water depth (blocks) before currents start applying.
+		# Default: 6.0
+		# Range: 0.0 ~ 128.0
+		depthMinBlocks = 6.0
+		#Water depth (blocks) where currents reach full strength.
+		# Default: 20.0
+		# Range: 1.0 ~ 256.0
+		depthFullBlocks = 20.0
+		#Scale factor for currents in non-ocean biomes (0 = none).
+		# Default: 0.35
+		# Range: 0.0 ~ 1.0
+		nonOceanScale = 0.35
+		#If true, currents only apply in ocean biomes (deep lakes get no currents).
+		requireOceanBiome = false
+		#If true, rain/thunder adds wind-driven surface drift to ships.
+		weatherEnabled = true
+		#Base wind-driven drift speed in m/s at full rain (before storm boost).
+		# Default: 0.3
+		# Range: 0.0 ~ 5.0
+		weatherBaseSpeed = 0.3
+		#Extra multiplier applied for thunder storms.
+		# Default: 1.8
+		# Range: 0.0 ~ 10.0
+		weatherStormBoost = 1.8
+		#Enable explicit wind forces in addition to water currents.
+		windEnabled = true
+		#Base wind speed in m/s used by the wind field (before gust/weather boosts).
+		# Default: 1.2
+		# Range: 0.0 ~ 12.0
+		windBaseSpeed = 1.2
+		#Spatial scale in blocks for wind direction changes.
+		# Default: 520.0
+		# Range: 32.0 ~ 4096.0
+		windScaleBlocks = 520.0
+		#Temporal scale in ticks for wind drift/gust evolution.
+		# Default: 1800
+		# Range: 20 ~ 24000
+		windTimeScaleTicks = 1800
+		#Relative gust intensity added to base wind (0..2 recommended).
+		# Default: 0.9
+		# Range: 0.0 ~ 5.0
+		windGustAmplitude = 0.9
+		#Force multiplier for ship response to wind velocity delta.
+		# Default: 0.075
+		# Range: 0.0 ~ 5.0
+		windForceMultiplier = 0.075
+		#Additional wind-speed multiplier contribution from thunder storms.
+		# Default: 1.65
+		# Range: 0.0 ~ 10.0
+		windStormBoost = 1.65
+		#How much wind still affects a ship while largely submerged (0..1).
+		# Default: 0.28
+		# Range: 0.0 ~ 1.0
+		windWaterCoupling = 0.28
+		#Velocity-blend multiplier for how strongly water currents affect non-player entities in water.
+		# Default: 0.22
+		# Range: 0.0 ~ 3.0
+		entityCurrentForceMultiplier = 0.22
+		#Velocity-blend multiplier for how strongly wind affects non-player entities.
+		# Default: 0.12
+		# Range: 0.0 ~ 3.0
+		entityWindForceMultiplier = 0.12
+		#Velocity-blend multiplier for how strongly currents affect players in water.
+		# Default: 0.16
+		# Range: 0.0 ~ 3.0
+		playerCurrentForceMultiplier = 0.16
+		#Velocity-blend multiplier for how strongly wind affects players when exposed.
+		# Default: 0.08
+		# Range: 0.0 ~ 3.0
+		playerWindForceMultiplier = 0.08
+		#Enable deterministic wave heave and rocking forces on ships.
+		waveMotionEnabled = true
+		#Base wave height in blocks used by the deterministic sea-state field.
+		# Default: 0.7
+		# Range: 0.0 ~ 4.0
+		waveBaseHeight = 0.7
+		#Spatial scale in blocks for wave crests and troughs.
+		# Default: 140.0
+		# Range: 8.0 ~ 2048.0
+		waveScaleBlocks = 140.0
+		#Temporal scale in ticks for wave travel (smaller = faster moving waves).
+		# Default: 120
+		# Range: 5 ~ 24000
+		waveTimeScaleTicks = 120
+		#Force multiplier for wave lift forces applied at the hull extremities (scaled by mass).
+		# Default: 0.01
+		# Range: 0.0 ~ 1.0
+		waveForceMultiplier = 0.01
+		#Maximum absolute wave lift force per sample point as a multiple of ship mass.
+		# Default: 0.03
+		# Range: 0.0 ~ 2.0
+		waveMaxForceMultiplier = 0.03
+		#Additional multiplier contribution to wave height during storms.
+		# Default: 1.4
+		# Range: 0.0 ~ 10.0
+		waveStormBoost = 1.4
+
+	[waterworks.wwSpray]
+		#Enable wave spray particles when ships slam into the water.
+		enabled = true
+		#Minimum ship speed (m/s) before spray can trigger.
+		# Default: 1.8
+		# Range: 0.0 ~ 50.0
+		speedThreshold = 1.8
+		#Minimum downward vertical speed (m/s) before spray triggers.
+		# Default: 0.65
+		# Range: 0.0 ~ 10.0
+		heaveThreshold = 0.65
+		#Base particle count per spray burst.
+		# Default: 10
+		# Range: 0 ~ 200
+		particles = 10
+		#Minimum ticks between spray bursts per ship.
+		# Default: 10
+		# Range: 0 ~ 200
+		cooldownTicks = 10
+		#Spray quality profile: 0=low, 1=balanced-low, 2=balanced, 3=high.
+		# Default: 2
+		# Range: 0 ~ 3
+		quality = 2
+		#Enable side hull wave-hit spray while ships move through water.
+		waveHitEnabled = true
+		#Minimum speed (m/s) before side wave-hit spray can trigger.
+		# Default: 1.2
+		# Range: 0.0 ~ 50.0
+		waveHitSpeedThreshold = 1.2
+		#Base particle count for each side wave-hit burst.
+		# Default: 8
+		# Range: 0 ~ 200
+		waveHitParticles = 8
+		#Enable stern propwash particle wake while underway.
+		propwashEnabled = true
+		#Minimum speed (m/s) before stern propwash triggers.
+		# Default: 1.0
+		# Range: 0.0 ~ 50.0
+		propwashSpeedThreshold = 1.0
+		#Base particle count for stern propwash bursts.
+		# Default: 10
+		# Range: 0 ~ 300
+		propwashParticles = 10
+
+	[waterworks.wwHelmAssist]
+		#Upper clamp for damping multiplier produced by HelmAssistAuthority.
+		# Default: 6.0
+		# Range: 1.0 ~ 10.0
+		maxMultiplier = 6.0
+		#Speed (m/s) where assist starts to ramp down.
+		# Default: 3.0
+		# Range: 0.1 ~ 50.0
+		speedCutoff = 3.0
+		#How much authority is lost by high speed (0..1).
+		# Default: 0.65
+		# Range: 0.0 ~ 1.0
+		speedPenalty = 0.65
+		#How much authority is lost at full flooding (0..1).
+		# Default: 0.85
+		# Range: 0.0 ~ 1.0
+		floodPenalty = 0.85
+		#Angular velocity delta threshold per tick that triggers impulse cooldown.
+		# Default: 0.35
+		# Range: 0.01 ~ 50.0
+		impulseThreshold = 0.35
+		#How long the assist is weakened after an impulse event.
+		# Default: 60
+		# Range: 0 ~ 200
+		impulseCooldownTicks = 60
+		#Multiplier applied during impulse cooldown (0..1).
+		# Default: 0.35
+		# Range: 0.0 ~ 1.0
+		impulseWeakFactor = 0.35
+		#Temporary power factor (0..1). Phase 4 wires into an actual ship power system.
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		powerFactor = 1.0
+		#If true, assist requires ship power generation to provide authority.
+		powerRequired = false
+		#If true, assist requires a gyro/autopilot unit to provide authority.
+		gyroRequired = false
+
+	[waterworks.wwSystems]
+		#If true, system blocks (gyro/generator) stop working when in a wet/flooded space.
+		disableWhenWet = true
+		#Compartment fill fraction (0..1) above which systems are considered flooded.
+		# Default: 0.15
+		# Range: 0.0 ~ 1.0
+		wetFillThreshold = 0.15
+		#If true, breaches can damage nearby ship systems (gyro/generator/pumps), requiring repair.
+		damageFromBreach = true
+		#Block radius around a breach position to search for systems to damage.
+		# Default: 6
+		# Range: 0 ~ 64
+		damageRadius = 6
+		#Chance per block position scanned to apply damage (0..1).
+		#Lower values reduce how many systems get hit per breach.
+		# Default: 0.15
+		# Range: 0.0 ~ 1.0
+		damageChance = 0.15
+
+	[waterworks.wwPumps]
+		#If true, bilge pumps only drain when ship power generation is online.
+		powerRequired = false
+
+	[waterworks.wwAnchors]
+		#Enable deployable ship anchors that settle to seabed and hold ships with drift.
+		enabled = true
+		#Default rope/chain length in blocks when deploying an anchor.
+		# Default: 48.0
+		# Range: 4.0 ~ 512.0
+		defaultRopeLength = 48.0
+		#Hard maximum rope/chain length in blocks.
+		# Default: 128.0
+		# Range: 8.0 ~ 1024.0
+		maxRopeLength = 128.0
+		#Initial downward velocity of a deployed anchor entity.
+		# Default: 0.16
+		# Range: 0.01 ~ 3.0
+		deployDropSpeed = 0.16
+		#Per-tick velocity multiplier of anchor entities while in water.
+		# Default: 0.88
+		# Range: 0.1 ~ 1.0
+		waterDrag = 0.88
+		#Per-tick velocity multiplier of anchor entities while in air.
+		# Default: 0.98
+		# Range: 0.1 ~ 1.0
+		airDrag = 0.98
+		#Spring strength for anchor holding force once rope is taut.
+		# Default: 80.0
+		# Range: 0.0 ~ 200000.0
+		holdSpringStrength = 80.0
+		#Outward velocity damping when rope is taut.
+		# Default: 30.0
+		# Range: 0.0 ~ 200000.0
+		holdDamping = 30.0
+		#Maximum total anchor hold force applied per anchor.
+		# Default: 250000.0
+		# Range: 0.0 ~ 2000000.0
+		holdMaxForce = 250000.0
+
+	[waterworks.wwMooring]
+		#Enable mooring lines and bollards.
+		enabled = true
+		#Default mooring line length in blocks when attaching a new line.
+		# Default: 32.0
+		# Range: 4.0 ~ 512.0
+		defaultLength = 32.0
+		#Maximum allowed mooring line length in blocks.
+		# Default: 96.0
+		# Range: 8.0 ~ 1024.0
+		maxLength = 96.0
+		#Spring elasticity strength applied when mooring line becomes taut.
+		# Default: 70.0
+		# Range: 0.0 ~ 200000.0
+		springStrength = 70.0
+		#Damping applied against line-separating velocity while taut.
+		# Default: 26.0
+		# Range: 0.0 ~ 200000.0
+		damping = 26.0
+		#Maximum mooring tension force applied per line.
+		# Default: 180000.0
+		# Range: 0.0 ~ 2000000.0
+		maxForce = 180000.0
+		#Line breaks when stretched beyond (ropeLength * breakStretch).
+		# Default: 1.28
+		# Range: 1.01 ~ 10.0
+		breakStretch = 1.28
+		#Start creaking FX/sound once line tension reaches (ropeLength * threshold).
+		# Default: 1.08
+		# Range: 1.01 ~ 10.0
+		creakThreshold = 1.08
+		#Minimum ticks between creak sounds for each line while under high tension.
+		# Default: 20
+		# Range: 1 ~ 2000
+		creakCooldownTicks = 20
+		#Cloud particle count baseline for mooring creak strain feedback.
+		# Default: 4
+		# Range: 0 ~ 128
+		creakParticles = 4
+		#Particle burst count when a mooring line snaps.
+		# Default: 24
+		# Range: 0 ~ 256
+		snapParticles = 24
+		#Base damage dealt to players near a snapping mooring line.
+		# Default: 14.0
+		# Range: 0.0 ~ 100.0
+		snapDamage = 14.0
+		#Radius around a snapping line segment where players can be hurt.
+		# Default: 3.75
+		# Range: 0.25 ~ 32.0
+		snapDamageRadius = 3.75
+
+	[waterworks.wwPower]
+		#Enable per-ship power generation, storage, and load-priority brownout behavior.
+		enabled = true
+		#Power units generated per active power-generator block per tick.
+		# Default: 1.0
+		# Range: 0.0 ~ 1000.0
+		generatorOutputPerTick = 1.0
+		#Per-ship power storage capacity in power units.
+		# Default: 240.0
+		# Range: 0.0 ~ 1000000.0
+		storageCapacity = 240.0
+		#Fraction of unused power retained in storage between ticks (0..1).
+		# Default: 0.995
+		# Range: 0.0 ~ 1.0
+		storageRetention = 0.995
+		#Per-pump power demand per tick.
+		# Default: 0.75
+		# Range: 0.0 ~ 1000.0
+		loadPump = 0.75
+		#Per-gyro power demand per tick.
+		# Default: 1.0
+		# Range: 0.0 ~ 1000.0
+		loadGyro = 1.0
+		#Per-life-support unit power demand per tick.
+		# Default: 1.25
+		# Range: 0.0 ~ 1000.0
+		loadLifeSupport = 1.25
+		#Per-CO2 alarm unit power demand per tick.
+		# Default: 0.15
+		# Range: 0.0 ~ 1000.0
+		loadCO2Alarm = 0.15
+		#Damage-control repair power demand per active repair operation tick.
+		# Default: 2.0
+		# Range: 0.0 ~ 1000.0
+		loadRepair = 2.0
+
+	[waterworks.wwDamage]
+		#Ticks required to repair one damaged system in a damage-control zone.
+		# Default: 60
+		# Range: 1 ~ 20000
+		repairTicksPerSystem = 60
+		#Repair item count consumed per repaired system.
+		# Default: 1
+		# Range: 0 ~ 64
+		repairItemsPerSystem = 1
+		#Item used for zone repairs, as a registry id, e.g. minecraft:iron_ingot.
+		repairItemId = "minecraft:iron_ingot"
