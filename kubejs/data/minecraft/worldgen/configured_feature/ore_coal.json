@@ -1,19 +1,22 @@
 {
-  "_comment": "Overrides vanilla minecraft:ore_coal. Vanilla's placement feature ore_coal_upper still references minecraft:ore_coal, so by replacing the configured feature here we redirect all 'upper coal' generation to lignite. Same vein size (17), same air-exposure handling (none), same biome distribution as vanilla coal.",
   "type": "minecraft:ore",
   "config": {
     "discard_chance_on_air_exposure": 0.0,
     "size": 17,
     "targets": [
       {
-        "state": { "Name": "logisticalpack:lignite_ore" },
+        "state": {
+          "Name": "logisticalpack:lignite_ore"
+        },
         "target": {
           "predicate_type": "minecraft:tag_match",
           "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
-        "state": { "Name": "logisticalpack:deepslate_lignite_ore" },
+        "state": {
+          "Name": "logisticalpack:deepslate_lignite_ore"
+        },
         "target": {
           "predicate_type": "minecraft:tag_match",
           "tag": "minecraft:deepslate_ore_replaceables"

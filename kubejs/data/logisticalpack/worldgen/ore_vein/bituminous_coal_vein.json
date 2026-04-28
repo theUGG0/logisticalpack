@@ -1,28 +1,43 @@
 {
-  "_comment": "Bituminous coal (the 'real' coal, the one TFMG can coke). Generated only via DOV large veins, only in biomes that thematically/geologically match coal-forming swamp and old-growth forest environments. Vanilla coal_ore's small-scattered placement has been redirected to lignite (see ../../../minecraft/worldgen/configured_feature/ore_coal*.json), so this vein is the ONLY source of vanilla coal blocks.",
-
   "ore": {
     "type": "minecraft:weighted_state_provider",
     "entries": [
-      { "weight": 3, "data": { "Name": "minecraft:coal_ore" } },
-      { "weight": 1, "data": { "Name": "minecraft:deepslate_coal_ore" } }
+      {
+        "weight": 3,
+        "data": {
+          "Name": "minecraft:coal_ore"
+        }
+      },
+      {
+        "weight": 1,
+        "data": {
+          "Name": "minecraft:deepslate_coal_ore"
+        }
+      }
     ]
   },
-
-  "_comment_secondary": "Solid coal block as the rare 'rich pocket' block, mirroring how DOV's example veins use raw_X_block. Coal blocks reward mining a vein with a more concentrated payout.",
   "secondary_ore": "minecraft:coal_block",
   "secondary_ore_chance": 0.04,
-
   "filler_block": {
     "type": "minecraft:weighted_state_provider",
     "entries": [
-      { "weight": 3, "data": { "Name": "minecraft:stone" } },
-      { "weight": 1, "data": { "Name": "minecraft:deepslate" } }
+      {
+        "weight": 3,
+        "data": {
+          "Name": "minecraft:stone"
+        }
+      },
+      {
+        "weight": 1,
+        "data": {
+          "Name": "minecraft:deepslate"
+        }
+      }
     ]
   },
-
-  "dimension": [ "minecraft:overworld" ],
-
+  "dimension": [
+    "minecraft:overworld"
+  ],
   "vein_toggle": {
     "input": {
       "type": "minecraft:interpolated",
@@ -34,7 +49,6 @@
       }
     }
   },
-
   "vein_ridged": {
     "input": {
       "type": "minecraft:add",
@@ -68,21 +82,16 @@
       }
     }
   },
-
   "vein_gap": {},
-
-  "_comment_settings": "Defaults are tuned to be roughly 1/5 as dense as vanilla coal would be in unrestricted biomes. min/max ore richness lowered from DOV's defaults (0.1/0.3 -> 0.06/0.2), and vein_solidness raised slightly to keep veins less continuous. Combined with the biome restriction, this hits the target 1:5 lignite:bituminous ratio overall.",
   "vein_settings": {
     "min_ore_richness": 0.06,
-    "max_ore_richness": 0.20,
+    "max_ore_richness": 0.2,
     "min_richness_threshold": 0.4,
     "max_richness_threshold": 0.6,
     "vein_solidness": 0.75,
     "edge_roundoff_begin": 20,
     "max_edge_roundoff": 0.2
   },
-
-  "_comment_conditions": "Geologically realistic biome restriction: swamp and mangrove_swamp model the carboniferous-era peat bogs that produced real bituminous coal; dark_forest is the dense old-growth analog. Y range matches vanilla coal's deep placement (-30 to 90), since bituminous deposits sit deep below the surface where they got compressed.",
   "conditions": [
     {
       "type": "dynamic_veins:all_of",
@@ -97,8 +106,12 @@
         },
         {
           "type": "dynamic_veins:height_range",
-          "min_inclusive": { "absolute": -30 },
-          "max_inclusive": { "absolute": 90 }
+          "min_inclusive": {
+            "absolute": -30
+          },
+          "max_inclusive": {
+            "absolute": 90
+          }
         }
       ]
     }
