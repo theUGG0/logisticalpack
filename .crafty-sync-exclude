@@ -1,0 +1,15 @@
+# Paths the server creates/owns at runtime that crafty-sync.py must not touch.
+# Format: <syncable-dir>/<path-or-glob> — one per line, # for comments.
+# Trailing / matches directories only.
+#
+# Excluded files/dirs are:
+#   - never uploaded from staging/
+#   - never deleted on the server by --delete
+#
+# Add entries here as you find more runtime-managed paths. Errs on the side
+# of preserving server state — anything in here is treated as authoritative
+# server-side, not pack-side.
+
+# KubeJS persistent state and regenerable cache
+kubejs/data/
+kubejs/cache/
