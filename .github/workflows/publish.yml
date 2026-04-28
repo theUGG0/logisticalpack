@@ -13,7 +13,10 @@ jobs:
         with:
           go-version: '1.22'
       - run: go install github.com/packwiz/packwiz@latest
-      - run: packwiz refresh
+      - name: Create index.toml and refresh packwiz
+        run: |
+          [ -f index.toml ] || touch index.toml
+          packwiz refresh
       - name: Stage pack files
         run: |
           mkdir _site
