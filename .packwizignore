@@ -1,0 +1,13 @@
+.git/**
+.gitattributes
+.gitignore
+.packwizignore
+.github/**
+
+README.md
+.env
+
+*.sh
+*.py
+*.zip
+*.mrpack
