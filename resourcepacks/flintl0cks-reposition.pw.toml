@@ -1,6 +1,6 @@
 filename = 'Create Vanilla+ Flintl0cks.zip'
 name = 'Flintl0cks - Reposition'
-side = ''
+side = 'both'
 x-prismlauncher-loaders = []
 x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'

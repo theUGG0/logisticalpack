@@ -98,6 +98,17 @@ def check_branch_not_behind(repo: Path) -> None:
     if local == base and local != upstream:
         fail("branch is behind origin — git pull first")
 
+def normalize_pw_toml(path: Path) -> None:
+    """Remove empty `side = ""` lines that Prism sometimes writes."""
+    lines = path.read_text(encoding="utf-8").splitlines(keepends=True)
+    cleaned = []
+    for l in lines:
+        if "side = ''" in l.strip():
+            cleaned.append("side = 'both'\n")
+            continue
+        cleaned.append(l)
+    
+    path.write_text("".join(cleaned), encoding="utf-8")
 
 def sync_metadata(instance: Path, repo: Path) -> None:
     """Copy *.pw.toml from instance/<kind>/.index/ to repo/<kind>/, deleting stale entries."""
@@ -118,7 +129,9 @@ def sync_metadata(instance: Path, repo: Path) -> None:
         # Copy current .pw.toml files.
         for entry in src.iterdir():
             if entry.is_file() and entry.name.endswith(".pw.toml"):
-                shutil.copy2(entry, dst / entry.name)
+                dest = dst / entry.name
+                shutil.copy2(entry, dest)
+                normalize_pw_toml(dest)
 
         print(f"  synced {kind}/ ({len(src_names)} entries)")
 
