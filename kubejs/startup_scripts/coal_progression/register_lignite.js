@@ -29,7 +29,6 @@ StartupEvents.registry('block', event => {
     .tagBlock('c:ores')
     .tagBlock('c:ores/coal')
     .tagBlock('forge:ores/coal')
-    .drops('logisticalpack:lignite')
     .item(item => {
       item.tag('c:ores')
           .tag('c:ores/coal')
@@ -47,7 +46,6 @@ StartupEvents.registry('block', event => {
     .tagBlock('c:ores')
     .tagBlock('c:ores/coal')
     .tagBlock('forge:ores/coal')
-    .drops('logisticalpack:lignite')
     .item(item => {
       item.tag('c:ores')
           .tag('c:ores/coal')
