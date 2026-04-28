@@ -344,12 +344,12 @@ metafile = true
 
 [[files]]
 file = "mods/create-towed.pw.toml"
-hash = "48814ad472224b9f19d86ab02ec8d040c7a111596461f8c5decd57240b43d22a"
+hash = "a719d416e8fffd40f818c4091d4b67a130aa2063a5e08a60d3253790f30590c0"
 metafile = true
 
 [[files]]
 file = "mods/create-tracks.pw.toml"
-hash = "28a3fe90ab206fb8263348a51cbd874297d2d0c4902277098364bc66e239ab98"
+hash = "7b4587087599e1035e33950aae9c865218bc372272572e07d61f93498b3ce4f1"
 metafile = true
 
 [[files]]
@@ -471,6 +471,6 @@ file = "mods/veinscout-1.0.0.jar"
 hash = "e41a6d3748df811589ff0ed018746ae8dc858c6862c8e0be1a60416fa0bf7080"
 
 [[files]]
-file = "resourcepacks/flintl0cks-reposition.pw.toml"
-hash = "dcd692b3ce66fe827dd98ab38938084d19027372d5b35943bb1dd1155ed60ba7"
+file = "resourcepacks/3d-muskets.pw.toml"
+hash = "16fb1f787b9b8e5b2ca1e67bc22b88dbf9399b5e7566d0914c9c06893971862b"
 metafile = true
