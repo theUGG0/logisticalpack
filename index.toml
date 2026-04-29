@@ -578,7 +578,7 @@ hash = "90e70a4bd35b8194c225dc54a4dff5ad07e93029f974537f656e72665710413d"
 
 [[files]]
 file = "__pycache__/packwiz-manager.cpython-314.pyc"
-hash = "5ec26481701c90022a5ba05ed7b0c8e009f30304413d4188097af63904a9abc2"
+hash = "f5d3145910253cf6c1a3c2f6af391942c0efacd48062cf052b45c1cdfe3c4e4f"
 
 [[files]]
 file = "config/CustomNpcs.cfg"
