@@ -574,11 +574,11 @@ hash = "bbd5af9938050258f193fa324ebb810b0d6acf6728e49c3c18d923c1e440dee3"
 
 [[files]]
 file = ".cache/sync.lock"
-hash = "90e70a4bd35b8194c225dc54a4dff5ad07e93029f974537f656e72665710413d"
+hash = "1c82423fe577ce4902405ea793534b7ab98e08adb20d50e042ac7a9e5326078b"
 
 [[files]]
 file = "__pycache__/packwiz-manager.cpython-314.pyc"
-hash = "f5d3145910253cf6c1a3c2f6af391942c0efacd48062cf052b45c1cdfe3c4e4f"
+hash = "b8b20008b5c0831e6ea3fe67674ccc7c3a3155e79feea4440b4be97600cf3d78"
 
 [[files]]
 file = "config/CustomNpcs.cfg"
@@ -586,7 +586,7 @@ hash = "db9e723f66651ef671f89113f10d07f434d306e6fdc714c35d2f3423b81d1b25"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "b4f1f1ed211746010e5ad12e2a77c5eb34eb00134300af319b0a66a9a446fe9f"
+hash = "0125fd960ec7edc65ac9600e96f5e1214f1ac31115cc715e2734fd2c517fa19f"
 
 [[files]]
 file = "config/aeronautics-server.toml"
