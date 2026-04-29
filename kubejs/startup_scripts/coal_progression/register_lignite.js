@@ -6,14 +6,6 @@
 //   - Tagged as #c:coals so generic "any coal" recipes still accept it,
 //     but it's a *poor* coal: short burn time (set below).
 //
-// Trello: https://trello.com/c/RHyQXtlW
-// Modpack: https://trello.com/b/WlK2BBhg
-//
-// Textures: Drop the PNGs into:
-//   kubejs/assets/logisticalpack/textures/block/lignite_ore.png
-//   kubejs/assets/logisticalpack/textures/block/deepslate_lignite_ore.png
-//   kubejs/assets/logisticalpack/textures/item/lignite.png
-// Until then, KubeJS will use the missing-texture (purple/black) fallback.
 // =============================================================================
 
 StartupEvents.registry('block', event => {
@@ -59,6 +51,7 @@ StartupEvents.registry('item', event => {
     .displayName('Lignite')
     .tag('c:coals')
     .tag('forge:coals')
+    .tag('minecraft:coals')
     .tooltip('A low-grade brown coal. Burns poorly. Cannot be coked.')
 })
 

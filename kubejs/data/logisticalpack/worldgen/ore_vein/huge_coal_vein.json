@@ -62,8 +62,8 @@
             "argument": {
               "type": "minecraft:noise",
               "noise": "minecraft:ore_vein_a",
-              "xz_scale": 4,
-              "y_scale": 4
+              "xz_scale": 2,
+              "y_scale": 2
             }
           }
         },
@@ -74,8 +74,8 @@
             "argument": {
               "type": "minecraft:noise",
               "noise": "minecraft:ore_vein_b",
-              "xz_scale": 4,
-              "y_scale": 4
+              "xz_scale": 1,
+              "y_scale": 1
             }
           }
         }
@@ -84,11 +84,11 @@
   },
   "vein_gap": {},
   "vein_settings": {
-    "min_ore_richness": 0.08,
-    "max_ore_richness": 0.25,
-    "min_richness_threshold": -0.2,
+    "min_ore_richness": 0.15,
+    "max_ore_richness": 0.40,
+    "min_richness_threshold": -0.35,
     "max_richness_threshold": 0.6,
-    "vein_solidness": 0.75,
+    "vein_solidness": 0.80,
     "edge_roundoff_begin": 20,
     "max_edge_roundoff": 0.2
   },
