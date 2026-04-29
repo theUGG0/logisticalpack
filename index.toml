@@ -995,11 +995,6 @@ hash = "bb5da3576f1d78a76879e6988a5fd8b3df5ca284ad8b702db5cb44ae35585938"
 metafile = true
 
 [[files]]
-file = "mods/moonrise-opt.pw.toml"
-hash = "f24ff9fdf3295d2351fde7a40ea52336474ffbf075dcda6361760bb11fb92507"
-metafile = true
-
-[[files]]
 file = "mods/musket-mod.pw.toml"
 hash = "ea597e98be97a9e0779c11cc13744142d182d66c84f83a55f605bc49beedd8d6"
 metafile = true

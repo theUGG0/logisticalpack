@@ -11,7 +11,7 @@ x-prismlauncher-version-number = 'cupboard-1.21-3.5.jar'
 hash = 'e5f55c8f9d172048fe6f8b919cda1dbe3cbfbc70'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
-url = ''
+url = 'https://www.curseforge.com/minecraft/mc-mods/cupboard/download/7746488'
 
 [update.curseforge]
 file-id = 7746488
