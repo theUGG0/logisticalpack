@@ -981,10 +981,6 @@ file = "kubejs/startup_scripts/ore_logistics.js"
 hash = "2eadb6c6e58274e15641008293e815677ca18aba1805ca22a4cb944c9edacb09"
 
 [[files]]
-file = "local_readme.md"
-hash = "14bc3fbc8ac72d399f9edcdeb295e2cc76a5d66b93bd8b58bf060344ba0e5959"
-
-[[files]]
 file = "mods/aeroguard-1-0-0.pw.toml"
 hash = "3a27d5c6686dda7315f4b4f494bb96a85e1f9f251838444766754def0ac2f14e"
 metafile = true
@@ -1052,6 +1048,15 @@ metafile = true
 file = "mods/create.pw.toml"
 hash = "38e2f3895b4a296bbe1f18bde4846e3514bd245a2a5f155db664757b6b8509f8"
 metafile = true
+
+[[files]]
+file = "mods/createbigcannons-5-11-3-dev-mc-1-21-1-build-279.pw.toml"
+hash = "02604f0c78ed02b41ee80bed7319c151ae98e9f95049516a8d38818628f736cf"
+metafile = true
+
+[[files]]
+file = "mods/createbigcannons-5.11.3-dev-mc.1.21.1-build.279.jar"
+hash = "7e9daa8ec03c4889acd323398ad4f8e42c30c085a7c63dbafaf46f08c8cb130e"
 
 [[files]]
 file = "mods/cupboard.pw.toml"
