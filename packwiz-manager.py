@@ -658,7 +658,8 @@ def detect_issues(repo_entries: list[ModEntry], repo_jars: list[LooseJar],
     return issues
 
 
-def _entry_dict(e: ModEntry, icons: IconCache | None = None) -> dict[str, Any]:
+def _entry_dict(e: ModEntry, icons: IconCache | None = None,
+                installed_jars: set[str] | None = None) -> dict[str, Any]:
     d = asdict(e)
     d["provider"] = e.provider
     d["has_download_url"] = e.has_download_url
@@ -669,6 +670,9 @@ def _entry_dict(e: ModEntry, icons: IconCache | None = None) -> dict[str, Any]:
             or (e.curseforge_project and icons.get("curseforge", str(e.curseforge_project)))
             or ""
         )
+    # If the caller knows which jars actually exist on disk, mark presence.
+    if installed_jars is not None:
+        d["jar_installed"] = bool(e.filename) and e.filename in installed_jars
     return d
 
 
@@ -684,29 +688,56 @@ def scan_state(env: dict[str, str], icons: IconCache | None = None,
     prism_entries: list[ModEntry] = []
     prism_jars: list[LooseJar] = []
     prism_status: dict[str, Any] = {"path": str(prism_root) if prism_root else "", "ok": False}
+    prism_installed_jars: set[str] = set()
+    not_installed_entries: list[ModEntry] = []
     if prism_root and prism_root.is_dir():
         prism_index = prism_root / "mods" / ".index"
         prism_mods = prism_root / "mods"
         prism_entries, _ = scan_pw_dir(prism_index)
-        # Loose jars in Prism: jars in mods/ not referenced by any .pw.toml in .index/
-        referenced = {e.filename for e in prism_entries if e.filename}
         if prism_mods.is_dir():
-            for p in sorted(prism_mods.iterdir()):
-                if p.is_file() and p.name.endswith(".jar") and p.name not in referenced:
-                    try:
-                        prism_jars.append(LooseJar(
-                            path=str(p), filename=p.name, size=p.stat().st_size, location="prism",
-                        ))
-                    except OSError:
-                        pass
+            for p in prism_mods.iterdir():
+                if p.is_file() and p.name.endswith(".jar"):
+                    prism_installed_jars.add(p.name)
+        # Loose jars: jars on disk not referenced by any .pw.toml in .index/
+        referenced = {e.filename for e in prism_entries if e.filename}
+        for jar_name in sorted(prism_installed_jars):
+            if jar_name not in referenced:
+                p = prism_mods / jar_name
+                try:
+                    prism_jars.append(LooseJar(
+                        path=str(p), filename=p.name, size=p.stat().st_size, location="prism",
+                    ))
+                except OSError:
+                    pass
+        # Inverse: .pw.toml entries whose jars aren't installed
+        for e in prism_entries:
+            if e.filename and e.filename not in prism_installed_jars:
+                not_installed_entries.append(e)
         prism_status = {
             "path": str(prism_root),
             "ok": True,
-            "jar_count": sum(1 for p in prism_mods.iterdir() if p.is_file() and p.name.endswith(".jar")) if prism_mods.is_dir() else 0,
+            "jar_count": len(prism_installed_jars),
             "index_count": len(prism_entries),
+            "not_installed_count": len(not_installed_entries),
         }
 
     issues = detect_issues(repo_entries, repo_jars, prism_entries, prism_jars)
+
+    # Surface "missing jar" issues — Prism .index/ entry exists but the jar
+    # itself is absent from <instance>/<kind>/. Common cause: bootstrapper
+    # skipped a side='server' mod, or a single-mod sync didn't fetch the jar.
+    for e in not_installed_entries:
+        issues.append(Issue(
+            kind="missing-jar", severity="warning",
+            message=f"{e.name or e.slug}: jar not installed in Prism (filename: {e.filename})",
+            targets=[e.pw_toml_path],
+            data={
+                "entry": _entry_dict(e, icons),
+                "filename": e.filename,
+                "pw_toml_path": e.pw_toml_path,
+                "pw_toml_name": e.pw_toml_name,
+            },
+        ))
 
     if icons is not None and mr is not None and cf is not None:
         try:
@@ -724,7 +755,7 @@ def scan_state(env: dict[str, str], icons: IconCache | None = None,
         },
         prism={
             **prism_status,
-            "entries": [_entry_dict(e, icons) for e in prism_entries],
+            "entries": [_entry_dict(e, icons, prism_installed_jars) for e in prism_entries],
             "loose_jars": [asdict(j) for j in prism_jars],
         },
         server={},  # filled in by status poller
@@ -1670,6 +1701,121 @@ def walk_dir_files(d: Path) -> dict[str, dict[str, Any]]:
     return out
 
 
+def _file_hash(path: Path, algo: str) -> str:
+    """Hash a file with the given algorithm (sha1/sha256/sha512/md5)."""
+    if algo == "sha1": h = hashlib.sha1()
+    elif algo == "sha512": h = hashlib.sha512()
+    elif algo == "sha256": h = hashlib.sha256()
+    elif algo == "md5": h = hashlib.md5()
+    else: return ""
+    try:
+        with open(path, "rb") as f:
+            while True:
+                chunk = f.read(65536)
+                if not chunk:
+                    break
+                h.update(chunk)
+        return h.hexdigest()
+    except OSError:
+        return ""
+
+
+def download_pw_jar(pw_toml_path: Path, instance: Path,
+                    cf_client: "CurseForgeClient | None",
+                    kind: str | None = None) -> tuple[bool, str, str]:
+    """Download the jar referenced by a .pw.toml into <instance>/<kind>/<filename>.
+
+    The .pw.toml can live anywhere — typical sources are <REPO>/<kind>/X.pw.toml
+    (used by sync-to-prism) and <instance>/<kind>/.index/X.pw.toml (used by
+    install-missing-jar). The kind is auto-derived from the path unless given.
+
+    Returns (ok, status, message) where status is one of:
+        'downloaded'   - jar was just fetched
+        'cached'       - jar already present with correct hash
+        'skipped'      - intentionally not downloaded
+        'error'        - something went wrong; ok will be False
+    """
+    raw = parse_pw_toml(pw_toml_path)
+    if not raw:
+        return False, "error", "couldn't parse .pw.toml"
+    filename = raw.get("filename")
+    if not filename:
+        return False, "error", ".pw.toml has no filename"
+
+    if kind is None:
+        # Auto-derive: parent dir is either <kind>/ (repo) or .index/ (prism)
+        parent = pw_toml_path.parent.name
+        grandparent = pw_toml_path.parent.parent.name
+        if parent in METADATA_KINDS:
+            kind = parent
+        elif parent == ".index" and grandparent in METADATA_KINDS:
+            kind = grandparent
+        else:
+            try:
+                parts = pw_toml_path.relative_to(REPO).parts
+                if parts and parts[0] in METADATA_KINDS:
+                    kind = parts[0]
+            except ValueError:
+                pass
+    if not kind or kind not in METADATA_KINDS:
+        return False, "error", f"couldn't determine kind for {pw_toml_path}"
+
+    download = raw.get("download") or {}
+    mode = download.get("mode", "")
+    url = download.get("url", "") or ""
+    expected_hash = download.get("hash", "") or ""
+    hash_format = download.get("hash-format", "") or ""
+
+    actual_url = ""
+    if mode == "url" and url:
+        actual_url = url
+    elif mode == "metadata:curseforge":
+        if not (cf_client and cf_client.configured):
+            return False, "error", "CurseForge metadata mode — set CURSEFORGE_API_KEY in Settings"
+        cf_meta = (raw.get("update") or {}).get("curseforge") or {}
+        project_id = cf_meta.get("project-id")
+        file_id = cf_meta.get("file-id")
+        if not (project_id and file_id):
+            return False, "error", "CF mode but missing project-id / file-id"
+        actual_url = cf_client.get_download_url(project_id, file_id) or ""
+        if not actual_url:
+            return False, "error", "CurseForge API returned no download URL (project may disable third-party downloads)"
+    else:
+        return False, "error", f"unsupported download mode: {mode!r}"
+
+    dest_jar = instance / kind / filename
+
+    # Already installed with correct hash? Nothing to do.
+    if dest_jar.is_file() and expected_hash and hash_format:
+        if _file_hash(dest_jar, hash_format) == expected_hash:
+            return True, "cached", "jar already installed (hash matches)"
+
+    dest_jar.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        req = urllib.request.Request(actual_url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            data = resp.read()
+    except Exception as e:
+        return False, "error", f"download failed: {e}"
+
+    if expected_hash and hash_format:
+        algos = {"sha1": hashlib.sha1, "sha512": hashlib.sha512,
+                 "sha256": hashlib.sha256, "md5": hashlib.md5}
+        hasher = algos.get(hash_format)
+        if hasher:
+            actual_hash = hasher(data).hexdigest()
+            if actual_hash != expected_hash:
+                return False, "error", (
+                    f"hash mismatch — expected {expected_hash[:16]}…, got {actual_hash[:16]}…"
+                )
+
+    try:
+        dest_jar.write_bytes(data)
+    except OSError as e:
+        return False, "error", f"write failed: {e}"
+    return True, "downloaded", f"installed {filename} ({len(data):,} bytes)"
+
+
 def _file_sha1(path: str) -> str:
     try:
         h = hashlib.sha1()
@@ -1962,6 +2108,8 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 self._handle_sync_pw_to_prism(body)
             elif path == "/api/sync-pw-from-prism":
                 self._handle_sync_pw_from_prism(body)
+            elif path == "/api/install-missing-jar":
+                self._handle_install_missing_jar(body)
             elif path == "/api/diff-pw":
                 self._handle_diff_pw(body)
             elif path == "/api/configs-diff":
@@ -2582,7 +2730,9 @@ class Handler(http.server.BaseHTTPRequestHandler):
             self._send_json(500, {"error": str(e2)})
 
     def _handle_sync_pw_to_prism(self, body: dict[str, Any] | None) -> None:
-        """Copy a single repo .pw.toml into Prism's matching .index/ dir."""
+        """Copy a single repo .pw.toml into Prism's .index/ AND download the
+        actual jar referenced by it. The user explicitly clicked sync on a
+        specific mod — they want the mod working, not just the metadata."""
         if not body:
             self._send_json(400, {"error": "body required"})
             return
@@ -2612,9 +2762,25 @@ class Handler(http.server.BaseHTTPRequestHandler):
         dst_dir.mkdir(parents=True, exist_ok=True)
         try:
             shutil.copy2(src, dst_dir / src.name)
-            self._send_json(200, {"ok": True, "wrote": str(dst_dir / src.name)})
         except Exception as e:
-            self._send_json(500, {"error": str(e)})
+            self._send_json(500, {"error": f"copying .pw.toml failed: {e}"})
+            return
+
+        # Also fetch the jar — the metadata is useless without the actual file.
+        jar_ok, jar_status, jar_msg = download_pw_jar(src, instance, CTX.curseforge)
+        CTX.bump_state_version()
+
+        response: dict[str, Any] = {
+            "ok": True,
+            "wrote": str(dst_dir / src.name),
+            "jar_status": jar_status,
+            "jar_message": jar_msg,
+        }
+        if not jar_ok:
+            # .pw.toml copied but jar install failed — still return 200 so the
+            # client can show both pieces of info; flag the jar issue.
+            response["warning"] = jar_msg
+        self._send_json(200, response)
 
     def _handle_configs_diff(self, body: dict[str, Any] | None) -> None:
         """Walk both repo VERBATIM_DIRS and Prism's, return per-file diff."""
@@ -2819,6 +2985,46 @@ class Handler(http.server.BaseHTTPRequestHandler):
             "name": name, "kind": kind,
             "repo": repo_data, "prism": prism_data, "summary": summary,
         })
+
+    def _handle_install_missing_jar(self, body: dict[str, Any] | None) -> None:
+        """Install the jar referenced by a Prism .index/ .pw.toml file.
+
+        Used when an entry in Prism's .index/ exists but the jar isn't in
+        <instance>/<kind>/ — e.g. a side='server' mod that the bootstrapper
+        skipped, or a partial install.
+        """
+        if not body:
+            self._send_json(400, {"error": "body required"})
+            return
+        pw_path = body.get("pw_toml_path") or body.get("path")
+        if not pw_path:
+            self._send_json(400, {"error": "pw_toml_path required"})
+            return
+        src = Path(pw_path)
+        if not src.is_file():
+            self._send_json(404, {"error": f"file not found: {src}"})
+            return
+        instance_str = CTX.env.get("INSTANCE", "")
+        instance = Path(os.path.expanduser(instance_str)) if instance_str else None
+        if not (instance and instance.is_dir()):
+            self._send_json(400, {"error": "Prism instance not configured / not found"})
+            return
+        # Confirm the .pw.toml is under this Prism instance (not arbitrary path)
+        try:
+            rel = src.resolve().relative_to(instance.resolve())
+        except ValueError:
+            self._send_json(400, {"error": ".pw.toml is not inside the Prism instance"})
+            return
+        if not rel.parts or rel.parts[0] not in METADATA_KINDS:
+            self._send_json(400, {"error": f"unsupported location: {rel}"})
+            return
+
+        ok, status, msg = download_pw_jar(src, instance, CTX.curseforge, kind=rel.parts[0])
+        if ok:
+            CTX.bump_state_version()
+            self._send_json(200, {"ok": True, "status": status, "message": msg})
+        else:
+            self._send_json(400, {"ok": False, "status": status, "error": msg})
 
     def _handle_sync_pw_from_prism(self, body: dict[str, Any] | None) -> None:
         """Copy a single Prism .index/ .pw.toml into the repo. Used when a mod
@@ -4155,15 +4361,17 @@ function renderCards() {
 
   // 2. Prism card
   if (p.ok) {
-    const prismWarn = (outOfSync || prismOnly || repoOnly) ? "warn" : "";
+    const notInstalled = p.not_installed_count || 0;
+    const prismWarn = (outOfSync || prismOnly || repoOnly || notInstalled) ? "warn" : "";
     cards.push(`<div class="card ${prismWarn}">
       <h3>Prism</h3>
       <div class="big">${p.jar_count} <span style="font-size:13px;color:var(--muted);font-weight:normal;">/ ${p.index_count}</span></div>
-      <div class="sub">jars / indexed</div>
-      ${(synced || outOfSync || prismOnly || repoOnly) ? `
+      <div class="sub">jars / indexed${notInstalled ? ` · <span style="color:var(--warn);">${notInstalled} not installed</span>` : ""}</div>
+      ${(synced || outOfSync || prismOnly || repoOnly || notInstalled) ? `
         <div class="card-tags" style="font-size:11px;">
           ${synced ? `<span class="tag synced small-tag">${synced} synced</span>` : ""}
           ${outOfSync ? `<span class="tag out-of-sync small-tag">${outOfSync} diff</span>` : ""}
+          ${notInstalled ? `<span class="tag out-of-sync small-tag">${notInstalled} no jar</span>` : ""}
           ${repoOnly ? `<span class="tag only small-tag">${repoOnly} repo only</span>` : ""}
           ${prismOnly ? `<span class="tag only small-tag">${prismOnly} prism only</span>` : ""}
         </div>` : ""}
@@ -4238,6 +4446,17 @@ function renderIssues() {
     el.innerHTML = '<div class="muted" style="padding:14px;">No issues found. ✓</div>';
     return;
   }
+
+  // Bulk action: if there are several missing-jar issues, offer one-click install for all
+  const missingJars = STATE.issues.filter(i => i.kind === "missing-jar");
+  if (missingJars.length > 1) {
+    const bulk = document.createElement("div");
+    bulk.style.cssText = "padding:8px 10px;margin-bottom:8px;background:var(--panel-2);border:1px solid var(--border);border-radius:6px;display:flex;gap:8px;align-items:center;";
+    bulk.innerHTML = `<span style="flex:1;font-size:12px;">${missingJars.length} mods have metadata but no installed jar.</span>`;
+    bulk.appendChild(btn(`Install all (${missingJars.length})`, "primary small",
+      () => installAllMissingJars(missingJars)));
+    el.appendChild(bulk);
+  }
   STATE.issues.forEach((iss, idx) => {
     const div = document.createElement("div");
     div.className = "issue " + (iss.severity === "warning" ? "warning" : "info-sev");
@@ -4261,6 +4480,8 @@ function renderIssues() {
       actions.appendChild(btn("Identify", "primary small", () => identifyJar(iss)));
     } else if (iss.kind === "prism-index-stale") {
       actions.appendChild(btn("Sync", "primary small", () => syncPwToPrism(iss)));
+    } else if (iss.kind === "missing-jar") {
+      actions.appendChild(btn("Install", "primary small", () => installMissingJar(iss)));
     } else if (iss.kind === "duplicate") {
       actions.appendChild(btn("Resolve", "primary small", () => resolveDuplicate(iss)));
     } else if (iss.kind === "cf-empty-url") {
@@ -4464,14 +4685,58 @@ async function deleteFromPrism(name) {
   } catch (e) { toast(e.message, "error"); }
 }
 
+async function installMissingJar(iss) {
+  const pw = iss.data && iss.data.pw_toml_path;
+  if (!pw) { toast("No .pw.toml path on issue.", "error"); return; }
+  try {
+    const result = await api("/api/install-missing-jar", {
+      method: "POST", body: JSON.stringify({ pw_toml_path: pw }),
+    });
+    toast(`Installed ${iss.data.filename}.`, "ok");
+    await reload();
+  } catch (e) { toast(e.message, "error"); }
+}
+
+async function installAllMissingJars(items) {
+  const ok = await confirmModal({
+    title: "Install missing jars",
+    body: `<p>Download and install <b>${items.length}</b> jar${items.length === 1 ? "" : "s"} into Prism's <code>mods/</code>?</p>
+           <p class="muted">Each one is fetched from its <code>.pw.toml</code>'s URL (or via the CurseForge API for <code>metadata:curseforge</code> entries).</p>`,
+    confirmText: `Install ${items.length}`,
+    confirmKind: "primary",
+  });
+  if (!ok) return;
+  let success = 0, failed = 0;
+  for (const iss of items) {
+    const pw = iss.data && iss.data.pw_toml_path;
+    if (!pw) { failed++; continue; }
+    try {
+      await api("/api/install-missing-jar", {
+        method: "POST", body: JSON.stringify({ pw_toml_path: pw }),
+      });
+      success++;
+    } catch (e) { failed++; }
+  }
+  toast(`Installed ${success}${failed ? `, ${failed} failed (likely CF mods needing API key)` : ""}.`,
+    failed === 0 ? "ok" : "error");
+  await reload();
+}
+
 async function syncPwToPrism(iss) {
   const repoPw = iss.data.repo_pw;
   if (!repoPw) { toast("No repo .pw.toml referenced.", "error"); return; }
   try {
-    await api("/api/sync-pw-to-prism", {
+    const result = await api("/api/sync-pw-to-prism", {
       method: "POST", body: JSON.stringify({ repo_pw: repoPw }),
     });
-    toast("Copied " + iss.data.repo_pw_name + " into Prism.", "ok");
+    let msg = "Copied " + iss.data.repo_pw_name + " into Prism";
+    if (result.jar_status === "downloaded") msg += " (jar installed)";
+    else if (result.jar_status === "cached") msg += " (jar already present)";
+    if (result.warning) {
+      toast("Metadata copied, but jar didn't install: " + result.warning, "error");
+    } else {
+      toast(msg + ".", "ok");
+    }
     await reload();
   } catch (e) { toast(e.message, "error"); }
 }
@@ -4667,6 +4932,8 @@ function renderMods() {
       _hasRepo: !!g.repo,
       _hasPrism: !!g.prism,
       _repoPath: g.repo ? g.repo.pw_toml_path : null,
+      _prismPath: g.prism ? g.prism.pw_toml_path : null,
+      _prismJarInstalled: (g.prism && "jar_installed" in g.prism) ? g.prism.jar_installed : null,
     });
   }
 
@@ -4702,6 +4969,10 @@ function renderMods() {
     } else {
       statusHtml = '<span class="tag only" title="In Prism\'s .index/ but not in repo">prism only</span>';
     }
+    // Annotate when Prism has the .pw.toml but the actual jar isn't installed
+    if (r._hasPrism && r._prismJarInstalled === false) {
+      statusHtml += ' <span class="tag out-of-sync" title="Prism has the .pw.toml but the jar isn\'t in mods/. Open Resolve to install.">no jar</span>';
+    }
 
     const issues = issuesByName.get(r.pw_toml_name) || issuesByName.get(r.filename) || [];
     const issueIcon = issues.length
@@ -4734,6 +5005,17 @@ function renderMods() {
       b.onclick = () => identifyJar({ data: { jar: { path: r.path, filename: r.filename, size: 0 } } });
       acts.appendChild(b);
     } else {
+      // If Prism has metadata but no jar, the most useful direct action is to install it
+      if (r._hasPrism && r._prismJarInstalled === false && r._prismPath) {
+        const installBtn = document.createElement("button");
+        installBtn.className = "small primary";
+        installBtn.textContent = "Install jar";
+        installBtn.title = "Download the jar referenced by Prism's .pw.toml into mods/";
+        installBtn.onclick = () => installMissingJar({
+          data: { pw_toml_path: r._prismPath, filename: r.filename },
+        });
+        acts.appendChild(installBtn);
+      }
       const needsAttention = r._status !== "synced";
       const resolve = document.createElement("button");
       resolve.className = "small " + (needsAttention ? "primary" : "");
@@ -5573,10 +5855,18 @@ async function openDiffModal(row) {
 async function syncRepoEntryToPrism(r) {
   if (!r._repoPath) { toast("No repo .pw.toml to sync.", "error"); return; }
   try {
-    await api("/api/sync-pw-to-prism", {
+    const result = await api("/api/sync-pw-to-prism", {
       method: "POST", body: JSON.stringify({ repo_pw: r._repoPath }),
     });
-    toast("Synced " + r.pw_toml_name + " to Prism.", "ok");
+    let msg = "Synced " + r.pw_toml_name;
+    if (result.jar_status === "downloaded") msg += " — jar installed.";
+    else if (result.jar_status === "cached") msg += " — jar already present.";
+    if (result.warning) {
+      // .pw.toml copied but jar didn't install
+      toast("Metadata synced, but jar didn't install: " + result.warning, "error");
+    } else {
+      toast(msg, "ok");
+    }
     await reload();
   } catch (e) { toast(e.message, "error"); }
 }
