@@ -2,6 +2,7 @@
 .gitattributes
 .gitignore
 .packwizignore
+.crafty-sync-exclude
 .github/**
 
 README.md
