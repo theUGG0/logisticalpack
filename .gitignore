@@ -10,3 +10,5 @@ local_readme.md
 *.zip
 *.mrpack
 .cache/
+# auto-generated python bytecode cache
+__pycache__/
