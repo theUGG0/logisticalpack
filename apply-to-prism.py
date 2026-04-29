@@ -28,6 +28,9 @@ from pathlib import Path
 BOOTSTRAP_JAR = "packwiz-installer-bootstrap.jar"
 DEFAULT_DEV_PACK_URL = "http://localhost:8080/pack.toml"
 
+# Folders where Prism stores packwiz metadata under a `.index/` subdir. Edit this as needed
+METADATA_KINDS = ("mods", "resourcepacks", "shaderpacks")
+
 
 # --- Helpers ----------------------------------------------------------------
 
@@ -104,6 +107,11 @@ def main() -> None:
              "instead of the production PACK_URL. Pair with `packwiz serve` "
              "running in the repo to test a feature branch.",
     )
+    parser.add_argument(
+        "--keep-stale",
+        action="store_true",
+        help="don't remove stale .pw.toml files when copying files from repo to Prism instance's .index directories"
+    )
     args = parser.parse_args()
 
     repo = repo_root()
@@ -137,7 +145,46 @@ def main() -> None:
         ["java", "-jar", BOOTSTRAP_JAR, pack_url],
         cwd=instance,
     )
-    sys.exit(result.returncode)
+    if result.returncode != 0:
+        sys.exit(result.returncode)
+
+    # Populate Prism's .index/ folders from the repo's metadata files.
+    # The bootstrapper installs the jars but doesn't write Prism's metadata,
+    # which means Prism's UI wouldn't recognize the mods and sync_from_prism.py
+    # would falsely think they were uninstalled.
+    print()
+    populate_prism_index(repo, instance, args.keep_stale)
+    print("\u2713 done")
+
+
+def populate_prism_index(repo: Path, instance: Path, keep_stale: bool) -> None:
+    for kind in METADATA_KINDS:
+        src = repo / kind
+        dst = instance / kind / ".index"
+        if not src.is_dir():
+            continue
+
+        dst.mkdir(parents=True, exist_ok=True)
+
+        # Mirror: dst should end up with exactly the .pw.toml files from src.
+        repo_names = {
+            p.name for p in src.iterdir()
+            if p.is_file() and p.name.endswith(".pw.toml")
+        }
+
+        if not keep_stale:
+            # Remove stale entries in dst.
+            for existing in dst.iterdir():
+                if existing.is_file() and existing.name.endswith(".pw.toml") \
+                        and existing.name not in repo_names:
+                    existing.unlink()
+
+        # Copy current entries from repo to dst.
+        for name in repo_names:
+            shutil.copy2(src / name, dst / name)
+
+        if repo_names:
+            print(f"  populated {kind}/.index/ ({len(repo_names)} entries)")
 
 
 if __name__ == "__main__":
