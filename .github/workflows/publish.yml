@@ -16,6 +16,10 @@ jobs:
       - name: Create index.toml and refresh packwiz
         run: |
           packwiz refresh
+          echo "=== pack.toml [index] ==="
+          grep -A3 '^\[index\]' pack.toml
+          echo "=== index.toml hash ==="
+          sha256sum index.toml
       - name: Stage pack files
         run: |
           mkdir _site
@@ -28,3 +32,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           publish_branch: gh-pages
+          force_orphan: true
