@@ -9,8 +9,8 @@ x-prismlauncher-version-number = 'tracks-neoforge-1.21.1-1.0.1.jar'
 [download]
 hash = 'cccd208606d7ac33f483e1e8a237092712a1a2c0'
 hash-format = 'sha1'
-mode = 'metadata:curseforge'
-url = 'https://www.curseforge.com/minecraft/mc-mods/create-tracks/download/7968280'
+mode = 'url'
+url = 'https://edge.forgecdn.net/files/7968/280/tracks-neoforge-1.21.1-1.0.1.jar'
 
 [update.curseforge]
 file-id = 7968280

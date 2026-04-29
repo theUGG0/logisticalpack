@@ -14,7 +14,7 @@ hash = "db9e723f66651ef671f89113f10d07f434d306e6fdc714c35d2f3423b81d1b25"
 
 [[files]]
 file = ".cache/server-pack/config/DistantHorizons.toml"
-hash = "25b4c76f3717faeb6655b8e4dae4c0d204b8f5296ed3ecc8f2656fb815c55e5a"
+hash = "b4f1f1ed211746010e5ad12e2a77c5eb34eb00134300af319b0a66a9a446fe9f"
 
 [[files]]
 file = ".cache/server-pack/config/aeronautics-server.toml"
@@ -31,6 +31,14 @@ hash = "83492cb723f368b41ed4b2b62a99ab20bec581149e2853d6a41750cc6b3a39b9"
 [[files]]
 file = ".cache/server-pack/config/bits_n_bobs-server.toml"
 hash = "fc6b87d500994353673065c6fde9f6dabb0e6b1c61a9db86e2a69d90a57ffb7e"
+
+[[files]]
+file = ".cache/server-pack/config/c2me.toml"
+hash = "e748e0d10e8d065af5fa36ed8a9a5b10d62b0c61b3ff4c75e0a75f0b18dbad91"
+
+[[files]]
+file = ".cache/server-pack/config/connectivity.json"
+hash = "6b95731807c56659d67f5c439439493834d0c42ad33baf23ef60d45bb7e73202"
 
 [[files]]
 file = ".cache/server-pack/config/create-client-1.toml.bak"
@@ -61,12 +69,16 @@ file = ".cache/server-pack/config/createbigcannons-server.toml"
 hash = "ffa79d44e4dc4407cebb841058b5fde911566fd5c0d0b8869f1374e254eb98ca"
 
 [[files]]
+file = ".cache/server-pack/config/cupboard.json"
+hash = "937698438af081495eebab187013f66570218e1443f35db8a2ca0b4cb6d9638b"
+
+[[files]]
 file = ".cache/server-pack/config/encumbrance.json"
 hash = "5758f19722918dae47dc47b11c157049c16b69fa64346a12d900bf952bee5833"
 
 [[files]]
 file = ".cache/server-pack/config/ferritecore-mixin.toml"
-hash = "1356f9d52b2dcb2afa5a593e53c286d9c1c3778a6f8b1cf761953b185b7dce78"
+hash = "b6c85cb392f799ed932ffe8d6051f48a283a0df3f8674acf4f8d89341836e686"
 
 [[files]]
 file = ".cache/server-pack/config/flywheel-client.toml"
@@ -74,7 +86,7 @@ hash = "9b9525f6baadc8312819ae21ad8688b20fb887e0e2bec4bceece4cbb296196b8"
 
 [[files]]
 file = ".cache/server-pack/config/fml.toml"
-hash = "cc59fb1039726fda3ab1eb69b06d9b9aebb7496604ea579cfb735bc5377e7825"
+hash = "cc127c6067eb9e23289edc1c774afd71456456eef06c688af6731a72d3bba5e5"
 
 [[files]]
 file = ".cache/server-pack/config/immediatelyfast.json"
@@ -90,7 +102,7 @@ hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
 file = ".cache/server-pack/config/jei/ingredient-list-mod-sort-order.ini"
-hash = "98d51a70dc01724ce7d927f3018182cebd3d55eeb3e2a23ea908a0afc30229aa"
+hash = "b1a98ecff2b57ba23694fbb0dc25fb4be133b21fa78f80e384f37fb6760c06c3"
 
 [[files]]
 file = ".cache/server-pack/config/jei/ingredient-list-type-sort-order.ini"
@@ -98,23 +110,23 @@ hash = "9be9f5ca14028eda8df857922eea736a3d1e76a85661ba90edae2682eeb0b502"
 
 [[files]]
 file = ".cache/server-pack/config/jei/jei-client.ini"
-hash = "f6841387ba118885299e6fe6574daaa62ad5adcf4e73f851ec2e9f8977ea066d"
+hash = "690df55f936858abf5ed93e681daab91e02b9bea84e128bedf0723556ce19258"
 
 [[files]]
 file = ".cache/server-pack/config/jei/jei-colors.ini"
-hash = "755f199a3868224bdccb2a8ffd8f1a4eb2d96140757f444ba31f8d677a66034f"
+hash = "e4bc0c5fce5a7536bce14c94b30e30482e65d63792b29db0ad59d4fa9eb4d1a5"
 
 [[files]]
 file = ".cache/server-pack/config/jei/jei-debug.ini"
-hash = "960b16c7af6d62bbe7b58fb52216a8a15771bddecbeefab49a8614b7ca86dcbd"
+hash = "39b7d63de65fbf7654ee33d521d67095aa17a93226d2d9b7a6fb09305c8990d4"
 
 [[files]]
 file = ".cache/server-pack/config/jei/jei-mod-id-format.ini"
-hash = "6a91c09d1cabc1980d90ab102a03ec58c0551213ab16a459b599d768b334d054"
+hash = "4eb3a3eb280558bdd2665fb4792d32551cb6dddc468776e66afc1c3ea981781e"
 
 [[files]]
 file = ".cache/server-pack/config/jei/recipe-category-sort-order.ini"
-hash = "1333b9db195b10e2c22e8ecc32670137d9b934151ef04da899b093af5c4f4a6e"
+hash = "f935276ac0bd13a0a2b7d67bca107fd1dd67a1d804617a309974e961f1fe70d6"
 
 [[files]]
 file = ".cache/server-pack/config/jei/world/local/New_World__1/lookupHistory.json"
@@ -133,6 +145,10 @@ file = ".cache/server-pack/config/jei/world/local/New_World__5/lookupHistory.jso
 hash = "4c9e94599849778a2ce2528d487598258a7660772da53bf343e9b872993ba68c"
 
 [[files]]
+file = ".cache/server-pack/config/jei/world/local/New_World__7/lookupHistory.json"
+hash = "964ceba91f96353fa7a084d14842feb9f36ef50751f61a983fea01cae5c14c27"
+
+[[files]]
 file = ".cache/server-pack/config/lithium.properties"
 hash = "6cf6f83720071fd1657c8e79b357caf68d40f410ae123e5f922483eb1d1d25be"
 
@@ -146,7 +162,7 @@ hash = "72ca2bcea2a9946a3a54842f14eff6f7b47d8fc96ef497c1b56406643b153fd7"
 
 [[files]]
 file = ".cache/server-pack/config/modernfix-mixins.properties"
-hash = "32bbaa6f573b612b92653fc2814365cd8aa423d39fcab4fa5dcfcb5f31121874"
+hash = "f7684457ca67d68a8df81e6f63b2f1bc6e3d9e3633ef60eef45c55d9c50d026a"
 
 [[files]]
 file = ".cache/server-pack/config/musketmod.txt"
@@ -197,16 +213,28 @@ file = ".cache/server-pack/config/radialbiomes/tiers/tier_3_extreme.json"
 hash = "cde99db2e2c7d2d3710d2ab169527ac149a24ca52e3f25e31029209207c007f6"
 
 [[files]]
+file = ".cache/server-pack/config/resourceful-config-web.json"
+hash = "275db2836a999c61f456435d256132d7f74ec9e5c12c853c59e9048c4bd54d4a"
+
+[[files]]
 file = ".cache/server-pack/config/ritchiesprojectilelib-server.toml"
 hash = "793c05c7f9975032f536f7b9702a4f892b8beb31e641af1f12ee9c96aed4d013"
 
 [[files]]
 file = ".cache/server-pack/config/sable-client-1.toml.bak"
+hash = "aa9ea8fbb230ff51a0bf9753dba5fb1df54704300f5bb4c2898b68c066cbbecf"
+
+[[files]]
+file = ".cache/server-pack/config/sable-client-2.toml.bak"
+hash = "0abc8a8f2ce730e440521d4d3d2cb45ec475e9d5a0e01e17e74cfbd63a0bd26b"
+
+[[files]]
+file = ".cache/server-pack/config/sable-client-3.toml.bak"
 hash = "6bf304a56470c5a028877c63a6304f831f62b2fa0259aa850a4266bcc1fb387a"
 
 [[files]]
 file = ".cache/server-pack/config/sable-client.toml"
-hash = "0abc8a8f2ce730e440521d4d3d2cb45ec475e9d5a0e01e17e74cfbd63a0bd26b"
+hash = "1a4676e6136f117f2587d32991720455c0a1b204498ebc7eb21e83f5912df222"
 
 [[files]]
 file = ".cache/server-pack/config/sable-common-1.toml.bak"
@@ -229,6 +257,10 @@ file = ".cache/server-pack/config/sable_waterworks-common.toml"
 hash = "469da096ecf8157392b4a2c112e5cd332fa4a41917b93a53e1dcf4e265caf5dc"
 
 [[files]]
+file = ".cache/server-pack/config/saturn-optimizations.toml"
+hash = "f18ce3963bfb77822357b4a45f901cd036113a607d284ffcb074dcbfac6792c1"
+
+[[files]]
 file = ".cache/server-pack/config/simulated-client.toml"
 hash = "ae2634e6d32c7fb2e3cfe195f0d5c3a4bd2a1e073890d0abcc982065b41e8219"
 
@@ -242,7 +274,7 @@ hash = "43f69b72502cfeb43e4b8584a1a8955120fcd25b31217ce199525127fd76e587"
 
 [[files]]
 file = ".cache/server-pack/config/sodium-fingerprint.json"
-hash = "6f47f9877369809ae0df8d6b2bad8ae103ef43d3ad4ca42545ca4a0fb1735949"
+hash = "4ef40f704bf9ce1e01c4225d94439d5934e54bd46a840c2d33d1ced5a011c845"
 
 [[files]]
 file = ".cache/server-pack/config/sodium-mixins.properties"
@@ -253,8 +285,28 @@ file = ".cache/server-pack/config/sodium-options.json"
 hash = "445a55bccce87dd8467f3265d1572827e8778e873e3bb70290adf0bb8a811e96"
 
 [[files]]
+file = ".cache/server-pack/config/spark/activity.json"
+hash = "572d3cc7a86bd5abae67b0b8f2065f3eac7966b8056de76744e8aae99e330557"
+
+[[files]]
+file = ".cache/server-pack/config/spark/config.json"
+hash = "992ba9f3a4a7ce3de112eb95575328956fdc3ce6781c455ebce7b23db7e7da42"
+
+[[files]]
+file = ".cache/server-pack/config/spark/tmp-client/about.txt"
+hash = "8057ccf4540ea269b0fc332225859f44d8f3a55d891fa2e7a3447b6202658d2a"
+
+[[files]]
+file = ".cache/server-pack/config/spark/tmp/about.txt"
+hash = "8057ccf4540ea269b0fc332225859f44d8f3a55d891fa2e7a3447b6202658d2a"
+
+[[files]]
+file = ".cache/server-pack/config/structure_layout_optimizer.jsonc"
+hash = "5a9058652bc0b88b8810e0b94eba0e1a90cbff2472845c53a7e67442682a1579"
+
+[[files]]
 file = ".cache/server-pack/config/tectonic.json"
-hash = "fe51e529faafe17609b060f25d2cd87c0db5571c98e306a09f9335d4b54546fa"
+hash = "c82855fc958c2ba9f1d785ce8739bb421db4c37d88a63d5094fd66da8ff269e7"
 
 [[files]]
 file = ".cache/server-pack/config/tfmg-common.toml"
@@ -289,6 +341,10 @@ file = ".cache/server-pack/kubejs/assets/kubejs/textures/item/example_item.png"
 hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
 
 [[files]]
+file = ".cache/server-pack/kubejs/assets/logisticalpack/lang/en_us.json"
+hash = "b9b7a05be83a2309458da5137f4d7ce59a2ff99911b03cdd51c149cc69eb66f8"
+
+[[files]]
 file = ".cache/server-pack/kubejs/client_scripts/main.js"
 hash = "3df46f0add819bf2602642215b5c62f0581ffdaaf97e77c80a8c4d966e05adcf"
 
@@ -305,8 +361,44 @@ file = ".cache/server-pack/kubejs/config/web_server.json"
 hash = "838937620dda444857732189a1e26401a2b97e447b3c8738bc2693584f0006b0"
 
 [[files]]
+file = ".cache/server-pack/kubejs/data/logisticalpack/loot_table/blocks/deepslate_lignite_ore.json"
+hash = "9365ee085a3eb5c829d46cfee416e6f97c2105e57cb4d35cdfa52763c6a92c8d"
+
+[[files]]
+file = ".cache/server-pack/kubejs/data/logisticalpack/loot_table/blocks/lignite_ore.json"
+hash = "3c2154e40180f16516027369517de0193bf34435b8f11f64aaf975d9f4ac9ba0"
+
+[[files]]
+file = ".cache/server-pack/kubejs/data/logisticalpack/worldgen/ore_vein/huge_coal_vein.json"
+hash = "c64f101d0a0b2278e131bbcb276740825b68854691318b375c2a85f39e4dad11"
+
+[[files]]
+file = ".cache/server-pack/kubejs/data/logisticalpack/worldgen/ore_vein/lignite_vein.json.dis"
+hash = "3a706b65f958f1b6c76b68fca9e2755286b157d71e739f91b260844431cf07dc"
+
+[[files]]
+file = ".cache/server-pack/kubejs/data/minecraft/worldgen/configured_feature/ore_coal.json"
+hash = "eabafd509c4331ad84a91b4e18c52704a7bbe31f26eaa93506b2626fd783676e"
+
+[[files]]
+file = ".cache/server-pack/kubejs/data/minecraft/worldgen/configured_feature/ore_coal_buried.json"
+hash = "5b278823047fd4eefe27776d78b7c4c66b50054db4c1cd983c6d1b3cb7c88b3f"
+
+[[files]]
+file = ".cache/server-pack/kubejs/server_scripts/coal_progression/lignite_behavior.js"
+hash = "0b149d663e273f8384185fa4d5a854235e812a6ea1ef70e199295200831f5766"
+
+[[files]]
+file = ".cache/server-pack/kubejs/server_scripts/coal_progression/lignite_torch_recipes.js"
+hash = "6bafffe1bd78b4bc9aaacbd12f4c7ddf435e693e065aeb70b4a7cba33e0433bf"
+
+[[files]]
 file = ".cache/server-pack/kubejs/server_scripts/main.js"
 hash = "dae099ae3be7f033c0c190ee8c3b023b42f6b235d9d0591be5926e8435dbd67f"
+
+[[files]]
+file = ".cache/server-pack/kubejs/startup_scripts/coal_progression/register_lignite.js"
+hash = "d1a461fe22938aca9c5643914cbcf1afd3b7a5445d603d4c0dabb3cb89585cba"
 
 [[files]]
 file = ".cache/server-pack/kubejs/startup_scripts/main.js"
@@ -349,8 +441,16 @@ file = ".cache/server-pack/mods/bits_n_bobs-0.0.44.jar"
 hash = "6d8268d82cc6e38dd13f5247b28f37b7a35d66cb476c6e0632f4e9ba5570f5d8"
 
 [[files]]
+file = ".cache/server-pack/mods/c2me-neoforge-mc1.21.1-0.3.0+alpha.0.91.jar"
+hash = "107ec5b3cca05a038ee21aa35e5c68880297c370e4a47d14998ecfa7270af369"
+
+[[files]]
 file = ".cache/server-pack/mods/cloth-config-15.0.140-neoforge.jar"
 hash = "65e722e0d98431a07c45f8bdd8d529a217cc8c175fde1740248bd5c1b4f3c0d4"
+
+[[files]]
+file = ".cache/server-pack/mods/connectivity-1.21.1-7.6.jar"
+hash = "2366973ddae5ba00b9ba15a26e5b610a6648038b9f2549bf81b9ae61342b281a"
 
 [[files]]
 file = ".cache/server-pack/mods/create-1.21.1-6.0.10.jar"
@@ -363,6 +463,10 @@ hash = "a182241a0254e22d32f537f397dd17c7d8729a027cda6915b698623bbacc1243"
 [[files]]
 file = ".cache/server-pack/mods/create_vibrant_vaults-0.3.2.jar"
 hash = "cebf5d1d1793fbfc2ee25b63d6f929910ad04ff72da5c1a6987d33961708cff1"
+
+[[files]]
+file = ".cache/server-pack/mods/cupboard-1.21-3.5.jar"
+hash = "d27298b67d74d6c95bdf1869bd60f49cfb93f33e6f14a0393be144584649c7db"
 
 [[files]]
 file = ".cache/server-pack/mods/encumbrance-1.0.0.jar"
@@ -409,6 +513,14 @@ file = ".cache/server-pack/mods/naturaltemperature-1.1.2-NEOFORGE-MC-1.21.1.jar"
 hash = "c6a0b260df6ab395af9a5a1f4af27b376b5a0c1f854aaa88882c70b9a7b1ef00"
 
 [[files]]
+file = ".cache/server-pack/mods/noisium-neoforge-2.7.0+mc1.21-1.21.1.jar"
+hash = "ca097cd53fcdabecbcbf22e2515eb1956f313f094cd3a0506800ebf239e255f9"
+
+[[files]]
+file = ".cache/server-pack/mods/resourcefulconfig-neoforge-1.21-3.0.11.jar"
+hash = "25b4f3502d25c535004acd4a9420272fff01d2f1e2df352239fec93fdab005d4"
+
+[[files]]
 file = ".cache/server-pack/mods/rhino-2101.2.7-build.81.jar"
 hash = "c79f19d9acea367adc1a8631ffc04c300a6e2b4902994a0111bd283b5e7f19fb"
 
@@ -419,6 +531,18 @@ hash = "cc509060833736fb650aa4c36b1ce33a7eeeb9ca6e9f8e80a7c951c9e7487b24"
 [[files]]
 file = ".cache/server-pack/mods/sable-neoforge-1.21.1-1.1.3.jar"
 hash = "aff91dc1c65caf104e8161ba6225c7767f93594c6783455adf238a90624cc952"
+
+[[files]]
+file = ".cache/server-pack/mods/saturn-mc1.21.1-0.1.5.jar"
+hash = "f49f4b51faeb4e9eb7568723fa259c0da1c3460f8019597f04a54c2137b76c32"
+
+[[files]]
+file = ".cache/server-pack/mods/spark-1.10.124-neoforge.jar"
+hash = "647e8a81afbe414dba1df4ba15fd06c5d32d4cb544e68828405e8e074c2e16db"
+
+[[files]]
+file = ".cache/server-pack/mods/structure_layout_optimizer-neoforge-1.0.12.jar"
+hash = "ef8eb29c5c4f111c74a49d379843e4c2f51d11b28c8116a49be13636c83f4385"
 
 [[files]]
 file = ".cache/server-pack/mods/tectonic-3.0.22-neoforge-21.1.jar"
@@ -446,11 +570,15 @@ hash = "c9f646908d340d84773948a9a7d98bc1dae250d35e1016dc6e2b8459760b5598"
 
 [[files]]
 file = ".cache/server-pack/packwiz.json"
-hash = "931b035e93cf6f695b759b0f7de9be1175521d4d8ff507804b5eb4d87e6b35e9"
+hash = "bbd5af9938050258f193fa324ebb810b0d6acf6728e49c3c18d923c1e440dee3"
 
 [[files]]
 file = ".cache/sync.lock"
-hash = "ed4b9ddcadef725437bd53687c973c9f447f5c69ee6d9382df522febc1d8b4df"
+hash = "90e70a4bd35b8194c225dc54a4dff5ad07e93029f974537f656e72665710413d"
+
+[[files]]
+file = "__pycache__/packwiz-manager.cpython-314.pyc"
+hash = "5ec26481701c90022a5ba05ed7b0c8e009f30304413d4188097af63904a9abc2"
 
 [[files]]
 file = "config/CustomNpcs.cfg"
@@ -857,6 +985,11 @@ file = "local_readme.md"
 hash = "14bc3fbc8ac72d399f9edcdeb295e2cc76a5d66b93bd8b58bf060344ba0e5959"
 
 [[files]]
+file = "mods/aeroguard-1-0-0.pw.toml"
+hash = "3a27d5c6686dda7315f4b4f494bb96a85e1f9f251838444766754def0ac2f14e"
+metafile = true
+
+[[files]]
 file = "mods/aeroguard-1.0.0.jar"
 hash = "6bcd211eadc3a5308d097307a7f7992210c407c5efbb68866e05420eb5c1771e"
 
@@ -877,7 +1010,7 @@ metafile = true
 
 [[files]]
 file = "mods/connectivity.pw.toml"
-hash = "f1c0e4aa386b3f006486d709c7453ea0b17140f10ca600233d1b45c7743f0846"
+hash = "282e1ac502f79e86f0885eb3ea2f404cbf4eb68f3f3a3da60c6a12d131748680"
 metafile = true
 
 [[files]]
@@ -907,7 +1040,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-tracks.pw.toml"
-hash = "68f1e34ce0cca7be9af47172e944333ac3101e5863c0852fd6e66f41d91e22db"
+hash = "aff7a20d801c4c05644ac064c611462e56ad3bd45efdb3a09631db14148e19c6"
 metafile = true
 
 [[files]]
@@ -922,7 +1055,7 @@ metafile = true
 
 [[files]]
 file = "mods/cupboard.pw.toml"
-hash = "40b812aaa8e77d9b9a0b01045a14016dfdf75ac9aa383967dcd064f06035036e"
+hash = "2826edbcf6a21c866c7ac725358c4511962127e21489ec543298d4371bdf6c1a"
 metafile = true
 
 [[files]]
@@ -941,17 +1074,17 @@ hash = "0f1f88694e0bf9ac1ae08b21ee5b59824a2ff2a6d6afc839fd9356c4e26c40dc"
 metafile = true
 
 [[files]]
+file = "mods/encumbrance-1-0-0.pw.toml"
+hash = "6beaac024974024c84ca6228676d9921ae520f9f9cbd8dc0d7bc629cd4b07e72"
+metafile = true
+
+[[files]]
 file = "mods/encumbrance-1.0.0.jar"
 hash = "60d633396b99628eeda014906ca0170a7f8619829eed2cd754bb31e23374f595"
 
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "ee283d69b5846fc59ea45b7f632809d1405313e83708e600a08ebc1c7267962d"
-metafile = true
-
-[[files]]
-file = "mods/ferritecore.pw.toml"
-hash = "a693415444811b13e7a50ede220e9239804b80ce32264869d6a101d4344059a8"
 metafile = true
 
 [[files]]
@@ -995,11 +1128,6 @@ hash = "bb5da3576f1d78a76879e6988a5fd8b3df5ca284ad8b702db5cb44ae35585938"
 metafile = true
 
 [[files]]
-file = "mods/moonrise-opt.pw.toml"
-hash = "f24ff9fdf3295d2351fde7a40ea52336474ffbf075dcda6361760bb11fb92507"
-metafile = true
-
-[[files]]
 file = "mods/musket-mod.pw.toml"
 hash = "ea597e98be97a9e0779c11cc13744142d182d66c84f83a55f605bc49beedd8d6"
 metafile = true
@@ -1016,7 +1144,7 @@ metafile = true
 
 [[files]]
 file = "mods/resourceful-config.pw.toml"
-hash = "ad08a49d43f3bc05da5971eef950c8114f6e0095878b92cdc50612024c809987"
+hash = "cc643c404f5ae0617374e13e653156f1740393c632b299047b3073754cbfa892"
 metafile = true
 
 [[files]]
@@ -1062,6 +1190,11 @@ metafile = true
 [[files]]
 file = "mods/terralith.pw.toml"
 hash = "820f76bfb5af7d5d878bad21a37d2dc5efe085615dc5eb55965d13c7116e7bfc"
+metafile = true
+
+[[files]]
+file = "mods/veinscout-1-0-0.pw.toml"
+hash = "8eed92e05d88a9c1302b0fcc583acc44d50c17219ae322497d8eb464f0320625"
 metafile = true
 
 [[files]]
