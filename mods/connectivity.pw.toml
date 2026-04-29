@@ -9,8 +9,8 @@ x-prismlauncher-version-number = 'connectivity-1.21.1-7.6.jar'
 [download]
 hash = '6adebe84f745dec8fa33bc3982383bc1cc24d49e'
 hash-format = 'sha1'
-mode = 'metadata:curseforge'
-url = 'https://www.curseforge.com/minecraft/mc-mods/connectivity/download/7367221'
+mode = 'url'
+url = 'https://edge.forgecdn.net/files/7367/221/connectivity-1.21.1-7.6.jar'
 
 [update.curseforge]
 file-id = 7367221
