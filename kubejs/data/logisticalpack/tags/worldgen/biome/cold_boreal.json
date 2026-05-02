@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:snowy_plains",
+    "minecraft:snowy_taiga",
+    "minecraft:grove",
+    "minecraft:snowy_beach",
+    "minecraft:frozen_river",
+    "minecraft:snowy_slopes",
+    "minecraft:windswept_hills",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:windswept_forest",
+    "minecraft:cold_ocean",
+    "minecraft:deep_cold_ocean",
+
+    "terralith:alpine_grove",
+    "terralith:alpine_highlands",
+    "terralith:frost_coniferous_forest",
+    "terralith:snowy_cherry_grove",
+    "terralith:snowy_haze_mountain",
+    "terralith:snowy_temperate_rainforest",
+    "terralith:snowy_temperate_highlands",
+    "terralith:snowy_shield",
+    "terralith:snowy_maple_forest",
+    "terralith:snowy_badlands",
+    "terralith:siberian_taiga",
+    "terralith:siberian_grove",
+    "terralith:scarlet_mountains",
+    "terralith:granite_cliffs",
+    "terralith:white_cliffs",
+    "terralith:stony_spires",
+    "terralith:ancient_foothills",
+    "terralith:valley_clearing",
+    "terralith:mountain_steppe",
+    "terralith:windswept_spires"
+  ]
+}

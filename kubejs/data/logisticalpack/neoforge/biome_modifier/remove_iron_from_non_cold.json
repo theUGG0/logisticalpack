@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#logisticalpack:temperate_warm_tropical",
+  "features": [
+    "minecraft:ore_iron_upper",
+    "minecraft:ore_iron_middle",
+    "minecraft:ore_iron_small"
+  ],
+  "steps": ["underground_ores"]
+}

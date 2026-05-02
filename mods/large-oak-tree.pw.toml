@@ -1,0 +1,18 @@
+filename = 'big_oak_tree-1.0.0-neoforge-1.21.1.jar'
+name = 'Large Oak Tree'
+side = 'both'
+x-prismlauncher-dependencies = [  ]
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'big_oak_tree-1.0.0-neoforge-1.21.1.jar'
+
+[download]
+hash = 'f6656d18f8a9ccd4c3c0af03098039a68818fc36'
+hash-format = 'sha1'
+mode = 'url'
+url = 'https://edge.forgecdn.net/files/6222/397/big_oak_tree-1.0.0-neoforge-1.21.1.jar'
+
+[update.curseforge]
+file-id = 6222397
+project-id = 1205379

@@ -86,7 +86,7 @@ def load_dotenv(path: Path) -> dict[str, str]:
 
 
 def get_setting(env: dict[str, str], key: str, default: str | None = None) -> str | None:
-    return env.get(key) or os.environ.get(key) or default
+    return os.environ.get(key) or env.get(key) or default
 
 
 def truthy(s: str | None) -> bool:

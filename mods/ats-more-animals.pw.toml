@@ -1,0 +1,25 @@
+filename = 'ats_more_animals_mod-1.1 Fins  Flippers-neoforge-1.21.1.jar'
+name = "AT's More Animals"
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'V1.1 Fins & Flippers Neoforge 1.21.1'
+
+[download]
+hash = 'bd65a39f8414a1871f9cc36d953be358ee3198a5'
+hash-format = 'sha1'
+mode = 'url'
+url = 'https://edge.forgecdn.net/files/7996/303/ats_more_animals_mod-1.1%20Fins%20%20Flippers-neoforge-1.21.1.jar'
+
+[update.curseforge]
+file-id = 7996303
+project-id = 1199797
+
+[[x-prismlauncher-dependencies]]
+addonId = '1187552'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1179609'
+type = 'OPTIONAL'

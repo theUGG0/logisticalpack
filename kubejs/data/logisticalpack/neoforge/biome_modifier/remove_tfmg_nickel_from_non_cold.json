@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#logisticalpack:temperate_warm_tropical_frozen",
+  "features": "tfmg:nickel_ore",
+  "steps": ["underground_ores"]
+}
