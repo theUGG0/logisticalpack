@@ -1,0 +1,21 @@
+filename = 'neruina-3.3.1+1.21.1-neoforge.jar'
+name = 'Neruina - Ticking Entity Fixer'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1', '1.21.2', '1.21.3', '1.21.4' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Neruina Neoforge 3.3.1 for 1.21.1'
+
+[download]
+hash = 'f815924fde01835ea6c69c8a14fa245efdd5a9e3ce6b64f47d3e16f7c52bae47900c60968e1970a85c3f6fa6a8b440e5504ed9ec0b6089b6206ec843bc37ceb6'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/1s5x833P/versions/YUUi3gGS/neruina-3.3.1%2B1.21.1-neoforge.jar'
+
+[update.modrinth]
+mod-id = '1s5x833P'
+version = 'YUUi3gGS'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1092048'
+type = 'REQUIRED'

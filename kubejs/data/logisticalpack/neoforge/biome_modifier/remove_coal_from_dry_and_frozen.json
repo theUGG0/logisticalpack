@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#logisticalpack:warm_frozen",
+  "features": [
+    "minecraft:ore_coal_upper",
+    "minecraft:ore_coal_lower"
+  ],
+  "steps": ["underground_ores"]
+}

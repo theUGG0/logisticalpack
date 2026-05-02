@@ -117,7 +117,7 @@ _version = 4
 	[common.multiThreading]
 		#
 		# How many threads should be used by Distant Horizons?
-		numberOfThreads = 8
+		numberOfThreads = 16
 		#
 		# A value between 1.0 and 0.0 that represents the percentage 
 		# of time each thread can run before going idle. 
@@ -239,7 +239,7 @@ _version = 4
 		# CHAT 
 		# LOG 
 		# DISABLED
-		showGenerationProgress = "DISABLED"
+		showGenerationProgress = "CHAT"
 		#
 		# The max radius in chunks around the central point where world generation is allowed. 
 		# If this value is set to 0, generation bounds are disabled and the render distance will be used. 
@@ -268,7 +268,7 @@ _version = 4
 		#  outside the vanilla render distance? 
 		# Depending on the generator mode, this will import existing chunks 
 		# and/or generating missing chunks.
-		enableDistantGeneration = false
+		enableDistantGeneration = true
 		#
 		# The center X chunk position that the world gen max radius is centered around.
 		generationCenterChunkX = 0
@@ -318,7 +318,7 @@ _version = 4
 			# DEFAULT: Default lod renderer 
 			# DEBUG_TRIANGLE: Debug testing renderer 
 			# DISABLED: Disable rendering
-			rendererMode = "DISABLED"
+			rendererMode = "DEFAULT"
 			#
 			# If enabled the LODs will render as wireframe.
 			renderWireframe = false
@@ -468,7 +468,7 @@ _version = 4
 				#  overhangs or walls for floating objects. 
 				#  Tweaking the caveCullingHeight, can resolve some 
 				#  of those issues.
-				enableCaveCulling = true
+				enableCaveCulling = false
 				#
 				# Identical to the other frustum culling option
 				# only used when a shader mod is present using the DH API
@@ -649,7 +649,7 @@ _version = 4
 				# 
 				# Lowest Quality: HEIGHT_MAP
 				# Highest Quality: EXTREME
-				verticalQuality = "MEDIUM"
+				verticalQuality = "HIGH"
 				#
 				# What blocks shouldn't be rendered as LODs? 
 				# 
@@ -676,7 +676,7 @@ _version = 4
 				# This indicates how quickly LODs decrease in quality the further away they are. 
 				# Higher settings will render higher quality fake chunks farther away, 
 				# but will increase memory and GPU usage.
-				horizontalQuality = "MEDIUM"
+				horizontalQuality = "HIGH"
 				#
 				# How should LOD transparency be handled. 
 				# 

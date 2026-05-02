@@ -1,592 +1,12 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".cache/deploy.lock"
-hash = "fde5cff235be7ceed12c442c0e4163b73f5dd49dc4f392873f816348f23ba9a8"
-
-[[files]]
-file = ".cache/packwiz-installer-bootstrap.jar"
-hash = "a8fbb24dc604278e97f4688e82d3d91a318b98efc08d5dbfcbcbcab6443d116c"
-
-[[files]]
-file = ".cache/server-pack/config/CustomNpcs.cfg"
-hash = "db9e723f66651ef671f89113f10d07f434d306e6fdc714c35d2f3423b81d1b25"
-
-[[files]]
-file = ".cache/server-pack/config/DistantHorizons.toml"
-hash = "b4f1f1ed211746010e5ad12e2a77c5eb34eb00134300af319b0a66a9a446fe9f"
-
-[[files]]
-file = ".cache/server-pack/config/aeronautics-server.toml"
-hash = "a9302b0253e494e7d80f0a2785bf4514b0b67da85796437ca032482db62be514"
-
-[[files]]
-file = ".cache/server-pack/config/appleskin-client.toml"
-hash = "7127a276c7305371397053cd8d0833e6825c828850626e4067b9fed1430ed217"
-
-[[files]]
-file = ".cache/server-pack/config/bits_n_bobs-common.toml"
-hash = "83492cb723f368b41ed4b2b62a99ab20bec581149e2853d6a41750cc6b3a39b9"
-
-[[files]]
-file = ".cache/server-pack/config/bits_n_bobs-server.toml"
-hash = "fc6b87d500994353673065c6fde9f6dabb0e6b1c61a9db86e2a69d90a57ffb7e"
-
-[[files]]
-file = ".cache/server-pack/config/c2me.toml"
-hash = "e748e0d10e8d065af5fa36ed8a9a5b10d62b0c61b3ff4c75e0a75f0b18dbad91"
-
-[[files]]
-file = ".cache/server-pack/config/connectivity.json"
-hash = "6b95731807c56659d67f5c439439493834d0c42ad33baf23ef60d45bb7e73202"
-
-[[files]]
-file = ".cache/server-pack/config/create-client-1.toml.bak"
-hash = "e20f6769fd946b918f24cfd54a422a599faa43394ee9a33012e645102a366da3"
-
-[[files]]
-file = ".cache/server-pack/config/create-client.toml"
-hash = "1294948463b268551548b987c80e1b1fe63f5974ce1dd7de2a8954fa59d1d7c3"
-
-[[files]]
-file = ".cache/server-pack/config/create-common.toml"
-hash = "2e77b1d93b40ce3f381ad7eb2a9e6d7148de917518be5c2616939a4369c4b140"
-
-[[files]]
-file = ".cache/server-pack/config/create-server-1.toml.bak"
-hash = "d063982581108b8c7ed6c670c4f4a302abe39be7bfeb565de96b8d9d880426cd"
-
-[[files]]
-file = ".cache/server-pack/config/create-server.toml"
-hash = "36216a05f3ed63106ba587c8c24ed6315385829e7f3dae695dcf545aba41a270"
-
-[[files]]
-file = ".cache/server-pack/config/createbigcannons-client.toml"
-hash = "dd1fabf921549ecaf23fc0cdb5eee8ab766c963671693dc29e5402bb2b4baf83"
-
-[[files]]
-file = ".cache/server-pack/config/createbigcannons-server.toml"
-hash = "ffa79d44e4dc4407cebb841058b5fde911566fd5c0d0b8869f1374e254eb98ca"
-
-[[files]]
-file = ".cache/server-pack/config/cupboard.json"
-hash = "937698438af081495eebab187013f66570218e1443f35db8a2ca0b4cb6d9638b"
-
-[[files]]
-file = ".cache/server-pack/config/encumbrance.json"
-hash = "5758f19722918dae47dc47b11c157049c16b69fa64346a12d900bf952bee5833"
-
-[[files]]
-file = ".cache/server-pack/config/ferritecore-mixin.toml"
-hash = "b6c85cb392f799ed932ffe8d6051f48a283a0df3f8674acf4f8d89341836e686"
-
-[[files]]
-file = ".cache/server-pack/config/flywheel-client.toml"
-hash = "9b9525f6baadc8312819ae21ad8688b20fb887e0e2bec4bceece4cbb296196b8"
-
-[[files]]
-file = ".cache/server-pack/config/fml.toml"
-hash = "cc127c6067eb9e23289edc1c774afd71456456eef06c688af6731a72d3bba5e5"
-
-[[files]]
-file = ".cache/server-pack/config/immediatelyfast.json"
-hash = "a6c9d147a51c9e432c5c74c00285cfc5ba8b6fa4a0c6686051a7168b158d0d7a"
-
-[[files]]
-file = ".cache/server-pack/config/jei-server.toml"
-hash = "702acd04d99445bce659d04fcc488e1a98c8a803983c31ae262b0f3a47fdc8d3"
-
-[[files]]
-file = ".cache/server-pack/config/jei/blacklist.json"
-hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
-
-[[files]]
-file = ".cache/server-pack/config/jei/ingredient-list-mod-sort-order.ini"
-hash = "b1a98ecff2b57ba23694fbb0dc25fb4be133b21fa78f80e384f37fb6760c06c3"
-
-[[files]]
-file = ".cache/server-pack/config/jei/ingredient-list-type-sort-order.ini"
-hash = "9be9f5ca14028eda8df857922eea736a3d1e76a85661ba90edae2682eeb0b502"
-
-[[files]]
-file = ".cache/server-pack/config/jei/jei-client.ini"
-hash = "690df55f936858abf5ed93e681daab91e02b9bea84e128bedf0723556ce19258"
-
-[[files]]
-file = ".cache/server-pack/config/jei/jei-colors.ini"
-hash = "e4bc0c5fce5a7536bce14c94b30e30482e65d63792b29db0ad59d4fa9eb4d1a5"
-
-[[files]]
-file = ".cache/server-pack/config/jei/jei-debug.ini"
-hash = "39b7d63de65fbf7654ee33d521d67095aa17a93226d2d9b7a6fb09305c8990d4"
-
-[[files]]
-file = ".cache/server-pack/config/jei/jei-mod-id-format.ini"
-hash = "4eb3a3eb280558bdd2665fb4792d32551cb6dddc468776e66afc1c3ea981781e"
-
-[[files]]
-file = ".cache/server-pack/config/jei/recipe-category-sort-order.ini"
-hash = "f935276ac0bd13a0a2b7d67bca107fd1dd67a1d804617a309974e961f1fe70d6"
-
-[[files]]
-file = ".cache/server-pack/config/jei/world/local/New_World__1/lookupHistory.json"
-hash = "8e842b9ccdb0247a1effe3ba0051b3ce34677fe9fc01228515a5b325ae7300df"
-
-[[files]]
-file = ".cache/server-pack/config/jei/world/local/New_World__2/lookupHistory.json"
-hash = "b3c6e01c795df08eaa13d4ca7cec454b39fa81869731368b19f7be55157064e0"
-
-[[files]]
-file = ".cache/server-pack/config/jei/world/local/New_World__4/lookupHistory.json"
-hash = "df6c92c6c19509761043ea9f1a02e73f2af493760fcff0836caa89786df9062c"
-
-[[files]]
-file = ".cache/server-pack/config/jei/world/local/New_World__5/lookupHistory.json"
-hash = "4c9e94599849778a2ce2528d487598258a7660772da53bf343e9b872993ba68c"
-
-[[files]]
-file = ".cache/server-pack/config/jei/world/local/New_World__7/lookupHistory.json"
-hash = "964ceba91f96353fa7a084d14842feb9f36ef50751f61a983fea01cae5c14c27"
-
-[[files]]
-file = ".cache/server-pack/config/lithium.properties"
-hash = "6cf6f83720071fd1657c8e79b357caf68d40f410ae123e5f922483eb1d1d25be"
-
-[[files]]
-file = ".cache/server-pack/config/lithostitched.json"
-hash = "d8a63933ec4757186a594debea59dd35724a0a895fe601b324f96217c28312df"
-
-[[files]]
-file = ".cache/server-pack/config/modernfix-common.toml"
-hash = "72ca2bcea2a9946a3a54842f14eff6f7b47d8fc96ef497c1b56406643b153fd7"
-
-[[files]]
-file = ".cache/server-pack/config/modernfix-mixins.properties"
-hash = "f7684457ca67d68a8df81e6f63b2f1bc6e3d9e3633ef60eef45c55d9c50d026a"
-
-[[files]]
-file = ".cache/server-pack/config/musketmod.txt"
-hash = "5eaff93c32b67e5016d4076d42a3bd3175804bce0e06b6c487331aa32ca525bf"
-
-[[files]]
-file = ".cache/server-pack/config/naturaltemperature-common.toml"
-hash = "11bd843653468a9df90d230d82758c7adb1d117b7465cfedbdc91f5869c9322d"
-
-[[files]]
-file = ".cache/server-pack/config/neoforge-client.toml"
-hash = "d58d93e2c429410d0abf25507d1679f732e1023b03bb52414348efcf5cf3ddb0"
-
-[[files]]
-file = ".cache/server-pack/config/neoforge-common.toml"
-hash = "fe878a2717a145cd890621eac5b3be1e1fd656f7ff9abc6e8d53f670d37474c4"
-
-[[files]]
-file = ".cache/server-pack/config/neoforge-server.toml"
-hash = "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f"
-
-[[files]]
-file = ".cache/server-pack/config/offroad-server.toml"
-hash = "d5f0ed8390618c769d9cb40a77df04779b7bbe636343b753c1ed6f92d325ae2b"
-
-[[files]]
-file = ".cache/server-pack/config/ponder-client.toml"
-hash = "55affffe67e84dfe11e590769e235aee999b77f9484a3adf7ee8247a9f3d35ba"
-
-[[files]]
-file = ".cache/server-pack/config/radialbiomes/main.json"
-hash = "bf4f43f93d1742ff5e65f2aa7267d503474c090effa9eef2943b1f478e73c30f"
-
-[[files]]
-file = ".cache/server-pack/config/radialbiomes/tiers/tier_0_spawn.json"
-hash = "6386f373658d719a38b2f9a3a509bc5e4326ec7531074a8ab1fde6808bb7ad28"
-
-[[files]]
-file = ".cache/server-pack/config/radialbiomes/tiers/tier_1_temperate.json"
-hash = "4372d4de471afa372c7af597ccc9929efdfc00cb0f71645e3884381c3ec5627e"
-
-[[files]]
-file = ".cache/server-pack/config/radialbiomes/tiers/tier_2_exotic.json"
-hash = "c45536eda47a2edf44baf28667dd6c06c6b2b2432cc2511ab99851291de8e6ac"
-
-[[files]]
-file = ".cache/server-pack/config/radialbiomes/tiers/tier_3_extreme.json"
-hash = "cde99db2e2c7d2d3710d2ab169527ac149a24ca52e3f25e31029209207c007f6"
-
-[[files]]
-file = ".cache/server-pack/config/resourceful-config-web.json"
-hash = "275db2836a999c61f456435d256132d7f74ec9e5c12c853c59e9048c4bd54d4a"
-
-[[files]]
-file = ".cache/server-pack/config/ritchiesprojectilelib-server.toml"
-hash = "793c05c7f9975032f536f7b9702a4f892b8beb31e641af1f12ee9c96aed4d013"
-
-[[files]]
-file = ".cache/server-pack/config/sable-client-1.toml.bak"
-hash = "aa9ea8fbb230ff51a0bf9753dba5fb1df54704300f5bb4c2898b68c066cbbecf"
-
-[[files]]
-file = ".cache/server-pack/config/sable-client-2.toml.bak"
-hash = "0abc8a8f2ce730e440521d4d3d2cb45ec475e9d5a0e01e17e74cfbd63a0bd26b"
-
-[[files]]
-file = ".cache/server-pack/config/sable-client-3.toml.bak"
-hash = "6bf304a56470c5a028877c63a6304f831f62b2fa0259aa850a4266bcc1fb387a"
-
-[[files]]
-file = ".cache/server-pack/config/sable-client.toml"
-hash = "1a4676e6136f117f2587d32991720455c0a1b204498ebc7eb21e83f5912df222"
-
-[[files]]
-file = ".cache/server-pack/config/sable-common-1.toml.bak"
-hash = "5d10408ecdb80544b66bafb2c50a92c7aff961040d60e007c36258fb274b79cb"
-
-[[files]]
-file = ".cache/server-pack/config/sable-common.toml"
-hash = "eb7884d0f2cc559b63600f96a9b429511b2db9590d41533380cadb7c41cf2f31"
-
-[[files]]
-file = ".cache/server-pack/config/sable_waterworks-client.new.tmp.toml"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = ".cache/server-pack/config/sable_waterworks-client.toml"
-hash = "dd9a9c7ba5b20e5ab3de47f7bd16afac09830c9208fa77f8d95257f78951eb3c"
-
-[[files]]
-file = ".cache/server-pack/config/sable_waterworks-common.toml"
-hash = "469da096ecf8157392b4a2c112e5cd332fa4a41917b93a53e1dcf4e265caf5dc"
-
-[[files]]
-file = ".cache/server-pack/config/saturn-optimizations.toml"
-hash = "f18ce3963bfb77822357b4a45f901cd036113a607d284ffcb074dcbfac6792c1"
-
-[[files]]
-file = ".cache/server-pack/config/simulated-client.toml"
-hash = "ae2634e6d32c7fb2e3cfe195f0d5c3a4bd2a1e073890d0abcc982065b41e8219"
-
-[[files]]
-file = ".cache/server-pack/config/simulated-server-1.toml.bak"
-hash = "2d4af29cce4bad3879d953a7491a3d6fbd9413ac1e8de4027abcc230ec0b271e"
-
-[[files]]
-file = ".cache/server-pack/config/simulated-server.toml"
-hash = "43f69b72502cfeb43e4b8584a1a8955120fcd25b31217ce199525127fd76e587"
-
-[[files]]
-file = ".cache/server-pack/config/sodium-fingerprint.json"
-hash = "4ef40f704bf9ce1e01c4225d94439d5934e54bd46a840c2d33d1ced5a011c845"
-
-[[files]]
-file = ".cache/server-pack/config/sodium-mixins.properties"
-hash = "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01"
-
-[[files]]
-file = ".cache/server-pack/config/sodium-options.json"
-hash = "445a55bccce87dd8467f3265d1572827e8778e873e3bb70290adf0bb8a811e96"
-
-[[files]]
-file = ".cache/server-pack/config/spark/activity.json"
-hash = "572d3cc7a86bd5abae67b0b8f2065f3eac7966b8056de76744e8aae99e330557"
-
-[[files]]
-file = ".cache/server-pack/config/spark/config.json"
-hash = "992ba9f3a4a7ce3de112eb95575328956fdc3ce6781c455ebce7b23db7e7da42"
-
-[[files]]
-file = ".cache/server-pack/config/spark/tmp-client/about.txt"
-hash = "8057ccf4540ea269b0fc332225859f44d8f3a55d891fa2e7a3447b6202658d2a"
-
-[[files]]
-file = ".cache/server-pack/config/spark/tmp/about.txt"
-hash = "8057ccf4540ea269b0fc332225859f44d8f3a55d891fa2e7a3447b6202658d2a"
-
-[[files]]
-file = ".cache/server-pack/config/structure_layout_optimizer.jsonc"
-hash = "5a9058652bc0b88b8810e0b94eba0e1a90cbff2472845c53a7e67442682a1579"
-
-[[files]]
-file = ".cache/server-pack/config/tectonic.json"
-hash = "c82855fc958c2ba9f1d785ce8739bb421db4c37d88a63d5094fd66da8ff269e7"
-
-[[files]]
-file = ".cache/server-pack/config/tfmg-common.toml"
-hash = "0fb1f8830443bb25e8ee0dde81490b9f49151decd42bb9f5c109ec376f6bb4b0"
-
-[[files]]
-file = ".cache/server-pack/config/tfmg-server.toml"
-hash = "f0324f5a9542ea073b7005aa56cb598546f01c7b4e984eab707e5f8082e5fb69"
-
-[[files]]
-file = ".cache/server-pack/config/towed-server.toml"
-hash = "45ed9eb108975b6d95e4a053d80d573ecbf0c40327bca42e9b72d559c4c2021e"
-
-[[files]]
-file = ".cache/server-pack/config/tracks-server.toml"
-hash = "5670de4aa967e03b3ccdc4feb44e9f68656204051b68cac5ec993d349036afdf"
-
-[[files]]
-file = ".cache/server-pack/config/veinscout.json"
-hash = "dad723e40c13f0c244aa0ab132b0a7c31c725974be26272f25fdb545317d24de"
-
-[[files]]
-file = ".cache/server-pack/kubejs/README.txt"
-hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
-
-[[files]]
-file = ".cache/server-pack/kubejs/assets/kubejs/textures/block/example_block.png"
-hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
-
-[[files]]
-file = ".cache/server-pack/kubejs/assets/kubejs/textures/item/example_item.png"
-hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
-
-[[files]]
-file = ".cache/server-pack/kubejs/assets/logisticalpack/lang/en_us.json"
-hash = "b9b7a05be83a2309458da5137f4d7ce59a2ff99911b03cdd51c149cc69eb66f8"
-
-[[files]]
-file = ".cache/server-pack/kubejs/client_scripts/main.js"
-hash = "3df46f0add819bf2602642215b5c62f0581ffdaaf97e77c80a8c4d966e05adcf"
-
-[[files]]
-file = ".cache/server-pack/kubejs/config/client.json"
-hash = "f38d326943014d6906916a9387c75e2bfd609fce10e92049d76a395c5775b6f1"
-
-[[files]]
-file = ".cache/server-pack/kubejs/config/common.json"
-hash = "e00a67922942660d77c213379b5128a46c5abc894178b0be04006d325ff5f6b3"
-
-[[files]]
-file = ".cache/server-pack/kubejs/config/web_server.json"
-hash = "838937620dda444857732189a1e26401a2b97e447b3c8738bc2693584f0006b0"
-
-[[files]]
-file = ".cache/server-pack/kubejs/data/logisticalpack/loot_table/blocks/deepslate_lignite_ore.json"
-hash = "9365ee085a3eb5c829d46cfee416e6f97c2105e57cb4d35cdfa52763c6a92c8d"
-
-[[files]]
-file = ".cache/server-pack/kubejs/data/logisticalpack/loot_table/blocks/lignite_ore.json"
-hash = "3c2154e40180f16516027369517de0193bf34435b8f11f64aaf975d9f4ac9ba0"
-
-[[files]]
-file = ".cache/server-pack/kubejs/data/logisticalpack/worldgen/ore_vein/huge_coal_vein.json"
-hash = "c64f101d0a0b2278e131bbcb276740825b68854691318b375c2a85f39e4dad11"
-
-[[files]]
-file = ".cache/server-pack/kubejs/data/logisticalpack/worldgen/ore_vein/lignite_vein.json.dis"
-hash = "3a706b65f958f1b6c76b68fca9e2755286b157d71e739f91b260844431cf07dc"
-
-[[files]]
-file = ".cache/server-pack/kubejs/data/minecraft/worldgen/configured_feature/ore_coal.json"
-hash = "eabafd509c4331ad84a91b4e18c52704a7bbe31f26eaa93506b2626fd783676e"
-
-[[files]]
-file = ".cache/server-pack/kubejs/data/minecraft/worldgen/configured_feature/ore_coal_buried.json"
-hash = "5b278823047fd4eefe27776d78b7c4c66b50054db4c1cd983c6d1b3cb7c88b3f"
-
-[[files]]
-file = ".cache/server-pack/kubejs/server_scripts/coal_progression/lignite_behavior.js"
-hash = "0b149d663e273f8384185fa4d5a854235e812a6ea1ef70e199295200831f5766"
-
-[[files]]
-file = ".cache/server-pack/kubejs/server_scripts/coal_progression/lignite_torch_recipes.js"
-hash = "6bafffe1bd78b4bc9aaacbd12f4c7ddf435e693e065aeb70b4a7cba33e0433bf"
-
-[[files]]
-file = ".cache/server-pack/kubejs/server_scripts/main.js"
-hash = "dae099ae3be7f033c0c190ee8c3b023b42f6b235d9d0591be5926e8435dbd67f"
-
-[[files]]
-file = ".cache/server-pack/kubejs/startup_scripts/coal_progression/register_lignite.js"
-hash = "d1a461fe22938aca9c5643914cbcf1afd3b7a5445d603d4c0dabb3cb89585cba"
-
-[[files]]
-file = ".cache/server-pack/kubejs/startup_scripts/main.js"
-hash = "5c4659e7bb368960801ccfce24ac3493fa14aae88a7e17b2a9cdfe1931985ffe"
-
-[[files]]
-file = ".cache/server-pack/kubejs/startup_scripts/ore_logistics.js"
-hash = "2eadb6c6e58274e15641008293e815677ca18aba1805ca22a4cb944c9edacb09"
-
-[[files]]
-file = ".cache/server-pack/mods/Continents_26.1_v1.1.13.jar"
-hash = "a9fccccfd3516181538290f1e8df4e47e794ed69c4f0b26aa7d72b46cf85eb7e"
-
-[[files]]
-file = ".cache/server-pack/mods/CustomNPCs-Unofficial-NeoForge-1.21.1.20241226.jar"
-hash = "06edf28bb7b1887fa67eef6b3fa5db7a969bbbd4647cfe3db8838c68b11a3211"
-
-[[files]]
-file = ".cache/server-pack/mods/DOV-1.0.0+1.21.0-1.jar"
-hash = "c97bf2cae8617c024449369f4e9a780b64cfd75ae7ff9d0caa8b6b6afcde2ddb"
-
-[[files]]
-file = ".cache/server-pack/mods/DistantHorizons-3.0.1-b-1.21.1-fabric-neoforge.jar"
-hash = "07b76558fedc394601888e00b4275bfd9b1c68176d046c7bc5d6783557f2aa60"
-
-[[files]]
-file = ".cache/server-pack/mods/Terralith_1.21.x_v2.5.8.jar"
-hash = "00333a130ac38b7b9ca93700098d5e02e0612bdc2d3522aada2f36e5600621bf"
-
-[[files]]
-file = ".cache/server-pack/mods/aeroguard-1.0.0.jar"
-hash = "6bcd211eadc3a5308d097307a7f7992210c407c5efbb68866e05420eb5c1771e"
-
-[[files]]
-file = ".cache/server-pack/mods/appleskin-neoforge-mc1.21-3.0.9.jar"
-hash = "38b48dd6231341c9f964ce6e42c57ec866c6cc8f72bec938390a59bafb3922df"
-
-[[files]]
-file = ".cache/server-pack/mods/bits_n_bobs-0.0.44.jar"
-hash = "6d8268d82cc6e38dd13f5247b28f37b7a35d66cb476c6e0632f4e9ba5570f5d8"
-
-[[files]]
-file = ".cache/server-pack/mods/c2me-neoforge-mc1.21.1-0.3.0+alpha.0.91.jar"
-hash = "107ec5b3cca05a038ee21aa35e5c68880297c370e4a47d14998ecfa7270af369"
-
-[[files]]
-file = ".cache/server-pack/mods/cloth-config-15.0.140-neoforge.jar"
-hash = "65e722e0d98431a07c45f8bdd8d529a217cc8c175fde1740248bd5c1b4f3c0d4"
-
-[[files]]
-file = ".cache/server-pack/mods/connectivity-1.21.1-7.6.jar"
-hash = "2366973ddae5ba00b9ba15a26e5b610a6648038b9f2549bf81b9ae61342b281a"
-
-[[files]]
-file = ".cache/server-pack/mods/create-1.21.1-6.0.10.jar"
-hash = "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
-
-[[files]]
-file = ".cache/server-pack/mods/create-aeronautics-bundled-1.21.1-1.1.3.jar"
-hash = "a182241a0254e22d32f537f397dd17c7d8729a027cda6915b698623bbacc1243"
-
-[[files]]
-file = ".cache/server-pack/mods/create_vibrant_vaults-0.3.2.jar"
-hash = "cebf5d1d1793fbfc2ee25b63d6f929910ad04ff72da5c1a6987d33961708cff1"
-
-[[files]]
-file = ".cache/server-pack/mods/cupboard-1.21-3.5.jar"
-hash = "d27298b67d74d6c95bdf1869bd60f49cfb93f33e6f14a0393be144584649c7db"
-
-[[files]]
-file = ".cache/server-pack/mods/encumbrance-1.0.0.jar"
-hash = "60d633396b99628eeda014906ca0170a7f8619829eed2cd754bb31e23374f595"
-
-[[files]]
-file = ".cache/server-pack/mods/ferritecore-7.0.3-neoforge.jar"
-hash = "d87ea28262715ebff45b8a82d493e6b468e7a4521bc021df5d88302196d030a8"
-
-[[files]]
-file = ".cache/server-pack/mods/interiors-1.21.1-neoforge-0.6.1.jar"
-hash = "0d1326fb8b67623ae1c69a63b788dcdcecaf8df400c7d8e5e55ace79a5166fe5"
-
-[[files]]
-file = ".cache/server-pack/mods/jei-1.21.1-neoforge-19.27.0.340.jar"
-hash = "8aaf547432f1b4958239b036356b910692fe40f858c3073d996f56bbf7c99826"
-
-[[files]]
-file = ".cache/server-pack/mods/kubejs-create-neoforge-2101.3.1-build.18.jar"
-hash = "9051fd08349850cb9b28845554246ef4f2c976892835a704ee27dcb7c8bfd7a1"
-
-[[files]]
-file = ".cache/server-pack/mods/kubejs-neoforge-2101.7.2-build.348.jar"
-hash = "a38abde5dc80f9d94c9b944b17c82a9eaafbe168c87b4f419e5771ceeaaa2007"
-
-[[files]]
-file = ".cache/server-pack/mods/lithium-neoforge-0.15.3+mc1.21.1.jar"
-hash = "a6548862bd13ff8eea6747cf61df50c8374a16a22d067614e414ed600eee6d83"
-
-[[files]]
-file = ".cache/server-pack/mods/lithostitched-1.7.0-neoforge-21.1.jar"
-hash = "ea5cc653a90c5320fbdc715446b0fe7cab8f99d754d1a041a69d82fa782f03e7"
-
-[[files]]
-file = ".cache/server-pack/mods/modernfix-neoforge-5.27.3+mc1.21.1.jar"
-hash = "b3c611855b9869e716653de00c61b8cd06b4be7f334c1b2b1172bb8e0f94b7ac"
-
-[[files]]
-file = ".cache/server-pack/mods/musketmod-1.21.1-neoforge-1.5.4.jar"
-hash = "93caf8783b88f1dfd9b3cb38e4838d2984a09aad0aa64a62b43ff37999652800"
-
-[[files]]
-file = ".cache/server-pack/mods/naturaltemperature-1.1.2-NEOFORGE-MC-1.21.1.jar"
-hash = "c6a0b260df6ab395af9a5a1f4af27b376b5a0c1f854aaa88882c70b9a7b1ef00"
-
-[[files]]
-file = ".cache/server-pack/mods/noisium-neoforge-2.7.0+mc1.21-1.21.1.jar"
-hash = "ca097cd53fcdabecbcbf22e2515eb1956f313f094cd3a0506800ebf239e255f9"
-
-[[files]]
-file = ".cache/server-pack/mods/resourcefulconfig-neoforge-1.21-3.0.11.jar"
-hash = "25b4f3502d25c535004acd4a9420272fff01d2f1e2df352239fec93fdab005d4"
-
-[[files]]
-file = ".cache/server-pack/mods/rhino-2101.2.7-build.81.jar"
-hash = "c79f19d9acea367adc1a8631ffc04c300a6e2b4902994a0111bd283b5e7f19fb"
-
-[[files]]
-file = ".cache/server-pack/mods/ritchiesprojectilelib-2.1.2+mc.1.21.1-neoforge.jar"
-hash = "cc509060833736fb650aa4c36b1ce33a7eeeb9ca6e9f8e80a7c951c9e7487b24"
-
-[[files]]
-file = ".cache/server-pack/mods/sable-neoforge-1.21.1-1.1.3.jar"
-hash = "aff91dc1c65caf104e8161ba6225c7767f93594c6783455adf238a90624cc952"
-
-[[files]]
-file = ".cache/server-pack/mods/saturn-mc1.21.1-0.1.5.jar"
-hash = "f49f4b51faeb4e9eb7568723fa259c0da1c3460f8019597f04a54c2137b76c32"
-
-[[files]]
-file = ".cache/server-pack/mods/spark-1.10.124-neoforge.jar"
-hash = "647e8a81afbe414dba1df4ba15fd06c5d32d4cb544e68828405e8e074c2e16db"
-
-[[files]]
-file = ".cache/server-pack/mods/structure_layout_optimizer-neoforge-1.0.12.jar"
-hash = "ef8eb29c5c4f111c74a49d379843e4c2f51d11b28c8116a49be13636c83f4385"
-
-[[files]]
-file = ".cache/server-pack/mods/tectonic-3.0.22-neoforge-21.1.jar"
-hash = "bf5cf7e351586865905eceb2a63e06769f8cd0f9c826864b6a30541e20cffc56"
-
-[[files]]
-file = ".cache/server-pack/mods/tfmg-1.2.0.jar"
-hash = "fc824a91cfe22e137c9014ed608ee9bf35f16490d2162b687666332c6eb3a555"
-
-[[files]]
-file = ".cache/server-pack/mods/towed-1.2.0.jar"
-hash = "c50a63fb2dabc95a0ceb5892d04c5b4451290a3273950bccca74384e7f8d8406"
-
-[[files]]
-file = ".cache/server-pack/mods/tracks-neoforge-1.21.1-1.0.1.jar"
-hash = "b126b2522a129c13ebec6491b8602726bad9a3df201cf906468ba583796125c8"
-
-[[files]]
-file = ".cache/server-pack/mods/veinscout-1.0.0.jar"
-hash = "e41a6d3748df811589ff0ed018746ae8dc858c6862c8e0be1a60416fa0bf7080"
-
-[[files]]
-file = ".cache/server-pack/packwiz-installer.jar"
-hash = "c9f646908d340d84773948a9a7d98bc1dae250d35e1016dc6e2b8459760b5598"
-
-[[files]]
-file = ".cache/server-pack/packwiz.json"
-hash = "bbd5af9938050258f193fa324ebb810b0d6acf6728e49c3c18d923c1e440dee3"
-
-[[files]]
-file = ".cache/sync.lock"
-hash = "1c82423fe577ce4902405ea793534b7ab98e08adb20d50e042ac7a9e5326078b"
-
-[[files]]
-file = "__pycache__/packwiz-manager.cpython-314.pyc"
-hash = "b8b20008b5c0831e6ea3fe67674ccc7c3a3155e79feea4440b4be97600cf3d78"
-
-[[files]]
 file = "config/CustomNpcs.cfg"
 hash = "db9e723f66651ef671f89113f10d07f434d306e6fdc714c35d2f3423b81d1b25"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "0125fd960ec7edc65ac9600e96f5e1214f1ac31115cc715e2734fd2c517fa19f"
+hash = "1d6e6a92bce329ffe7f737ed5bb6d3b6ac3391ae641f6b75af75053912b8f3fc"
 
 [[files]]
 file = "config/aeronautics-server.toml"
@@ -606,7 +26,7 @@ hash = "fc6b87d500994353673065c6fde9f6dabb0e6b1c61a9db86e2a69d90a57ffb7e"
 
 [[files]]
 file = "config/c2me.toml"
-hash = "e748e0d10e8d065af5fa36ed8a9a5b10d62b0c61b3ff4c75e0a75f0b18dbad91"
+hash = "7796779ae0b306d8aaed494e16129f3b142deaebf5103430c52854f5bbd28076"
 
 [[files]]
 file = "config/connectivity.json"
@@ -639,6 +59,94 @@ hash = "dd1fabf921549ecaf23fc0cdb5eee8ab766c963671693dc29e5402bb2b4baf83"
 [[files]]
 file = "config/createbigcannons-server.toml"
 hash = "ffa79d44e4dc4407cebb841058b5fde911566fd5c0d0b8869f1374e254eb98ca"
+
+[[files]]
+file = "config/cristellib/ats_more_animals_mod/structure_placement_config.json5"
+hash = "ec8fde7a9de9f4ef9c2fa95c6bb716492052aa4b979c2bb3f08b092bd76c61fd"
+
+[[files]]
+file = "config/cristellib/ats_more_animals_mod/structure_toggle_config.json5"
+hash = "95cfd9a71ed332385b66c74a55663a39629ef0248a92783cb296ee206e550099"
+
+[[files]]
+file = "config/cristellib/auto_config_settings.json5"
+hash = "799173b66094a241753f41af672ddf22921ca206cb88f1966d31960c89c3f99a"
+
+[[files]]
+file = "config/cristellib/big_birch_tree/structure_placement_config.json5"
+hash = "82f1c7cadb119c58e1e5dd2e95744e7558b12279cd5857859afbac988df6c700"
+
+[[files]]
+file = "config/cristellib/big_birch_tree/structure_toggle_config.json5"
+hash = "b76ae945b41bf96c1f0a54f1a562bf2e0963f5ea4bc2ce5f514f6caa7994f216"
+
+[[files]]
+file = "config/cristellib/big_oak_tree/structure_placement_config.json5"
+hash = "147d9a79ba995446a9fea6878417e5ac02cb99e96049c8bae95af076d2783a19"
+
+[[files]]
+file = "config/cristellib/big_oak_tree/structure_toggle_config.json5"
+hash = "5f80af102d452bbdc93ccc5dd2af9438c5e3ae20625ed458cb2f9af8cae9ccdb"
+
+[[files]]
+file = "config/cristellib/built_in_packs.json5"
+hash = "f1be3df3751749fc4f475c886553f4b6b998c1a9f68f7ec33ddebe6909bffb14"
+
+[[files]]
+file = "config/cristellib/create_easy_structures/structure_placement_config.json5"
+hash = "57596f405a8d4f34f5b0a38186c82c394e94b3b7619d167d4f9998d2640fd9d9"
+
+[[files]]
+file = "config/cristellib/create_easy_structures/structure_toggle_config.json5"
+hash = "cbc6417b03c5de43d7080528151ebf8cfacfa1d8e0fd8eb5af10b140985cb990"
+
+[[files]]
+file = "config/cristellib/create_rustic_structures/structure_placement_config.json5"
+hash = "eb3d40104dfdd24e2816ca41678622d762cb2514f93cc2ca9d41b16d918a1056"
+
+[[files]]
+file = "config/cristellib/create_rustic_structures/structure_toggle_config.json5"
+hash = "6dc5f97ba898d585a2e1d8a6437041aaaaa30d9c8a44aed7eedc562e61ff41bb"
+
+[[files]]
+file = "config/cristellib/explorify/structure_placement_config.json5"
+hash = "a246410de17822748dbb20b11773c9fab60484bdc5fb924c0785a39c486f2a92"
+
+[[files]]
+file = "config/cristellib/explorify/structure_toggle_config.json5"
+hash = "91937c0505d28dd9d9d41f11c8b0df04c8b106fac3746d72087a959f81a18e1e"
+
+[[files]]
+file = "config/cristellib/jungle_treehouse_village/structure_placement_config.json5"
+hash = "50215c82e024b5046484711634b3593008ab20833a3db1a8a70c3ec45b5fd8b5"
+
+[[files]]
+file = "config/cristellib/jungle_treehouse_village/structure_toggle_config.json5"
+hash = "455f058e12c927a1325fdde31450956f8830c20c533b7b115603e9466870fa7e"
+
+[[files]]
+file = "config/cristellib/plants_and_rocks/structure_placement_config.json5"
+hash = "685efccfb9e45ba8adbaf92bded7430e094493cb29ebd57eaa512c274021233e"
+
+[[files]]
+file = "config/cristellib/plants_and_rocks/structure_toggle_config.json5"
+hash = "9059f9f17434ef22e899cce26b8140201c50ab0f98480bbb28224ec74253e3d3"
+
+[[files]]
+file = "config/cristellib/structory/structure_placement_config.json5"
+hash = "0eab3d6c98dd4eedbe4dce5a4fc4596d1d060876bc20bbe60e069ab5ae61df0c"
+
+[[files]]
+file = "config/cristellib/structory/structure_toggle_config.json5"
+hash = "a33903592feb8a1e1fd0a4fe0adf4ef72efbb4832330c9500db0fb2910abd287"
+
+[[files]]
+file = "config/cristellib/terralith/structure_placement_config.json5"
+hash = "777e236cc299321f8e51f96238bd01be855699cf72aa7520b30d32ad8edb7367"
+
+[[files]]
+file = "config/cristellib/terralith/structure_toggle_config.json5"
+hash = "b2b1510673394f1558f80f11c479a7619414a91691139a5cc43d5e3b3d233da1"
 
 [[files]]
 file = "config/cupboard.json"
@@ -674,7 +182,7 @@ hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
 file = "config/jei/ingredient-list-mod-sort-order.ini"
-hash = "b1a98ecff2b57ba23694fbb0dc25fb4be133b21fa78f80e384f37fb6760c06c3"
+hash = "1bb0ca1dfbb78f091dc4f7d6ed8c97a901af71816c3c62edfbac7261d1ff15f2"
 
 [[files]]
 file = "config/jei/ingredient-list-type-sort-order.ini"
@@ -742,7 +250,7 @@ hash = "5eaff93c32b67e5016d4076d42a3bd3175804bce0e06b6c487331aa32ca525bf"
 
 [[files]]
 file = "config/naturaltemperature-common.toml"
-hash = "11bd843653468a9df90d230d82758c7adb1d117b7465cfedbdc91f5869c9322d"
+hash = "8ca0531e5cb5fdee1d57cb5a0b05fd7af06affd34cd0d38877d0447ac6a15c29"
 
 [[files]]
 file = "config/neoforge-client.toml"
@@ -791,6 +299,10 @@ hash = "275db2836a999c61f456435d256132d7f74ec9e5c12c853c59e9048c4bd54d4a"
 [[files]]
 file = "config/ritchiesprojectilelib-server.toml"
 hash = "793c05c7f9975032f536f7b9702a4f892b8beb31e641af1f12ee9c96aed4d013"
+
+[[files]]
+file = "config/rocks-common.toml"
+hash = "7410195f3a54acc2b208f64c479ca48f666acf079e9d05832e36c7bd3e3b99d7"
 
 [[files]]
 file = "config/sable-client-1.toml.bak"
@@ -854,11 +366,11 @@ hash = "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01"
 
 [[files]]
 file = "config/sodium-options.json"
-hash = "445a55bccce87dd8467f3265d1572827e8778e873e3bb70290adf0bb8a811e96"
+hash = "61ed28fb5994a6ac4bdabc3014b824def3bbd2294ed93d548af35d93bb32dbc9"
 
 [[files]]
 file = "config/spark/activity.json"
-hash = "572d3cc7a86bd5abae67b0b8f2065f3eac7966b8056de76744e8aae99e330557"
+hash = "5d685569ea967f0a739770abcb8358d7f2186898e6e94c0c519c929ed6f12a9e"
 
 [[files]]
 file = "config/spark/config.json"
@@ -878,7 +390,7 @@ hash = "5a9058652bc0b88b8810e0b94eba0e1a90cbff2472845c53a7e67442682a1579"
 
 [[files]]
 file = "config/tectonic.json"
-hash = "c82855fc958c2ba9f1d785ce8739bb421db4c37d88a63d5094fd66da8ff269e7"
+hash = "c0fc89e3011e7a40a4967e3a4e68ae7d0c63b07aff54b969a90dcd753d8e22f2"
 
 [[files]]
 file = "config/tfmg-common.toml"
@@ -893,8 +405,24 @@ file = "config/towed-server.toml"
 hash = "45ed9eb108975b6d95e4a053d80d573ecbf0c40327bca42e9b72d559c4c2021e"
 
 [[files]]
+file = "config/towns_and_towers/structure_enable_or_disable_new.json5"
+hash = "7c70e7df82d014a87dcb2defcf45d9654a22362283c7efe1f81f3b3c04290709"
+
+[[files]]
+file = "config/towns_and_towers/structure_rarity_new.json5"
+hash = "fe4ca0974aca38b27c94e3f1dc092f1688b54f27d9eaa728d61c6ccae4ca1313"
+
+[[files]]
 file = "config/tracks-server.toml"
 hash = "5670de4aa967e03b3ccdc4feb44e9f68656204051b68cac5ec993d349036afdf"
+
+[[files]]
+file = "config/vanilla_structures/placement_structure_config.json5"
+hash = "1f069468e438ae66f65ee41732603c895741b063add626a9e56ef7d0040ac4e6"
+
+[[files]]
+file = "config/vanilla_structures/toggle_structure_config.json5"
+hash = "c4fb220488de3c1afc569f4b8a89d8e97f8b5504eeb59d9700b491f29718d2f9"
 
 [[files]]
 file = "config/veinscout.json"
@@ -937,16 +465,116 @@ file = "kubejs/data/logisticalpack/loot_table/blocks/deepslate_lignite_ore.json"
 hash = "9365ee085a3eb5c829d46cfee416e6f97c2105e57cb4d35cdfa52763c6a92c8d"
 
 [[files]]
+file = "kubejs/data/logisticalpack/loot_table/blocks/deepslate_tin_ore.json"
+hash = "a625432c75fd26b4e32b5947b903d5a55af63ce6d98c0463bf256485b0ed8939"
+
+[[files]]
 file = "kubejs/data/logisticalpack/loot_table/blocks/lignite_ore.json"
 hash = "3c2154e40180f16516027369517de0193bf34435b8f11f64aaf975d9f4ac9ba0"
 
 [[files]]
-file = "kubejs/data/logisticalpack/worldgen/ore_vein/huge_coal_vein.json"
+file = "kubejs/data/logisticalpack/loot_table/blocks/tin_ore.json"
+hash = "b542a2230b4395cb3786d62242d520628dabb546947dc64d1be81ebf404a23cc"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/add_tin_to_spawn.json"
+hash = "b7ec59e84e4cf17c79387e722542359129e3ee0cdd9336fda1e5d3e852a18bcc"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_coal_from_dry_and_frozen.json"
+hash = "7d0f2f6d52a0f0dd0a248a9eedaa5877775744bb6a2b098b830b51681a3bfcd2"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_copper_from_frozen.json"
+hash = "cbbbc6d493a4dc620f396a183eefd41ee98843f533e33228b58cf5294799f196"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_diamond_from_temperate_warm_tropical.json"
+hash = "93fb2fca8f5652436d0c03de0b1e2e447d5d8674daeca1d47ee38aa27c340e7f"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_gold_from_temperate_cold_tropical.json"
+hash = "203b9c6734f5da4664ca89978406f9f6182d117ed5541562305cbd50bd0c932b"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_iron_from_non_cold.json"
+hash = "d95c9a1c4e9171d1cafd930b37d178eb0a87ce382007fdbf35427098cf949636"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_lapis_from_temperate_warm_tropical.json"
+hash = "a26fa126f5f753dc6bd483bc793b48cc39e22033ac6b1bfdd0e77c43a1b3642c"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_redstone_from_temperate_cold_tropical.json"
+hash = "893d221b2bb16ad4c49ef54808272723657d5e91092236afaf2db46f7d5eee1d"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_tfmg_lead_from_non_cold.json"
+hash = "fadc026ada58d7041289b3d32910ee12d3ddcaef4d2fb35a0a78e3043cfbb3a1"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_tfmg_lithium_from_non_warm.json"
+hash = "fc4703e83398faad5953dff95bb04b0abf4401b8aecbed841afcbd959d99d679"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_tfmg_nickel_from_non_cold.json"
+hash = "2ce052f0a07a7ada5d0564fe8d6d53e63f2e28888c0a9172b7066db8083ee23b"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/cold_boreal.json"
+hash = "0308b973575ae4bdef37022d00c5b67611b56c891b5d4a7d5aded9f44413c801"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/frozen_extreme.json"
+hash = "f99bd1d4fe942e3ef8340df3fa939b99f7bb934195e8ffdc6852986d6c899ebd"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/spawn_temperate.json"
+hash = "e9b7a6d3a4981b74520150da857de928aa9cb86b15c530072469eebb88d72377"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/temperate_cold_tropical.json"
+hash = "4504774ce6cbdae302ceb7c15467c18b931b9c7b5f6ecbb2495655b4942fc0db"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/temperate_cold_tropical_frozen.json"
+hash = "a432955d89e48a0bca273a42e32aff7a0288c4a4d2bca5d7fc5797cea83edf9c"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/temperate_warm_tropical.json"
+hash = "c541b284efb39e6ead5cae375e816c0984254e89d9ab32dfd2cd05c9bd11f7ce"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/temperate_warm_tropical_frozen.json"
+hash = "06268283c07d78d3c486db98a00687742ab42d24a52f56ed681013bd1832744c"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/tropical.json"
+hash = "e26035382c3bd693c9769eb937155cbe1b9c0568a1dc273e8fe31d6fda358361"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/warm_dry.json"
+hash = "e7319452118f5aea0c245602c327fb15bea78c431615ca4a1ed97425b82c113a"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/warm_frozen.json"
+hash = "649c907b8a35d23f044c4b166e8699a120c9e6c5e4f916860553abb56e7296c9"
+
+[[files]]
+file = "kubejs/data/logisticalpack/worldgen/configured_feature/ore_tin.json"
+hash = "23d0e3e59b2b05aa8e58547495e2b3514a0051564a3e52a4d87127a70e1d5291"
+
+[[files]]
+file = "kubejs/data/logisticalpack/worldgen/ore_vein/huge_coal_vein.json.dis"
 hash = "c64f101d0a0b2278e131bbcb276740825b68854691318b375c2a85f39e4dad11"
 
 [[files]]
 file = "kubejs/data/logisticalpack/worldgen/ore_vein/lignite_vein.json.dis"
 hash = "3a706b65f958f1b6c76b68fca9e2755286b157d71e739f91b260844431cf07dc"
+
+[[files]]
+file = "kubejs/data/logisticalpack/worldgen/placed_feature/ore_tin.json"
+hash = "8cc6df45faf9cc3a675c9a054a6418844eda05865923877dbf2c598286352b22"
 
 [[files]]
 file = "kubejs/data/minecraft/worldgen/configured_feature/ore_coal.json"
@@ -957,6 +585,14 @@ file = "kubejs/data/minecraft/worldgen/configured_feature/ore_coal_buried.json"
 hash = "5b278823047fd4eefe27776d78b7c4c66b50054db4c1cd983c6d1b3cb7c88b3f"
 
 [[files]]
+file = "kubejs/data/minecraft/worldgen/density_function/overworld/temperature.json"
+hash = "f74f2a399b675a3306592ac788949bbffb0cf5df09f5c9bb42641496736b2e80"
+
+[[files]]
+file = "kubejs/data/minecraft/worldgen/density_function/overworld/vegetation.json"
+hash = "a0bb0f6aab33fb3533a1b3e14b3b460f534efab4ce8bd26c446314a333dedae3"
+
+[[files]]
 file = "kubejs/server_scripts/coal_progression/lignite_behavior.js"
 hash = "0b149d663e273f8384185fa4d5a854235e812a6ea1ef70e199295200831f5766"
 
@@ -965,8 +601,20 @@ file = "kubejs/server_scripts/coal_progression/lignite_torch_recipes.js"
 hash = "6bafffe1bd78b4bc9aaacbd12f4c7ddf435e693e065aeb70b4a7cba33e0433bf"
 
 [[files]]
+file = "kubejs/server_scripts/dev/strip_to_ores.js"
+hash = "93a62340fef83d4e5145f594b0ae5a8ea7cc5d37718ef4a3f0d575dbeb86a9df"
+
+[[files]]
 file = "kubejs/server_scripts/main.js"
 hash = "dae099ae3be7f033c0c190ee8c3b023b42f6b235d9d0591be5926e8435dbd67f"
+
+[[files]]
+file = "kubejs/server_scripts/ore_progression/tin_behavior.js"
+hash = "9c2187ebc65df098ec770bfa2a5819d6e436b78dc1c1967f18df50d13d26ba09"
+
+[[files]]
+file = "kubejs/server_scripts/ore_progression/tin_recipes.js"
+hash = "68c4f7f835986ceaf145637457233aa4cb395b888a090529457aef4503c6838b"
 
 [[files]]
 file = "kubejs/startup_scripts/coal_progression/register_lignite.js"
@@ -979,6 +627,10 @@ hash = "5c4659e7bb368960801ccfce24ac3493fa14aae88a7e17b2a9cdfe1931985ffe"
 [[files]]
 file = "kubejs/startup_scripts/ore_logistics.js"
 hash = "2eadb6c6e58274e15641008293e815677ca18aba1805ca22a4cb944c9edacb09"
+
+[[files]]
+file = "kubejs/startup_scripts/ore_progression/register_tin.js"
+hash = "db88dea19970005cd6ab369a1e0bf4c3f41f1db8aaf1c9a654fd229a89d4bc54"
 
 [[files]]
 file = "local_readme.md"
@@ -999,8 +651,28 @@ hash = "ad397362402111a7c7bfef11ba0b1ce8103c2322dcabae24513d110f4d57d62f"
 metafile = true
 
 [[files]]
+file = "mods/ats-more-animals.pw.toml"
+hash = "49b69f085351f433ffb9bc0954f021cb0f1fc777b5e1b4aada149f7e3c68679f"
+metafile = true
+
+[[files]]
+file = "mods/big-birch-tree.pw.toml"
+hash = "b539c066aeee8cd0e8e788c72de6cb18d0292868320d88e940b70a2fe71fe289"
+metafile = true
+
+[[files]]
+file = "mods/biome-improvement-mindthemoods-pile-of-rocks.pw.toml"
+hash = "75c16d458c78fa10e44997e85f566f422df3801f70c129fe5c1b8e7c291409ad"
+metafile = true
+
+[[files]]
 file = "mods/c2me-neoforge.pw.toml"
 hash = "4e6b365e3c0b9c7538e851c44192d9e29fe958af2e895f398f25546b4f17852e"
+metafile = true
+
+[[files]]
+file = "mods/chunky.pw.toml"
+hash = "ef2323b87d1ba4d03d0ee1ab800d06ba6490f45a1b84ecd341f9e3b5bc5e16bf"
 metafile = true
 
 [[files]]
@@ -1009,13 +681,13 @@ hash = "920fa83599db72cc9295271c7ce11d1e85d423dc43565c913d887178c79cf3d6"
 metafile = true
 
 [[files]]
-file = "mods/connectivity.pw.toml"
-hash = "282e1ac502f79e86f0885eb3ea2f404cbf4eb68f3f3a3da60c6a12d131748680"
+file = "mods/configurable.pw.toml"
+hash = "4e762da534bb530bf8ff3ac66c1e1c5daeec419cefd576d2cd9f26adb257f5ea"
 metafile = true
 
 [[files]]
-file = "mods/continents.pw.toml"
-hash = "ed94813827cdd539f617654f59767955fe611373676e005aba2fa48c119d2dc5"
+file = "mods/connectivity.pw.toml"
+hash = "282e1ac502f79e86f0885eb3ea2f404cbf4eb68f3f3a3da60c6a12d131748680"
 metafile = true
 
 [[files]]
@@ -1026,6 +698,16 @@ metafile = true
 [[files]]
 file = "mods/create-bits-n-bobs.pw.toml"
 hash = "98ee9f505ae64d27396f35e96cbd358d27a70a6d462b00af9c63960f1f6e9fe8"
+metafile = true
+
+[[files]]
+file = "mods/create-easy-structures.pw.toml"
+hash = "7663918b3ec83c43fcbd5454374b9428a7fdf0542448954d4f38007518b56795"
+metafile = true
+
+[[files]]
+file = "mods/create-rustic-structures.pw.toml"
+hash = "cc91a7fac10bcdc7413778d240e0a8f2f36565424dca2d16613d09247ab3e98f"
 metafile = true
 
 [[files]]
@@ -1054,13 +736,18 @@ hash = "38e2f3895b4a296bbe1f18bde4846e3514bd245a2a5f155db664757b6b8509f8"
 metafile = true
 
 [[files]]
+file = "mods/cristel-lib.pw.toml"
+hash = "ddf27dc0c20788f29aa31667f7748dedcbd7ddcedf96d405a3cab3a5fb8f6b78"
+metafile = true
+
+[[files]]
 file = "mods/cupboard.pw.toml"
 hash = "2826edbcf6a21c866c7ac725358c4511962127e21489ec543298d4371bdf6c1a"
 metafile = true
 
 [[files]]
 file = "mods/customnpcs-unofficial.pw.toml"
-hash = "942167f772e9ad780e1e5be4e911f09460223935ce85bad2afedea4a4e25d028"
+hash = "824317b718bf1d118afdecec915c407593fbf72633673963c543a65647334b33"
 metafile = true
 
 [[files]]
@@ -1074,6 +761,11 @@ hash = "0f1f88694e0bf9ac1ae08b21ee5b59824a2ff2a6d6afc839fd9356c4e26c40dc"
 metafile = true
 
 [[files]]
+file = "mods/dynamic-view.pw.toml"
+hash = "7120ce21491290ec94652960ca5dd5114e5e32f137c078c01187496b5be2c18d"
+metafile = true
+
+[[files]]
 file = "mods/encumbrance-1-0-0.pw.toml"
 hash = "6beaac024974024c84ca6228676d9921ae520f9f9cbd8dc0d7bc629cd4b07e72"
 metafile = true
@@ -1083,13 +775,28 @@ file = "mods/encumbrance-1.0.0.jar"
 hash = "60d633396b99628eeda014906ca0170a7f8619829eed2cd754bb31e23374f595"
 
 [[files]]
+file = "mods/explorify.pw.toml"
+hash = "9d0230c596467b917236b6b8758fd4898dff2076bea71764391d7f6f559f47d0"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "ee283d69b5846fc59ea45b7f632809d1405313e83708e600a08ebc1c7267962d"
 metafile = true
 
 [[files]]
+file = "mods/geophilic.pw.toml"
+hash = "4170947d7af86edf8d700f06ca86ce6da066018883f55b584943f75a0c55025a"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "f82040dace33e92bc91cda295b0719b739140c3b841d79951b35e19a2ae6d9b8"
+metafile = true
+
+[[files]]
+file = "mods/improved-village-placement.pw.toml"
+hash = "145fe08e49d6f957aa45ee43af1a70f65c91631851d469859db12a4957cf53e3"
 metafile = true
 
 [[files]]
@@ -1103,6 +810,11 @@ hash = "cdd4984a4ff5c489aef8efb0c2ecffedb6b5e341f3a3ce76144f778763f46e28"
 metafile = true
 
 [[files]]
+file = "mods/jungle-treehouse-village.pw.toml"
+hash = "902bc8ab5bf624426ea1ab2817538a08226752a0d72eb777ad6dd26ec8127eb7"
+metafile = true
+
+[[files]]
 file = "mods/kubejs-create.pw.toml"
 hash = "74460692f3af5e84c6d0582ee4557cc41738b90f575ebe610bbedbca9d26c9d2"
 metafile = true
@@ -1110,6 +822,11 @@ metafile = true
 [[files]]
 file = "mods/kubejs.pw.toml"
 hash = "a8b7a23e79c1350cca4c311697392fd27c30984c4c565da4ecf82c0ab522e0aa"
+metafile = true
+
+[[files]]
+file = "mods/large-oak-tree.pw.toml"
+hash = "c2a8c92330ee03264de78775be7e12d3597c3910e8138a00e905007138314b9a"
 metafile = true
 
 [[files]]
@@ -1135,6 +852,11 @@ metafile = true
 [[files]]
 file = "mods/natural-temperature.pw.toml"
 hash = "d34a2ae0caa7bab0889e727f67ce72099c58119781bba3267af9fa0ee6a8a817"
+metafile = true
+
+[[files]]
+file = "mods/neruina.pw.toml"
+hash = "4b56cd9dd05369b7257acf7243ef684d85e0015724fa6d92971987cf1f1f98b2"
 metafile = true
 
 [[files]]
@@ -1178,6 +900,11 @@ hash = "f6b922752736741e222dead919491a7b59946c7424ac3b87d0ceae3f0144e149"
 metafile = true
 
 [[files]]
+file = "mods/structory.pw.toml"
+hash = "8b71ad410692583381cb1ed9bda104f06169339598d7884f649ee8f7165612c9"
+metafile = true
+
+[[files]]
 file = "mods/structure-layout-optimizer.pw.toml"
 hash = "14cec666696e99bc20b351be80993aab8745fe9d95b6c99070f9b5fc97420485"
 metafile = true
@@ -1193,6 +920,16 @@ hash = "820f76bfb5af7d5d878bad21a37d2dc5efe085615dc5eb55965d13c7116e7bfc"
 metafile = true
 
 [[files]]
+file = "mods/this-rocks-forge.pw.toml"
+hash = "a4a36ace3971c071d10c041669243588b719044ea103e7116a0d172611722633"
+metafile = true
+
+[[files]]
+file = "mods/towns-and-towers.pw.toml"
+hash = "faed33ed47cc1fbb139329249437a8d867cf3eb0a08c739e12c907eac2dc7189"
+metafile = true
+
+[[files]]
 file = "mods/veinscout-1-0-0.pw.toml"
 hash = "8eed92e05d88a9c1302b0fcc583acc44d50c17219ae322497d8eb464f0320625"
 metafile = true
@@ -1200,6 +937,11 @@ metafile = true
 [[files]]
 file = "mods/veinscout-1.0.0.jar"
 hash = "e41a6d3748df811589ff0ed018746ae8dc858c6862c8e0be1a60416fa0bf7080"
+
+[[files]]
+file = "mods/wwoo.pw.toml"
+hash = "e9d7cb8584e6b889ed3729a36c01798f0c85045204b847c05af8ec3d129e6a73"
+metafile = true
 
 [[files]]
 file = "resourcepacks/3d-muskets.pw.toml"

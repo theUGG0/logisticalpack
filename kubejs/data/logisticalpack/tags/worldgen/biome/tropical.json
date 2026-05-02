@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:jungle",
+    "minecraft:sparse_jungle",
+    "minecraft:bamboo_jungle",
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp",
+
+    "terralith:tropical_jungle",
+    "terralith:bayou",
+    "terralith:wetland",
+    "terralith:warm_river",
+    "terralith:basalt_cliffs"
+  ]
+}

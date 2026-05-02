@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#logisticalpack:frozen_extreme",
+  "features": [
+    "minecraft:ore_copper",
+    "minecraft:ore_copper_large"
+  ],
+  "steps": ["underground_ores"]
+}
