@@ -26,7 +26,7 @@ hash = "fc6b87d500994353673065c6fde9f6dabb0e6b1c61a9db86e2a69d90a57ffb7e"
 
 [[files]]
 file = "config/c2me.toml"
-hash = "7796779ae0b306d8aaed494e16129f3b142deaebf5103430c52854f5bbd28076"
+hash = "8c9b167b710415fb09bb54430a4c89c8572b7c879c77eac5a36a5e8412c24b0b"
 
 [[files]]
 file = "config/connectivity.json"
@@ -71,14 +71,6 @@ hash = "95cfd9a71ed332385b66c74a55663a39629ef0248a92783cb296ee206e550099"
 [[files]]
 file = "config/cristellib/auto_config_settings.json5"
 hash = "799173b66094a241753f41af672ddf22921ca206cb88f1966d31960c89c3f99a"
-
-[[files]]
-file = "config/cristellib/big_birch_tree/structure_placement_config.json5"
-hash = "82f1c7cadb119c58e1e5dd2e95744e7558b12279cd5857859afbac988df6c700"
-
-[[files]]
-file = "config/cristellib/big_birch_tree/structure_toggle_config.json5"
-hash = "b76ae945b41bf96c1f0a54f1a562bf2e0963f5ea4bc2ce5f514f6caa7994f216"
 
 [[files]]
 file = "config/cristellib/big_oak_tree/structure_placement_config.json5"
@@ -656,11 +648,6 @@ hash = "49b69f085351f433ffb9bc0954f021cb0f1fc777b5e1b4aada149f7e3c68679f"
 metafile = true
 
 [[files]]
-file = "mods/big-birch-tree.pw.toml"
-hash = "b539c066aeee8cd0e8e788c72de6cb18d0292868320d88e940b70a2fe71fe289"
-metafile = true
-
-[[files]]
 file = "mods/biome-improvement-mindthemoods-pile-of-rocks.pw.toml"
 hash = "75c16d458c78fa10e44997e85f566f422df3801f70c129fe5c1b8e7c291409ad"
 metafile = true
@@ -734,6 +721,15 @@ metafile = true
 file = "mods/create.pw.toml"
 hash = "38e2f3895b4a296bbe1f18bde4846e3514bd245a2a5f155db664757b6b8509f8"
 metafile = true
+
+[[files]]
+file = "mods/createbigcannons-5-11-3-dev-mc-1-21-1-build-279.pw.toml"
+hash = "02604f0c78ed02b41ee80bed7319c151ae98e9f95049516a8d38818628f736cf"
+metafile = true
+
+[[files]]
+file = "mods/createbigcannons-5.11.3-dev-mc.1.21.1-build.279.jar"
+hash = "7e9daa8ec03c4889acd323398ad4f8e42c30c085a7c63dbafaf46f08c8cb130e"
 
 [[files]]
 file = "mods/cristel-lib.pw.toml"

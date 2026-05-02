@@ -1,0 +1,9 @@
+filename = 'createbigcannons-5.11.3-dev-mc.1.21.1-build.279.jar'
+name = 'createbigcannons-5.11.3-dev-mc.1.21.1-build.279'
+side = 'both'
+
+[download]
+hash-format = 'sha512'
+hash = 'd026bd5a886a20930a3befe484db048a66828c3daf9d541b20d8d6de8ee79d16f868989f6e6b3c344f7f490050acb8cd0a0b883285af0272a92ae2eb9c42cb2f'
+mode = 'url'
+url = 'https://raw.githubusercontent.com/theUGG0/logisticalpack/main/mods/createbigcannons-5.11.3-dev-mc.1.21.1-build.279.jar'
