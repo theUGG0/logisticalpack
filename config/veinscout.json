@@ -8,6 +8,6 @@
   "sizeThresholds": {
     "smallMax": 20,
     "mediumMax": 60,
-    "largeMax": 150
+    "largeMax": 110000
   }
 }

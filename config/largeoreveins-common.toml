@@ -1,0 +1,8 @@
+#How many chunks per large ore vein, e.g. if this is 5, then each chunk has a 1/5 chance of containing a vein.
+# Default: 3
+# Range: > 1
+chunksPerVein = 3
+#How many chunks to process per server tick. Higher = faster generation but more TPS impact.
+# Default: 10
+# Range: 1 ~ 100
+chunksPerTick = 1

@@ -1,0 +1,17 @@
+filename = 'largeoreveins-0.2.0.jar'
+name = 'Large Ore Veins'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1', '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = '0.2.0'
+
+[download]
+hash = 'a8e661c009526815696cc8df729ef66dbe619d818769c277161985460af1c96c0d274d5d97c04c27d97b5fb7cc3573e5da3f5107b861965c864a792ce3af0845'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/e4MqDPej/versions/dNKzlJ33/largeoreveins-0.2.0.jar'
+
+[update.modrinth]
+mod-id = 'e4MqDPej'
+version = 'dNKzlJ33'
