@@ -1,0 +1,20 @@
+[
+  {
+    "mob": ["minecraft:blaze"],
+    "persecond": 0.1,
+    "attempts": 10,
+    "amount": {
+      "maximum": 3
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "minheight": -64,
+      "maxheight": 0,
+      "maxthis": 4,
+      "and": {
+        "biome": "terralith:cave/mantle_caves",
+        "seesky": false
+      }
+    }
+  }
+]

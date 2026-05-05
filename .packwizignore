@@ -13,3 +13,6 @@ README.md
 *.py
 *.zip
 *.mrpack
+
+config/jei/*
+config/spark/tmp*

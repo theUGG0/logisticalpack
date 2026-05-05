@@ -9,7 +9,12 @@ BlockEvents.broken(event => {
   const hasSilk = tool && tool.enchantments &&
                   tool.enchantments.some(e => String(e.id) === 'minecraft:silk_touch')
   if (hasSilk) return
-
-  const xp = Math.floor(Math.random() * 3)
-  if (xp > 0) event.block.popExperience(xp)
 })
+
+LootJS.modifiers(event => {
+    event
+        .addBlockModifier("logisticalpack:lignite_ore")
+        .dropExperience({ n: 5, p: 0.3 })
+        .matchMainHand(ItemFilter.not(ItemFilter.hasEnchantment("minecraft:silk_touch")))
+;
+});

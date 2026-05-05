@@ -1,0 +1,17 @@
+filename = 'copper_tools_armor_backport-0.0.5 Hotfix-neoforge-1.21.1.jar'
+name = 'Copper Tools & Armor Backport'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '0.0.5'
+
+[download]
+hash = '5a7907ce8dc14edc3a5d18053f247f93145baa4d21868484286f3a6aabdbaad914eedf092af72d1fc3b964c540c3584fc74ba85e57c69e7459d8f63c16ce3077'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/J94K8VJM/versions/cvwhk9sT/copper_tools_armor_backport-0.0.5 Hotfix-neoforge-1.21.1.jar'
+
+[update.modrinth]
+mod-id = 'J94K8VJM'
+version = 'cvwhk9sT'

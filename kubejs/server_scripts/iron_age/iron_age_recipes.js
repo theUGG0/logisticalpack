@@ -1,11 +1,9 @@
 // Iron-age 6x ore-doubling step. For every item in #create:crushed_raw_materials,
-// add a HEATED mixing recipe that out-yields washing by ~1.5x. Combined
+// add a heated mixing recipe that out-yields washing by ~1.5x. Combined
 // with the existing crushing+washing chain (4x), this brings refined
-// metals to 6x effective. Heat must come from a coal-fueled hot campfire
-// (or a blaze burner, post-steel).
-//
-// Output is the corresponding ingot via #c:ingots/<metal> lookup, with
-// a chance bonus that averages the 0.5-ingot uplift over washing.
+// metals to 6x effective. Heat: vanilla Create heated (blaze burner).
+// Output is the corresponding ingot via same-namespace then minecraft
+// fallback, with a 50% chance bonus averaging the 0.5-ingot uplift.
 
 ServerEvents.recipes(event => {
   const stacks = Ingredient.of('#create:crushed_raw_materials').stacks
@@ -20,11 +18,7 @@ ServerEvents.recipes(event => {
     for (const c of candidates) {
       if (Item.exists(c)) { ingot = c; break }
     }
-    if (!ingot) {
-      console.warn('iron_age_recipes: no ingot found for ' + crushedId)
-      return
-    }
-    console.info('iron_age_recipes: ' + crushedId + ' -> ' + ingot)
+    if (!ingot) return
 
     event.recipes.create.mixing(
       [
@@ -32,8 +26,6 @@ ServerEvents.recipes(event => {
         CreateItem.of(ingot, 0.5)
       ],
       [crushedId]
-    ).heatLevel("DINGUS").id('logisticalpack:iron_age_refining_' + metal)
+    ).heated().id('logisticalpack:iron_age_refining_' + metal)
   })
-
-  event.recipes.create.mixing("minecraft:diamond", "minecraft:coal_block").heatLevel("DINGUS");
 })

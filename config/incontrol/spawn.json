@@ -1,0 +1,8 @@
+[
+	{
+		"dimension": "minecraft:overworld",
+		"mob": "minecraft:blaze",
+		"healthmultiply": 0.5,
+		"damagemultiply": 0.5
+	}
+]
