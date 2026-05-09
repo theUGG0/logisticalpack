@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:farmland",
+    "minecraft:grass_block",
+    "minecraft:dirt_path",
+    "minecraft:moss_block",
+    "minecraft:rooted_dirt"
+  ]
+}

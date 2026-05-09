@@ -1,0 +1,40 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '1.0.21'
+}
+
+version = '1.0.0'
+group = 'com.fatcrackle.biomegrowthjade'
+
+base {
+    archivesName = 'biome-growth-jade'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    mavenCentral()
+}
+
+neoForge {
+    version = '21.1.221'
+    parchment {
+        mappingsVersion = '2024.11.17'
+        minecraftVersion = '1.21.1'
+    }
+    runs {
+        client {
+            client()
+        }
+    }
+    mods {
+        biomegrowthjade {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+dependencies {
+    compileOnly files('libs/Jade-1.21.1-NeoForge-15.10.5.jar')
+    runtimeOnly files('libs/Jade-1.21.1-NeoForge-15.10.5.jar')
+}

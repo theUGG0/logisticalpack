@@ -1,0 +1,17 @@
+# Gradle build outputs — regenerated every build, large (decompiled MC + NeoForge jars).
+build/
+.gradle/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+out/
+
+# Vendored Jade jar — copied locally because Modrinth maven doesn't expose it
+# at the expected coordinate. Anyone building this mod copies the jar from
+# their prism instance into libs/ themselves.
+libs/
