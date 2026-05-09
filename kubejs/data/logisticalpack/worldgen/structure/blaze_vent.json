@@ -5,7 +5,7 @@
   "size": 1,
   "start_height": {
     "type": "minecraft:constant",
-    "value": -1
+    "value": { "absolute": -1 }
   },
   "start_pool": "logisticalpack:blaze_vent",
   "step": "surface_structures",
