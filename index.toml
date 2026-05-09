@@ -1,12 +1,328 @@
 hash-format = "sha256"
 
 [[files]]
+file = "03ccda17e9986274c812c7a464044f8c/pathname"
+hash = "9f521fd59b5c67f1f2cbdc3ae17027422cd748e2845b780a0382160a8648d34d"
+
+[[files]]
+file = "04706739e5e05c94690848df1055fdbe/pathname"
+hash = "342c105fb2def9ec9022ef30480fb573330943400daf6303ea1f67daa80ee80a"
+
+[[files]]
+file = "054e5816c35ba2c4c80d2f507b758670/pathname"
+hash = "6a8ccf524b5956d2c5843dc1d0fa0cccd1f23246ce5d590b92b0b85af2078a81"
+
+[[files]]
+file = "0595ba0885c6e6145b69b34a9d581325/pathname"
+hash = "6ddbc6261bef93e54867ea9b4cf2f475b1c2c33993b81a1758dcd14938ed41ac"
+
+[[files]]
+file = "0c89ea1d306ad7d408b9687fc6662d19/pathname"
+hash = "1761eab79a558dc84fc6df1bea6a38203e9d07b8673c9a7f5057aee518ae1039"
+
+[[files]]
+file = "0c8c33c7a83b3e945a2d3f87fd470294/pathname"
+hash = "12c96f07467849f73dfa00a02ab3a2bb13141b9c1ffb870e38caf2042ae3acb6"
+
+[[files]]
+file = "122f2ee7d8704ca43bf4a8353dcccd6d/pathname"
+hash = "7f55a35bdf585b66e8552123246d40799917be7f35a4f1dacdfe676ff85ecaee"
+
+[[files]]
+file = "1385fd3e617f246429eb766a84e78bbd/pathname"
+hash = "1c9b9537d15fee2c3a8df5f2ce0a86ac21fef639bac3cc3b84e0df4d70423c8a"
+
+[[files]]
+file = "153ffef5847ed8c42aae8621a5cfd55c/pathname"
+hash = "f9c6e0d83ae6cf973f9e0b6438d16710a139b300e470d4c24cf5f39eae7a7b15"
+
+[[files]]
+file = "192be0f473fba59439252ada29935e60/pathname"
+hash = "b50f8eda64f03f7881a37117fa1d42a9ffb9de1eddd2017fae9782328b92cec1"
+
+[[files]]
+file = "1f125446416f89845b6a3779b386519c/pathname"
+hash = "dfe7b7057ca906d87be2bfd766be7dfcdaea6188b190ec69be4aa53ba9fdaf08"
+
+[[files]]
+file = "21eabae20d078d547b744feb5d3f174d/pathname"
+hash = "7018446a76fbd8dbd40bc24b0cd62e6df7930c857ed0ebe1f483adfc042bd736"
+
+[[files]]
+file = "27ac9cce88d7ba644bd38b9cf7d12c5f/pathname"
+hash = "dd4e2d80f94e70fd71f9aa8dce93ddfe8774ed6c7dce94b56ceafd8f698c69d4"
+
+[[files]]
+file = "27de3f3793b699149a321ce3c8099114/pathname"
+hash = "3995897cd1336abd30556b17b1e7c5781f8128ec3881d3846dcc8b37b2a24e29"
+
+[[files]]
+file = "2a832ea2b00bab34ab3bbc45e4208710/pathname"
+hash = "3296d65764add3764a50b87c0d42a07550411dddd098fbae3568ce20f82d711f"
+
+[[files]]
+file = "316f8112e397507498cfdd9e09273ad2/pathname"
+hash = "5d0059ca7bc79bddc32fab88685126997a9230a9e14c60df4aae76c7ec9b0a4b"
+
+[[files]]
+file = "33c298d1d9f7caa48a7e51aa10b872f8/pathname"
+hash = "d7c28dd78263e85088b0d60cc8ac183ce6897959522e28d7358a2d8c5614aadb"
+
+[[files]]
+file = "341bbd8003ec8be42b5fbcdeffa524da/pathname"
+hash = "f4f068dc2b6a5d4770b2a1aaecf49e524170631e0675bad8748c608a07fb6b47"
+
+[[files]]
+file = "3831926ef5a80fe488e43b4e039c988d/pathname"
+hash = "4fcf68816b31c63fe45e2755fd3e7b59b3feb8ac1d2a51cc2b3b7dd730f343d7"
+
+[[files]]
+file = "383401251f5fa414c96f892a3d2d661f/pathname"
+hash = "13acc368080fef0bb5b29fe3e059767cf4de0de1b9a768a1da78c49e9d1159a0"
+
+[[files]]
+file = "3955cb44e1e621041b85b5eec5cf183f/pathname"
+hash = "8ddc1fe11c62543d78c5c1ccc24a460a96dff7c5953cf530063dbcbebc34beeb"
+
+[[files]]
+file = "3ce24866ef8f2d043b99405660702ee4/pathname"
+hash = "92a17cb43813f32af7b9750cd46c2e78bd373a3270333b93badc752cef94e7e5"
+
+[[files]]
+file = "3eb6c3fffe789844e9a744df28b7f5a8/pathname"
+hash = "3a82ce9fd631a214e9345a36daae623f89a789c1385bab4a02379a90ae90f57b"
+
+[[files]]
+file = "43b3a666a3a8d174fbe824c8e2c1c224/pathname"
+hash = "b9bf00476e1a5a779fe70d793e9e2d3ba24dc91528039fbd6b4f4470592c0b9f"
+
+[[files]]
+file = "479f00e4f01eb2c468c2d5905ebffeda/pathname"
+hash = "610307b0a79b452ff4903cefea27055ad5ae364ec3bbe4a8ae30711c976e440f"
+
+[[files]]
+file = "4bf1e25cec1444749b4d35337cc7de6f/pathname"
+hash = "0ec7dd03d0f328e645ca2c4876e1977c5964d6d12cd8690693a4bccd298406b6"
+
+[[files]]
+file = "4e817602fe4168944a2fea438f78bd7e/pathname"
+hash = "e2edc715aa9a9de95c345037f18785936d7f7337f944fb8d4c7ac9d31a21e880"
+
+[[files]]
+file = "4fb16c36eff4bc0499c744a19d195d25/pathname"
+hash = "d24508637fdf31589780e5a5c8dd0cb44d828fc4db089e0abd807724ec75452f"
+
+[[files]]
+file = "50884292854fa4446ba19aef4f139283/pathname"
+hash = "7565c77c3774010434a9aca9a834b794566dd5a8b54a3802cb0f2bb5ae3267fe"
+
+[[files]]
+file = "51a60d915ddfee64aa3b62d132ea6e3e/pathname"
+hash = "990d183e0696e6658c18b4df5a6c8401c19039b6b75102aad66bf11ed925ebb1"
+
+[[files]]
+file = "53b6307435094bf4686285ddf1932df7/pathname"
+hash = "03b5761110d11bc46da0be1eaaa8afa62bf701088895e7fe413ef4d828102b0c"
+
+[[files]]
+file = "54ade1e2567bdad468cb61a4ed6efac3/pathname"
+hash = "35c18131c24e76ecc82e8d6a4248508b552814db0dc24855404c4bb1a5d10a09"
+
+[[files]]
+file = "54d2d0a49e441774bb9f2386c9bd5407/pathname"
+hash = "04e9b3e611583f081c99b95a8a8e8744891314cd3f0e1bbace143b5fba524bd9"
+
+[[files]]
+file = "578e5e85191d57f4c9406a29e57d311b/pathname"
+hash = "88fecb323a1a31a0eca88353dcc08c2f0a081a43a5129b9f1f97edcf5812dbc4"
+
+[[files]]
+file = "59924fdff2f309741b8c254725a6815c/pathname"
+hash = "15f589765510b2912de850349004c3182702f7298d26c437d6a43f0ce679908b"
+
+[[files]]
+file = "5b9377af81de3ec4caced305085bdb52/pathname"
+hash = "5d8f346bd33172c067b755006fd6f7bc4b44728188a66b9dedfbb4f5a7ba46c9"
+
+[[files]]
+file = "5df214d893e454948b0d62643f02122c/pathname"
+hash = "dcd0fac7be0fdda9b474c05e4ab76d0397c7d26196479a2e7fafc7b401e9799e"
+
+[[files]]
+file = "5e6a3cb885eab6f42988bc05393d32cf/pathname"
+hash = "a8ebd9815459afc3178b1317a6eddb66ee6f438e3b901b3550ea7195672dec20"
+
+[[files]]
+file = "65cd1d54a8977404f9c6a6b7b12128e3/pathname"
+hash = "6eb071fe9b8da64c978076911aedf818775f8f5b24a18d19f7aead9d9b267325"
+
+[[files]]
+file = "66db53f4ee47ec846b7a957a86c83d6d/pathname"
+hash = "d7ad6f732430111a2066f1a48da71472f631bb6c16ddbb5bb43f234eb2497d55"
+
+[[files]]
+file = "670e6524aeb183a45be5c939dd35382d/pathname"
+hash = "4a13119111c1a0432a11149b7b2bcfb7a02247adcc586f196eb831e756e2a866"
+
+[[files]]
+file = "675c154f732a14d4fbb59e0e723dbdda/pathname"
+hash = "8064dfcd6849b4dec1b0ccbee44b8d8cfe7e4f877b7adcdac3c896f962990da9"
+
+[[files]]
+file = "6aa456685a1e0fb4cbd64c4fe90e75c7/pathname"
+hash = "f4851029720b5acbd89f5dec0884d7bac8bd8bb7af6fb0c25420384c5001eb70"
+
+[[files]]
+file = "70399c5800afcbe4685e61f607605d45/pathname"
+hash = "11ddeb840e7efe1197590c6259f7f2924116b724e849bcfc529cde92752c6905"
+
+[[files]]
+file = "752a7e39977273844a072c7f1537e397/pathname"
+hash = "702272d19955e57013c0a1a81fea71425b4a6dd938aea669c2b5a39a7545f784"
+
+[[files]]
+file = "7c733651f4cf0834b81174e35a3bb0db/pathname"
+hash = "889175adb48ce579b0f64773e59d9ee6e8a889929405cde9c28a18ca88addf50"
+
+[[files]]
+file = "80dac1c1026c5ed42abbc42f48dc373c/pathname"
+hash = "000d8f3ac7f48693d3ff56eaa8f743dc300a4686ec42b73b0c77734606b5c53d"
+
+[[files]]
+file = "8223ac4b0696fdb4cbabd559472d827b/pathname"
+hash = "8482fed3e874809a3e5469d35232ac0c36e35761028be1fbf6b756b04cf57d4f"
+
+[[files]]
+file = "83cfef2b1f4de22429a865e82aa2bfaa/pathname"
+hash = "49d22c1f7e97c4ab4fee88c1fd80ce3194b8c7cb33de68a501bbc37221ee7fc1"
+
+[[files]]
+file = "85cfe79d769cd0b40b10bbb73b4b984b/pathname"
+hash = "9c63b62e816f7d72688010403caf02069ddfa1f5220a5c5ad3069588d656e3c1"
+
+[[files]]
+file = "865b64848d40f404c914ac76fb7aa853/pathname"
+hash = "3f6a5dd25b8bfdbcff5559bb2c840ce397dd855cde271711baeac757a48a2b90"
+
+[[files]]
+file = "88bcedee41236b74ebd0c75b8a9dc51b/pathname"
+hash = "4e93b8f09558dc8e82c341554dc612b6f8ce4722902522c6d060f37f9ee391bf"
+
+[[files]]
+file = "8c1a9a61383e17a498b85e46b50422a5/pathname"
+hash = "50b37bacf7924219d0f46bceb436c07621cb67d6f9eba748d198baab59b0bc32"
+
+[[files]]
+file = "8ca610265ba55724d81fa54111116558/pathname"
+hash = "6d4e26607175f83cd27ad1ee64e134a008e5f306f1714b096f81a3a0dbcf6619"
+
+[[files]]
+file = "8d9b96fb7e391064192a434e1f11cf45/pathname"
+hash = "76cfdc30a11de68d229939891fc74357f20d0fa6dccde1732e3ca451cb5a3e8d"
+
+[[files]]
+file = "93c54952f39b5274295c5bb23a6c1cc1/pathname"
+hash = "7b38a6c3721f62f2929b01fd5732391785ad2913e178595620b6d57d4159f6d0"
+
+[[files]]
+file = "940cbb0954da5f24fa9b900f932cb271/pathname"
+hash = "2e12013cfaf2aacb9c8e7c6fa70092482d9862603bbe0942117829b6b9e5f0d5"
+
+[[files]]
+file = "9679a9c38698cf1479cf385d907e1f9e/pathname"
+hash = "52053301f847f78a7f14985104c8bff429469b72345ddbf9e3b5d2a7835d91e7"
+
+[[files]]
+file = "9728e3eaa536550438725916be8873d6/pathname"
+hash = "5b489504bc51c0624ceda07e1ce6b8c9f355eab9e9b6d55914a9e68129e481c3"
+
+[[files]]
+file = "98530722a706f954081cb492267cc24d/pathname"
+hash = "66713011d81cbb07cde7030f8eb4b044312cd20fd8302366a1bbd0648ce07c36"
+
+[[files]]
+file = "9e1d2495495270240916ee6015742890/pathname"
+hash = "cfd56685d3bf050cd638c87012d1f5961ea8f460731367dc47c92395b2fb3ca7"
+
+[[files]]
+file = "a11f77259138fb0418b635a15087e7d6/pathname"
+hash = "59c988a66a5360d6bfaa606ec433e4ca5e51136c32131fd09fe98b56eb5038aa"
+
+[[files]]
+file = "a1a922865b9993741aa7f5ddfdee5145/pathname"
+hash = "72fffbc35c64a0a5402fd384de997f604950a853bf989f3cb9ca9dc9023fa865"
+
+[[files]]
+file = "a23b86e3a7f156948a065bcae280bf92/pathname"
+hash = "756c94d5a34058f656539424510d4820e41dab97e9af168086a9fa4a73d86f23"
+
+[[files]]
+file = "a3c08510a6dd42448bbbbae969ad0eb0/pathname"
+hash = "462c381a9a2b137758533f5204b5ca47ef9371c16be9e124f9086047eeae6598"
+
+[[files]]
+file = "a3c9d80ec8f0beb459d7fe6913c6ba12/pathname"
+hash = "305f36e6b9ffb5fb522ce20c7762a5d1c57dffbb94bd0d70959017a3a364b8c4"
+
+[[files]]
+file = "a66c9dd31a20a264f92ea12d71fe5c35/pathname"
+hash = "b34e39f01f59a8f3d06e9b2984f0733a4560dc2ca9344ed715aba5f0b113d24c"
+
+[[files]]
+file = "ab651fc0922cc9547a40c16c289ca6a2/pathname"
+hash = "a712fbc48023b666f89e8740585a38c334f7ccdcd331aa830718f89a58b93a75"
+
+[[files]]
+file = "af7026d08608a9d4c9dff119f8522b87/pathname"
+hash = "69555e0b129faf9c9aaa97454d99bb42423523301324cbcb9f413e19cf38a1b7"
+
+[[files]]
+file = "b2f173008c4192f4d9bd4ebcf6c50150/pathname"
+hash = "9896fd9ed35e04a4c2bbe76b6d15d5eef5925df3fd0691995a53f63b18bf66a8"
+
+[[files]]
+file = "b41a0d2b01032d84b90bc2373cf98068/pathname"
+hash = "f775c2ca034a5cd6877eca1aaf192372f7cad0d7a03681d6db58f998c738ce4d"
+
+[[files]]
+file = "b461d25749f4a09499679329718dccd4/pathname"
+hash = "ca3352de269919349d6b74f9e9d1bb8800aca08d23e2f3b37b77a7f69771247f"
+
+[[files]]
+file = "b6f4ff10ac7933441843c487b3db9ad1/pathname"
+hash = "1e89cfa8633894f47366e1651c2b5ade441bd9de29be0defa7922ff13da63bee"
+
+[[files]]
+file = "b776d3fc890e74d458ddf9dc43eccbf8/pathname"
+hash = "cb98963d837e6183d42b8dc0995398411f5500d44ddf23605c234b070441456f"
+
+[[files]]
+file = "b96e1c13b9c67a14d94e65648e184b6d/pathname"
+hash = "974fa8456e922a149c7aeedcd16e9fc5f7b136c1d113442a43bcd3863bbe82a8"
+
+[[files]]
+file = "b98780b2c1893fe4191d46dffc9baefd/pathname"
+hash = "e14566dd4d0d9b4b55cd40c575beacafa4ab0f4361f1047ff4791cd6afb63100"
+
+[[files]]
+file = "bd9f68d5966c336449c684535d804ae0/pathname"
+hash = "152782beddd10d4a96ab88af9d4652adb009133da4d9162b4fb1bbd39f06a00a"
+
+[[files]]
+file = "cc332d140cf448c42a2871ea64f9c2c0/pathname"
+hash = "0cc89998043e20521a31ab590b5bfa8b27ccba70e30d74af678b934bcb5a514c"
+
+[[files]]
+file = "cd719d1059bd0e94794025391c8cae41/pathname"
+hash = "fa748df4d8ce3f50fc57d5432e09e139c7da2b349e4604fdf4959938d08e9f62"
+
+[[files]]
 file = "config/CustomNpcs.cfg"
 hash = "db9e723f66651ef671f89113f10d07f434d306e6fdc714c35d2f3423b81d1b25"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "1d6e6a92bce329ffe7f737ed5bb6d3b6ac3391ae641f6b75af75053912b8f3fc"
+hash = "448683e98407934ae989839fbec054712184bd34d7adbdd92fd5e2e9e36cc266"
 
 [[files]]
 file = "config/aeronautics-server.toml"
@@ -26,7 +342,15 @@ hash = "fc6b87d500994353673065c6fde9f6dabb0e6b1c61a9db86e2a69d90a57ffb7e"
 
 [[files]]
 file = "config/c2me.toml"
-hash = "8c9b167b710415fb09bb54430a4c89c8572b7c879c77eac5a36a5e8412c24b0b"
+hash = "b80c81f898fca2e685641f05add62630e1e18b4d0c97ddeb0c790b05e2751922"
+
+[[files]]
+file = "config/chunky/config.json"
+hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
+
+[[files]]
+file = "config/chunky/tasks/minecraft/overworld.properties"
+hash = "e215cb0fbff633a12d2e30308dda80037f672936ca977b20bb63ebc504d70ca7"
 
 [[files]]
 file = "config/connectivity.json"
@@ -66,11 +390,19 @@ hash = "ec8fde7a9de9f4ef9c2fa95c6bb716492052aa4b979c2bb3f08b092bd76c61fd"
 
 [[files]]
 file = "config/cristellib/ats_more_animals_mod/structure_toggle_config.json5"
-hash = "95cfd9a71ed332385b66c74a55663a39629ef0248a92783cb296ee206e550099"
+hash = "54d8331a885f785211e4b3f710883df3d6afd51c929b23172f0b4ca935906168"
 
 [[files]]
 file = "config/cristellib/auto_config_settings.json5"
 hash = "799173b66094a241753f41af672ddf22921ca206cb88f1966d31960c89c3f99a"
+
+[[files]]
+file = "config/cristellib/big_birch_tree/structure_placement_config.json5"
+hash = "82f1c7cadb119c58e1e5dd2e95744e7558b12279cd5857859afbac988df6c700"
+
+[[files]]
+file = "config/cristellib/big_birch_tree/structure_toggle_config.json5"
+hash = "b76ae945b41bf96c1f0a54f1a562bf2e0963f5ea4bc2ce5f514f6caa7994f216"
 
 [[files]]
 file = "config/cristellib/big_oak_tree/structure_placement_config.json5"
@@ -109,6 +441,14 @@ file = "config/cristellib/explorify/structure_toggle_config.json5"
 hash = "91937c0505d28dd9d9d41f11c8b0df04c8b106fac3746d72087a959f81a18e1e"
 
 [[files]]
+file = "config/cristellib/hopour/structure_placement_config.json5"
+hash = "688d5f367d1363a17879cb648511c32737ed1a3085f191fdf74c9419ff47c00c"
+
+[[files]]
+file = "config/cristellib/hopour/structure_toggle_config.json5"
+hash = "b5d58407e41ffe92ae270e9fe7ecce4bc7db76c3c3142202540186efc8556e60"
+
+[[files]]
 file = "config/cristellib/jungle_treehouse_village/structure_placement_config.json5"
 hash = "50215c82e024b5046484711634b3593008ab20833a3db1a8a70c3ec45b5fd8b5"
 
@@ -123,6 +463,14 @@ hash = "685efccfb9e45ba8adbaf92bded7430e094493cb29ebd57eaa512c274021233e"
 [[files]]
 file = "config/cristellib/plants_and_rocks/structure_toggle_config.json5"
 hash = "9059f9f17434ef22e899cce26b8140201c50ab0f98480bbb28224ec74253e3d3"
+
+[[files]]
+file = "config/cristellib/spawn/structure_placement_config.json5"
+hash = "b343466607140e453d501996d67d4ad17ecad7467c32b8982360e23339eb0057"
+
+[[files]]
+file = "config/cristellib/spawn/structure_toggle_config.json5"
+hash = "59c689340cb86a170856783dc2b6406d1ee2d6a88567c15c3fd1432acb8e01f0"
 
 [[files]]
 file = "config/cristellib/structory/structure_placement_config.json5"
@@ -145,6 +493,10 @@ file = "config/cupboard.json"
 hash = "937698438af081495eebab187013f66570218e1443f35db8a2ca0b4cb6d9638b"
 
 [[files]]
+file = "config/dynamicview.json"
+hash = "305841828cd7218dd650fc2f48f01039cbfb8a914143cd79ffe11f96f31888fd"
+
+[[files]]
 file = "config/encumbrance.json"
 hash = "5758f19722918dae47dc47b11c157049c16b69fa64346a12d900bf952bee5833"
 
@@ -165,6 +517,14 @@ file = "config/immediatelyfast.json"
 hash = "a6c9d147a51c9e432c5c74c00285cfc5ba8b6fa4a0c6686051a7168b158d0d7a"
 
 [[files]]
+file = "config/iris-excluded.json"
+hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
+
+[[files]]
+file = "config/iris.properties"
+hash = "541682a9a7735ace4b1001be6be4fc21bd8b612e51c8e823262d70de21ac7014"
+
+[[files]]
 file = "config/jei-server.toml"
 hash = "702acd04d99445bce659d04fcc488e1a98c8a803983c31ae262b0f3a47fdc8d3"
 
@@ -174,7 +534,7 @@ hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
 file = "config/jei/ingredient-list-mod-sort-order.ini"
-hash = "1bb0ca1dfbb78f091dc4f7d6ed8c97a901af71816c3c62edfbac7261d1ff15f2"
+hash = "b8f060a1a5e0998dcde553b5d149094af5cb26881ae273cd18fa2de2d3b12c4f"
 
 [[files]]
 file = "config/jei/ingredient-list-type-sort-order.ini"
@@ -213,12 +573,24 @@ file = "config/jei/world/local/New_World__4/lookupHistory.json"
 hash = "df6c92c6c19509761043ea9f1a02e73f2af493760fcff0836caa89786df9062c"
 
 [[files]]
+file = "config/jei/world/local/New_World__47/lookupHistory.json"
+hash = "529c401c5860e5799914117adb178b26efb43c9347ffb5e92b233270e66bf0c1"
+
+[[files]]
+file = "config/jei/world/local/New_World__48/lookupHistory.json"
+hash = "24e3293b28d3bcfd602caf4ab9357ebb9c68e4bcf117f7bac73ef70288c5f164"
+
+[[files]]
 file = "config/jei/world/local/New_World__5/lookupHistory.json"
 hash = "4c9e94599849778a2ce2528d487598258a7660772da53bf343e9b872993ba68c"
 
 [[files]]
 file = "config/jei/world/local/New_World__7/lookupHistory.json"
 hash = "964ceba91f96353fa7a084d14842feb9f36ef50751f61a983fea01cae5c14c27"
+
+[[files]]
+file = "config/jei/world/server/Minecraft_Server_adf2b5c2/lookupHistory.json"
+hash = "376cc69ade20b6eac81b8259b523b563e2b83599ba343989150eb494a8485bec"
 
 [[files]]
 file = "config/lithium.properties"
@@ -242,7 +614,7 @@ hash = "5eaff93c32b67e5016d4076d42a3bd3175804bce0e06b6c487331aa32ca525bf"
 
 [[files]]
 file = "config/naturaltemperature-common.toml"
-hash = "8ca0531e5cb5fdee1d57cb5a0b05fd7af06affd34cd0d38877d0447ac6a15c29"
+hash = "fcd559dbd3dc40c9c5b25dccee91226da42704d085469206240e3b297309146f"
 
 [[files]]
 file = "config/neoforge-client.toml"
@@ -255,6 +627,10 @@ hash = "fe878a2717a145cd890621eac5b3be1e1fd656f7ff9abc6e8d53f670d37474c4"
 [[files]]
 file = "config/neoforge-server.toml"
 hash = "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f"
+
+[[files]]
+file = "config/neruina.json5"
+hash = "bfa343775801d4708d39e86b5fa4893a18185f190f2799a8b6ad828e96027073"
 
 [[files]]
 file = "config/offroad-server.toml"
@@ -358,11 +734,11 @@ hash = "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01"
 
 [[files]]
 file = "config/sodium-options.json"
-hash = "61ed28fb5994a6ac4bdabc3014b824def3bbd2294ed93d548af35d93bb32dbc9"
+hash = "193bf962cedc759607f0883abd70c3dbc331eb9bf26a0a8cfb0125099396cb3c"
 
 [[files]]
 file = "config/spark/activity.json"
-hash = "5d685569ea967f0a739770abcb8358d7f2186898e6e94c0c519c929ed6f12a9e"
+hash = "5d7e2e2699e2d86706bfe4ad0a6e43604bfc64f948b85b3c58c5d8ce7951597f"
 
 [[files]]
 file = "config/spark/config.json"
@@ -377,12 +753,20 @@ file = "config/spark/tmp/about.txt"
 hash = "8057ccf4540ea269b0fc332225859f44d8f3a55d891fa2e7a3447b6202658d2a"
 
 [[files]]
+file = "config/spawn-client.toml"
+hash = "6f9b4ad83c77b078ce752db8a472b69f13e93488cba2ce0c7e919cf32f9b4d6f"
+
+[[files]]
+file = "config/spawn-server.toml"
+hash = "d8221a51171524f9c2924f85a5ebee4c57753b53090ac43d6ad058d7989e1b44"
+
+[[files]]
 file = "config/structure_layout_optimizer.jsonc"
 hash = "5a9058652bc0b88b8810e0b94eba0e1a90cbff2472845c53a7e67442682a1579"
 
 [[files]]
 file = "config/tectonic.json"
-hash = "c0fc89e3011e7a40a4967e3a4e68ae7d0c63b07aff54b969a90dcd753d8e22f2"
+hash = "cabd6bf77f6c625de3e83aa90ea86fb83cec030ca321f28ca13b070d22a4328a"
 
 [[files]]
 file = "config/tfmg-common.toml"
@@ -421,6 +805,94 @@ file = "config/veinscout.json"
 hash = "dad723e40c13f0c244aa0ab132b0a7c31c725974be26272f25fdb545317d24de"
 
 [[files]]
+file = "config/world_preview/biome-colors.json"
+hash = "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+
+[[files]]
+file = "config/world_preview/config.json"
+hash = "0355f85dcf31fa89f0cff47df95858cddf2feb9fa0f175642573a02f1fbe6dff"
+
+[[files]]
+file = "config/world_preview/missing-structures.json"
+hash = "b7f832bf4f0371830426e78af9a011e6444998c04269ac75f96aead61b707cb7"
+
+[[files]]
+file = "config/world_preview/renderConfig.json"
+hash = "20f9cba7670212c7f7ac2f437f0351d574a68d3615dcd814df7d15ce4dd963fa"
+
+[[files]]
+file = "d66f403f88b272f4d835597d526b3d4e/pathname"
+hash = "07ee3ca759f593c6f810082ffbae8240c47054ab2697e11cae060574e69795c1"
+
+[[files]]
+file = "d6770a15fa7a96e49a19a031ceb68911/pathname"
+hash = "5138a45124166bb687b0aa8c312580c307701935e86b42e8aa2468c562ea9501"
+
+[[files]]
+file = "d72ef8dd73f761341b96c7b95c6d222c/pathname"
+hash = "7adcf85192c2fa19d44bc6f28401c1416dd96fb6099249d6622d52ffa728055f"
+
+[[files]]
+file = "db0413b547ac75c4e8d880f8749e1527/pathname"
+hash = "ff01bedd1ba894890e66aee1e189c1c539b964a8d6b3cea5310a0ebbea57ccc7"
+
+[[files]]
+file = "e08cf79673587eb459a86e01fde42477/pathname"
+hash = "551e1a32c4e9b7d960d309c6ae5ef945996896c3a03d603c1b4f4d26c97bcf77"
+
+[[files]]
+file = "e2aaeca9d49e4c244a64f1186d138de9/pathname"
+hash = "97e002d0b5ec3afaee7ec07a96eacaf4119b48b35a9ad65eeb91fa25556c522e"
+
+[[files]]
+file = "e33f011823014d640bd1d37e881d8b88/pathname"
+hash = "2ef15f9d42d38f34028c2aa8ce6d296dc77e77dbfcb7b8cf34a852734ce3fa69"
+
+[[files]]
+file = "e4395d422fc76f648a7f236a56152e99/pathname"
+hash = "9648ed70cbc197b4486cb5c9fd8d027ca56c13e584194b87b41d934834dbaf94"
+
+[[files]]
+file = "e47646849a704eb4789885c7567ed04f/pathname"
+hash = "f81a8d670d307d8c5e76ed007e9b5244f33026ae03d5601e06390455f65866de"
+
+[[files]]
+file = "e646c838172448e4ab2ff87493bf3979/pathname"
+hash = "af2db6c6331610c273d07009cbaeb82ae5e2e61a24457b4a1345f986b8d3659f"
+
+[[files]]
+file = "ec6dd9c2020c2b64baa06a5c0074ffb8/pathname"
+hash = "e34e36c608dc520778446c2816df552354b4702d1f9ff4a50f0f8bead6bb07bf"
+
+[[files]]
+file = "edade4e4bf0ca1b45ba994e785320a00/pathname"
+hash = "7d95f580aa362bf5a8ddd6a8e1bd7d97cb2fb0f6f3b6eee9200fdf7d48a5cae3"
+
+[[files]]
+file = "ee3fa011f93eebd4980bfd67da20972f/pathname"
+hash = "65795de8ed8886cd3ede75c4a8013e4f825415d2129ed7c8fbf4e9dee2bb29ae"
+
+[[files]]
+file = "f2437dab5ac705c42ae2729dfaada17d/pathname"
+hash = "52de0dc6fc7e9c7155e1869133acb1e3867d9e8d1724c80c16ada1971c12cc68"
+
+[[files]]
+file = "f3165e07ceac9c24f8367a638e0961c6/pathname"
+hash = "684eef90bb78810a2fa114bc6c8ac707701cb1b5135277d79f3103c0c6620d5b"
+
+[[files]]
+file = "f581da11830d1c848b8e1a7537a3822d/pathname"
+hash = "482b4520387acb975e745309da67497b3294cafaa61ff1e32f024ea81cd508dc"
+
+[[files]]
+file = "f8fbc47dedd783e4bb1b8e42554783f5/pathname"
+hash = "030661046f9f65a34118dfca829a0c2d88e966454a5a55c5bb40781650f9ee8f"
+
+[[files]]
+file = "ffd6d8a4a0d1e5143b6871483fe0c768/pathname"
+hash = "3c34512a8cad2d86b25637f3aa9eae067dd0a3141c95cb828cae86e2432473d5"
+
+[[files]]
 file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
@@ -451,6 +923,150 @@ hash = "e00a67922942660d77c213379b5128a46c5abc894178b0be04006d325ff5f6b3"
 [[files]]
 file = "kubejs/config/web_server.json"
 hash = "838937620dda444857732189a1e26401a2b97e447b3c8738bc2693584f0006b0"
+
+[[files]]
+file = "kubejs/data/create_easy_structures/loot_table/chests/common_chest.json"
+hash = "85a5892893e139c7a5e060b3e46a069326a0222a0a7277459dac1843050670b6"
+
+[[files]]
+file = "kubejs/data/create_easy_structures/loot_table/chests/epic_chest.json"
+hash = "7e74e7dafb13070d95f19645350157b71dbecf711bf1b1e6835f0a51b8805e45"
+
+[[files]]
+file = "kubejs/data/create_easy_structures/loot_table/chests/rare_chest.json"
+hash = "35f900d61d67d9003b2f1e87ea0dc09f46c352405b707eb72fed614270a0d89f"
+
+[[files]]
+file = "kubejs/data/explorify/loot_table/chest/dark_forest_settlement.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/explorify/loot_table/chest/mausoleum_pot.json"
+hash = "dc26125182a1294a31cb1908cdae3de5fc1629d4b5eccd92e7d207a46cb4ff4f"
+
+[[files]]
+file = "kubejs/data/explorify/loot_table/chest/supply_cache.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/archaeology/small_ruins.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/archaeology/warm_small_ruins.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/copper.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/coral.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/food.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/materials.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/prismarine.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/small_ruin_cold.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/small_ruin_warm.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/pots/underwater_ruins/small_ruins.json"
+hash = "0c7a62a455625f4797791acc0959af485ee2a05d2a307a81f13b65b226269155"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/archeology/forest_ruins_common.json"
+hash = "b662026aa9b959c58bb8b58d0197d430086288dfdd3f3cbee06219a07083c253"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/archeology/forest_ruins_rare.json"
+hash = "ecbecac981e72ccbba5dce5b83ff3ae0b12ca907209801f0ee935a5055a48c38"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/outpost/common/armory.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/outpost/common/food.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/outpost/exclusives/outpost_beach_barrel.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/outpost/exclusives/outpost_mediterranean_barrel.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/outpost/exclusives/outpost_rustic_barrel.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/exclusives/village_classic_blacksmith.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/exclusives/village_mediterranean_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/exclusives/village_piglin_barrel.json"
+hash = "7ae8a7ce66d2a873a275cfe85d72b337917324fc0460a3cae96d5c642abad1db"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/exclusives/village_piglin_house.json"
+hash = "05e2375598e410f9ea95fcf87d047987fe435c7a20aebc2089fe82c4fca164fd"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/exclusives/village_wandering_trader_hut.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_badlands_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_birch_forest_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_forest_ruins/forest_ruins_butcher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_forest_ruins/forest_ruins_library.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_forest_ruins/forest_ruins_temple.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_jungle_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_mushroom_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_swamp_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
 
 [[files]]
 file = "kubejs/data/logisticalpack/loot_table/blocks/deepslate_lignite_ore.json"
@@ -569,6 +1185,218 @@ file = "kubejs/data/logisticalpack/worldgen/placed_feature/ore_tin.json"
 hash = "8cc6df45faf9cc3a675c9a054a6418844eda05865923877dbf2c598286352b22"
 
 [[files]]
+file = "kubejs/data/minecraft/loot_table/archaeology/desert_pyramid.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/archaeology/desert_well.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/archaeology/trail_ruins_common.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/archaeology/trail_ruins_rare.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/abandoned_mineshaft.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/ancient_city.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/ancient_city_ice_box.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/bastion_bridge.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/bastion_hoglin_stable.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/bastion_other.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/bastion_treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/buried_treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/desert_pyramid.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/end_city_treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/igloo_chest.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/jungle_temple.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/jungle_temple_dispenser.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/nether_bridge.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/pillager_outpost.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/ruined_portal.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/shipwreck_map.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/shipwreck_supply.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/shipwreck_treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/simple_dungeon.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/spider_nest.json"
+hash = "1b3f25f8a22a2a6360390f82019764535a3ddadfacc84c1f67190ea5c8924dc5"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/stronghold_corridor.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/stronghold_crossing.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/stronghold_library.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/trail_ruins_common_ceramics.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/trail_ruins_common_items.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/trail_ruins_rare_ceramics.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/trail_ruins_rare_items.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/underwater_ruin_big.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/underwater_ruin_small.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_armorer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_butcher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_cartographer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_desert_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_fisher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_fletcher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_leatherworker.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_mason.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_plains_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_savanna_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_shepherd.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_snowy_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_taiga_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_tannery.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_temple.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_toolsmith.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_weaponsmith.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/woodland_mansion.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/worldgen/biome/stony_shore.json"
+hash = "36006f16d5f8fb53ddcd3c5c159183c55be840e7eb81c1a6bf8c96cc450ad45b"
+
+[[files]]
 file = "kubejs/data/minecraft/worldgen/configured_feature/ore_coal.json"
 hash = "eabafd509c4331ad84a91b4e18c52704a7bbe31f26eaa93506b2626fd783676e"
 
@@ -578,11 +1406,435 @@ hash = "5b278823047fd4eefe27776d78b7c4c66b50054db4c1cd983c6d1b3cb7c88b3f"
 
 [[files]]
 file = "kubejs/data/minecraft/worldgen/density_function/overworld/temperature.json"
-hash = "f74f2a399b675a3306592ac788949bbffb0cf5df09f5c9bb42641496736b2e80"
+hash = "11109b2f73e7d273336a4849b8f1dcd59caf7f3f08a8d177ab26ae40bc00e0a9"
 
 [[files]]
 file = "kubejs/data/minecraft/worldgen/density_function/overworld/vegetation.json"
 hash = "a0bb0f6aab33fb3533a1b3e14b3b460f534efab4ce8bd26c446314a333dedae3"
+
+[[files]]
+file = "kubejs/data/minecraft/worldgen/structure_set/ruined_portals.json"
+hash = "a35b22065708675e0b217ae49fe96e6a16ed5e24188838ce1e613b0641945388"
+
+[[files]]
+file = "kubejs/data/minecraft/worldgen/structure_set/trial_chambers.json"
+hash = "b805834543debfa939fdabd5e90e5a207f5ae2b3ef306e5c586ab190be9207b8"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/buried_treasure.json"
+hash = "63e67255b31cfe9bdf4eac2f4db00c8b6f365cfe80fca7cbd8b606eab5982bc1"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/desert_pyramid.json"
+hash = "ee685ebd11d257ef8031a26435c242a7160b19c7ad64a826d33e0097bd650776"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/jungle_temple.json"
+hash = "d8db41d9fff183cd9a88b8601b8fd3259799985b3b030435acb70cab242fa040"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/pillager_outpost.json"
+hash = "80c914234ff5dd4d3ba51f73be59498a06a28feaf3fee95d5a5153781c57544a"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/simple_dungeon.json"
+hash = "0d6fe673954d10076b58cabd41ceacfb2b8fe649bb18489363230532af393637"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/stronghold_corridor.json"
+hash = "6273e7451189d695311b1cf13b5daa9cfd83e1d3e372e92c5837de70978976ce"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/stronghold_crossing.json"
+hash = "128e7538b8964699514edb2560c17ab4c941fb8d036b6de2b8d2437a4dc20f3f"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/stronghold_library.json"
+hash = "7abe5b87373f1e97cdd7444d262397e733c04437c23324bd57b0be6797baf63b"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/woodland_mansion.json"
+hash = "eea48d6f3464416687d2ee241228eadf9c0e333a85024dc350dd8c7a36094678"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/extra/copper.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/graveyard.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/graveyard2.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/manor2/loot.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/manor2/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/old_manor/common.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/old_manor/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/library/high.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/library/junk.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/library/low.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/badlands.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/cave.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/desert.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/farmer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/fisherman.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/grassy.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/jungle.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/mangrove.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/miner.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/mushroom.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/ocean.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/snowy.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/taiga.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/bandit/desert.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/bandit/desert_copper.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/boat/loot.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/farm_ruin.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/generic/bandit.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/generic/miner.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/low.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/mine/loot.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/ruin/ruin.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/settlement.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/ruin.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/swamp/loot.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/taiga/illager_high.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/taiga/illager_low.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/taiga/illager_treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/taiga/loot.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/tectonic/worldgen/density_function/noise/temperature_index.json"
+hash = "148746a456202fd0f6aca9fe44307c844f01e347989a8a0fa87d9c8978faa15d"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/desert_outpost.json"
+hash = "80c914234ff5dd4d3ba51f73be59498a06a28feaf3fee95d5a5153781c57544a"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/igloo.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/lodge_drinkables.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/mage/barracks.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/mage/extras.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/mage/small_common_flowers.json"
+hash = "53b4d15c2ca7f57bf07b40e29c8eab0151a7ff3391cade1af50132bd70fbe2a2"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/mage/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/royal_jelly.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/ruin/glacial/junk.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/ruin/glacial/main_cs.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/spire/common.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/spire/junk.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/spire/rare.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/spire/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/underground/chest.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/underground/giant_bee_hive.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/archer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/attic.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/butcher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/cartographer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/fisherman.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/food.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/generic.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/generic_low.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/junk.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/leatherworker.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/library.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/mason.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/shepherd.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/smith.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/smith/expert.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/smith/novice.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/archer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/attic.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/butcher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/cartographer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/fisherman.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/food.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/generic.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/generic_low.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/junk.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/library.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/mason.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/smith.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/smith/expert.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/smith/novice.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/tavern_downstairs.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/tavern_upstairs.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/treasure/diamond.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/treasure/emerald.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/treasure/golem.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/witch_hut.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/wythers/loot_table/chests/village/forest_ruins_big_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
 
 [[files]]
 file = "kubejs/server_scripts/coal_progression/lignite_behavior.js"
@@ -591,6 +1843,10 @@ hash = "0b149d663e273f8384185fa4d5a854235e812a6ea1ef70e199295200831f5766"
 [[files]]
 file = "kubejs/server_scripts/coal_progression/lignite_torch_recipes.js"
 hash = "6bafffe1bd78b4bc9aaacbd12f4c7ddf435e693e065aeb70b4a7cba33e0433bf"
+
+[[files]]
+file = "kubejs/server_scripts/dev/audit_nearby_chests.js"
+hash = "63c0fd01f2bcb2dc12fae2d0858d1aeec7fe90561a7f94789258981df7b61b37"
 
 [[files]]
 file = "kubejs/server_scripts/dev/strip_to_ores.js"
@@ -669,7 +1925,7 @@ metafile = true
 
 [[files]]
 file = "mods/configurable.pw.toml"
-hash = "4e762da534bb530bf8ff3ac66c1e1c5daeec419cefd576d2cd9f26adb257f5ea"
+hash = "89fa474dbb196a83ee637151ec31279f2867803c960cfda7ead1160d531da7d0"
 metafile = true
 
 [[files]]
@@ -685,11 +1941,6 @@ metafile = true
 [[files]]
 file = "mods/create-bits-n-bobs.pw.toml"
 hash = "98ee9f505ae64d27396f35e96cbd358d27a70a6d462b00af9c63960f1f6e9fe8"
-metafile = true
-
-[[files]]
-file = "mods/create-easy-structures.pw.toml"
-hash = "7663918b3ec83c43fcbd5454374b9428a7fdf0542448954d4f38007518b56795"
 metafile = true
 
 [[files]]
@@ -723,11 +1974,6 @@ hash = "38e2f3895b4a296bbe1f18bde4846e3514bd245a2a5f155db664757b6b8509f8"
 metafile = true
 
 [[files]]
-file = "mods/createbigcannons-5-11-3-dev-mc-1-21-1-build-279.pw.toml"
-hash = "02604f0c78ed02b41ee80bed7319c151ae98e9f95049516a8d38818628f736cf"
-metafile = true
-
-[[files]]
 file = "mods/createbigcannons-5.11.3-dev-mc.1.21.1-build.279.jar"
 hash = "7e9daa8ec03c4889acd323398ad4f8e42c30c085a7c63dbafaf46f08c8cb130e"
 
@@ -757,11 +2003,6 @@ hash = "0f1f88694e0bf9ac1ae08b21ee5b59824a2ff2a6d6afc839fd9356c4e26c40dc"
 metafile = true
 
 [[files]]
-file = "mods/dynamic-view.pw.toml"
-hash = "7120ce21491290ec94652960ca5dd5114e5e32f137c078c01187496b5be2c18d"
-metafile = true
-
-[[files]]
 file = "mods/encumbrance-1-0-0.pw.toml"
 hash = "6beaac024974024c84ca6228676d9921ae520f9f9cbd8dc0d7bc629cd4b07e72"
 metafile = true
@@ -782,7 +2023,12 @@ metafile = true
 
 [[files]]
 file = "mods/geophilic.pw.toml"
-hash = "4170947d7af86edf8d700f06ca86ce6da066018883f55b584943f75a0c55025a"
+hash = "34035acb2d5b1dce8259ca199711d01a5727513b15e2d362abad3ed0e36b3bc8"
+metafile = true
+
+[[files]]
+file = "mods/hopo-better-underwater-ruins.pw.toml"
+hash = "268645c22bd07aa832f8f7d999de49fcbd4559e996851f2c03310eaee1eb1665"
 metafile = true
 
 [[files]]
@@ -801,13 +2047,18 @@ hash = "cd23f7aed76a363e82f71d4e65f05f0c0681a9c1a01b1c9b0c1918b5740b28c3"
 metafile = true
 
 [[files]]
+file = "mods/iris.pw.toml"
+hash = "bad7a016fed7f4a8416f8600de5f05e38a97acc8a35ed17f18e1b0e7fdcbf96f"
+metafile = true
+
+[[files]]
 file = "mods/jei.pw.toml"
 hash = "cdd4984a4ff5c489aef8efb0c2ecffedb6b5e341f3a3ce76144f778763f46e28"
 metafile = true
 
 [[files]]
 file = "mods/jungle-treehouse-village.pw.toml"
-hash = "902bc8ab5bf624426ea1ab2817538a08226752a0d72eb777ad6dd26ec8127eb7"
+hash = "113ae3a692c98d7fc455aac08d78d5a1f32d0451f93ebf7b574dea124c7509f3"
 metafile = true
 
 [[files]]
@@ -822,7 +2073,7 @@ metafile = true
 
 [[files]]
 file = "mods/large-oak-tree.pw.toml"
-hash = "c2a8c92330ee03264de78775be7e12d3597c3910e8138a00e905007138314b9a"
+hash = "3542fadb00c91f53aeed8646ba609b5d4ae9fea59492e3b0b393f7d20389c4d2"
 metafile = true
 
 [[files]]
@@ -852,7 +2103,7 @@ metafile = true
 
 [[files]]
 file = "mods/neruina.pw.toml"
-hash = "4b56cd9dd05369b7257acf7243ef684d85e0015724fa6d92971987cf1f1f98b2"
+hash = "ee4c672784ff19c01db8b1a2df14284c80b6b06cc574f614e0d52cfb342774c6"
 metafile = true
 
 [[files]]
@@ -896,6 +2147,11 @@ hash = "f6b922752736741e222dead919491a7b59946c7424ac3b87d0ceae3f0144e149"
 metafile = true
 
 [[files]]
+file = "mods/spawn-animations.pw.toml"
+hash = "a56408940bab5b38087c562e4a8867f683c090e6cb99cc2ca50266e03973b9e5"
+metafile = true
+
+[[files]]
 file = "mods/structory.pw.toml"
 hash = "8b71ad410692583381cb1ed9bda104f06169339598d7884f649ee8f7165612c9"
 metafile = true
@@ -933,6 +2189,11 @@ metafile = true
 [[files]]
 file = "mods/veinscout-1.0.0.jar"
 hash = "e41a6d3748df811589ff0ed018746ae8dc858c6862c8e0be1a60416fa0bf7080"
+
+[[files]]
+file = "mods/world-preview-neoforged-(unofficial).pw.toml"
+hash = "15f247253ecb9ab92aa017f9b7aa2a9296835a13d1b0e4b93dcfda8424740bb1"
+metafile = true
 
 [[files]]
 file = "mods/wwoo.pw.toml"

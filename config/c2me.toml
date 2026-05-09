@@ -21,9 +21,9 @@ defaultGlobalExecutorParallelismExpression = "default"
 # References:
 # - https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Thread.html#setPriority(int)
 # 
-threadPoolPriority = 1
+threadPoolPriority = 5
 # (Default: 11) Configures the parallelism of global executor
-globalExecutorParallelism = 22
+globalExecutorParallelism = 11
 
 [fixes]
 	# (Default: true) Enforces safe world random access.  
@@ -188,7 +188,7 @@ globalExecutorParallelism = 22
 	enabled = "default"
 	# (Default: 12) No-tick view distance max concurrent chunk loads 
 	#  Lower this for a better latency and higher this for a faster loading
-	maxConcurrentChunkLoads = 4
+	maxConcurrentChunkLoads = "default"
 	# (Default: true) Whether to use compatibility mode to send chunks 
 	#  This may fix some mod compatibility issues
 	compatibilityMode = "default"
@@ -204,4 +204,4 @@ globalExecutorParallelism = 22
 	# 
 	# Defaults to 200, which is 200%
 	# 
-	chunkSendingSpeedMultiplierPercentage = 100
+	chunkSendingSpeedMultiplierPercentage = "default"

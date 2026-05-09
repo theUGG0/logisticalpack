@@ -1,0 +1,18 @@
+filename = 'world_preview-1.3.0.jar'
+name = 'World Preview NeoForged'
+side = 'client'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.3.0'
+
+[download]
+hash = '033da438205fbef55e87dd263a3254f640426729a812b768bbd47d6b734a1364373a64c2bcf3c7f34277eab2661ab95e0aeb6d1307433c86be41a8770460118b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/7kyIwfie/versions/y3St0do0/world_preview-1.3.0.jar'
+
+[update.modrinth]
+mod-id = '7kyIwfie'
+version = 'y3St0do0'

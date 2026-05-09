@@ -1,6 +1,6 @@
 filename = 'jungle_treehouse_village-1.0.0-neoforge-1.21.1.jar'
 name = 'Jungle Treehouse Village'
-side = 'both'
+side = ''
 x-prismlauncher-dependencies = [  ]
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
