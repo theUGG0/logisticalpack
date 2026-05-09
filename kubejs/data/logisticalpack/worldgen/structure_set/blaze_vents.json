@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "logisticalpack:blaze_vent",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 16,
+    "separation": 6,
+    "salt": 184729365
+  }
+}
