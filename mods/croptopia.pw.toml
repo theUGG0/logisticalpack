@@ -1,0 +1,21 @@
+filename = 'croptopia-neoforge-1.21.1-4.2.4.jar'
+name = 'Croptopia'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'croptopia-neoforge-1.21.1-4.2.4.jar'
+
+[download]
+hash = '2f03480a38c5d9113d22ae2012c69b165079c0e0'
+hash-format = 'sha1'
+mode = 'url'
+url = 'https://edge.forgecdn.net/files/7958/876/croptopia-neoforge-1.21.1-4.2.4.jar'
+
+[update.curseforge]
+file-id = 7958876
+project-id = 415438
+
+[[x-prismlauncher-dependencies]]
+addonId = '885449'
+type = 'REQUIRED'

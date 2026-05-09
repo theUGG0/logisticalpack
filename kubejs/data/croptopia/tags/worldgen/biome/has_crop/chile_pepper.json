@@ -1,0 +1,85 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "terralith:savanna_slopes",
+      "required": false
+    },
+    {
+      "id": "terralith:lush_desert",
+      "required": false
+    },
+    {
+      "id": "terralith:desert_oasis",
+      "required": false
+    },
+    {
+      "id": "terralith:red_oasis",
+      "required": false
+    },
+    {
+      "id": "terralith:brushland",
+      "required": false
+    },
+    {
+      "id": "terralith:arid_highlands",
+      "required": false
+    },
+    {
+      "id": "terralith:rocky_shrubland",
+      "required": false
+    },
+    {
+      "id": "terralith:lush_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:mirage_isles",
+      "required": false
+    },
+    {
+      "id": "terralith:skylands_summer",
+      "required": false
+    },
+    {
+      "id": "minecraft:badlands",
+      "required": false
+    },
+    {
+      "id": "minecraft:desert",
+      "required": false
+    },
+    {
+      "id": "minecraft:wooded_badlands",
+      "required": false
+    },
+    {
+      "id": "terralith:gravel_desert",
+      "required": false
+    },
+    {
+      "id": "terralith:white_mesa",
+      "required": false
+    },
+    {
+      "id": "terralith:hot_shrubland",
+      "required": false
+    },
+    {
+      "id": "terralith:ashen_savanna",
+      "required": false
+    },
+    {
+      "id": "terralith:bryce_canyon",
+      "required": false
+    },
+    {
+      "id": "terralith:desert_canyon",
+      "required": false
+    },
+    {
+      "id": "terralith:desert_spires",
+      "required": false
+    }
+  ]
+}

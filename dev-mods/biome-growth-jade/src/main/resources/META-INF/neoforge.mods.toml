@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "biomegrowthjade"
+version = "1.0.0"
+displayName = "Biome Growth Jade"
+description = '''Adds a colored climate verdict line to Jade tooltips when looking at Croptopia crops.'''
+authors = "fatcrackle"
+
+[[dependencies.biomegrowthjade]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.biomegrowthjade]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.biomegrowthjade]]
+modId = "jade"
+type = "required"
+versionRange = "[15,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.biomegrowthjade]]
+modId = "croptopia"
+type = "optional"
+versionRange = "[4,)"
+ordering = "NONE"
+side = "BOTH"

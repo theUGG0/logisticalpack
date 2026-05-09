@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "terralith:orchard", "required": false },
+    { "id": "terralith:lush_valley", "required": false },
+    { "id": "terralith:lush_desert", "required": false },
+    { "id": "terralith:mirage_isles", "required": false },
+    { "id": "terralith:warm_river", "required": false },
+    { "id": "terralith:savanna_slopes", "required": false },
+    { "id": "terralith:blooming_plateau", "required": false },
+    { "id": "terralith:skylands_summer", "required": false },
+    { "id": "terralith:skylands_spring", "required": false }
+  ]
+}
