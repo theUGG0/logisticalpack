@@ -1,6 +1,6 @@
 filename = 'big_oak_tree-1.0.0-neoforge-1.21.1.jar'
 name = 'Large Oak Tree'
-side = 'both'
+side = ''
 x-prismlauncher-dependencies = [  ]
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

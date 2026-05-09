@@ -1,0 +1,16 @@
+{
+  "center": {
+    "x": -96,
+    "y": 320,
+    "z": 8448
+  },
+  "quartExpand": 1,
+  "quartStride": 4,
+  "samplerType": "SINGLE",
+  "dimension": {
+    "namespace": "minecraft",
+    "path": "overworld",
+    "cachedString": "minecraft:overworld"
+  },
+  "hideAllStructures": false
+}
