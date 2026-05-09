@@ -14,3 +14,13 @@ config/spark/tmp*
 .cache/
 # auto-generated python bytecode cache
 __pycache__/
+
+# JEI per-world state (bookmarks, filter history)
+config/jei/world/
+
+# Generated cache files
+config/world_preview/missing-colors.json
+
+# Per-installation client UI preferences (NOT pack settings)
+config/creativecore-client.json
+config/solonion-client.json

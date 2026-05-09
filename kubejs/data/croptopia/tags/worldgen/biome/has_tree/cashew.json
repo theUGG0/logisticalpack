@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "terralith:tropical_jungle", "required": false },
+    { "id": "terralith:lush_valley", "required": false },
+    { "id": "terralith:mirage_isles", "required": false }
+  ]
+}

@@ -1,0 +1,18 @@
+filename = 'PileOfRocks(NEOFORGE)V5.0.jar'
+name = "Biome Improvement (Mindthemood's Pile of Rocks)"
+side = 'server'
+x-prismlauncher-dependencies = [  ]
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'PileOfRocks(NEOFORGE)V5.0.jar'
+
+[download]
+hash = 'b0f9d86ed38f711b574430c59a8ce9ddd309a083'
+hash-format = 'sha1'
+mode = 'url'
+url = 'https://edge.forgecdn.net/files/5855/443/PileOfRocks(NEOFORGE)V5.0.jar'
+
+[update.curseforge]
+file-id = 5855443
+project-id = 637377

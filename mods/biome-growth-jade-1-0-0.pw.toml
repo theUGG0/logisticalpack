@@ -1,0 +1,9 @@
+filename = 'biome-growth-jade-1.0.0.jar'
+name = 'biome-growth-jade-1.0.0'
+side = 'both'
+
+[download]
+hash-format = 'sha512'
+hash = 'f7692d79dc0ae432f791caf78efee89f75501ffe52fcfd8d4773a897977cb1096646cb3eede6bc94db41cd90c3ecb0d99eef57ce3fb4d7795f10ce7e23de5bde'
+mode = 'url'
+url = 'https://raw.githubusercontent.com/theUGG0/logisticalpack/main/mods/biome-growth-jade-1.0.0.jar'

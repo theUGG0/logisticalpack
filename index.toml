@@ -6,7 +6,7 @@ hash = "db9e723f66651ef671f89113f10d07f434d306e6fdc714c35d2f3423b81d1b25"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "b4f1f1ed211746010e5ad12e2a77c5eb34eb00134300af319b0a66a9a446fe9f"
+hash = "448683e98407934ae989839fbec054712184bd34d7adbdd92fd5e2e9e36cc266"
 
 [[files]]
 file = "config/aeronautics-server.toml"
@@ -26,7 +26,15 @@ hash = "fc6b87d500994353673065c6fde9f6dabb0e6b1c61a9db86e2a69d90a57ffb7e"
 
 [[files]]
 file = "config/c2me.toml"
-hash = "bcb387d02a37c1ab7db3c584060aade28d2cca199941ac23154fcbe3ca01c498"
+hash = "b80c81f898fca2e685641f05add62630e1e18b4d0c97ddeb0c790b05e2751922"
+
+[[files]]
+file = "config/chunky/config.json"
+hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
+
+[[files]]
+file = "config/chunky/tasks/minecraft/overworld.properties"
+hash = "e215cb0fbff633a12d2e30308dda80037f672936ca977b20bb63ebc504d70ca7"
 
 [[files]]
 file = "config/connectivity.json"
@@ -61,8 +69,124 @@ file = "config/createbigcannons-server.toml"
 hash = "ffa79d44e4dc4407cebb841058b5fde911566fd5c0d0b8869f1374e254eb98ca"
 
 [[files]]
+file = "config/creativecore-client.json"
+hash = "acb6c8c1394d4d6f2d0c98d5c314c5ef8ad34b8a76f0a420fc596733bcbc51ac"
+
+[[files]]
+file = "config/creativecore.json"
+hash = "5f08d0878d7f89c6b4c947a49dce368d7738255d44fecf9aad59ec6ae8a4fcef"
+
+[[files]]
+file = "config/cristellib/ats_more_animals_mod/structure_placement_config.json5"
+hash = "ec8fde7a9de9f4ef9c2fa95c6bb716492052aa4b979c2bb3f08b092bd76c61fd"
+
+[[files]]
+file = "config/cristellib/ats_more_animals_mod/structure_toggle_config.json5"
+hash = "54d8331a885f785211e4b3f710883df3d6afd51c929b23172f0b4ca935906168"
+
+[[files]]
+file = "config/cristellib/auto_config_settings.json5"
+hash = "799173b66094a241753f41af672ddf22921ca206cb88f1966d31960c89c3f99a"
+
+[[files]]
+file = "config/cristellib/big_birch_tree/structure_placement_config.json5"
+hash = "82f1c7cadb119c58e1e5dd2e95744e7558b12279cd5857859afbac988df6c700"
+
+[[files]]
+file = "config/cristellib/big_birch_tree/structure_toggle_config.json5"
+hash = "b76ae945b41bf96c1f0a54f1a562bf2e0963f5ea4bc2ce5f514f6caa7994f216"
+
+[[files]]
+file = "config/cristellib/big_oak_tree/structure_placement_config.json5"
+hash = "147d9a79ba995446a9fea6878417e5ac02cb99e96049c8bae95af076d2783a19"
+
+[[files]]
+file = "config/cristellib/big_oak_tree/structure_toggle_config.json5"
+hash = "5f80af102d452bbdc93ccc5dd2af9438c5e3ae20625ed458cb2f9af8cae9ccdb"
+
+[[files]]
+file = "config/cristellib/built_in_packs.json5"
+hash = "f1be3df3751749fc4f475c886553f4b6b998c1a9f68f7ec33ddebe6909bffb14"
+
+[[files]]
+file = "config/cristellib/create_easy_structures/structure_placement_config.json5"
+hash = "57596f405a8d4f34f5b0a38186c82c394e94b3b7619d167d4f9998d2640fd9d9"
+
+[[files]]
+file = "config/cristellib/create_easy_structures/structure_toggle_config.json5"
+hash = "cbc6417b03c5de43d7080528151ebf8cfacfa1d8e0fd8eb5af10b140985cb990"
+
+[[files]]
+file = "config/cristellib/create_rustic_structures/structure_placement_config.json5"
+hash = "eb3d40104dfdd24e2816ca41678622d762cb2514f93cc2ca9d41b16d918a1056"
+
+[[files]]
+file = "config/cristellib/create_rustic_structures/structure_toggle_config.json5"
+hash = "6dc5f97ba898d585a2e1d8a6437041aaaaa30d9c8a44aed7eedc562e61ff41bb"
+
+[[files]]
+file = "config/cristellib/explorify/structure_placement_config.json5"
+hash = "a246410de17822748dbb20b11773c9fab60484bdc5fb924c0785a39c486f2a92"
+
+[[files]]
+file = "config/cristellib/explorify/structure_toggle_config.json5"
+hash = "91937c0505d28dd9d9d41f11c8b0df04c8b106fac3746d72087a959f81a18e1e"
+
+[[files]]
+file = "config/cristellib/hopour/structure_placement_config.json5"
+hash = "688d5f367d1363a17879cb648511c32737ed1a3085f191fdf74c9419ff47c00c"
+
+[[files]]
+file = "config/cristellib/hopour/structure_toggle_config.json5"
+hash = "b5d58407e41ffe92ae270e9fe7ecce4bc7db76c3c3142202540186efc8556e60"
+
+[[files]]
+file = "config/cristellib/jungle_treehouse_village/structure_placement_config.json5"
+hash = "50215c82e024b5046484711634b3593008ab20833a3db1a8a70c3ec45b5fd8b5"
+
+[[files]]
+file = "config/cristellib/jungle_treehouse_village/structure_toggle_config.json5"
+hash = "455f058e12c927a1325fdde31450956f8830c20c533b7b115603e9466870fa7e"
+
+[[files]]
+file = "config/cristellib/plants_and_rocks/structure_placement_config.json5"
+hash = "685efccfb9e45ba8adbaf92bded7430e094493cb29ebd57eaa512c274021233e"
+
+[[files]]
+file = "config/cristellib/plants_and_rocks/structure_toggle_config.json5"
+hash = "9059f9f17434ef22e899cce26b8140201c50ab0f98480bbb28224ec74253e3d3"
+
+[[files]]
+file = "config/cristellib/spawn/structure_placement_config.json5"
+hash = "b343466607140e453d501996d67d4ad17ecad7467c32b8982360e23339eb0057"
+
+[[files]]
+file = "config/cristellib/spawn/structure_toggle_config.json5"
+hash = "59c689340cb86a170856783dc2b6406d1ee2d6a88567c15c3fd1432acb8e01f0"
+
+[[files]]
+file = "config/cristellib/structory/structure_placement_config.json5"
+hash = "0eab3d6c98dd4eedbe4dce5a4fc4596d1d060876bc20bbe60e069ab5ae61df0c"
+
+[[files]]
+file = "config/cristellib/structory/structure_toggle_config.json5"
+hash = "a33903592feb8a1e1fd0a4fe0adf4ef72efbb4832330c9500db0fb2910abd287"
+
+[[files]]
+file = "config/cristellib/terralith/structure_placement_config.json5"
+hash = "777e236cc299321f8e51f96238bd01be855699cf72aa7520b30d32ad8edb7367"
+
+[[files]]
+file = "config/cristellib/terralith/structure_toggle_config.json5"
+hash = "b2b1510673394f1558f80f11c479a7619414a91691139a5cc43d5e3b3d233da1"
+
+[[files]]
 file = "config/cupboard.json"
 hash = "937698438af081495eebab187013f66570218e1443f35db8a2ca0b4cb6d9638b"
+
+[[files]]
+file = "config/dynamicview.json"
+hash = "305841828cd7218dd650fc2f48f01039cbfb8a914143cd79ffe11f96f31888fd"
 
 [[files]]
 file = "config/encumbrance.json"
@@ -85,6 +209,34 @@ file = "config/immediatelyfast.json"
 hash = "a6c9d147a51c9e432c5c74c00285cfc5ba8b6fa4a0c6686051a7168b158d0d7a"
 
 [[files]]
+file = "config/iris-excluded.json"
+hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
+
+[[files]]
+file = "config/iris.properties"
+hash = "46d96efb21e34b6940283033a6d22352f8ae5145547cea2aeb05bafc6a4f31a8"
+
+[[files]]
+file = "config/jade/hide-blocks.json"
+hash = "309df4ae96864c19eae41b646d58497c85a73b1fc3c584e772ef4d5822794baa"
+
+[[files]]
+file = "config/jade/hide-entities.json"
+hash = "3741bb54a4535fb5a00fb0ee1f4386f3dd17834aebdf9e89c21fcd3307109709"
+
+[[files]]
+file = "config/jade/jade.json"
+hash = "f9f68a1557cdfab8394d2f4b54a2756d96451dcdddea4f5e04cb912b516ffa05"
+
+[[files]]
+file = "config/jade/plugins.json"
+hash = "252781a9860ee241ed889f1780e7d1a0147322a003e7508a2a48a583d270fe0f"
+
+[[files]]
+file = "config/jade/sort-order.json"
+hash = "2dc6f3a52bdd8d070a1d2a4463ca0aa07d0ffc41e1d087ba38288ad6430460d4"
+
+[[files]]
 file = "config/jei-server.toml"
 hash = "702acd04d99445bce659d04fcc488e1a98c8a803983c31ae262b0f3a47fdc8d3"
 
@@ -94,7 +246,7 @@ hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
 file = "config/jei/ingredient-list-mod-sort-order.ini"
-hash = "b1a98ecff2b57ba23694fbb0dc25fb4be133b21fa78f80e384f37fb6760c06c3"
+hash = "d81eda8cec24497ffb8cd2e973d518762fee94801151321972c18cc85879f3aa"
 
 [[files]]
 file = "config/jei/ingredient-list-type-sort-order.ini"
@@ -137,8 +289,20 @@ file = "config/jei/world/local/New_World__4/lookupHistory.json"
 hash = "df6c92c6c19509761043ea9f1a02e73f2af493760fcff0836caa89786df9062c"
 
 [[files]]
+file = "config/jei/world/local/New_World__47/lookupHistory.json"
+hash = "529c401c5860e5799914117adb178b26efb43c9347ffb5e92b233270e66bf0c1"
+
+[[files]]
+file = "config/jei/world/local/New_World__48/lookupHistory.json"
+hash = "24e3293b28d3bcfd602caf4ab9357ebb9c68e4bcf117f7bac73ef70288c5f164"
+
+[[files]]
 file = "config/jei/world/local/New_World__5/lookupHistory.json"
 hash = "4c9e94599849778a2ce2528d487598258a7660772da53bf343e9b872993ba68c"
+
+[[files]]
+file = "config/jei/world/local/New_World__68/lookupHistory.json"
+hash = "7bd937588fcec6c047d17a54efd0c2fcb5d32e5c6c2d0cb8a6e8003a2d922bb6"
 
 [[files]]
 file = "config/jei/world/local/New_World__7/lookupHistory.json"
@@ -170,7 +334,7 @@ hash = "5eaff93c32b67e5016d4076d42a3bd3175804bce0e06b6c487331aa32ca525bf"
 
 [[files]]
 file = "config/naturaltemperature-common.toml"
-hash = "11bd843653468a9df90d230d82758c7adb1d117b7465cfedbdc91f5869c9322d"
+hash = "fcd559dbd3dc40c9c5b25dccee91226da42704d085469206240e3b297309146f"
 
 [[files]]
 file = "config/neoforge-client.toml"
@@ -185,6 +349,10 @@ file = "config/neoforge-server.toml"
 hash = "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f"
 
 [[files]]
+file = "config/neruina.json5"
+hash = "bfa343775801d4708d39e86b5fa4893a18185f190f2799a8b6ad828e96027073"
+
+[[files]]
 file = "config/offroad-server.toml"
 hash = "d5f0ed8390618c769d9cb40a77df04779b7bbe636343b753c1ed6f92d325ae2b"
 
@@ -193,32 +361,16 @@ file = "config/ponder-client.toml"
 hash = "55affffe67e84dfe11e590769e235aee999b77f9484a3adf7ee8247a9f3d35ba"
 
 [[files]]
-file = "config/radialbiomes/main.json"
-hash = "bf4f43f93d1742ff5e65f2aa7267d503474c090effa9eef2943b1f478e73c30f"
-
-[[files]]
-file = "config/radialbiomes/tiers/tier_0_spawn.json"
-hash = "6386f373658d719a38b2f9a3a509bc5e4326ec7531074a8ab1fde6808bb7ad28"
-
-[[files]]
-file = "config/radialbiomes/tiers/tier_1_temperate.json"
-hash = "4372d4de471afa372c7af597ccc9929efdfc00cb0f71645e3884381c3ec5627e"
-
-[[files]]
-file = "config/radialbiomes/tiers/tier_2_exotic.json"
-hash = "c45536eda47a2edf44baf28667dd6c06c6b2b2432cc2511ab99851291de8e6ac"
-
-[[files]]
-file = "config/radialbiomes/tiers/tier_3_extreme.json"
-hash = "cde99db2e2c7d2d3710d2ab169527ac149a24ca52e3f25e31029209207c007f6"
-
-[[files]]
 file = "config/resourceful-config-web.json"
 hash = "275db2836a999c61f456435d256132d7f74ec9e5c12c853c59e9048c4bd54d4a"
 
 [[files]]
 file = "config/ritchiesprojectilelib-server.toml"
 hash = "793c05c7f9975032f536f7b9702a4f892b8beb31e641af1f12ee9c96aed4d013"
+
+[[files]]
+file = "config/rocks-common.toml"
+hash = "7410195f3a54acc2b208f64c479ca48f666acf079e9d05832e36c7bd3e3b99d7"
 
 [[files]]
 file = "config/sable-client-1.toml.bak"
@@ -282,7 +434,15 @@ hash = "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01"
 
 [[files]]
 file = "config/sodium-options.json"
-hash = "445a55bccce87dd8467f3265d1572827e8778e873e3bb70290adf0bb8a811e96"
+hash = "193bf962cedc759607f0883abd70c3dbc331eb9bf26a0a8cfb0125099396cb3c"
+
+[[files]]
+file = "config/solonion-client.json"
+hash = "3b25083488df1b392b417e202ade95037aee601ff4a564067c2b1d67fff60aa0"
+
+[[files]]
+file = "config/solonion.json"
+hash = "105d00b0b515d8fff493d00768d95cc41d35d4ac24e08b075eebe2fae16b8f9f"
 
 [[files]]
 file = "config/spark/activity.json"
@@ -301,12 +461,20 @@ file = "config/spark/tmp/about.txt"
 hash = "d7514c0ddb6ae8611a281527bf04ca6cbcea1fa21758534fdcd08ed0f51c19c0"
 
 [[files]]
+file = "config/spawn-client.toml"
+hash = "6f9b4ad83c77b078ce752db8a472b69f13e93488cba2ce0c7e919cf32f9b4d6f"
+
+[[files]]
+file = "config/spawn-server.toml"
+hash = "d8221a51171524f9c2924f85a5ebee4c57753b53090ac43d6ad058d7989e1b44"
+
+[[files]]
 file = "config/structure_layout_optimizer.jsonc"
 hash = "5a9058652bc0b88b8810e0b94eba0e1a90cbff2472845c53a7e67442682a1579"
 
 [[files]]
 file = "config/tectonic.json"
-hash = "c82855fc958c2ba9f1d785ce8739bb421db4c37d88a63d5094fd66da8ff269e7"
+hash = "cabd6bf77f6c625de3e83aa90ea86fb83cec030ca321f28ca13b070d22a4328a"
 
 [[files]]
 file = "config/tfmg-common.toml"
@@ -321,12 +489,316 @@ file = "config/towed-server.toml"
 hash = "45ed9eb108975b6d95e4a053d80d573ecbf0c40327bca42e9b72d559c4c2021e"
 
 [[files]]
+file = "config/towns_and_towers/structure_enable_or_disable_new.json5"
+hash = "7c70e7df82d014a87dcb2defcf45d9654a22362283c7efe1f81f3b3c04290709"
+
+[[files]]
+file = "config/towns_and_towers/structure_rarity_new.json5"
+hash = "fe4ca0974aca38b27c94e3f1dc092f1688b54f27d9eaa728d61c6ccae4ca1313"
+
+[[files]]
 file = "config/tracks-server.toml"
 hash = "5670de4aa967e03b3ccdc4feb44e9f68656204051b68cac5ec993d349036afdf"
 
 [[files]]
+file = "config/vanilla_structures/placement_structure_config.json5"
+hash = "1f069468e438ae66f65ee41732603c895741b063add626a9e56ef7d0040ac4e6"
+
+[[files]]
+file = "config/vanilla_structures/toggle_structure_config.json5"
+hash = "c4fb220488de3c1afc569f4b8a89d8e97f8b5504eeb59d9700b491f29718d2f9"
+
+[[files]]
 file = "config/veinscout.json"
 hash = "8e127099d2cb2b38c2d4d6b2d343268b6b0edfe072202b5a4e22756e6bbf23d2"
+
+[[files]]
+file = "config/world_preview/biome-colors.json"
+hash = "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+
+[[files]]
+file = "config/world_preview/config.json"
+hash = "0355f85dcf31fa89f0cff47df95858cddf2feb9fa0f175642573a02f1fbe6dff"
+
+[[files]]
+file = "config/world_preview/missing-colors.json"
+hash = "c6f1263aabb0c5c8d124f1f62605e9c46bd71956441afaab113c292c5004d4a7"
+
+[[files]]
+file = "config/world_preview/missing-structures.json"
+hash = "b7f832bf4f0371830426e78af9a011e6444998c04269ac75f96aead61b707cb7"
+
+[[files]]
+file = "config/world_preview/renderConfig.json"
+hash = "5a44efa9a81c0c394f9a743b8212e489a86695835ab737775632ac8c562827c2"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/8.10/checksums/checksums.lock"
+hash = "5f2aaa5300d15daca2a8be8eb7c28cf961fb28b76ca1a27b414b32b647039daf"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/8.10/checksums/md5-checksums.bin"
+hash = "725bc7f8a105c581951d97ecfa69e61cbefcc45ccafe28e40381be72db50c803"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/8.10/checksums/sha1-checksums.bin"
+hash = "a9426de447408afb3639512a1fe5dc5c00e3ab1703ca1f4d9e819fbe098ecb3b"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/8.10/dependencies-accessors/gc.properties"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/8.10/executionHistory/executionHistory.bin"
+hash = "1251dd14a6a08f94e73257cd37f63a912bf441423b95761b7690127625fadccd"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/8.10/executionHistory/executionHistory.lock"
+hash = "c247fd183abcaa4aad552a5ff358679bca69d9c1383c40b467f067a44b60a5fc"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/8.10/fileChanges/last-build.bin"
+hash = "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/8.10/fileHashes/fileHashes.bin"
+hash = "b2abba88d4311e9bd5486fc9b9985d39cbe92a38604dc338f2cac7cb733cee09"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/8.10/fileHashes/fileHashes.lock"
+hash = "6e0cb98aabe14684d39a14844ae788bbeaa728b77547be27341e495cafb724ea"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/8.10/fileHashes/resourceHashesCache.bin"
+hash = "15d0ec75fa558009e2390f997b973182015c491e8cba9471726cb3eb06f25d21"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/8.10/gc.properties"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/buildOutputCleanup/buildOutputCleanup.lock"
+hash = "5ab73281c0f58e778a3acfe8b7e982d0ea5e0773df71835f8e591a7c3a40a067"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/buildOutputCleanup/cache.properties"
+hash = "ba50f13c09262158fd7e5215c081bb1f2796a4c4427500f52b8b68a736d46d37"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/buildOutputCleanup/outputFiles.bin"
+hash = "88a71405046b95f7d72319f98a5e738c87aa24f1b074b02164f5feeffef3a9cb"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/.gradle/vcs-1/gc.properties"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build.gradle"
+hash = "025869eff67cc72861c1657864591db45b0f4fd67695b07cb586b2e2eb8a374a"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/BiomeGrowthJade.class"
+hash = "bdfd4711aa02974e2be24d43cd13a23f4e8accd195e3a0d54d9e279455be41db"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/CropGrowthProvider$BucketTags.class"
+hash = "b3e349c6329c6fab58ea52fff43275e7b54626207f77c306c34ddccb1d414faa"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/CropGrowthProvider$StateInfo.class"
+hash = "9890e975e833acb1ed8c812fcc7df922cf8ca1d035dfede97490ba426302da9d"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/CropGrowthProvider.class"
+hash = "6d435a2c6d4035f8556d806fff96a65e92bb2d8cdef4d680f483fdb4f9ecd759"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/DeadBushProvider.class"
+hash = "d438fe1e7c6e0e7d730fb8fb85b09a9acda0ddf01835c6408ccd5035cc6be506"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/DeathRecord.class"
+hash = "d6f9c1fd69b9fa434857385807c5e42dc4380b693214412e943522defa6d7881"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/DeathRecords.class"
+hash = "8159fc6cbe13d3f9acad15be87e5906c02ae4afda57c675b15be09587fa906b9"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/JadePlugin.class"
+hash = "682c1a585fbd74616d9676fbd0927a20d68d1a24dc1476b4096250e66cc4092d"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/libs/biome-growth-jade-1.0.0.jar"
+hash = "222ef2e35a65e5abffc8aff598db4b9fb33ed7b87523a82e763d2a5608c26851"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.221-minecraft-merged.jar"
+hash = "b70af1423267b54afc4a91f871eba7161d38594c58d08c81f47689cca203c90b"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.221-minecraft-resources-aka-client-extra.jar"
+hash = "a390ae8f2e8a8417fad5e5c0f915ef830ab9d4bbb3980500a23831dea327cbdc"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.221-minecraft-sources.jar"
+hash = "ed1a04ef1a94bd0ab0a5826f7f5e523566886bc08929c3e1bfc8c4996193a386"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.221-minecraft.jar"
+hash = "2c892d549918a1f43c7678e842c56253775459cf6c4f4e613d54a9164e8d8dfa"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.95-minecraft-merged.jar"
+hash = "a459420a2f173d035e59e08c504f043c26ea141d38822f8c29e3fe382751e313"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.95-minecraft-resources-aka-client-extra.jar"
+hash = "a390ae8f2e8a8417fad5e5c0f915ef830ab9d4bbb3980500a23831dea327cbdc"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.95-minecraft-sources.jar"
+hash = "e5a5ce45b486e7c953daeea9eaf7d4e4a44beb9694f2c6875b9b9f6b155bbdee"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.95-minecraft.jar"
+hash = "86998271331fe3a429ba0203b4d20ec9633f4a89e7ab632e048a41b4ae350be0"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/moddev/nfrt_artifact_manifest.properties"
+hash = "18d5c8b75ac564afff535a74f04463d9d460882624bf3f0bdc8aebd591bb8360"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/resources/main/META-INF/neoforge.mods.toml"
+hash = "4e603f8e6cbaa290497d03fd54be4eb6cd8a196b2ac1db61fb1ad00be6a20237"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/resources/main/pack.mcmeta"
+hash = "b573a87d4059e42a994115b3f00eebf1a3c6ff4db66c6d1dffd72fba7d177e1e"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/compileJava/compileTransaction/stash-dir/CropGrowthProvider$BucketTags.class.uniqueId1"
+hash = "b3e349c6329c6fab58ea52fff43275e7b54626207f77c306c34ddccb1d414faa"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/compileJava/compileTransaction/stash-dir/CropGrowthProvider$StateInfo.class.uniqueId0"
+hash = "9890e975e833acb1ed8c812fcc7df922cf8ca1d035dfede97490ba426302da9d"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/compileJava/compileTransaction/stash-dir/CropGrowthProvider.class.uniqueId2"
+hash = "e18a7065c0b44f0682c97a6ce3da845e1bc2f556b27d5272ca002412e191d3f8"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/compileJava/compileTransaction/stash-dir/JadePlugin.class.uniqueId3"
+hash = "682c1a585fbd74616d9676fbd0927a20d68d1a24dc1476b4096250e66cc4092d"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/compileJava/previous-compilation-data.bin"
+hash = "cf87b8dc8860cd58747f46a6070f91bd898ca756e4f88cf482bbc8f5976c5d0e"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/jar/MANIFEST.MF"
+hash = "566ad1a80220026d05099562645ce968ff0e7c36cde22634332605bb34cc3eff"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202504_extractServer/console_output.txt"
+hash = "419b6c8e09f9b3b59a14fa029ca2f549508d914d01e000cc341ed55cd4ee9b90"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202504_mergeMappings/config/joined.tsrg"
+hash = "8081431dcb7c2428db07582db7135be739fa50b123103b3eaf14b2ae16ea37a6"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202504_mergeMappings/console_output.txt"
+hash = "3c56fd85654564bd05122b0840d7f8387b2df77101f9b2c72cc7cddffd08d6cf"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202505_merge/console_output.txt"
+hash = "71067d9bb10da559c428002f40522d3425f017f88d9b22a26630853c3792dfbd"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202506_rename/console_output.txt"
+hash = "a3d87dc40261ed2bdb098a5992a94a226d1ed52c62851198317cef68e8729cdf"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202508_decompile/console_output.txt"
+hash = "81eebf02c363519bb1af5a4de920e3fc83064763ac9bef2b23df54af0bcd53c7"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202522_patch/console_output.txt"
+hash = "6dbc23b95f9f04dee1a6c45cba1f2263ac3f17f4c4607f8a3e7599c19efa9ed4"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202523_applyNeoforgePatches/console_output.txt"
+hash = "206310fcce7ef20a626bf2077ae33bc3fed4a4e5a6b0a19c4234c3823f63aa58"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202523_transformSources/ats/_script_neoforge.cfg"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202523_transformSources/ats/accesstransformer.cfg"
+hash = "71280d5941debd450e726691809d0101008326ba229580563dc277760b8abcc6"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202523_transformSources/console_output.txt"
+hash = "4c93ae6fdf3bc309b9737b0882af2e5e9e44f7f6f0814dea32b244d1f3a6884b"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-232642_applyNeoforgePatches/console_output.txt"
+hash = "75c11a4cc91255ba2ad26ea8ee651a0266d9f3b4856320af40dba89d8870e3fc"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-232643_transformSources/ats/accesstransformer.cfg"
+hash = "d43403e1d9930ca4e5a5c1788bdf46b688b3ae5acd3d4c61ff16f7bcd22840be"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-232643_transformSources/console_output.txt"
+hash = "883bb3244cf21eb449e9b45071311ce9f9ad51a6616e0b87d2675853f76dd386"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/gradle.properties"
+hash = "0f79be478ac1d147fc6086fce9c195cfb92620123dae4838ddc68db94f40d0ad"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/libs/Jade-1.21.1-NeoForge-15.10.5.jar"
+hash = "067bb4b007e1d6f6b79f0afe99c91252aa825472b99a76d33a60d24442f9e92d"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/settings.gradle"
+hash = "9dccc7204a71bdc11d60c1c38c70fd4edaee611316ec860a1bb2cf9f377973c7"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/src/main/java/com/fatcrackle/biomegrowthjade/BiomeGrowthJade.java"
+hash = "b3ce85ee9f6eec4ad7d00d90b67d2f385352862f99867d2afe42a077cc310d8e"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/src/main/java/com/fatcrackle/biomegrowthjade/CropGrowthProvider.java"
+hash = "38a7c8efd50b898826db39a57f4a19c43010fd69e0da7cfa6c2c3a3846ec0fc3"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/src/main/java/com/fatcrackle/biomegrowthjade/DeadBushProvider.java"
+hash = "80edb90e4d2d7060960b087ef330dc53837f972afb485cc0389fb0b1e59c0bbf"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/src/main/java/com/fatcrackle/biomegrowthjade/DeathRecord.java"
+hash = "fea69c48dcb721ef82a2915873777631b475ed5d251a3103a43e54526d703e87"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/src/main/java/com/fatcrackle/biomegrowthjade/DeathRecords.java"
+hash = "03c7d0ef41b1858e9e3c31e034e770e34cfded29555a6474ed2b641c3a475ff3"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/src/main/java/com/fatcrackle/biomegrowthjade/JadePlugin.java"
+hash = "3cda77276cc2d3aa3ba55b77ecb3c7193a36e4e90dd90d9ced5e278e104bfa80"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/src/main/resources/META-INF/neoforge.mods.toml"
+hash = "4e603f8e6cbaa290497d03fd54be4eb6cd8a196b2ac1db61fb1ad00be6a20237"
+
+[[files]]
+file = "dev-mods/biome-growth-jade/src/main/resources/pack.mcmeta"
+hash = "b573a87d4059e42a994115b3f00eebf1a3c6ff4db66c6d1dffd72fba7d177e1e"
 
 [[files]]
 file = "kubejs/README.txt"
@@ -345,6 +817,10 @@ file = "kubejs/assets/logisticalpack/lang/en_us.json"
 hash = "b9b7a05be83a2309458da5137f4d7ce59a2ff99911b03cdd51c149cc69eb66f8"
 
 [[files]]
+file = "kubejs/client_scripts/biome_growth_tooltip.js"
+hash = "3ec79773903735bc230b9e0e0f0cc2fb71031fb7e8cd990018463d343ef5af53"
+
+[[files]]
 file = "kubejs/client_scripts/main.js"
 hash = "3df46f0add819bf2602642215b5c62f0581ffdaaf97e77c80a8c4d966e05adcf"
 
@@ -361,20 +837,1160 @@ file = "kubejs/config/web_server.json"
 hash = "838937620dda444857732189a1e26401a2b97e447b3c8738bc2693584f0006b0"
 
 [[files]]
+file = "kubejs/data/create_easy_structures/loot_table/chests/common_chest.json"
+hash = "85a5892893e139c7a5e060b3e46a069326a0222a0a7277459dac1843050670b6"
+
+[[files]]
+file = "kubejs/data/create_easy_structures/loot_table/chests/epic_chest.json"
+hash = "7e74e7dafb13070d95f19645350157b71dbecf711bf1b1e6835f0a51b8805e45"
+
+[[files]]
+file = "kubejs/data/create_easy_structures/loot_table/chests/rare_chest.json"
+hash = "35f900d61d67d9003b2f1e87ea0dc09f46c352405b707eb72fed614270a0d89f"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/artichoke.json"
+hash = "69a59b7b08fc3448b67231157e7bac939756a1cbfd48b4d6bad419d24ff0812b"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/asparagus.json"
+hash = "14cc072c137fb8f8815203f9957dc451bae5f9048c08ed86538e1b1f7bc0b1da"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/barley.json"
+hash = "e6c106073438188b5720ebcada9ee1b78c3ac0bdbc6de0a6dde6d61f5a63469b"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/basil.json"
+hash = "900e99acc860dbb78457dbcad441f3179b9a471e0663be1d330f607202bf7d15"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/bellpepper.json"
+hash = "7e7f074d6783eeecf4de3954057e2046534b1e40d87ced5102d72173ee1d71dc"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/blackbean.json"
+hash = "b084200566431c956ff5fd3b0c216173413bff110a6de802bce20205cd65fe1c"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/blackberry.json"
+hash = "de22d34ff2f37f146dd42048f235510bdbb3a73dbfacb79f73789032377f2b13"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/blueberry.json"
+hash = "1e4d82ef9cddaff409276f4a2251d6e3c9346c3255f8b38a84b5d5616ce301bb"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/broccoli.json"
+hash = "253edadc49cabfb34b26ce429f93e9db0223d091d417ea6bed1858041f5d14b2"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/cabbage.json"
+hash = "8b8801c7c52bd4df35701cab64174aaefd159efdc4d398908cd1b740885e09ae"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/cantaloupe.json"
+hash = "58db039ba5d59f2b1b8dc0be0e598c725e8dc9e35ce769fb9fa6b11ea1707ebb"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/cauliflower.json"
+hash = "8abb35ad1cd013ef90b18d3f475e7b5e2d0054f723c6a9832b955d02ae5f931c"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/celery.json"
+hash = "8ac8a8515b551cd0cfb61a797008499877c6b906c603e375fd643fb16d593ef5"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/chile_pepper.json"
+hash = "f33b710825e5b8d2de65b4b8e53ae65dd89f8c03c222431d2d8c40825ba7b3df"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/coffee_beans.json"
+hash = "8791bdc1ee7d996dd8276a4fbaa794d80d8e7ed1e364de8079b6160e45938cd4"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/corn.json"
+hash = "93591cefa0ad159bc6335e98d1231f416026b436933b6561519fb79897d564ba"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/cranberry.json"
+hash = "8163c06c672b66c8e6513e380737ee3f663fa753a6c9713d72f4ee14685c45ef"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/cucumber.json"
+hash = "4421612a8904670be7ebbc115711a589129892a679cce227d80c8539229f1e20"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/currant.json"
+hash = "d5f2ae53f3362d4e744fbbeaeaf5d090c8c7687e0bdc112b7f1faf17cacb84f6"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/eggplant.json"
+hash = "924ca1b29b60a6285e8e4826183c72e1b26c113347f3ffb955ae22f15d8d9405"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/elderberry.json"
+hash = "8a336479382f2571fab395fb41c41c2616423f21ea1f2cae489390ec0ca5f7dd"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/garlic.json"
+hash = "f8fbdc466097166fa593fe0ed8691c1d561cf0c69f220cdc7c9ec9e82952d361"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/ginger.json"
+hash = "668c26afa0df1458b1648db9075b3dbdc52423daae5393b49ddc9da16444e179"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/grape.json"
+hash = "835755a56118f503246038b6f66ffce83a99e8f9d5e6b8fd0e5182474dc50751"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/greenbean.json"
+hash = "f9aa4156ddbdc7ffa678ce470e789efbbc135e191854cf3eceac92259e92f000"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/greenonion.json"
+hash = "a9155ae7b1d5b01ec1f97c4949ce02da41009702549c294733f4252e0d3c942e"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/honeydew.json"
+hash = "156aa06d05feef56d0b32ce0a280d4d8e7913845eff607a829a0b973d7236231"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/hops.json"
+hash = "1fba88d05d9cdb23c76a4b121fd57b45e9222c3de739e5ff7db679264e4494dd"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/kale.json"
+hash = "dc95ce29dd8b2e4e1ee891255cfb2cdb478c1c31e3309f148077022f0552559c"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/kiwi.json"
+hash = "5bf520dc9e68626e1a39ea037c0b0b4be271788f697b0b2a91d26544c12f7709"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/leek.json"
+hash = "f58e69cbd0860780711644a627650cfb891d9101e579cf457848d7784948e386"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/lettuce.json"
+hash = "3f048d536ecd5eb35f5e7f03616d44b9f5f7f795edc5873f5a77680fa215790e"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/mustard.json"
+hash = "f66612e313aeb36d6260bd7e0bb88f8785d6e56f6fb346727166d0f9f59b27b9"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/oat.json"
+hash = "f62d0fe703acbbd3f08fd7eba58b31f0197a49674f1e592deeeb7b71cb4f947c"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/olive.json"
+hash = "10a843bbb23630f9b78803a90ae60dd355b626b2d99ffe8feea15d56b9d5c226"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/onion.json"
+hash = "b4d844c01d7d190119a8fb4d11db7b2a07455549a4c8f12532b5140004591b03"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/peanut.json"
+hash = "1dd6ed9fa28df9b18e06aa9a22c8ed5885baa4de682595f188869c103cacbbaa"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/pepper.json"
+hash = "9350d9f5f4efd6b5b6bebe44c71dde411776ede4da6af9d39c3a85d22d1f4499"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/pineapple.json"
+hash = "aa743f831867fe84078acaaecec9dcf65defe7bd0e0b8a55c5078ab831d424f9"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/radish.json"
+hash = "324af9954c6d7e7dbc2e0d70efa2ea0bb09baefd567e751a6f329a3a3777fc34"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/raspberry.json"
+hash = "2e734147e170e275f96b6f529ebaadd2ccd9e252b742c05f7a841a5bc51e8cd5"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/rhubarb.json"
+hash = "4b85cdf13b7676a7be5bb072d1339faca579f0e5e06931d249efeedf6554236a"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/rice.json"
+hash = "635de93457c95ed42419c0485ce20de1bb78a250187bfe18095b482f5c5ce7a2"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/rutabaga.json"
+hash = "bbfb422ebd8f5be3e654f27c6e410837abc0c27cb35920325c0e20abe0ebd2dc"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/saguaro.json"
+hash = "3454a0ceb761de4ecac19202519fa3729d8126b9901d3f8b30477760976b3d76"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/soybean.json"
+hash = "86de2937acb706dcd7ad2f9aa33ce179c8f738720b2a991869070b3061557764"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/spinach.json"
+hash = "a101c026b822e1e0c5e1549f87cc9e420279491420c52847c02d0d44e7126833"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/squash.json"
+hash = "8271ef7818bca5d0b2e4a36260c3fe2dac03d7158bfc6f05ca1579a21d50db8c"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/strawberry.json"
+hash = "332a6582ae6188c4321f5562334382f21ad4cf28bdae1eb62fff13d4fa4132e4"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/sweetpotato.json"
+hash = "09fe3e032097a95edacf6f10c922d9f556725b9f5e87cef9c974494a72d13715"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/tea_leaves.json"
+hash = "f07614ff4352ab5c9e9024dfd1325924ba00e0a0c8522b336e2fc18d667860b7"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/tomatillo.json"
+hash = "8e40ed308036258c9961dc9d7bbaccec85f62a02a94aaed3671ba0f68c03068e"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/tomato.json"
+hash = "975ce771f9120af63370d403216f10316e46df07c082cfebc01db791def74415"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/turmeric.json"
+hash = "aa743f831867fe84078acaaecec9dcf65defe7bd0e0b8a55c5078ab831d424f9"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/turnip.json"
+hash = "1530b0d4060908b769943b92dc800ca6a71b17f9f0a1e0be985d49230fbbc739"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/vanilla.json"
+hash = "aa743f831867fe84078acaaecec9dcf65defe7bd0e0b8a55c5078ab831d424f9"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/yam.json"
+hash = "aa743f831867fe84078acaaecec9dcf65defe7bd0e0b8a55c5078ab831d424f9"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_crop/zucchini.json"
+hash = "b2a956327ca21c4af0c3bf91b89dba2b81cf98672fe41610ee60d9e6b8f5f429"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/almond.json"
+hash = "91f2247aec6101fb09c1df4d8512812f57f9e5fbd24402362db3bb615475cfc0"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/apple.json"
+hash = "159b63099855621295d83cfd41638da7d5ca8469f57d4d1ad6fc3e0d4b03fd72"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/apricot.json"
+hash = "1176d24c27affbbcfc6cbd4c3c5b80d3c33852c21ceee64bcf67b9fc2814a669"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/avocado.json"
+hash = "796ccdd58ca535fe35a1a4ac2f5edd81051a55132cfae9f10d7cc128784b8ad3"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/banana.json"
+hash = "69ef2ddfa18165e3bdc1961e27133e9084895f61a591d95ef401c30b340ae1e8"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/cashew.json"
+hash = "431daf09001f2ba0d644a43a0287f399e836b695f9cfea39c2d8abbaafc9fb57"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/cherry.json"
+hash = "67bc392641f3a0361b1b447ed2d721310117a20b376c44d4c92b681e6a3cf8e9"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/cinnamon.json"
+hash = "e1c3033c03c050999890c61bfd53eef9c80dd169a02b61ce7a65be0f92bd301a"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/coconut.json"
+hash = "cb6c4bd0f339215c9fd047f7269ef58d905d5333a415be114c849b2d1f593194"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/date.json"
+hash = "96db39d4063356f0a0a6f6c4739300f8b8e56f2e10ca6ecc6050c62670c96a59"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/dragonfruit.json"
+hash = "6006902ad2b197d3ba9ec7bb13bb1084826aba51677d85af010dbefc67cb0455"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/fig.json"
+hash = "17cd73e0bb44828b32f694c0e172ef7fb36a38719c58639cfd0ca0433d8f1ffb"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/grapefruit.json"
+hash = "51e14410dedfe13e2415256466e8b7946b9184ab4db12c96cf3e5ffaf6d51050"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/kumquat.json"
+hash = "75587ad0bdde2f02269ec2dad8ea702c19460cca25a8959b3cb3ea2797ebc4e5"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/lemon.json"
+hash = "a37727f3607277265f2f59bff2f7a469e381df48ab8c71061554a5d663e634f1"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/lime.json"
+hash = "c75529db53bb57bdaffdd685572b1fce613e141906dc554efec02e7c1170b5cf"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/mango.json"
+hash = "6f7d48408c533d8d54a695c6295756154295c90d759a6ba13f9e923766dbbc88"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/nectarine.json"
+hash = "cd3eb2e32f2772739d45b334e1af6e56fcc4fbb986720bfef86ba1b1b45cc4fb"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/nutmeg.json"
+hash = "e1c3033c03c050999890c61bfd53eef9c80dd169a02b61ce7a65be0f92bd301a"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/orange.json"
+hash = "de8de1aff77e5e35d704384187259b9898e44ca5418ababa4213db14aad0e7d7"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/peach.json"
+hash = "804463a6e5cbea37e297b080f34239fc0afc42c9723c34574ecb86199bda471f"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/pear.json"
+hash = "9a854ae2245f1f1c08692d0d80eeb955a072ce734d1663464f9d9d05fe0652dc"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/pecan.json"
+hash = "69a688c3a4d3c34455c5591e54f323ad8aa7a365b7353ea95c4fd8598a872dec"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/persimmon.json"
+hash = "25073c8afcc9bc92e6ea58cf69c593ea43ee10999f1a6bf5be2ebb8e5142a268"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/plum.json"
+hash = "446b4c68126a2e0153ad1f2dfca98129306c75e2ee7776477818c3f9da9ac709"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/starfruit.json"
+hash = "5d35dfd91336067b61957171aa1a1c8fd45734c7dd875563e69d4add4d5a3d61"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/worldgen/biome/has_tree/walnut.json"
+hash = "3967d29bf0f8f7c33f116c9afe91ce65a828e4f51763f1e840a8533c106a1220"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/almond_tree_placed.json"
+hash = "4a524acc14c0c1c119882aa660126664718a127538534b44a3d74451827d7eba"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/apple_tree_placed.json"
+hash = "8bc5f78c2807c8fde4ac710f78c3f028de630f2e4c1f11a8e38726e4ada80e51"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/apricot_tree_placed.json"
+hash = "e94b5fbb5ff28631ecf4131b143b025c4a9380ead2a4a290218a2394424ced68"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/artichoke_crop_placed.json"
+hash = "59428e0f420ffcc00934e2ae496a55dda9adf0b6d014ad9ec36b623393e0116a"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/asparagus_crop_placed.json"
+hash = "d0f490718b253f27c6e7b4540e6e5f1fb43f1118701a164598726baa99e5dc7d"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/avocado_tree_placed.json"
+hash = "304076132f8da1d0517ccc360ff70cc364456ea1a61df3345d78bb0381356225"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/banana_tree_placed.json"
+hash = "beac6309f35bfde0806dd1df9d05c6c4d6dae121548bcbc3c51a796e46a84004"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/barley_crop_placed.json"
+hash = "8a390ac521066ef6b0400489e79528c8914b88fcd870c78f0cde54f931bf9b91"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/basil_crop_placed.json"
+hash = "47cc23c32ac1f5becc0a2f61d9ffff2b88a4fdcdbe7980fb1209e3a63399da85"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/bellpepper_crop_placed.json"
+hash = "1fba8bc1daf04fe2b92b2a5e906bbf893eae0593c1cf3231ed837f00efef602e"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/blackbean_crop_placed.json"
+hash = "f0115124ea6361a5366c13d34adcc9fa030640e3e2600c6d843eb4b09aefad30"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/blackberry_crop_placed.json"
+hash = "fc3507749e97ab578b68d75630da98044abae003f36c05e164c44e8d429abaf7"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/blueberry_crop_placed.json"
+hash = "fe4d9b15a95ba236e04d616a3b5e0703cb43d499e684dcfb80d1f2eb1b69096c"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/broccoli_crop_placed.json"
+hash = "644c2ee4b9343c2c146bfb14b650e07b7110e3ab9e9e946bfb085702e6fccab0"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/cabbage_crop_placed.json"
+hash = "63ae269e0097a20ccf74ef723b97327a3f85e43a3a39ed35d3dfdc571214a8b3"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/cantaloupe_crop_placed.json"
+hash = "46c867c9f67c3d33d77e530879bd93eba0d41c4a73b09590d95163603ad6e12b"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/cashew_tree_placed.json"
+hash = "ffc98ccd232f09d1904a068be12e51d1bdfed5d556e8b1f1d95d9cdc2937de62"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/cauliflower_crop_placed.json"
+hash = "e647ab2446857e62caf637f783a0400cb18fad7c4d8ba615677c198ff353ba5a"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/celery_crop_placed.json"
+hash = "a835fa3359923b40f04d47b9c43ca997d57e544bfcbc662a2b7aa0400bd01a41"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/cherry_tree_placed.json"
+hash = "df392109d3dd979d0116a1b04453cffca33b7dfb7d935a3b64b23e068fa7e40b"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/chile_pepper_crop_placed.json"
+hash = "ed35158e1599a2d118a428b2c31a22132866a28384ecf4c498a8e55dbb7ca96f"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/cinnamon_tree_placed.json"
+hash = "0ea9bc7e8f2b7b8d7a4de5e246f8d5d45646cfb165a8128903bf6269a57812ef"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/coconut_tree_placed.json"
+hash = "d9025d642e712689ce5635258c1fa55892b6fd12b90dbf20c8b4b3abcfdb013a"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/coffee_beans_crop_placed.json"
+hash = "4e6e051cb5d97b1742a6b54cd88856add051386a9557c0766c54ffd1f3c07cbe"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/corn_crop_placed.json"
+hash = "4a905ad7846986efbca1ae34c384f33652df242d9674b5e2417452a23a2c402c"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/cranberry_crop_placed.json"
+hash = "e0d3f3f9178af5196f96707ae9752680dc0b828da515b3c68b990444e237b015"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/cucumber_crop_placed.json"
+hash = "83d9be6b8aeb5371bc531e5d3dc47aeb1de4889c17e96523e60ce5cede828162"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/currant_crop_placed.json"
+hash = "6f5696c42ef695e808e58cfdb97ba64a029dac1ec8796cf59fdc5f43f264d3cf"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/date_tree_placed.json"
+hash = "93dd3d20adf7425e11dbea2dc5cd56dfc8d5a07121e728fd19f1816d8739e621"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/dragonfruit_tree_placed.json"
+hash = "a4a853b4eb5d48883296e1fb27192e42b67e917987d1df98711a5ea9bb48fc24"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/eggplant_crop_placed.json"
+hash = "f7ab10fa876d6876bf270d16e7808d7258ae6f042bc269461a19eb16b7a72598"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/elderberry_crop_placed.json"
+hash = "06cb57b9b627ede1196e1c24101d99eb2ec80d37bf38dc77d784e1d5be856a2b"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/fig_tree_placed.json"
+hash = "5209f2e5d30d5a43998ff3be5e7f9042e83012c93ccbe89b099f172fe9322502"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/garlic_crop_placed.json"
+hash = "0db18299532182eecfb9d911d6b4e4d7b475725715a00669bd4e967e75e33ec7"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/ginger_crop_placed.json"
+hash = "1b8b8baf83de240158af75d9d7416ab696dd287a8ead1b656c0246386f8048c6"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/grape_crop_placed.json"
+hash = "2fdac8179685d0f470c17a47e906e0ba14c41dc0ebef0509dab50c34acc0980b"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/grapefruit_tree_placed.json"
+hash = "65afd2880ab843be97ffd3209efb9417a00ce11b36b8158203a2e936ca52d620"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/greenbean_crop_placed.json"
+hash = "f2ec0a24b31f04a23a2c67e6463aeb5feeaecfda6c6cc6da3e7ca3742ca374fd"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/greenonion_crop_placed.json"
+hash = "37612b0d46c9e57f4a080364488b75f7c3231b4904e9d8c94ca8f13b1cd88e26"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/honeydew_crop_placed.json"
+hash = "470e5b69ab84431f1a0aac9052d6ad29544374eef7bbb7e82422f4de02180825"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/hops_crop_placed.json"
+hash = "977b7e1ca270db8cc5f593bec775bb2e45b07eb341c36f90718a021a660a0716"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/kale_crop_placed.json"
+hash = "b6a588709623b0558e18df54ab7fcb7d9fe334f9a4c546ec77fec34592d2078d"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/kiwi_crop_placed.json"
+hash = "cea6ea58722e7e5e53ffc6b23c2b4f5fa7b6df11394c1d3b8a1e005176593167"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/kumquat_tree_placed.json"
+hash = "ab3073a6efab7246680a404bf31e69b128105a1f25ca84036aaee76de1970083"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/leek_crop_placed.json"
+hash = "9d0d1a63a7be9b87c388d258c5292734c3c0dac229018120c8dba2fa8beb7ed7"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/lemon_tree_placed.json"
+hash = "880c0e4204e6af848b82c078f5502321a360fa92df5814b127dfc9e27008c6fd"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/lettuce_crop_placed.json"
+hash = "64eed351dd93a36e9cc53dfecdfe5c03a34c940852db951c2fc18a8d7c664c0e"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/lime_tree_placed.json"
+hash = "cd620cd05ef1000b9692792dca53e80e1f86abb2ccb0cd9c34959ea042b23667"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/mango_tree_placed.json"
+hash = "205736eb287c86c6dab04be49ede88f4007bae0fadb492c840010b49b1f0c3b9"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/mustard_crop_placed.json"
+hash = "d49353ab8b4324fec0b8a72f671e55b451025f660b8265553b5b162230f2985f"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/nectarine_tree_placed.json"
+hash = "7f8883dd154a47a673750605218ddefa27d7a2d98afcd3ae8df448acb18c0361"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/nutmeg_tree_placed.json"
+hash = "29b1fdc1a2a2ebd602c75cbd2f3849a357c9fd379273d281f7fafe1d25ef5983"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/oat_crop_placed.json"
+hash = "8d2f858ab88fca3ed3197492a9e2776a1d2e04057df326d4c09631a0ee6a4659"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/olive_crop_placed.json"
+hash = "2a42c7b727254b2b52801b17d9cb06dc7e52df9ef8edc521ac4d8e726f4ad86e"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/onion_crop_placed.json"
+hash = "ef35eb37180470ab5f4ed3bc35683ba93a5ef17d2f9cb984f3c9c7777cdcce6c"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/orange_tree_placed.json"
+hash = "1d6575d9f7e70ce4158c160d952811dd95bbbbedac65b9581bb1412e672ef921"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/peach_tree_placed.json"
+hash = "849c629f0dddb5cd3a090d3295687379f8ff586b5183b5d4808ea54297c41e50"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/peanut_crop_placed.json"
+hash = "9723d1245bda42c1b25eefe98388ccf07b3cda40ef1bc7bf9fbe10c4c45df18e"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/pear_tree_placed.json"
+hash = "7e4d96832e951ccd5316a6daba7ca88e58fa7e49ea4c1fd906b51b28aef01207"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/pecan_tree_placed.json"
+hash = "747f6ff129f694f369b3ac54a96c8c26915c34392cee354e78f2acde241457d0"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/pepper_crop_placed.json"
+hash = "e4f685117f1d1e3895e59cb99480626cacb3454d123ddafc990cd4245da2e84e"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/persimmon_tree_placed.json"
+hash = "54bf615d0da160bfe094cd28087cb2ca15df2851131dc3c1183ee1249138ddfe"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/pineapple_crop_placed.json"
+hash = "ecb1fef022945df3010f2678b2455a7743e3d9cc1c94bfe7c90179011b11bd6d"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/plum_tree_placed.json"
+hash = "2be4216fb73d2c70bccbf4a003a6517fde2339bb3fb5565e2663963478879640"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/radish_crop_placed.json"
+hash = "118990220c6ad6fab92bda012681e6d9bd9fac95b9164dc76040d793f93ee848"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/raspberry_crop_placed.json"
+hash = "bce21aa6b0fefaac34c015b6ef3f8fed595f96f54dfc9a5fe32679c3f269dd8d"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/rhubarb_crop_placed.json"
+hash = "959426a033d18170a0ad24aba5fdb17814e7a62395990c2030e127b99a707614"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/rice_crop_placed.json"
+hash = "be2e24ea348887d72a34e64211abf9d5d7967fca0732c8671fda240be5e021d6"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/rutabaga_crop_placed.json"
+hash = "ebd44742178b7c23d30ce22fcaa5cf18aef7f05f6f59f0dec24372f776ea44a4"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/saguaro_crop_placed.json"
+hash = "2b808881c193a771baf7beb65c50242f85f963da38e394c9171cf1015f8153e3"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/soybean_crop_placed.json"
+hash = "c4f8e27b289b5da26fd64a564a1b92939bc2547cb378d57af0e70dc59e388038"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/spinach_crop_placed.json"
+hash = "7f2ec2eac8ed2a467bfa67c0ba982fc19cb47363d1ae38b62b5aac375d26de82"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/squash_crop_placed.json"
+hash = "9aca980dbf626c62bcd712d4f5f7a6fefc2e8db0a635479e4b380be4d4045e66"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/starfruit_tree_placed.json"
+hash = "1b225803aa12796d89d68f9d58d43b99069390e0bcff6b81c3dc621753e8036a"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/strawberry_crop_placed.json"
+hash = "773aa6fe8d502fb4c83db4fbfdc83e539ec41aa5fe59362346e8e8c31e621a52"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/sweetpotato_crop_placed.json"
+hash = "7764c6930991cde66050be1421983d1bcac94a1be365a355db0b8f26cbe108dc"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/tea_leaves_crop_placed.json"
+hash = "d7cc7be5e4b83495c96e54e94e3d539f19ac6e90d3cb3ad6a7b6e317974ac7e9"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/tomatillo_crop_placed.json"
+hash = "2c39a7512100df53404ef62288924e0891c2954feea4afbbac20a67a125c77a1"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/tomato_crop_placed.json"
+hash = "d9d00f9b4f256f3ada66ca71fafecb039d2f95865e9b1e63b88e4ad7c2d50b8c"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/turmeric_crop_placed.json"
+hash = "5a6c9ff0e6aa412fc12e093b481193ae46b9640a300265f7eada8200e8c4366d"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/turnip_crop_placed.json"
+hash = "5a94ca20e80498fca20b9abe0e2de8b4a4ac4550f4510ad044f74ce1f5775c3b"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/vanilla_crop_placed.json"
+hash = "cd1efdc1ec239d2c8d70a32a35302e13de5cc639b5a2f147c144fcb4d5f29314"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/walnut_tree_placed.json"
+hash = "c380b6da23fde6ba64072f7ed46b0638d1738ff0d66f41cb93fc4f86735037ac"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/yam_crop_placed.json"
+hash = "1a6d6cc0f4788a75378e3e1752426eb8d5f18175ce439dc5a26f55fff947799a"
+
+[[files]]
+file = "kubejs/data/croptopia/worldgen/placed_feature/zucchini_crop_placed.json"
+hash = "38710f0b8daf28eefbb3b59266a8c635423225ecf946d3cf33c6a9cc821f6314"
+
+[[files]]
+file = "kubejs/data/explorify/loot_table/chest/dark_forest_settlement.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/explorify/loot_table/chest/mausoleum_pot.json"
+hash = "dc26125182a1294a31cb1908cdae3de5fc1629d4b5eccd92e7d207a46cb4ff4f"
+
+[[files]]
+file = "kubejs/data/explorify/loot_table/chest/supply_cache.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/archaeology/small_ruins.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/archaeology/warm_small_ruins.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/copper.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/coral.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/food.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/materials.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/prismarine.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/small_ruin_cold.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/chests/small_ruin_warm.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/hopo/loot_table/pots/underwater_ruins/small_ruins.json"
+hash = "0c7a62a455625f4797791acc0959af485ee2a05d2a307a81f13b65b226269155"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/archeology/forest_ruins_common.json"
+hash = "b662026aa9b959c58bb8b58d0197d430086288dfdd3f3cbee06219a07083c253"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/archeology/forest_ruins_rare.json"
+hash = "ecbecac981e72ccbba5dce5b83ff3ae0b12ca907209801f0ee935a5055a48c38"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/outpost/common/armory.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/outpost/common/food.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/outpost/exclusives/outpost_beach_barrel.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/outpost/exclusives/outpost_mediterranean_barrel.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/outpost/exclusives/outpost_rustic_barrel.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/exclusives/village_classic_blacksmith.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/exclusives/village_mediterranean_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/exclusives/village_piglin_barrel.json"
+hash = "7ae8a7ce66d2a873a275cfe85d72b337917324fc0460a3cae96d5c642abad1db"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/exclusives/village_piglin_house.json"
+hash = "05e2375598e410f9ea95fcf87d047987fe435c7a20aebc2089fe82c4fca164fd"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/exclusives/village_wandering_trader_hut.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_badlands_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_birch_forest_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_forest_ruins/forest_ruins_butcher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_forest_ruins/forest_ruins_library.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_forest_ruins/forest_ruins_temple.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_jungle_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_mushroom_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/kaisyn/loot_table/village/village_swamp_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
 file = "kubejs/data/logisticalpack/loot_table/blocks/deepslate_lignite_ore.json"
 hash = "9365ee085a3eb5c829d46cfee416e6f97c2105e57cb4d35cdfa52763c6a92c8d"
+
+[[files]]
+file = "kubejs/data/logisticalpack/loot_table/blocks/deepslate_tin_ore.json"
+hash = "a625432c75fd26b4e32b5947b903d5a55af63ce6d98c0463bf256485b0ed8939"
 
 [[files]]
 file = "kubejs/data/logisticalpack/loot_table/blocks/lignite_ore.json"
 hash = "3c2154e40180f16516027369517de0193bf34435b8f11f64aaf975d9f4ac9ba0"
 
 [[files]]
-file = "kubejs/data/logisticalpack/worldgen/ore_vein/huge_coal_vein.json"
+file = "kubejs/data/logisticalpack/loot_table/blocks/tin_ore.json"
+hash = "b542a2230b4395cb3786d62242d520628dabb546947dc64d1be81ebf404a23cc"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/add_tin_to_spawn.json"
+hash = "b7ec59e84e4cf17c79387e722542359129e3ee0cdd9336fda1e5d3e852a18bcc"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_coal_from_dry_and_frozen.json"
+hash = "7d0f2f6d52a0f0dd0a248a9eedaa5877775744bb6a2b098b830b51681a3bfcd2"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_copper_from_frozen.json"
+hash = "cbbbc6d493a4dc620f396a183eefd41ee98843f533e33228b58cf5294799f196"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_diamond_from_temperate_warm_tropical.json"
+hash = "93fb2fca8f5652436d0c03de0b1e2e447d5d8674daeca1d47ee38aa27c340e7f"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_gold_from_temperate_cold_tropical.json"
+hash = "203b9c6734f5da4664ca89978406f9f6182d117ed5541562305cbd50bd0c932b"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_iron_from_non_cold.json"
+hash = "d95c9a1c4e9171d1cafd930b37d178eb0a87ce382007fdbf35427098cf949636"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_lapis_from_temperate_warm_tropical.json"
+hash = "a26fa126f5f753dc6bd483bc793b48cc39e22033ac6b1bfdd0e77c43a1b3642c"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_redstone_from_temperate_cold_tropical.json"
+hash = "893d221b2bb16ad4c49ef54808272723657d5e91092236afaf2db46f7d5eee1d"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_tfmg_lead_from_non_cold.json"
+hash = "fadc026ada58d7041289b3d32910ee12d3ddcaef4d2fb35a0a78e3043cfbb3a1"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_tfmg_lithium_from_non_warm.json"
+hash = "fc4703e83398faad5953dff95bb04b0abf4401b8aecbed841afcbd959d99d679"
+
+[[files]]
+file = "kubejs/data/logisticalpack/neoforge/biome_modifier/remove_tfmg_nickel_from_non_cold.json"
+hash = "2ce052f0a07a7ada5d0564fe8d6d53e63f2e28888c0a9172b7066db8083ee23b"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/cold_boreal.json"
+hash = "0308b973575ae4bdef37022d00c5b67611b56c891b5d4a7d5aded9f44413c801"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/frozen_extreme.json"
+hash = "f99bd1d4fe942e3ef8340df3fa939b99f7bb934195e8ffdc6852986d6c899ebd"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/spawn_temperate.json"
+hash = "e9b7a6d3a4981b74520150da857de928aa9cb86b15c530072469eebb88d72377"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/temperate_cold_tropical.json"
+hash = "4504774ce6cbdae302ceb7c15467c18b931b9c7b5f6ecbb2495655b4942fc0db"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/temperate_cold_tropical_frozen.json"
+hash = "a432955d89e48a0bca273a42e32aff7a0288c4a4d2bca5d7fc5797cea83edf9c"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/temperate_warm_tropical.json"
+hash = "c541b284efb39e6ead5cae375e816c0984254e89d9ab32dfd2cd05c9bd11f7ce"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/temperate_warm_tropical_frozen.json"
+hash = "06268283c07d78d3c486db98a00687742ab42d24a52f56ed681013bd1832744c"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/tropical.json"
+hash = "e26035382c3bd693c9769eb937155cbe1b9c0568a1dc273e8fe31d6fda358361"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/warm_dry.json"
+hash = "e7319452118f5aea0c245602c327fb15bea78c431615ca4a1ed97425b82c113a"
+
+[[files]]
+file = "kubejs/data/logisticalpack/tags/worldgen/biome/warm_frozen.json"
+hash = "649c907b8a35d23f044c4b166e8699a120c9e6c5e4f916860553abb56e7296c9"
+
+[[files]]
+file = "kubejs/data/logisticalpack/worldgen/configured_feature/ore_tin.json"
+hash = "23d0e3e59b2b05aa8e58547495e2b3514a0051564a3e52a4d87127a70e1d5291"
+
+[[files]]
+file = "kubejs/data/logisticalpack/worldgen/ore_vein/huge_coal_vein.json.dis"
 hash = "c64f101d0a0b2278e131bbcb276740825b68854691318b375c2a85f39e4dad11"
 
 [[files]]
 file = "kubejs/data/logisticalpack/worldgen/ore_vein/lignite_vein.json.dis"
 hash = "3a706b65f958f1b6c76b68fca9e2755286b157d71e739f91b260844431cf07dc"
+
+[[files]]
+file = "kubejs/data/logisticalpack/worldgen/placed_feature/ore_tin.json"
+hash = "8cc6df45faf9cc3a675c9a054a6418844eda05865923877dbf2c598286352b22"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/archaeology/desert_pyramid.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/archaeology/desert_well.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/archaeology/trail_ruins_common.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/archaeology/trail_ruins_rare.json"
+hash = "475af96b882386974d60259b45c65f6fab35f6e17e49dce2fa71e4727576bf51"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/abandoned_mineshaft.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/ancient_city.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/ancient_city_ice_box.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/bastion_bridge.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/bastion_hoglin_stable.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/bastion_other.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/bastion_treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/buried_treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/desert_pyramid.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/end_city_treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/igloo_chest.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/jungle_temple.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/jungle_temple_dispenser.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/nether_bridge.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/pillager_outpost.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/ruined_portal.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/shipwreck_map.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/shipwreck_supply.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/shipwreck_treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/simple_dungeon.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/spider_nest.json"
+hash = "1b3f25f8a22a2a6360390f82019764535a3ddadfacc84c1f67190ea5c8924dc5"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/stronghold_corridor.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/stronghold_crossing.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/stronghold_library.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/trail_ruins_common_ceramics.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/trail_ruins_common_items.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/trail_ruins_rare_ceramics.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/trail_ruins_rare_items.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/underwater_ruin_big.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/underwater_ruin_small.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_armorer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_butcher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_cartographer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_desert_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_fisher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_fletcher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_leatherworker.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_mason.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_plains_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_savanna_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_shepherd.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_snowy_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_taiga_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_tannery.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_temple.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_toolsmith.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/village/village_weaponsmith.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/chests/woodland_mansion.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/block/dead_bush_may_place_on.json"
+hash = "b9bf9cc679609a47a04440063ed570c8eb54795aa420c7ae108c8111a7274d0a"
+
+[[files]]
+file = "kubejs/data/minecraft/worldgen/biome/stony_shore.json"
+hash = "36006f16d5f8fb53ddcd3c5c159183c55be840e7eb81c1a6bf8c96cc450ad45b"
 
 [[files]]
 file = "kubejs/data/minecraft/worldgen/configured_feature/ore_coal.json"
@@ -391,6 +2007,440 @@ hash = "dfb744b33a1da857a45328fcf2186c856935fa65ea12ff8648d229c5672cdc29"
 [[files]]
 file = "kubejs/server_scripts/clear_ores.js"
 hash = "052f954cf7e16608f8a2162127e46fee53b5822969f74b15d10b8085b0164de6"
+file = "kubejs/data/minecraft/worldgen/density_function/overworld/temperature.json"
+hash = "11109b2f73e7d273336a4849b8f1dcd59caf7f3f08a8d177ab26ae40bc00e0a9"
+
+[[files]]
+file = "kubejs/data/minecraft/worldgen/density_function/overworld/vegetation.json"
+hash = "a0bb0f6aab33fb3533a1b3e14b3b460f534efab4ce8bd26c446314a333dedae3"
+
+[[files]]
+file = "kubejs/data/minecraft/worldgen/structure_set/ruined_portals.json"
+hash = "a35b22065708675e0b217ae49fe96e6a16ed5e24188838ce1e613b0641945388"
+
+[[files]]
+file = "kubejs/data/minecraft/worldgen/structure_set/trial_chambers.json"
+hash = "b805834543debfa939fdabd5e90e5a207f5ae2b3ef306e5c586ab190be9207b8"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/buried_treasure.json"
+hash = "63e67255b31cfe9bdf4eac2f4db00c8b6f365cfe80fca7cbd8b606eab5982bc1"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/desert_pyramid.json"
+hash = "ee685ebd11d257ef8031a26435c242a7160b19c7ad64a826d33e0097bd650776"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/jungle_temple.json"
+hash = "d8db41d9fff183cd9a88b8601b8fd3259799985b3b030435acb70cab242fa040"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/pillager_outpost.json"
+hash = "80c914234ff5dd4d3ba51f73be59498a06a28feaf3fee95d5a5153781c57544a"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/simple_dungeon.json"
+hash = "0d6fe673954d10076b58cabd41ceacfb2b8fe649bb18489363230532af393637"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/stronghold_corridor.json"
+hash = "6273e7451189d695311b1cf13b5daa9cfd83e1d3e372e92c5837de70978976ce"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/stronghold_crossing.json"
+hash = "128e7538b8964699514edb2560c17ab4c941fb8d036b6de2b8d2437a4dc20f3f"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/stronghold_library.json"
+hash = "7abe5b87373f1e97cdd7444d262397e733c04437c23324bd57b0be6797baf63b"
+
+[[files]]
+file = "kubejs/data/musketmod/loot_table/chests/woodland_mansion.json"
+hash = "eea48d6f3464416687d2ee241228eadf9c0e333a85024dc350dd8c7a36094678"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/extra/copper.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/graveyard.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/graveyard2.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/manor2/loot.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/manor2/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/old_manor/common.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/harvest/old_manor/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/library/high.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/library/junk.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/library/low.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/badlands.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/cave.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/desert.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/farmer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/fisherman.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/grassy.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/jungle.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/mangrove.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/miner.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/mushroom.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/ocean.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/snowy.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/mood/taiga.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/bandit/desert.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/bandit/desert_copper.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/boat/loot.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/farm_ruin.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/generic/bandit.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/generic/miner.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/low.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/mine/loot.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/ruin/ruin.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/outcast/settlement.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/ruin.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/swamp/loot.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/taiga/illager_high.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/taiga/illager_low.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/taiga/illager_treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/structory/loot_table/ruin/taiga/loot.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/tectonic/worldgen/density_function/noise/temperature_index.json"
+hash = "148746a456202fd0f6aca9fe44307c844f01e347989a8a0fa87d9c8978faa15d"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/desert_outpost.json"
+hash = "80c914234ff5dd4d3ba51f73be59498a06a28feaf3fee95d5a5153781c57544a"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/igloo.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/lodge_drinkables.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/mage/barracks.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/mage/extras.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/mage/small_common_flowers.json"
+hash = "53b4d15c2ca7f57bf07b40e29c8eab0151a7ff3391cade1af50132bd70fbe2a2"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/mage/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/royal_jelly.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/ruin/glacial/junk.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/ruin/glacial/main_cs.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/spire/common.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/spire/junk.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/spire/rare.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/spire/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/underground/chest.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/underground/giant_bee_hive.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/archer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/attic.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/butcher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/cartographer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/fisherman.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/food.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/generic.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/generic_low.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/junk.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/leatherworker.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/library.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/mason.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/shepherd.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/smith.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/smith/expert.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/smith/novice.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/desert/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/archer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/attic.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/butcher.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/cartographer.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/fisherman.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/food.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/generic.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/generic_low.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/junk.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/library.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/mason.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/smith.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/smith/expert.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/smith/novice.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/tavern_downstairs.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/tavern_upstairs.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/fortified/treasure.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/treasure/diamond.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/treasure/emerald.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/village/treasure/golem.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/terralith/loot_table/witch_hut.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/data/wythers/loot_table/chests/village/forest_ruins_big_house.json"
+hash = "556778fd4d9957832380211c76af43719e5c0b5f2cdc054432263d0d50194bf4"
+
+[[files]]
+file = "kubejs/server_scripts/biome_growth_tick.js"
+hash = "1ce1c7af6b2fdcced1e214389ae9af659f446f6c4afddf3eca73eadcba133525"
 
 [[files]]
 file = "kubejs/server_scripts/coal_progression/lignite_behavior.js"
@@ -423,6 +2473,12 @@ hash = "3b53b2e8653787c7deb3f3857e609206962804e84f3baabc420fe5ea76e4e14b"
 [[files]]
 file = "kubejs/server_scripts/iron_age/iron_age_recipes.js"
 hash = "b60156a0159306f07f7da14d11b95950b3063291fea9f0f8baf5710c06dc145b"
+file = "kubejs/server_scripts/dev/audit_nearby_chests.js"
+hash = "63c0fd01f2bcb2dc12fae2d0858d1aeec7fe90561a7f94789258981df7b61b37"
+
+[[files]]
+file = "kubejs/server_scripts/dev/strip_to_ores.js"
+hash = "93a62340fef83d4e5145f594b0ae5a8ea7cc5d37718ef4a3f0d575dbeb86a9df"
 
 [[files]]
 file = "kubejs/server_scripts/main.js"
@@ -431,6 +2487,16 @@ hash = "dae099ae3be7f033c0c190ee8c3b023b42f6b235d9d0591be5926e8435dbd67f"
 [[files]]
 file = "kubejs/server_scripts/ore_progression/remove_create_renewable_ores.js"
 hash = "81468e39f74922fb23fbc0863c615713d75dba5d6d40e51890e4be1bd8720adb"
+file = "kubejs/server_scripts/ore_progression/tin_behavior.js"
+hash = "9c2187ebc65df098ec770bfa2a5819d6e436b78dc1c1967f18df50d13d26ba09"
+
+[[files]]
+file = "kubejs/server_scripts/ore_progression/tin_recipes.js"
+hash = "68c4f7f835986ceaf145637457233aa4cb395b888a090529457aef4503c6838b"
+
+[[files]]
+file = "kubejs/startup_scripts/biome_growth_tooltip.js"
+hash = "ae5ed4f44e58ac5408d30762d6f4831cc89b27c58dec45b3e67214c6d26736ed"
 
 [[files]]
 file = "kubejs/startup_scripts/coal_progression/register_lignite.js"
@@ -453,6 +2519,14 @@ file = "kubejs/startup_scripts/ore_logistics.js"
 hash = "2eadb6c6e58274e15641008293e815677ca18aba1805ca22a4cb944c9edacb09"
 
 [[files]]
+file = "kubejs/startup_scripts/ore_progression/register_tin.js"
+hash = "db88dea19970005cd6ab369a1e0bf4c3f41f1db8aaf1c9a654fd229a89d4bc54"
+
+[[files]]
+file = "local_readme.md"
+hash = "14bc3fbc8ac72d399f9edcdeb295e2cc76a5d66b93bd8b58bf060344ba0e5959"
+
+[[files]]
 file = "mods/aeroguard-1-0-0.pw.toml"
 hash = "3a27d5c6686dda7315f4b4f494bb96a85e1f9f251838444766754def0ac2f14e"
 metafile = true
@@ -469,11 +2543,23 @@ metafile = true
 [[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "f9398d647b0e6e8a16bb7bd619cd91f80443f8a298edf82b0784fc50179c0058"
+file = "mods/ats-more-animals.pw.toml"
+hash = "49b69f085351f433ffb9bc0954f021cb0f1fc777b5e1b4aada149f7e3c68679f"
+metafile = true
+
+[[files]]
+file = "mods/biome-improvement-mindthemoods-pile-of-rocks.pw.toml"
+hash = "75c16d458c78fa10e44997e85f566f422df3801f70c129fe5c1b8e7c291409ad"
 metafile = true
 
 [[files]]
 file = "mods/c2me-neoforge.pw.toml"
-hash = "4e6b365e3c0b9c7538e851c44192d9e29fe958af2e895f398f25546b4f17852e"
+hash = "2fb37ba751a18590bdcb80a04211424e325b7dbe5dc65e5e930135445be6b46e"
+metafile = true
+
+[[files]]
+file = "mods/chunky.pw.toml"
+hash = "ef2323b87d1ba4d03d0ee1ab800d06ba6490f45a1b84ecd341f9e3b5bc5e16bf"
 metafile = true
 
 [[files]]
@@ -482,13 +2568,13 @@ hash = "920fa83599db72cc9295271c7ce11d1e85d423dc43565c913d887178c79cf3d6"
 metafile = true
 
 [[files]]
-file = "mods/connectivity.pw.toml"
-hash = "282e1ac502f79e86f0885eb3ea2f404cbf4eb68f3f3a3da60c6a12d131748680"
+file = "mods/configurable.pw.toml"
+hash = "89fa474dbb196a83ee637151ec31279f2867803c960cfda7ead1160d531da7d0"
 metafile = true
 
 [[files]]
-file = "mods/continents.pw.toml"
-hash = "ed94813827cdd539f617654f59767955fe611373676e005aba2fa48c119d2dc5"
+file = "mods/connectivity.pw.toml"
+hash = "282e1ac502f79e86f0885eb3ea2f404cbf4eb68f3f3a3da60c6a12d131748680"
 metafile = true
 
 [[files]]
@@ -504,6 +2590,8 @@ metafile = true
 [[files]]
 file = "mods/create-heat-js.pw.toml"
 hash = "531a5578fe3c0c8bbd3bca0333281c2c96208b03270f9dedfc996751a97df195"
+file = "mods/create-rustic-structures.pw.toml"
+hash = "cc91a7fac10bcdc7413778d240e0a8f2f36565424dca2d16613d09247ab3e98f"
 metafile = true
 
 [[files]]
@@ -533,12 +2621,27 @@ metafile = true
 
 [[files]]
 file = "mods/createbigcannons-5-11-3-dev-mc-1-21-1-build-279.pw.toml"
-hash = "02604f0c78ed02b41ee80bed7319c151ae98e9f95049516a8d38818628f736cf"
+hash = "2dcab2b4b16e22751f3f521be05cabb1cdb4577ebf185f29b914a5d882715311"
 metafile = true
 
 [[files]]
 file = "mods/createbigcannons-5.11.3-dev-mc.1.21.1-build.279.jar"
 hash = "7e9daa8ec03c4889acd323398ad4f8e42c30c085a7c63dbafaf46f08c8cb130e"
+
+[[files]]
+file = "mods/creativecore.pw.toml"
+hash = "f2599e36f54264512440528290ec1767bc731c423caa03787265e85715ade3aa"
+metafile = true
+
+[[files]]
+file = "mods/cristel-lib.pw.toml"
+hash = "ddf27dc0c20788f29aa31667f7748dedcbd7ddcedf96d405a3cab3a5fb8f6b78"
+metafile = true
+
+[[files]]
+file = "mods/croptopia.pw.toml"
+hash = "289b444ff2bdaaccc83d00a59452b55c053873340d9bb3ab14f0f70b814bf626"
+metafile = true
 
 [[files]]
 file = "mods/cupboard.pw.toml"
@@ -547,7 +2650,7 @@ metafile = true
 
 [[files]]
 file = "mods/customnpcs-unofficial.pw.toml"
-hash = "942167f772e9ad780e1e5be4e911f09460223935ce85bad2afedea4a4e25d028"
+hash = "824317b718bf1d118afdecec915c407593fbf72633673963c543a65647334b33"
 metafile = true
 
 [[files]]
@@ -565,8 +2668,28 @@ file = "mods/encumbrance-1.0.0.jar"
 hash = "60d633396b99628eeda014906ca0170a7f8619829eed2cd754bb31e23374f595"
 
 [[files]]
+file = "mods/epherolib.pw.toml"
+hash = "941a3a76358b4eaa308f2fe29cd6944a7bb5fdb55f3d9361cd42589e335e5188"
+metafile = true
+
+[[files]]
+file = "mods/explorify.pw.toml"
+hash = "9d0230c596467b917236b6b8758fd4898dff2076bea71764391d7f6f559f47d0"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "ee283d69b5846fc59ea45b7f632809d1405313e83708e600a08ebc1c7267962d"
+metafile = true
+
+[[files]]
+file = "mods/geophilic.pw.toml"
+hash = "34035acb2d5b1dce8259ca199711d01a5727513b15e2d362abad3ed0e36b3bc8"
+metafile = true
+
+[[files]]
+file = "mods/hopo-better-underwater-ruins.pw.toml"
+hash = "268645c22bd07aa832f8f7d999de49fcbd4559e996851f2c03310eaee1eb1665"
 metafile = true
 
 [[files]]
@@ -575,13 +2698,33 @@ hash = "f82040dace33e92bc91cda295b0719b739140c3b841d79951b35e19a2ae6d9b8"
 metafile = true
 
 [[files]]
+file = "mods/improved-village-placement.pw.toml"
+hash = "145fe08e49d6f957aa45ee43af1a70f65c91631851d469859db12a4957cf53e3"
+metafile = true
+
+[[files]]
 file = "mods/interiors.pw.toml"
 hash = "cd23f7aed76a363e82f71d4e65f05f0c0681a9c1a01b1c9b0c1918b5740b28c3"
 metafile = true
 
 [[files]]
+file = "mods/iris.pw.toml"
+hash = "bad7a016fed7f4a8416f8600de5f05e38a97acc8a35ed17f18e1b0e7fdcbf96f"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "f86a10950c4557243ef9235f121a35306df5ff9238cf2191071991ea38392b9c"
+metafile = true
+
+[[files]]
 file = "mods/jei.pw.toml"
 hash = "cdd4984a4ff5c489aef8efb0c2ecffedb6b5e341f3a3ce76144f778763f46e28"
+metafile = true
+
+[[files]]
+file = "mods/jungle-treehouse-village.pw.toml"
+hash = "113ae3a692c98d7fc455aac08d78d5a1f32d0451f93ebf7b574dea124c7509f3"
 metafile = true
 
 [[files]]
@@ -602,6 +2745,8 @@ metafile = true
 [[files]]
 file = "mods/large-ore-veins.pw.toml"
 hash = "5aee75acb439bb794a3928a758c82e92c9899893975a58e44baa5458558a1f12"
+file = "mods/large-oak-tree.pw.toml"
+hash = "3542fadb00c91f53aeed8646ba609b5d4ae9fea59492e3b0b393f7d20389c4d2"
 metafile = true
 
 [[files]]
@@ -627,6 +2772,11 @@ metafile = true
 [[files]]
 file = "mods/natural-temperature.pw.toml"
 hash = "d34a2ae0caa7bab0889e727f67ce72099c58119781bba3267af9fa0ee6a8a817"
+metafile = true
+
+[[files]]
+file = "mods/neruina.pw.toml"
+hash = "ee4c672784ff19c01db8b1a2df14284c80b6b06cc574f614e0d52cfb342774c6"
 metafile = true
 
 [[files]]
@@ -670,6 +2820,21 @@ hash = "f6b922752736741e222dead919491a7b59946c7424ac3b87d0ceae3f0144e149"
 metafile = true
 
 [[files]]
+file = "mods/spawn-animations.pw.toml"
+hash = "a56408940bab5b38087c562e4a8867f683c090e6cb99cc2ca50266e03973b9e5"
+metafile = true
+
+[[files]]
+file = "mods/spice-of-life-onion.pw.toml"
+hash = "dfb4cc71c28de5005bbb452e27ba1f7802f4319266cd88c93870cff076ca129d"
+metafile = true
+
+[[files]]
+file = "mods/structory.pw.toml"
+hash = "8b71ad410692583381cb1ed9bda104f06169339598d7884f649ee8f7165612c9"
+metafile = true
+
+[[files]]
 file = "mods/structure-layout-optimizer.pw.toml"
 hash = "14cec666696e99bc20b351be80993aab8745fe9d95b6c99070f9b5fc97420485"
 metafile = true
@@ -685,6 +2850,16 @@ hash = "820f76bfb5af7d5d878bad21a37d2dc5efe085615dc5eb55965d13c7116e7bfc"
 metafile = true
 
 [[files]]
+file = "mods/this-rocks-forge.pw.toml"
+hash = "a4a36ace3971c071d10c041669243588b719044ea103e7116a0d172611722633"
+metafile = true
+
+[[files]]
+file = "mods/towns-and-towers.pw.toml"
+hash = "faed33ed47cc1fbb139329249437a8d867cf3eb0a08c739e12c907eac2dc7189"
+metafile = true
+
+[[files]]
 file = "mods/veinscout-1-0-0.pw.toml"
 hash = "8eed92e05d88a9c1302b0fcc583acc44d50c17219ae322497d8eb464f0320625"
 metafile = true
@@ -692,6 +2867,16 @@ metafile = true
 [[files]]
 file = "mods/veinscout-1.0.0.jar"
 hash = "e41a6d3748df811589ff0ed018746ae8dc858c6862c8e0be1a60416fa0bf7080"
+
+[[files]]
+file = "mods/world-preview-neoforged-(unofficial).pw.toml"
+hash = "15f247253ecb9ab92aa017f9b7aa2a9296835a13d1b0e4b93dcfda8424740bb1"
+metafile = true
+
+[[files]]
+file = "mods/wwoo.pw.toml"
+hash = "e9d7cb8584e6b889ed3729a36c01798f0c85045204b847c05af8ec3d129e6a73"
+metafile = true
 
 [[files]]
 file = "resourcepacks/3d-muskets.pw.toml"

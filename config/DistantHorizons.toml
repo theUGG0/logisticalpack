@@ -29,7 +29,7 @@ _version = 4
 	# When enabled, Distant Horizons will attempt to download missing LODs from the server.
 	# 
 	# Note: the server must have Distant Generation enabled for it to work.
-	enableServerGeneration = true
+	enableServerGeneration = false
 	#
 	# Makes the server send level keys for each world.
 	# Disable this if you use alternative ways to send level keys.
@@ -239,7 +239,7 @@ _version = 4
 		# CHAT 
 		# LOG 
 		# DISABLED
-		showGenerationProgress = "DISABLED"
+		showGenerationProgress = "OVERLAY"
 		#
 		# The max radius in chunks around the central point where world generation is allowed. 
 		# If this value is set to 0, generation bounds are disabled and the render distance will be used. 
@@ -429,15 +429,6 @@ _version = 4
 				intTest = 69420
 				stringTest = "Test input box"
 
-			[client.advanced.debugging.positionFinderDebugging]
-				positionFinderEnable = false
-				positionFinderDetailLevel = 6
-				positionFinderXPos = 0
-				positionFinderZPos = 0
-				positionFinderMinBlockY = -64
-				positionFinderMaxBlockY = 125
-				positionFinderMarginPercent = "0.0"
-
 		[client.advanced.graphics]
 			#
 			# Enable Screen Space Ambient Occlusion
@@ -477,7 +468,7 @@ _version = 4
 				#  overhangs or walls for floating objects. 
 				#  Tweaking the caveCullingHeight, can resolve some 
 				#  of those issues.
-				enableCaveCulling = true
+				enableCaveCulling = false
 				#
 				# Identical to the other frustum culling option
 				# only used when a shader mod is present using the DH API
@@ -589,7 +580,7 @@ _version = 4
 				dimensionEnabledCloudRenderingCsv = "minecraft:overworld"
 				#
 				# If true LOD clouds will be rendered.
-				enableCloudRendering = true
+				enableCloudRendering = false
 				#
 				# If true LOD beacon beams will be rendered wider at extreme distances, 
 				# making them easier to see. 
@@ -658,7 +649,7 @@ _version = 4
 				# 
 				# Lowest Quality: HEIGHT_MAP
 				# Highest Quality: EXTREME
-				verticalQuality = "MEDIUM"
+				verticalQuality = "HIGH"
 				#
 				# What blocks shouldn't be rendered as LODs? 
 				# 
@@ -685,7 +676,7 @@ _version = 4
 				# This indicates how quickly LODs decrease in quality the further away they are. 
 				# Higher settings will render higher quality fake chunks farther away, 
 				# but will increase memory and GPU usage.
-				horizontalQuality = "MEDIUM"
+				horizontalQuality = "HIGH"
 				#
 				# How should LOD transparency be handled. 
 				# 

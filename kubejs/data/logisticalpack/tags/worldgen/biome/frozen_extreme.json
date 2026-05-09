@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:ice_spikes",
+    "minecraft:frozen_peaks",
+    "minecraft:jagged_peaks",
+    "minecraft:stony_peaks",
+    "minecraft:frozen_ocean",
+    "minecraft:deep_frozen_ocean",
+
+    "terralith:glacial_chasm",
+    "terralith:frozen_cliffs",
+    "terralith:arctic",
+    "terralith:volcanic_peaks",
+    "terralith:volcanic_crater",
+    "terralith:volcanic_plains",
+    "terralith:emerald_peaks",
+    "terralith:sandstone_valley",
+    "terralith:lost_city"
+  ]
+}

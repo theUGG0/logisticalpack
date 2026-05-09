@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#logisticalpack:spawn_temperate",
+    "#logisticalpack:cold_boreal",
+    "#logisticalpack:tropical",
+    "#logisticalpack:frozen_extreme"
+  ]
+}

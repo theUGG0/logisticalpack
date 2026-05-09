@@ -1,0 +1,18 @@
+filename = 'jungle_treehouse_village-1.0.0-neoforge-1.21.1.jar'
+name = 'Jungle Treehouse Village'
+side = ''
+x-prismlauncher-dependencies = [  ]
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'jungle_treehouse_village-1.0.0-neoforge-1.21.1.jar'
+
+[download]
+hash = '1fe0ee574517476af531d9c7f6657dfd621706ffd07e16efa43ab2d619cf4e6c442259613ee069a42475b8f7773acae06353faa1c3b023aab88bb24961653e47'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/el366kQ7/versions/cm0A1j6D/jungle_treehouse_village-1.0.0-neoforge-1.21.1.jar'
+
+[update.modrinth]
+mod-id = 'el366kQ7'
+version = 'cm0A1j6D'

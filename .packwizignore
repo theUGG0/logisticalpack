@@ -4,6 +4,8 @@
 .packwizignore
 .crafty-sync-exclude
 .github/**
+.cache/**
+**/__pycache__/**
 
 README.md
 .env

@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#logisticalpack:temperate_warm_tropical",
+  "features": [
+    "minecraft:ore_diamond",
+    "minecraft:ore_diamond_large",
+    "minecraft:ore_diamond_buried"
+  ],
+  "steps": ["underground_ores"]
+}
