@@ -1,0 +1,17 @@
+filename = 'bronze-neoforge-1.21.1-2.0.6.jar'
+name = 'Bronze'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.0.6+1.21.1'
+
+[download]
+hash = '26b222a33d6d546baf728d139569d814e099a2ea2d7b16019d291ce9fa9960de7a5f52330b2a9d87515d480a54c4052c7fb7714468a587181b03baef1086af8c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/6pVlXMty/versions/3Ji0UTaT/bronze-neoforge-1.21.1-2.0.6.jar'
+
+[update.modrinth]
+mod-id = '6pVlXMty'
+version = '3Ji0UTaT'

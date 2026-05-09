@@ -429,6 +429,15 @@ _version = 4
 				intTest = 69420
 				stringTest = "Test input box"
 
+			[client.advanced.debugging.positionFinderDebugging]
+				positionFinderEnable = false
+				positionFinderDetailLevel = 6
+				positionFinderXPos = 0
+				positionFinderZPos = 0
+				positionFinderMinBlockY = -64
+				positionFinderMaxBlockY = 125
+				positionFinderMarginPercent = "0.0"
+
 		[client.advanced.graphics]
 			#
 			# Enable Screen Space Ambient Occlusion

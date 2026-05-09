@@ -1,0 +1,8 @@
+#Tin-ore generation is controlled by datapacks in NeoForge.
+#To disable it, create a datapack that overrides
+#bronze:neoforge/biome_modifier/add_tin_ore.json and add_small_tin_ore.json
+#with an empty JSON object {}
+# 
+# (ignore the value below)
+[ignoreMe]
+	_dummy = true
