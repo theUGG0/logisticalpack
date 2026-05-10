@@ -1,0 +1,61 @@
+# Eclipse
+bin
+eclipse
+.classpath
+.metadata
+.project
+.settings
+*.launch
+
+# Idea
+out
+.idea
+*.ipr
+*.iws
+*.iml
+
+# Gradle
+build
+run
+runs
+.gradle
+.gradle-*
+*local.properties
+
+# NodeJs
+node_modules
+npm-debug.log
+.npmrc
+
+# Files from Forge MDK
+forge*changelog.txt
+
+# VSCode
+.vscode/launch.json
+.vscode/settings.json
+*/.vscode/launch.json
+*/.vscode/settings.json
+
+# Ghost Reference Index (local knowledge base sync)
+.ghost-reference-index
+
+# Template placeholder files
+put_your_*_here
+
+# Raw NPC Types (auto-generated)
+/core/Common/src/main/java/de/markusbordihn/easynpc/api/npc/raw/*Raw.java
+/core/Common/src/main/java/de/markusbordihn/easynpc/api/npc/raw/*/*Raw.java
+
+# Default Preset Index (auto-generated)
+/core/Common/src/main/resources/data/easy_npc/default_preset/default_preset.index
+
+# Other
+.DS_Store
+generated
+*.bak
+*.clip
+*.log
+*.log.gz
+*.patch.txt
+*.stackdump
+*.hprof

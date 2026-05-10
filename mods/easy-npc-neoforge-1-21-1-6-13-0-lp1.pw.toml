@@ -1,0 +1,9 @@
+filename = 'easy_npc-neoforge-1.21.1-6.13.0-lp1.jar'
+name = 'easy_npc-neoforge-1.21.1-6.13.0-lp1'
+side = 'both'
+
+[download]
+hash-format = 'sha512'
+hash = 'b21175d15fd828c8c3cb129c7373bf200134dca2ab9aeb13ecd409a0876a9ba000a4b3fe04699ac4d97fb1f37fef55d11cc13efe88b873353bc132b8d3e31bfb'
+mode = 'url'
+url = 'https://raw.githubusercontent.com/theUGG0/logisticalpack/main/mods/easy_npc-neoforge-1.21.1-6.13.0-lp1.jar'

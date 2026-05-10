@@ -1,0 +1,252 @@
+apply plugin: 'java'
+import org.gradle.tooling.GradleConnector
+
+def ghostRefScript = file(findProperty('ghostRefIndex') ?: '')
+if (ghostRefScript.exists()) apply from: ghostRefScript
+
+subprojects {
+
+  tasks.register('wrapper', Wrapper) {
+    gradleVersion = '8.14.3'
+  }
+
+  tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+  }
+
+}
+
+// Build all modules
+tasks.named('build') {
+  description = 'Builds all modules (core, config-ui, bundle)'
+
+  doLast {
+    def modules = ['core', 'config-ui', 'bundle']
+
+    modules.each { moduleName ->
+      def moduleDir = file("${rootDir}/${moduleName}")
+      println "Building module: ${moduleName}"
+
+      def connection = GradleConnector.newConnector()
+          .forProjectDirectory(moduleDir)
+          .connect()
+
+      try {
+        def buildLauncher = connection.newBuild()
+        buildLauncher.forTasks('build')
+        buildLauncher.setStandardOutput(System.out)
+        buildLauncher.setStandardError(System.err)
+        buildLauncher.run()
+        println "Successfully built module: ${moduleName}"
+      } finally {
+        connection.close()
+      }
+    }
+
+    println "All modules successfully built."
+  }
+}
+
+// Clean all modules
+tasks.named('clean') {
+  description = 'Cleans all modules (core, config-ui, bundle)'
+
+  doLast {
+    def modules = ['core', 'config-ui', 'bundle']
+
+    modules.each { moduleName ->
+      def moduleDir = file("${rootDir}/${moduleName}")
+      println "Cleaning module: ${moduleName}"
+
+      def connection = GradleConnector.newConnector()
+          .forProjectDirectory(moduleDir)
+          .connect()
+
+      try {
+        def buildLauncher = connection.newBuild()
+        buildLauncher.forTasks('clean')
+        buildLauncher.setStandardOutput(System.out)
+        buildLauncher.setStandardError(System.err)
+        buildLauncher.run()
+        println "Successfully cleaned module: ${moduleName}"
+      } finally {
+        connection.close()
+      }
+    }
+
+    println "All modules successfully cleaned."
+  }
+}
+
+// Clean Maven Local artifacts (current version only)
+tasks.register('cleanMavenLocal') {
+  description = 'Deletes this project\'s artifacts from Maven Local (current version)'
+  group = "build"
+
+  doLast {
+    def mavenLocalRepo = file("${System.getProperty('user.home')}/.m2/repository")
+    if (!mavenLocalRepo.exists()) {
+      println "Maven Local repository not found"
+      return
+    }
+
+    def corePropertiesFile = file("${rootDir}/core/gradle.properties")
+    if (!corePropertiesFile.exists()) {
+      println "Could not find core/gradle.properties"
+      return
+    }
+
+    def props = new Properties()
+    corePropertiesFile.withInputStream { props.load(it) }
+    def projectVersion = props.getProperty('version')
+    def minecraftVersion = props.getProperty('minecraft_version')
+
+    println "Cleaning Maven Local for version ${projectVersion} (Minecraft ${minecraftVersion})"
+
+    def artifacts = [
+        [group: 'de/markusbordihn/easynpc', artifact: "easy_npc-common-${minecraftVersion}", version: projectVersion],
+        [group: 'de/markusbordihn/easynpc', artifact: "easy_npc-fabric-${minecraftVersion}", version: projectVersion],
+        [group: 'de/markusbordihn/easynpc', artifact: "easy_npc-forge-${minecraftVersion}", version: projectVersion],
+        [group: 'de/markusbordihn/easynpc/configui', artifact: "easy_npc_config_ui-common-${minecraftVersion}", version: projectVersion],
+        [group: 'de/markusbordihn/easynpc/configui', artifact: "easy_npc_config_ui-fabric-${minecraftVersion}", version: projectVersion],
+        [group: 'de/markusbordihn/easynpc/configui', artifact: "easy_npc_config_ui-forge-${minecraftVersion}", version: projectVersion]
+    ]
+
+    def deletedCount = 0
+    artifacts.each { artifactInfo ->
+      def versionDir = new File(mavenLocalRepo, "${artifactInfo.group}/${artifactInfo.artifact}/${artifactInfo.version}")
+      if (versionDir.exists()) {
+        println "Deleting: ${artifactInfo.artifact}:${artifactInfo.version}"
+        versionDir.deleteDir()
+        deletedCount++
+      }
+    }
+
+    if (deletedCount > 0) {
+      println "Successfully deleted ${deletedCount} artifact(s)"
+    } else {
+      println "No artifacts found for version ${projectVersion}"
+    }
+  }
+}
+
+// Clean Loom Cache for Easy NPC artifacts
+tasks.register('cleanLoomCache') {
+  description = 'Deletes Easy NPC artifacts from Fabric Loom cache'
+  group = "build"
+
+  doLast {
+    println "Cleaning Loom Cache for Easy NPC artifacts..."
+
+    def deletedCount = 0
+    def loomCacheDirs = [
+        file("${rootDir}/core/.gradle/loom-cache/remapped_mods"),
+        file("${rootDir}/config-ui/.gradle/loom-cache/remapped_mods"),
+        file("${rootDir}/bundle/.gradle/loom-cache/remapped_mods")
+    ]
+
+    loomCacheDirs.each { cacheDir ->
+      if (cacheDir.exists()) {
+        cacheDir.eachDir { mappingsDir ->
+          if (mappingsDir.name.startsWith("loom_mappings_")) {
+            def easyNpcCacheDir = new File(mappingsDir, "de/markusbordihn/easynpc")
+            if (easyNpcCacheDir.exists()) {
+              println "Deleting: ${easyNpcCacheDir.absolutePath}"
+              easyNpcCacheDir.deleteDir()
+              deletedCount++
+            }
+          }
+        }
+      }
+    }
+
+    if (deletedCount > 0) {
+      println "Successfully deleted ${deletedCount} Loom cache directory(ies)"
+    } else {
+      println "No Loom cache entries found for Easy NPC"
+    }
+  }
+}
+
+// Clean Maven Local and build all modules sequentially
+tasks.register('cleanBuild') {
+  description = 'Cleans Maven Local and builds all modules sequentially (core -> config-ui -> bundle)'
+  group = "build"
+
+  doLast {
+    // First clean Maven Local
+    tasks.cleanMavenLocal.actions.each { it.execute(tasks.cleanMavenLocal) }
+
+    // Clean Loom Cache
+    tasks.cleanLoomCache.actions.each { it.execute(tasks.cleanLoomCache) }
+
+    // Build modules in correct order: core first, then config-ui (needs core), then bundle (needs both)
+    def modules = ['core', 'config-ui', 'bundle']
+
+    modules.each { moduleName ->
+      def moduleDir = file("${rootDir}/${moduleName}")
+      println "Building module: ${moduleName}"
+
+      def connection = GradleConnector.newConnector()
+          .forProjectDirectory(moduleDir)
+          .connect()
+
+      try {
+        def buildLauncher = connection.newBuild()
+        buildLauncher.forTasks('build')
+        buildLauncher.setStandardOutput(System.out)
+        buildLauncher.setStandardError(System.err)
+        buildLauncher.run()
+        println "Successfully built module: ${moduleName}"
+      } finally {
+        connection.close()
+      }
+    }
+
+    println "All modules successfully built and published to Maven Local."
+  }
+}
+
+// Publish all modules to Modrinth and CurseForge
+tasks.register('publish') {
+  description = 'Builds and publishes all modules (core, config-ui, bundle)'
+  group = "publishing"
+
+  dependsOn 'cleanBuild'
+
+  doLast {
+    def modules = ['core', 'config-ui', 'bundle']
+    def publishingTasks = ['modrinth', 'curseforge']
+
+    modules.each { moduleName ->
+      def moduleDir = file("${rootDir}/${moduleName}")
+
+      publishingTasks.each { publishTask ->
+        println "Publishing ${moduleName} to ${publishTask}..."
+
+        def connection = GradleConnector.newConnector()
+            .forProjectDirectory(moduleDir)
+            .connect()
+
+        try {
+          def publishLauncher = connection.newBuild()
+          publishLauncher.forTasks(publishTask)
+          publishLauncher.setStandardOutput(System.out)
+          publishLauncher.setStandardError(System.err)
+          publishLauncher.run()
+          println "Successfully published ${moduleName} to ${publishTask}"
+
+          println "Waiting 5 seconds..."
+          sleep(5000)
+        } catch (Exception e) {
+          println "Warning: Failed to publish ${moduleName} to ${publishTask}"
+          println "Error: ${e.message}"
+        } finally {
+          connection.close()
+        }
+      }
+    }
+
+    println "All modules successfully published."
+  }
+}

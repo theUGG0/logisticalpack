@@ -1,0 +1,115 @@
+plugins {
+  id 'maven-publish'
+  id 'fabric-loom' version "${fabric_loom}"
+  id 'com.matthewprenger.cursegradle' version '1.4.0'
+  id 'nu.studer.credentials' version '3.0'
+  id "com.modrinth.minotaur" version "2.+"
+}
+
+base {
+  archivesName = "${project.mod_id}-fabric-${project.minecraft_version}"
+}
+
+def getNextMajorVersion(String currentVersion) {
+  def versionParts = currentVersion.tokenize('.')
+  if (versionParts.size() > 0) {
+    def majorVersion = versionParts[0].toInteger()
+    return "${majorVersion + 1}.0.0"
+  }
+  return "1.0.0"
+}
+
+def nextMajorVersion = getNextMajorVersion(project.version.toString())
+
+loom {
+  runs {
+    client {
+      client()
+      setConfigName("Fabric Client")
+      ideConfigGenerated(true)
+      runDir("run/client")
+    }
+    server {
+      server()
+      setConfigName("Fabric Server")
+      ideConfigGenerated(true)
+      runDir("run/server")
+    }
+  }
+}
+
+dependencies {
+  minecraft "com.mojang:minecraft:${project.minecraft_version}"
+  mappings loom.officialMojangMappings()
+  modImplementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
+
+  // Bundle dependencies - use compileOnly to avoid transitive dependency issues
+  modRuntimeOnly(group: 'de.markusbordihn.easynpc', name: "easy_npc-fabric-${project.minecraft_version}", version: "${project.version}") {
+    changing = true
+  }
+  modRuntimeOnly(group: 'de.markusbordihn.easynpc.configui', name: "easy_npc_config_ui-fabric-${project.minecraft_version}", version: "${project.version}") {
+    changing = true
+  }
+}
+
+processResources {
+  from project(":Common").sourceSets.main.resources
+  duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+  inputs.property "version", project.version
+  inputs.property 'nextMajorVersion', nextMajorVersion
+
+  filesMatching("fabric.mod.json") {
+    expand "version": project.version,
+        "nextMajorVersion": nextMajorVersion
+  }
+}
+
+tasks.withType(JavaCompile).configureEach {
+  source(project(":Common").sourceSets.main.allSource)
+}
+
+tasks.named('compileTestJava', JavaCompile).configure {
+  enabled = !sourceSets.test.allSource.isEmpty()
+}
+
+// CurseForge Publishing
+if (project.hasProperty('curseforge_project_id') && project.curseforge_project_id) {
+  curseforge {
+    apiKey = "${credentials.forKey('curseforge_api_token')}"
+    project {
+      id = "${project.curseforge_project_id}"
+      changelog = rootProject.file('../CHANGELOG.md')
+      changelogType = 'markdown'
+      releaseType = "${project.curseforge_release_type}"
+      addGameVersion("${project.minecraft_version}")
+      addGameVersion("Fabric")
+      addGameVersion("Quilt")
+      mainArtifact(remapJar) {
+        relations {
+          requiredDependency 'easy-npc-core'
+          requiredDependency 'easy-npc-config-ui'
+        }
+      }
+    }
+  }
+}
+
+// Modrinth Publishing
+if (project.hasProperty('modrinth_project_id') && project.modrinth_project_id) {
+  modrinth {
+    token = "${credentials.forKey('modrinth_api_token')}"
+    projectId = "${project.modrinth_project_id}"
+    versionNumber = "${project.version}"
+    versionType = "${project.modrinth_release_type}"
+    versionName = "${project.mod_name} ${project.version}"
+    changelog = rootProject.file('../CHANGELOG.md').text
+    uploadFile = remapJar
+    gameVersions = ["${project.minecraft_version}"]
+    loaders = ["fabric", "quilt"]
+    dependencies {
+      required.project "easy-npc-core"
+      required.project "easy-npc-config-ui"
+    }
+  }
+}

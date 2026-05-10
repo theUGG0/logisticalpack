@@ -1,0 +1,89 @@
+/*
+ * Copyright 2023 Markus Bordihn
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+ * associated documentation files (the "Software"), to deal in the Software without restriction,
+ * including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ * sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or
+ * substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+ * NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+package de.markusbordihn.easynpc.handler;
+
+import de.markusbordihn.easynpc.Constants;
+import de.markusbordihn.easynpc.data.display.DisplayAttributeType;
+import de.markusbordihn.easynpc.data.display.NameVisibilityType;
+import de.markusbordihn.easynpc.entity.easynpc.EasyNPC;
+import de.markusbordihn.easynpc.entity.easynpc.data.DisplayAttributeDataCapable;
+import de.markusbordihn.easynpc.network.components.TextComponent;
+import de.markusbordihn.easynpc.utils.TextUtils;
+import net.minecraft.network.chat.Style;
+import net.minecraft.network.chat.TextColor;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class NameHandler {
+
+  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+
+  private NameHandler() {}
+
+  public static boolean setCustomName(EasyNPC<?> easyNPC, String name, int color, boolean visible) {
+    return setCustomName(
+        easyNPC, name, color, visible ? NameVisibilityType.ALWAYS : NameVisibilityType.NEVER);
+  }
+
+  public static boolean setCustomName(
+      EasyNPC<?> easyNPC, String name, int color, NameVisibilityType nameVisibilityType) {
+    if (easyNPC == null || name == null) {
+      log.error("[{}] Error setting custom name {}", easyNPC, name);
+      return false;
+    }
+
+    log.debug(
+        "[{}] Change custom name to '{}' with color {} and visibility {}",
+        easyNPC,
+        name,
+        color,
+        nameVisibilityType);
+
+    // Remove the custom name if the name is empty.
+    if (name.isEmpty()) {
+      log.debug("[{}] Remove custom name", easyNPC);
+      easyNPC.getEntity().setCustomName(null);
+      easyNPC.getEntity().setCustomNameVisible(false);
+      return true;
+    }
+
+    // Define custom color and style for the name, if any.
+    Style style = Style.EMPTY;
+    if (color >= 0) {
+      style = style.withColor(TextColor.fromRgb(color));
+    }
+
+    // Set the custom name for the entity with translation key support.
+    easyNPC
+        .getEntity()
+        .setCustomName(
+            TextComponent.getTextComponentRaw(name, TextUtils.isTranslationKey(name))
+                .setStyle(style));
+
+    // Set display attribute for name visibility.
+    DisplayAttributeDataCapable<?> displayAttributeData = easyNPC.getEasyNPCDisplayAttributeData();
+    if (displayAttributeData != null) {
+      displayAttributeData.setDisplayAttribute(
+          DisplayAttributeType.NAME_VISIBILITY, nameVisibilityType);
+    }
+
+    return true;
+  }
+}

@@ -22,3 +22,11 @@ config/world_preview/missing-colors.json
 # Per-installation client UI preferences (NOT pack settings)
 config/creativecore-client.json
 config/solonion-client.json
+
+# java build outputs
+build/
+.gradle/
+.idea/
+*.iml
+.vscode/
+out/
