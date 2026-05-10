@@ -1791,6 +1791,14 @@ def download_pw_jar(pw_toml_path: Path, instance: Path,
             return True, "cached", "jar already installed (hash matches)"
 
     dest_jar.parent.mkdir(parents=True, exist_ok=True)
+    # Modrinth's API sometimes returns CDN URLs with literal spaces in the
+    # filename portion; urllib refuses those. Re-quote the path while leaving
+    # any existing percent-encoding intact (safe='/%').
+    parts = urllib.parse.urlsplit(actual_url)
+    safe_path = urllib.parse.quote(parts.path, safe="/%")
+    actual_url = urllib.parse.urlunsplit(
+        (parts.scheme, parts.netloc, safe_path, parts.query, parts.fragment)
+    )
     try:
         req = urllib.request.Request(actual_url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=60) as resp:

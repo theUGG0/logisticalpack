@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "WORLD_SETUP.md"
+hash = "322503d75b2d405d9b7e47392d6559a07baf58a1921932364f4df19655f43a1a"
+
+[[files]]
 file = "config/CustomNpcs.cfg"
 hash = "db9e723f66651ef671f89113f10d07f434d306e6fdc714c35d2f3423b81d1b25"
 
@@ -27,6 +31,10 @@ hash = "fc6b87d500994353673065c6fde9f6dabb0e6b1c61a9db86e2a69d90a57ffb7e"
 [[files]]
 file = "config/c2me.toml"
 hash = "b80c81f898fca2e685641f05add62630e1e18b4d0c97ddeb0c790b05e2751922"
+
+[[files]]
+file = "config/chunklimit-common.toml"
+hash = "8a8faffe4795e9b8451a7ba0f64e9dc0455327676dc9b02f938d4e762132a1cd"
 
 [[files]]
 file = "config/chunky/config.json"
@@ -189,6 +197,126 @@ file = "config/dynamicview.json"
 hash = "305841828cd7218dd650fc2f48f01039cbfb8a914143cd79ffe11f96f31888fd"
 
 [[files]]
+file = "config/easy_npc/npc_base.cfg"
+hash = "e74fa4628b900a6d3e1f0839c8963454d9c6ad7472e02b3c7b87a126dd72cb7a"
+
+[[files]]
+file = "config/easy_npc/render_entity_type_support.cfg"
+hash = "fe88972ca55f889b1d8ecc6748b5e3f289b47472bfb0b815140b8a4b569f5f3c"
+
+[[files]]
+file = "config/easy_npc/security.cfg"
+hash = "ab1b272d90c83b045607f558658953d46c2738445e9dc8778327e7f9784375b7"
+
+[[files]]
+file = "config/easy_npc/skin/allay/allay_template.png"
+hash = "5851df322e03f8c7d4ccd5875a7b8f38b692d6484cd9a8a34ca3ba2e51bcde1a"
+
+[[files]]
+file = "config/easy_npc/skin/cat/cat_template.png"
+hash = "c9c22851b6ce2a97d731b4e476423abcfc4911acd9e29ae157b8be5b42088364"
+
+[[files]]
+file = "config/easy_npc/skin/chicken/chicken_template.png"
+hash = "c9a5d1a53f844f32e2d530103540b4a91cfe8d53861c7b70bcae950742c50422"
+
+[[files]]
+file = "config/easy_npc/skin/creeper/creeper_template.png"
+hash = "effaa2db2b00b87505ed4e59549598106a7c63684b69e0c820c308b41eeb2385"
+
+[[files]]
+file = "config/easy_npc/skin/ender_man/ender_man_template.png"
+hash = "73579f345c51e7096168cacddf4b3e0a93b6c9880bded532a9d292c5917642a3"
+
+[[files]]
+file = "config/easy_npc/skin/fairy/fairy_template.png"
+hash = "db071fe581827f3a195df8344909bafb243cbf54c8931dc60a7785285946d1bb"
+
+[[files]]
+file = "config/easy_npc/skin/fox/fox_template.png"
+hash = "8cce109a5322cff97d82ea51c2c50d54d4486e57d48d72f20354d0e2e7aaf9a6"
+
+[[files]]
+file = "config/easy_npc/skin/humanoid/humanoid_template.png"
+hash = "b96aee293379a6a60a0e862dc338eb6a14ea31929b4f78d9923eb6b60940106c"
+
+[[files]]
+file = "config/easy_npc/skin/humanoid_slim/humanoid_slim_template.png"
+hash = "1c194da6ebe3a991146b0ef04a6000451789887a62bf7ee2d8a49b50b4bec6dd"
+
+[[files]]
+file = "config/easy_npc/skin/husk/husk_template.png"
+hash = "81f7fb65d89044326626462c36bfdc28b45d7fb307543d5b28abfa7a3a031624"
+
+[[files]]
+file = "config/easy_npc/skin/illager/illager_template.png"
+hash = "d3a9f1a01c6b711bb3ca70f598f14f3cfde8017542a8a48f93f8489b514dc03c"
+
+[[files]]
+file = "config/easy_npc/skin/iron_golem/iron_golem_template.png"
+hash = "2fadcece746b8a921130968a567296e63d4dbdfd1282e21d71fbd278994a4fe6"
+
+[[files]]
+file = "config/easy_npc/skin/orc/orc_template.png"
+hash = "1469eab5ffabb32f3b8ed9965de819db03ee6b0bd950885ad88fc5c517eaf817"
+
+[[files]]
+file = "config/easy_npc/skin/pig/pig_template.png"
+hash = "e1d27259fbaab2ae6924d5fc73ed462215395f08f79ef1518005ee0f73f2a81a"
+
+[[files]]
+file = "config/easy_npc/skin/piglin/piglin_template.png"
+hash = "9d2dfd8515332c4ac529e51599ee89b8a4c359617a225d15a5147020034870a5"
+
+[[files]]
+file = "config/easy_npc/skin/skeleton/skeleton_template.png"
+hash = "aa91f44a9c36bea6c14537e4f73ab69a4b50d4406370577a7a0d63af4783a8c6"
+
+[[files]]
+file = "config/easy_npc/skin/spider/spider_template.png"
+hash = "f9f894b50e1ebf1a2ea9cede0e6b8eadb816ef951b4d4ad6a7e55ce85be3bf1e"
+
+[[files]]
+file = "config/easy_npc/skin/stray/stray_template.png"
+hash = "81f7fb65d89044326626462c36bfdc28b45d7fb307543d5b28abfa7a3a031624"
+
+[[files]]
+file = "config/easy_npc/skin/vex/vex_template.png"
+hash = "56c665b06aa06dcc111c6a7c09e02729c026350a30c98635df5f54e3d12d4bcf"
+
+[[files]]
+file = "config/easy_npc/skin/villager/villager_template.png"
+hash = "ee42acf22b0f8df770510a77e1c0988af96bb4f24e3b82a32b3364be021c760c"
+
+[[files]]
+file = "config/easy_npc/skin/villager/villager_without_hat_template.png"
+hash = "d24d599378f1fb54f343926c2d39c078c81021cab7da6337f7a688621327cac5"
+
+[[files]]
+file = "config/easy_npc/skin/witch/witch_template.png"
+hash = "ef51d0f6a893c201752ce5b12ee352651928d42497b102ba429d1b8cd25f2722"
+
+[[files]]
+file = "config/easy_npc/skin/wolf/wolf_template.png"
+hash = "47833f4690766423c63905c6950224b77867e1c30833fd9a7cdcc0d6455d743a"
+
+[[files]]
+file = "config/easy_npc/skin/zombie/zombie_template.png"
+hash = "e9a38d8b1980d1390575658004f1a8274d57e5f14afaff9a2c7dc06315d01f54"
+
+[[files]]
+file = "config/easy_npc/skin/zombie_villager/zombie_villager_template.png"
+hash = "fdeea612041dc4c5137675bfb656ff570cad4b33fffa995746f1e56290614516"
+
+[[files]]
+file = "config/easy_npc/spawner_type.cfg"
+hash = "aec6713fcff26b22d8e64f232160b0dbdbc028e84d9819e6cbdc1fe111fd0e43"
+
+[[files]]
+file = "config/easy_npc/user_defined_npcs.json"
+hash = "03ebf1e09c95de7cae601b38688ba89a153812ff1a6cf08bdad27913e977c016"
+
+[[files]]
 file = "config/encumbrance.json"
 hash = "5758f19722918dae47dc47b11c157049c16b69fa64346a12d900bf952bee5833"
 
@@ -205,6 +333,34 @@ file = "config/fml.toml"
 hash = "cc127c6067eb9e23289edc1c774afd71456456eef06c688af6731a72d3bba5e5"
 
 [[files]]
+file = "config/ftb_chunks_mob_spawn_fix.toml"
+hash = "ee8ff742c9678da20cbd9e9eecca7b324206b3182943f755b06210585f1eb0af"
+
+[[files]]
+file = "config/ftbchunks-client.snbt"
+hash = "13b25880aff3143e248ada2bf69288d27ed6899c2d0f742fe4e4d33bd12a4d17"
+
+[[files]]
+file = "config/ftbchunks-world.snbt"
+hash = "abd33c769d6364bf6fce532ba5bfe2a8bcd6ae8461fa6eb88e3f88d676576207"
+
+[[files]]
+file = "config/ftblibrary-client.snbt"
+hash = "a9fcae14a98b4009d0a4f020bcdc6693953496293ac213683496f27a001a623f"
+
+[[files]]
+file = "config/ftbquests-client.snbt"
+hash = "83b3c8c5548b8e419f97857e0694fac7ae08442ebd894f41868db4b30ae1030f"
+
+[[files]]
+file = "config/ftbteams-server.snbt"
+hash = "0cb54f6b7568ca7fff6b6a1320eb4ef455941c83a932f5dd8c6ad1c5741e0458"
+
+[[files]]
+file = "config/ftbxmodcompat.snbt"
+hash = "1227e1dd97b7c71deaa0b47abf0ec446db955b6cb8f1db0e877a22f095dd9780"
+
+[[files]]
 file = "config/immediatelyfast.json"
 hash = "a6c9d147a51c9e432c5c74c00285cfc5ba8b6fa4a0c6686051a7168b158d0d7a"
 
@@ -214,7 +370,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "46d96efb21e34b6940283033a6d22352f8ae5145547cea2aeb05bafc6a4f31a8"
+hash = "1e262168e3c3d7e68ef82e579ba13c400b0aab5b164587222842d9e16f130084"
 
 [[files]]
 file = "config/jade/hide-blocks.json"
@@ -230,11 +386,11 @@ hash = "f9f68a1557cdfab8394d2f4b54a2756d96451dcdddea4f5e04cb912b516ffa05"
 
 [[files]]
 file = "config/jade/plugins.json"
-hash = "252781a9860ee241ed889f1780e7d1a0147322a003e7508a2a48a583d270fe0f"
+hash = "5d76e0f8335fd071f7845ecf529b5b557749fd1b48ec8b7088b6aab143b86742"
 
 [[files]]
 file = "config/jade/sort-order.json"
-hash = "2dc6f3a52bdd8d070a1d2a4463ca0aa07d0ffc41e1d087ba38288ad6430460d4"
+hash = "c24b95fde69ae8e939de95833f62cc4b4d8e61d5a3a3b7a7c0c44a1e2e5bfe38"
 
 [[files]]
 file = "config/jei-server.toml"
@@ -246,7 +402,7 @@ hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
 file = "config/jei/ingredient-list-mod-sort-order.ini"
-hash = "d81eda8cec24497ffb8cd2e973d518762fee94801151321972c18cc85879f3aa"
+hash = "0ea8395ea7b667ec3f1375470ac8246ae7a727110ed5f2e5f17732d76ef46472"
 
 [[files]]
 file = "config/jei/ingredient-list-type-sort-order.ini"
@@ -270,7 +426,7 @@ hash = "4eb3a3eb280558bdd2665fb4792d32551cb6dddc468776e66afc1c3ea981781e"
 
 [[files]]
 file = "config/jei/recipe-category-sort-order.ini"
-hash = "f935276ac0bd13a0a2b7d67bca107fd1dd67a1d804617a309974e961f1fe70d6"
+hash = "e1e31b948a6e1bb6a080aec5cf403f0a995f1df8f9fefa93b5e2c6a3bd4b1b22"
 
 [[files]]
 file = "config/jei/world/local/New_World__1/lookupHistory.json"
@@ -517,16 +673,12 @@ file = "config/world_preview/config.json"
 hash = "0355f85dcf31fa89f0cff47df95858cddf2feb9fa0f175642573a02f1fbe6dff"
 
 [[files]]
-file = "config/world_preview/missing-colors.json"
-hash = "c6f1263aabb0c5c8d124f1f62605e9c46bd71956441afaab113c292c5004d4a7"
-
-[[files]]
 file = "config/world_preview/missing-structures.json"
 hash = "b7f832bf4f0371830426e78af9a011e6444998c04269ac75f96aead61b707cb7"
 
 [[files]]
 file = "config/world_preview/renderConfig.json"
-hash = "5a44efa9a81c0c394f9a743b8212e489a86695835ab737775632ac8c562827c2"
+hash = "80cc75199f586ce13e75f15202367cc2b3cca9b93a3a55ab393017cd8c373760"
 
 [[files]]
 file = "dev-mods/biome-growth-jade/.gradle/8.10/checksums/checksums.lock"
@@ -593,166 +745,6 @@ file = "dev-mods/biome-growth-jade/build.gradle"
 hash = "025869eff67cc72861c1657864591db45b0f4fd67695b07cb586b2e2eb8a374a"
 
 [[files]]
-file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/BiomeGrowthJade.class"
-hash = "bdfd4711aa02974e2be24d43cd13a23f4e8accd195e3a0d54d9e279455be41db"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/CropGrowthProvider$BucketTags.class"
-hash = "b3e349c6329c6fab58ea52fff43275e7b54626207f77c306c34ddccb1d414faa"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/CropGrowthProvider$StateInfo.class"
-hash = "9890e975e833acb1ed8c812fcc7df922cf8ca1d035dfede97490ba426302da9d"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/CropGrowthProvider.class"
-hash = "6d435a2c6d4035f8556d806fff96a65e92bb2d8cdef4d680f483fdb4f9ecd759"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/DeadBushProvider.class"
-hash = "d438fe1e7c6e0e7d730fb8fb85b09a9acda0ddf01835c6408ccd5035cc6be506"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/DeathRecord.class"
-hash = "d6f9c1fd69b9fa434857385807c5e42dc4380b693214412e943522defa6d7881"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/DeathRecords.class"
-hash = "8159fc6cbe13d3f9acad15be87e5906c02ae4afda57c675b15be09587fa906b9"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/classes/java/main/com/fatcrackle/biomegrowthjade/JadePlugin.class"
-hash = "682c1a585fbd74616d9676fbd0927a20d68d1a24dc1476b4096250e66cc4092d"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/libs/biome-growth-jade-1.0.0.jar"
-hash = "222ef2e35a65e5abffc8aff598db4b9fb33ed7b87523a82e763d2a5608c26851"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.221-minecraft-merged.jar"
-hash = "b70af1423267b54afc4a91f871eba7161d38594c58d08c81f47689cca203c90b"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.221-minecraft-resources-aka-client-extra.jar"
-hash = "a390ae8f2e8a8417fad5e5c0f915ef830ab9d4bbb3980500a23831dea327cbdc"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.221-minecraft-sources.jar"
-hash = "ed1a04ef1a94bd0ab0a5826f7f5e523566886bc08929c3e1bfc8c4996193a386"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.221-minecraft.jar"
-hash = "2c892d549918a1f43c7678e842c56253775459cf6c4f4e613d54a9164e8d8dfa"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.95-minecraft-merged.jar"
-hash = "a459420a2f173d035e59e08c504f043c26ea141d38822f8c29e3fe382751e313"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.95-minecraft-resources-aka-client-extra.jar"
-hash = "a390ae8f2e8a8417fad5e5c0f915ef830ab9d4bbb3980500a23831dea327cbdc"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.95-minecraft-sources.jar"
-hash = "e5a5ce45b486e7c953daeea9eaf7d4e4a44beb9694f2c6875b9b9f6b155bbdee"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/moddev/artifacts/neoforge-21.1.95-minecraft.jar"
-hash = "86998271331fe3a429ba0203b4d20ec9633f4a89e7ab632e048a41b4ae350be0"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/moddev/nfrt_artifact_manifest.properties"
-hash = "18d5c8b75ac564afff535a74f04463d9d460882624bf3f0bdc8aebd591bb8360"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/resources/main/META-INF/neoforge.mods.toml"
-hash = "4e603f8e6cbaa290497d03fd54be4eb6cd8a196b2ac1db61fb1ad00be6a20237"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/resources/main/pack.mcmeta"
-hash = "b573a87d4059e42a994115b3f00eebf1a3c6ff4db66c6d1dffd72fba7d177e1e"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/compileJava/compileTransaction/stash-dir/CropGrowthProvider$BucketTags.class.uniqueId1"
-hash = "b3e349c6329c6fab58ea52fff43275e7b54626207f77c306c34ddccb1d414faa"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/compileJava/compileTransaction/stash-dir/CropGrowthProvider$StateInfo.class.uniqueId0"
-hash = "9890e975e833acb1ed8c812fcc7df922cf8ca1d035dfede97490ba426302da9d"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/compileJava/compileTransaction/stash-dir/CropGrowthProvider.class.uniqueId2"
-hash = "e18a7065c0b44f0682c97a6ce3da845e1bc2f556b27d5272ca002412e191d3f8"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/compileJava/compileTransaction/stash-dir/JadePlugin.class.uniqueId3"
-hash = "682c1a585fbd74616d9676fbd0927a20d68d1a24dc1476b4096250e66cc4092d"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/compileJava/previous-compilation-data.bin"
-hash = "cf87b8dc8860cd58747f46a6070f91bd898ca756e4f88cf482bbc8f5976c5d0e"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/jar/MANIFEST.MF"
-hash = "566ad1a80220026d05099562645ce968ff0e7c36cde22634332605bb34cc3eff"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202504_extractServer/console_output.txt"
-hash = "419b6c8e09f9b3b59a14fa029ca2f549508d914d01e000cc341ed55cd4ee9b90"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202504_mergeMappings/config/joined.tsrg"
-hash = "8081431dcb7c2428db07582db7135be739fa50b123103b3eaf14b2ae16ea37a6"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202504_mergeMappings/console_output.txt"
-hash = "3c56fd85654564bd05122b0840d7f8387b2df77101f9b2c72cc7cddffd08d6cf"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202505_merge/console_output.txt"
-hash = "71067d9bb10da559c428002f40522d3425f017f88d9b22a26630853c3792dfbd"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202506_rename/console_output.txt"
-hash = "a3d87dc40261ed2bdb098a5992a94a226d1ed52c62851198317cef68e8729cdf"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202508_decompile/console_output.txt"
-hash = "81eebf02c363519bb1af5a4de920e3fc83064763ac9bef2b23df54af0bcd53c7"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202522_patch/console_output.txt"
-hash = "6dbc23b95f9f04dee1a6c45cba1f2263ac3f17f4c4607f8a3e7599c19efa9ed4"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202523_applyNeoforgePatches/console_output.txt"
-hash = "206310fcce7ef20a626bf2077ae33bc3fed4a4e5a6b0a19c4234c3823f63aa58"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202523_transformSources/ats/_script_neoforge.cfg"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202523_transformSources/ats/accesstransformer.cfg"
-hash = "71280d5941debd450e726691809d0101008326ba229580563dc277760b8abcc6"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-202523_transformSources/console_output.txt"
-hash = "4c93ae6fdf3bc309b9737b0882af2e5e9e44f7f6f0814dea32b244d1f3a6884b"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-232642_applyNeoforgePatches/console_output.txt"
-hash = "75c11a4cc91255ba2ad26ea8ee651a0266d9f3b4856320af40dba89d8870e3fc"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-232643_transformSources/ats/accesstransformer.cfg"
-hash = "d43403e1d9930ca4e5a5c1788bdf46b688b3ae5acd3d4c61ff16f7bcd22840be"
-
-[[files]]
-file = "dev-mods/biome-growth-jade/build/tmp/neoformruntime/20260509-232643_transformSources/console_output.txt"
-hash = "883bb3244cf21eb449e9b45071311ce9f9ad51a6616e0b87d2675853f76dd386"
-
-[[files]]
 file = "dev-mods/biome-growth-jade/gradle.properties"
 hash = "0f79be478ac1d147fc6086fce9c195cfb92620123dae4838ddc68db94f40d0ad"
 
@@ -810,7 +802,7 @@ hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
 
 [[files]]
 file = "kubejs/assets/logisticalpack/lang/en_us.json"
-hash = "b9b7a05be83a2309458da5137f4d7ce59a2ff99911b03cdd51c149cc69eb66f8"
+hash = "40670e374263499608bb2aa9c973228d1bf11a04ff00540157d08c281ac4669e"
 
 [[files]]
 file = "kubejs/client_scripts/biome_growth_tooltip.js"
@@ -2461,6 +2453,22 @@ file = "kubejs/server_scripts/ore_progression/tin_recipes.js"
 hash = "68c4f7f835986ceaf145637457233aa4cb395b888a090529457aef4503c6838b"
 
 [[files]]
+file = "kubejs/server_scripts/towns/town_chunk_scan.js"
+hash = "4681b574eb849a4cb7ae9a6840676fcb83639fb1424331c724a7d9aea9f2467d"
+
+[[files]]
+file = "kubejs/server_scripts/towns/town_names.js"
+hash = "0c91fb25568b0b13e41e192e028c7767d7cb93105c23895c2701ce72b684a505"
+
+[[files]]
+file = "kubejs/server_scripts/towns/town_registry.js"
+hash = "642cf1e3158f78d08ab6e59abcb83a2c4613dffea6f738568bdafaa40c94b499"
+
+[[files]]
+file = "kubejs/server_scripts/towns/town_setup.js"
+hash = "9e33493e12319b86e25c35f20fae90836e9c6e30773ac5b1b5321f4b7e61ba5f"
+
+[[files]]
 file = "kubejs/startup_scripts/biome_growth_tooltip.js"
 hash = "ae5ed4f44e58ac5408d30762d6f4831cc89b27c58dec45b3e67214c6d26736ed"
 
@@ -2481,6 +2489,10 @@ file = "kubejs/startup_scripts/ore_progression/register_tin.js"
 hash = "db88dea19970005cd6ab369a1e0bf4c3f41f1db8aaf1c9a654fd229a89d4bc54"
 
 [[files]]
+file = "kubejs/startup_scripts/towns/town_center_block.js"
+hash = "b336ea69c0fd031c8daf4032206b1bf4fe018f2a361922c3dd8d2ae5c9388bc2"
+
+[[files]]
 file = "local_readme.md"
 hash = "14bc3fbc8ac72d399f9edcdeb295e2cc76a5d66b93bd8b58bf060344ba0e5959"
 
@@ -2499,9 +2511,23 @@ hash = "ad397362402111a7c7bfef11ba0b1ce8103c2322dcabae24513d110f4d57d62f"
 metafile = true
 
 [[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "2de72a067c618a855af01239c1dd665e99bd9987a9f1301fcf499dd61669df02"
+metafile = true
+
+[[files]]
 file = "mods/ats-more-animals.pw.toml"
 hash = "49b69f085351f433ffb9bc0954f021cb0f1fc777b5e1b4aada149f7e3c68679f"
 metafile = true
+
+[[files]]
+file = "mods/biome-growth-jade-1-0-0.pw.toml"
+hash = "1055fc5459d6de62ba19c4e32716843395c53d747cff0e1e6052ff1d0e63c5b7"
+metafile = true
+
+[[files]]
+file = "mods/biome-growth-jade-1.0.0.jar"
+hash = "222ef2e35a65e5abffc8aff598db4b9fb33ed7b87523a82e763d2a5608c26851"
 
 [[files]]
 file = "mods/biome-improvement-mindthemoods-pile-of-rocks.pw.toml"
@@ -2603,11 +2629,6 @@ hash = "2826edbcf6a21c866c7ac725358c4511962127e21489ec543298d4371bdf6c1a"
 metafile = true
 
 [[files]]
-file = "mods/customnpcs-unofficial.pw.toml"
-hash = "824317b718bf1d118afdecec915c407593fbf72633673963c543a65647334b33"
-metafile = true
-
-[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "7bb79b20f2bab5e5a503e1a23c46a006e91fc366a0f9b9387ce071f3f32d8461"
 metafile = true
@@ -2615,6 +2636,21 @@ metafile = true
 [[files]]
 file = "mods/dynamic-ore-veins.pw.toml"
 hash = "0f1f88694e0bf9ac1ae08b21ee5b59824a2ff2a6d6afc839fd9356c4e26c40dc"
+metafile = true
+
+[[files]]
+file = "mods/easy-npc-config-ui.pw.toml"
+hash = "e75b18c1abd01e0c002f354da5eea771f013f0f4586f86629d2edfb2c69db061"
+metafile = true
+
+[[files]]
+file = "mods/easy-npc-core.pw.toml"
+hash = "409420313ca5820c223f0e2e4504efd3ef54abe14311d8d8308cd0fcf73d957c"
+metafile = true
+
+[[files]]
+file = "mods/easy-npc.pw.toml"
+hash = "8503655601f336ddd7d799b879489d0baa6e18e8d0be44152557607ca093318d"
 metafile = true
 
 [[files]]
@@ -2639,6 +2675,36 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "ee283d69b5846fc59ea45b7f632809d1405313e83708e600a08ebc1c7267962d"
+metafile = true
+
+[[files]]
+file = "mods/ftb-chunks-expanded-config.pw.toml"
+hash = "d4fe224b8f18b7fc4c186079e5153fceaed48e8b7e0dd4a324a3eb7cd2db003a"
+metafile = true
+
+[[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "84984e2bc15af834967c030ec0fdfe0e48a321b1c48c2c2325f3ce77047c4905"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "ac3479c3914c48852560a3d0efb7f33de6578785ecbbff079ad7a0b6e0ddcbfa"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "2dc13168737ba04f595cf89c54f774d29603dc36de28ea47ed29a0e8366d01f3"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "f1aa3dc8f0e818d5cf17ea1524c89522d05ebde7072e72c4811bf4460c0ddc1d"
+metafile = true
+
+[[files]]
+file = "mods/ftb-xmod-compat.pw.toml"
+hash = "c5648f7c204c4e78dbe6a67fd5e57e14d01226021eb3ee1db083d2415028f3c7"
 metafile = true
 
 [[files]]
@@ -2734,6 +2800,11 @@ metafile = true
 [[files]]
 file = "mods/noisiumforked.pw.toml"
 hash = "ca8d67430c95efb01b18b4b432d3e3eecb33ea4545799a166c551c4fe2663fe7"
+metafile = true
+
+[[files]]
+file = "mods/numismatics.pw.toml"
+hash = "6425e1638ff21771bbeb71f91ba1e33b624c8ff18f64beefa75e3d6f7f4eaf7e"
 metafile = true
 
 [[files]]

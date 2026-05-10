@@ -1,5 +1,6 @@
 {
   "block.logisticalpack.lignite_ore": "Lignite Ore",
   "block.logisticalpack.deepslate_lignite_ore": "Deepslate Lignite Ore",
-  "item.logisticalpack.lignite": "Lignite"
+  "item.logisticalpack.lignite": "Lignite",
+  "block.logisticalpack.town_center": "Town Center"
 }
