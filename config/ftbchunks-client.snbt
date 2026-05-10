@@ -138,38 +138,38 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:pig": true
-			"minecraft:glow_squid": true
-			"ats_more_animals_mod:tapir": true
-			"minecraft:chicken": true
-			"minecraft:villager": true
-			"minecraft:drowned": true
-			"minecraft:slime": true
-			"minecraft:tropical_fish": false
-			"minecraft:bee": true
 			"ats_more_animals_mod:jellyfish": true
-			"minecraft:axolotl": true
-			"minecraft:wolf": true
-			"ats_more_animals_mod:shark": true
-			"minecraft:witch": true
-			"ats_more_animals_mod:wale": true
-			"minecraft:squid": true
-			"minecraft:bat": true
-			"minecraft:creeper": true
-			"minecraft:zombie_villager": true
-			"minecraft:sheep": true
-			"ats_more_animals_mod:snail": true
-			"minecraft:dolphin": true
-			"minecraft:goat": true
+			"minecraft:villager": true
+			"minecraft:slime": true
 			"minecraft:spider": true
-			"minecraft:skeleton": true
-			"minecraft:zombie": true
-			"minecraft:enderman": true
-			"minecraft:bogged": true
-			"minecraft:cod": false
-			"minecraft:cow": true
+			"ats_more_animals_mod:shark": true
 			"minecraft:phantom": true
+			"ats_more_animals_mod:snail": true
+			"minecraft:cow": true
+			"minecraft:sheep": true
+			"ats_more_animals_mod:wale": true
+			"minecraft:tropical_fish": false
+			"minecraft:pig": true
+			"minecraft:bee": true
+			"minecraft:glow_squid": true
+			"minecraft:enderman": true
 			"minecraft:frog": true
+			"minecraft:drowned": true
+			"minecraft:wolf": true
+			"minecraft:creeper": true
+			"minecraft:witch": true
+			"minecraft:bat": true
+			"minecraft:dolphin": true
+			"minecraft:squid": true
+			"minecraft:zombie_villager": true
+			"minecraft:chicken": true
+			"minecraft:bogged": true
+			"minecraft:skeleton": true
+			"ats_more_animals_mod:tapir": true
+			"minecraft:cod": false
+			"minecraft:axolotl": true
+			"minecraft:goat": true
+			"minecraft:zombie": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "cgm:pistol",
+      "required": false
+    },
+    {
+      "id": "tacz:modern_kinetic_gun",
+      "required": false
+    },
+    {
+      "id": "jeg:minigun",
+      "required": false
+    }
+  ]
+}

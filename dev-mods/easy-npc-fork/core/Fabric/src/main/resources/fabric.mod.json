@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "easy_npc",
+  "version": "${version}",
+  "name": "Easy NPC",
+  "description": "Create easily NPCs for your world or for your mods.",
+  "authors": [
+    "Markus Bordihn"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/easy-npc",
+    "issues": "https://github.com/MarkusBordihn/BOs-Easy-NPC/issues"
+  },
+  "license": "MIT",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.markusbordihn.easynpc.EasyNPCMain"
+    ],
+    "client": [
+      "de.markusbordihn.easynpc.EasyNPCClient"
+    ],
+    "fabric-gametest": [
+      "de.markusbordihn.easynpc.gametest.SmokeTest",
+      "de.markusbordihn.easynpc.gametest.DialogScreenTest",
+      "de.markusbordihn.easynpc.gametest.ModSpawnEggItemTest"
+    ]
+  },
+  "mixins": [
+    "easy_npc.fabric.mixins.json"
+  ],
+  "accessWidener": "easynpc.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.18.3",
+    "fabric-api": ">=0.116.7+1.21.1",
+    "minecraft": "1.21.1",
+    "java": ">=21"
+  },
+  "suggests": {
+    "tooltipfix": "*"
+  }
+}

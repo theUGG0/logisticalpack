@@ -1,0 +1,300 @@
+// Workaround for Easy NPC issue #305 (closed Not Planned by upstream):
+//   preset-imported NPCs spawn with valid Offers/Recipes NBT but the
+//   in-memory Merchant object is never constructed, so right-click and
+//   /easy_npc trading open both fail with "No merchant found for ..."
+//
+// Root cause (verified by decompiling the mod jar):
+//   TradingDataCapable.setTradingOffers(MerchantOffers) ends with
+//   updateMerchantTradingOffers() which performs the registration.
+//   The deserialisation path that runs during preset import writes the
+//   NBT but never invokes setTradingOffers, so updateMerchantTradingOffers
+//   never fires either. The wand-UI "touch a slot" workaround works
+//   because the UI calls setTradingOffers, which calls update.
+//
+// Fix: hook entity-spawn, detect Easy NPC humanoids, call
+//   updateMerchantTradingOffers() directly. It's a default method on the
+//   TradingDataCapable interface that every Easy NPC entity implements.
+//   Idempotent — calling it on an already-working NPC is harmless.
+//
+// Memory ref: easy_npc_import_interaction_bug.md
+
+if (typeof LPNpc === 'undefined') var LPNpc = {}
+
+;(function () {
+  LPNpc.tradingFixCount = LPNpc.tradingFixCount || 0
+
+  // Lazy-load Java classes once. Using Easy NPC's own file IO
+  // (PresetFileHandler) instead of java.nio.file.Files — the latter is
+  // blocked by KubeJS's class filter.
+  var lpFxClassesLoaded = false
+  var lpFxTradingUtils, lpFxLevelResource, lpFxFile, lpFxPresetFileHandler
+  var lpFxTradingType, lpFxTradingTypeBASIC
+
+  function lpFxLoadClasses() {
+    if (lpFxClassesLoaded) return true
+    try {
+      lpFxTradingUtils      = Java.loadClass('de.markusbordihn.easynpc.utils.TradingUtils')
+      lpFxLevelResource     = Java.loadClass('net.minecraft.world.level.storage.LevelResource')
+      lpFxFile              = Java.loadClass('java.io.File')
+      lpFxPresetFileHandler = Java.loadClass('de.markusbordihn.easynpc.io.PresetFileHandler')
+      lpFxTradingType       = Java.loadClass('de.markusbordihn.easynpc.data.trading.TradingType')
+      lpFxTradingTypeBASIC  = lpFxTradingType.BASIC
+      lpFxClassesLoaded = true
+      return true
+    } catch (eLoad) {
+      console.warn('[LPNpc] Could not load required Java classes: ' + eLoad)
+      return false
+    }
+  }
+
+  // Resolve the world directory by getting any known LevelResource path
+  // and walking up to the parent.
+  function lpFxWorldDirString(server) {
+    var lpFxLDF = lpFxLevelResource.LEVEL_DATA_FILE
+    return String(server.getWorldPath(lpFxLDF).getParent())
+  }
+
+  function lpRunTradingFix(entity, sourceTag) {
+    if (!entity) return false
+    var lpFxId = ''
+    try { lpFxId = String(entity.type) } catch (e) {}
+    if (lpFxId.indexOf('easy_npc:') !== 0) return false
+    if (!lpFxLoadClasses()) return false
+
+    // Read the entity's persistent .npc.nbt file from disk via Easy NPC's
+    // own PresetFileHandler.load(File) — this avoids KubeJS's filter on
+    // java.nio.file.Files and uses mod-internal IO that's already allowed.
+    var lpFxServer = entity.level.server
+    var lpFxFilePathStr
+    try {
+      lpFxFilePathStr = lpFxWorldDirString(lpFxServer)
+        + '/easy_npc/npcs/' + String(entity.uuid) + '.npc.nbt'
+    } catch (ePath) {
+      console.warn('[LPNpc] Could not build npc file path: ' + ePath)
+      return false
+    }
+
+    var lpFxFileObj
+    try {
+      lpFxFileObj = new lpFxFile(lpFxFilePathStr)
+    } catch (eFile) {
+      console.warn('[LPNpc] Could not construct File: ' + eFile)
+      return false
+    }
+    if (!lpFxFileObj.exists()) {
+      console.log('[LPNpc] No persistent file for ' + lpFxId
+        + ' uuid=' + entity.uuid + ' (path=' + lpFxFilePathStr + ')')
+      return false
+    }
+
+    var lpFxNbt
+    try {
+      lpFxNbt = lpFxPresetFileHandler.load(lpFxFileObj)
+    } catch (eRead) {
+      console.warn('[LPNpc] PresetFileHandler.load failed for '
+        + lpFxFilePathStr + ': ' + eRead)
+      return false
+    }
+    if (!lpFxNbt) {
+      console.warn('[LPNpc] PresetFileHandler.load returned null for '
+        + lpFxFilePathStr)
+      return false
+    }
+
+    var lpFxHasOffers = false
+    try { lpFxHasOffers = lpFxNbt.contains('Offers') } catch (eC) {}
+    if (!lpFxHasOffers) {
+      console.log('[LPNpc] No Offers in file for ' + lpFxId
+        + ' uuid=' + entity.uuid + ' (skipping)')
+      return false
+    }
+
+    var lpFxOffers
+    try {
+      lpFxOffers = lpFxTradingUtils.parseMerchantOffers(
+        lpFxNbt,
+        'Offers',
+        entity.level.registryAccess(),
+        'lpfix'
+      )
+    } catch (eParse) {
+      console.warn('[LPNpc] parseMerchantOffers failed for ' + lpFxId
+        + ' uuid=' + entity.uuid + ': ' + eParse)
+      return false
+    }
+    var lpFxSize = -1
+    try { lpFxSize = lpFxOffers ? lpFxOffers.size() : 0 } catch (eSz) {}
+
+    if (lpFxSize <= 0) {
+      console.log('[LPNpc] Parsed 0 offers for ' + lpFxId
+        + ' uuid=' + entity.uuid + ' (skipping)')
+      return false
+    }
+
+    // Three writes are needed in this order:
+    //
+    // 1. TradingDataSet.type = BASIC. updateMerchantTradingOffers (which
+    //    setTradingOffers calls) checks the type — if it's NONE (default),
+    //    it overwrites the merchantTradingOffers field with an EMPTY
+    //    MerchantOffers. So we MUST set the type to BASIC first or the
+    //    field gets wiped immediately after we set it.
+    //
+    // 2. setMerchantTradingOffers(offers) — populates the entity's
+    //    `merchantTradingOffers` field, which is what Merchant.getOffers()
+    //    reads (used by the actual trading screen).
+    //
+    // 3. setTradingOffers(offers) — also pushes through the synced-data
+    //    path so clients see the offers (used by the wand GUI display).
+    try {
+      var lpFxDS = entity.getTradingDataSet()
+      if (lpFxDS) {
+        lpFxDS.setType(lpFxTradingTypeBASIC)
+        entity.setTradingDataSet(lpFxDS)
+      } else {
+        console.warn('[LPNpc] getTradingDataSet returned null for '
+          + entity.uuid)
+      }
+    } catch (eType) {
+      console.warn('[LPNpc] Setting TradingType=BASIC failed for '
+        + entity.uuid + ': ' + eType)
+    }
+
+    try {
+      entity.setMerchantTradingOffers(lpFxOffers)
+    } catch (eSetField) {
+      console.warn('[LPNpc] setMerchantTradingOffers FAILED for ' + lpFxId
+        + ' uuid=' + entity.uuid + ' err=' + eSetField)
+    }
+
+    try {
+      entity.setTradingOffers(lpFxOffers)
+      LPNpc.tradingFixCount++
+      console.log('[LPNpc] Trading fix applied (' + sourceTag + '): '
+        + lpFxId + ' uuid=' + entity.uuid
+        + ' offers=' + lpFxSize
+        + ' total=' + LPNpc.tradingFixCount)
+      return true
+    } catch (eSet) {
+      console.warn('[LPNpc] setTradingOffers FAILED for ' + lpFxId
+        + ' uuid=' + entity.uuid
+        + ' offers=' + lpFxSize
+        + ' err=' + eSet)
+      return false
+    }
+  }
+
+  // Auto-fix queue: when an Easy NPC spawns its persistent .npc.nbt file
+  // is written 30-60+ seconds LATER (not synchronously). So spawn-time
+  // fix usually fails with "No persistent file". Queue the entity by
+  // direct reference and retry every second until the fix succeeds or
+  // 90s pass.
+  //
+  // Store entity references directly — UUID lookup via level.getEntity
+  // proved unreliable (returned null silently in tick context).
+  LPNpc.fixQueue = LPNpc.fixQueue || []
+  LPNpc.fixCounter = LPNpc.fixCounter || 0
+  var LPNpc_RETRY_INTERVAL_TICKS = 20      // 1 second
+  var LPNpc_GIVE_UP_TICKS = 90 * 20        // 90 seconds
+
+  EntityEvents.spawned(event => {
+    var lpQEnt = event.entity
+    if (!lpQEnt) return
+    var lpQId = ''
+    try { lpQId = String(lpQEnt.type) } catch (e) {}
+    if (lpQId.indexOf('easy_npc:') !== 0) return
+    LPNpc.fixQueue.push({
+      entity: lpQEnt,
+      uuid: String(lpQEnt.uuid),
+      tickAdded: LPNpc.fixCounter,
+    })
+    console.log('[LPNpc] Queued spawn fix for ' + lpQId
+      + ' uuid=' + lpQEnt.uuid + ' (queue size=' + LPNpc.fixQueue.length + ')')
+  })
+
+  ServerEvents.tick(event => {
+    LPNpc.fixCounter++
+    if (LPNpc.fixCounter % LPNpc_RETRY_INTERVAL_TICKS !== 0) return
+    if (LPNpc.fixQueue.length === 0) return
+
+    var lpQI, lpQItem, lpQAge, lpQAlive
+    // Iterate backward so we can splice without disturbing the index.
+    for (lpQI = LPNpc.fixQueue.length - 1; lpQI >= 0; lpQI--) {
+      lpQItem = LPNpc.fixQueue[lpQI]
+      lpQAge = LPNpc.fixCounter - lpQItem.tickAdded
+
+      lpQAlive = false
+      try { lpQAlive = lpQItem.entity && lpQItem.entity.isAlive } catch (eAlive) {}
+      if (!lpQAlive) {
+        console.warn('[LPNpc] Dropping queued ' + lpQItem.uuid + ' (not alive)')
+        LPNpc.fixQueue.splice(lpQI, 1)
+        continue
+      }
+
+      if (lpRunTradingFix(lpQItem.entity, 'queue-retry')) {
+        LPNpc.fixQueue.splice(lpQI, 1)
+      } else if (lpQAge > LPNpc_GIVE_UP_TICKS) {
+        console.warn('[LPNpc] Giving up on ' + lpQItem.uuid
+          + ' after ' + Math.floor(lpQAge / 20) + 's; file never appeared')
+        LPNpc.fixQueue.splice(lpQI, 1)
+      }
+    }
+  })
+
+  // /lp_fix_npcs — manual one-shot to repair every Easy NPC currently
+  // loaded in the player's dimension. Use after enabling this script for
+  // the first time, or if you suspect some NPCs slipped through.
+  ServerEvents.commandRegistry(event => {
+    event.register(
+      event.commands.literal('lp_fix_npcs')
+        .requires(src => src.hasPermission(2))
+        .executes(ctx => {
+          var lpFxSrc = ctx.source
+          var lpFxLevel = lpFxSrc.level
+          var lpFxFixed = 0
+          var lpFxScanned = 0
+          var lpFxEnt
+
+          // KubeJS exposes level.entities as an Iterable of all loaded
+          // entities. Try that first; fall back to vanilla allEntities.
+          var lpFxIter = null
+          try {
+            var lpFxColl = lpFxLevel.entities
+            if (lpFxColl && typeof lpFxColl.iterator === 'function') {
+              lpFxIter = lpFxColl.iterator()
+            } else if (lpFxColl && typeof lpFxColl.getAll === 'function') {
+              lpFxIter = lpFxColl.getAll().iterator()
+            }
+          } catch (eIter1) {}
+
+          if (!lpFxIter) {
+            try {
+              lpFxIter = lpFxLevel.getEntities().getAll().iterator()
+            } catch (eIter2) {
+              lpFxSrc.sendFailure(Text.red(
+                '[LPNpc] Could not enumerate entities: ' + eIter2))
+              return 0
+            }
+          }
+
+          while (lpFxIter.hasNext()) {
+            lpFxEnt = lpFxIter.next()
+            lpFxScanned++
+            if (lpRunTradingFix(lpFxEnt, 'manual')) lpFxFixed++
+          }
+
+          // KubeJS adapter mangles Supplier<Component> arrow functions, so
+          // bypass sendSuccess and just /tellraw the result. console.log
+          // also captures it for the server log.
+          var lpFxMsg = '[LPNpc] Fixed ' + lpFxFixed + ' / scanned '
+                      + lpFxScanned + ' entities in '
+                      + String(lpFxLevel.dimension)
+          console.log(lpFxMsg)
+          try {
+            lpFxSrc.server.runCommandSilent(
+              'tellraw @a {"text":"' + lpFxMsg + '","color":"green"}')
+          } catch (eTell) {}
+          return lpFxFixed
+        })
+    )
+  })
+})()

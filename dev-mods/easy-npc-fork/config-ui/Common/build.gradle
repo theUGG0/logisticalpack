@@ -1,0 +1,36 @@
+plugins {
+  id 'maven-publish'
+  id 'net.neoforged.moddev' version '2.0.72'
+}
+
+base {
+  archivesName = "${project.mod_id}-common-${project.minecraft_version}"
+}
+
+neoForge {
+  neoFormVersion = neo_form_version
+}
+
+dependencies {
+  compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.7'
+
+  // Include Core Common code
+  compileOnly("de.markusbordihn.easynpc:easy_npc-common-${project.minecraft_version}:${project.version}") {
+    changing = true
+  }
+}
+
+publishing {
+  publications {
+    mavenJava(MavenPublication) {
+      groupId project.group
+      artifactId project.archivesBaseName
+      version project.version
+      from components.java
+    }
+  }
+}
+
+tasks.named('build') {
+  finalizedBy tasks.named('publishToMavenLocal')
+}

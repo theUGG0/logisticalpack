@@ -1,0 +1,278 @@
+/*
+ * Copyright 2023 Markus Bordihn
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+ * associated documentation files (the "Software"), to deal in the Software without restriction,
+ * including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ * sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or
+ * substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+ * NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+package de.markusbordihn.easynpc.configui.client.screen.editor.action;
+
+import de.markusbordihn.easynpc.client.screen.components.DrawBorder;
+import de.markusbordihn.easynpc.client.screen.components.Text;
+import de.markusbordihn.easynpc.configui.Constants;
+import de.markusbordihn.easynpc.configui.client.screen.components.DeleteButton;
+import de.markusbordihn.easynpc.configui.client.screen.components.EditButton;
+import de.markusbordihn.easynpc.configui.client.screen.components.UpDownButton;
+import de.markusbordihn.easynpc.data.action.ActionDataEntry;
+import de.markusbordihn.easynpc.data.action.ActionDataSet;
+import de.markusbordihn.easynpc.data.action.ActionDataType;
+import de.markusbordihn.easynpc.data.scoreboard.ScoreboardOperation;
+import de.markusbordihn.easynpc.network.components.TextComponent;
+import de.markusbordihn.easynpc.utils.TextUtils;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Font;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.components.ObjectSelectionList;
+import net.minecraft.network.chat.Component;
+
+public class ActionDataListEntry extends ObjectSelectionList.Entry<ActionDataListEntry> {
+
+  // Column position constants
+  public static final int ID_LEFT_POS = 0;
+  public static final int TYPE_LEFT_POS = 22;
+  public static final int VALUE_LEFT_POS = 130;
+  public static final int OPTIONS_LEFT_POS = 230;
+
+  // Layout constants
+  private static final int ENTRY_HEIGHT = 21;
+  private static final int FIELD_LEFT_OFFSET = 5;
+  private static final int FIELD_TOP_OFFSET = 5;
+  private static final int COLUMN_SEPARATOR_OFFSET = 3;
+  private static final int BUTTON_SPACING = 2;
+  private static final int BUTTON_SIZE = 18;
+  private static final int VALUE_MAX_LENGTH = 16;
+  private static final int LIST_WIDTH = 309;
+
+  // Color constants
+  private static final int COLOR_SEPARATOR_LINE = 0xffaaaaaa;
+  private static final int COLOR_COLUMN_SEPARATOR = 0xff666666;
+
+  private final Font font;
+  private final int leftPos;
+  private final int topPos;
+  private final ActionDataEntry actionDataEntry;
+  private final ActionDataType actionDataType;
+  private final int actionDateEntriesSize;
+  private final EditButton editButton;
+  private final DeleteButton deleteButton;
+  private final UpDownButton upAndDownButton;
+
+  public ActionDataListEntry(
+      Minecraft minecraft,
+      ActionDataEntry actionDataEntry,
+      ActionDataSet actionDataSet,
+      int leftPos,
+      int topPos,
+      OnUp onUp,
+      OnDown onDown,
+      OnEdit onEdit,
+      OnRemove onRemove) {
+    super();
+
+    // Set font and position
+    this.font = minecraft.font;
+    this.leftPos = leftPos;
+    this.topPos = topPos;
+
+    // Set action data entry
+    this.actionDataEntry = actionDataEntry;
+    this.actionDataType =
+        actionDataEntry != null ? actionDataEntry.actionDataType() : ActionDataType.NONE;
+    this.actionDateEntriesSize = actionDataSet != null ? actionDataSet.getEntries().size() : 1;
+
+    // Adding general buttons
+    this.upAndDownButton =
+        new UpDownButton(
+            this.leftPos + OPTIONS_LEFT_POS + 4,
+            this.topPos,
+            BUTTON_SIZE,
+            BUTTON_SIZE,
+            onPress -> {
+              if (onUp != null) {
+                onUp.changeOrder(actionDataEntry);
+              }
+            },
+            onPress -> {
+              if (onDown != null) {
+                onDown.changeOrder(actionDataEntry);
+              }
+            });
+    this.editButton =
+        new EditButton(
+            this.upAndDownButton.getX() + this.upAndDownButton.getWidth() + BUTTON_SPACING,
+            this.topPos,
+            BUTTON_SIZE,
+            BUTTON_SIZE,
+            onPress -> {
+              if (onEdit != null) {
+                onEdit.edit(actionDataEntry);
+              }
+            });
+    this.deleteButton =
+        new DeleteButton(
+            this.editButton.getX() + this.editButton.getWidth() + BUTTON_SPACING,
+            this.topPos,
+            onPress -> {
+              if (onRemove != null) {
+                onRemove.remove(actionDataEntry);
+              }
+            });
+  }
+
+  @Override
+  public Component getNarration() {
+    return TextComponent.getText(this.actionDataType.name() + ":" + this.actionDataEntry.command());
+  }
+
+  @Override
+  public boolean mouseClicked(double mouseX, double mouseY, int button) {
+    super.mouseClicked(mouseX, mouseY, button);
+    this.upAndDownButton.mouseClicked(mouseX, mouseY, button);
+    this.editButton.mouseClicked(mouseX, mouseY, button);
+    this.deleteButton.mouseClicked(mouseX, mouseY, button);
+    return button == 0;
+  }
+
+  @Override
+  public void render(
+      GuiGraphics guiGraphics,
+      int entryId,
+      int top,
+      int left,
+      int entryWidth,
+      int entryHeight,
+      int mouseX,
+      int mouseY,
+      boolean isSelected,
+      float partialTicks) {
+
+    // Draw separator line
+    guiGraphics.fill(
+        this.leftPos,
+        top + entryHeight + 2,
+        this.leftPos + LIST_WIDTH,
+        top + entryHeight + 3,
+        COLOR_SEPARATOR_LINE);
+
+    int fieldsLeft = this.leftPos + FIELD_LEFT_OFFSET;
+    int fieldTop = top + FIELD_TOP_OFFSET;
+
+    // Action Entry ID
+    Text.drawString(
+        guiGraphics,
+        this.font,
+        String.valueOf(entryId),
+        fieldsLeft + ID_LEFT_POS + 2,
+        fieldTop,
+        Constants.FONT_COLOR_BLACK);
+
+    // Action Type
+    Text.drawConfigString(
+        guiGraphics,
+        this.font,
+        this.actionDataType.getId(),
+        fieldsLeft + TYPE_LEFT_POS + 2,
+        fieldTop,
+        Constants.FONT_COLOR_BLACK);
+
+    // Value preview
+    renderValuePreview(guiGraphics, fieldsLeft, fieldTop);
+
+    // Up and down buttons
+    this.upAndDownButton.setY(top);
+    this.upAndDownButton.render(guiGraphics, mouseX, mouseY, partialTicks);
+    this.upAndDownButton.enableUpButton(entryId > 0);
+    this.upAndDownButton.enableDownButton(entryId < this.actionDateEntriesSize - 1);
+
+    // Edit and delete buttons
+    this.editButton.setY(top);
+    this.editButton.render(guiGraphics, mouseX, mouseY, partialTicks);
+    this.deleteButton.setY(top);
+    this.deleteButton.render(guiGraphics, mouseX, mouseY, partialTicks);
+
+    // Render separator lines
+    this.renderSeparatorLines(guiGraphics, top);
+  }
+
+  private void renderValuePreview(GuiGraphics guiGraphics, int fieldsLeft, int fieldTop) {
+    if (this.actionDataType == ActionDataType.COMMAND
+        || this.actionDataType == ActionDataType.OPEN_NAMED_DIALOG) {
+      Text.drawString(
+          guiGraphics,
+          this.font,
+          TextUtils.limitString(this.actionDataEntry.command(), VALUE_MAX_LENGTH),
+          fieldsLeft + VALUE_LEFT_POS + 2,
+          fieldTop,
+          Constants.FONT_COLOR_BLACK);
+    } else if (this.actionDataType == ActionDataType.INTERACT_BLOCK) {
+      Text.drawString(
+          guiGraphics,
+          this.font,
+          TextUtils.limitString(this.actionDataEntry.blockPos().toString(), VALUE_MAX_LENGTH),
+          fieldsLeft + VALUE_LEFT_POS + 2,
+          fieldTop,
+          Constants.FONT_COLOR_BLACK);
+    } else if (this.actionDataType == ActionDataType.SCOREBOARD) {
+      ScoreboardOperation operation =
+          ScoreboardOperation.fromCommand(this.actionDataEntry.command());
+      Text.drawConfigString(
+          guiGraphics,
+          this.font,
+          operation.getTranslationKey(),
+          fieldsLeft + VALUE_LEFT_POS + 2,
+          fieldTop,
+          Constants.FONT_COLOR_BLACK);
+    }
+  }
+
+  public void renderSeparatorLines(GuiGraphics guiGraphics, int top) {
+    int separatorTop = top - 1;
+    int separatorLeft = this.leftPos + FIELD_LEFT_OFFSET;
+    DrawBorder.drawVerticalSeparator(
+        guiGraphics,
+        separatorLeft + TYPE_LEFT_POS - COLUMN_SEPARATOR_OFFSET,
+        separatorTop,
+        ENTRY_HEIGHT,
+        COLOR_COLUMN_SEPARATOR);
+    DrawBorder.drawVerticalSeparator(
+        guiGraphics,
+        separatorLeft + VALUE_LEFT_POS - COLUMN_SEPARATOR_OFFSET,
+        separatorTop,
+        ENTRY_HEIGHT,
+        COLOR_COLUMN_SEPARATOR);
+    DrawBorder.drawVerticalSeparator(
+        guiGraphics,
+        separatorLeft + OPTIONS_LEFT_POS - COLUMN_SEPARATOR_OFFSET,
+        separatorTop,
+        ENTRY_HEIGHT,
+        COLOR_COLUMN_SEPARATOR);
+  }
+
+  public interface OnRemove {
+    void remove(ActionDataEntry actionDataEntry);
+  }
+
+  public interface OnEdit {
+    void edit(ActionDataEntry actionDataEntry);
+  }
+
+  public interface OnUp {
+    void changeOrder(ActionDataEntry actionDataEntry);
+  }
+
+  public interface OnDown {
+    void changeOrder(ActionDataEntry actionDataEntry);
+  }
+}
