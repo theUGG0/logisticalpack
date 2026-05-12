@@ -1,0 +1,33 @@
+{
+  "id": "logisticalpack:iron_vein_band2",
+  "dimension": "minecraft:overworld",
+  "replace_blocks": {
+    "minecraft:stone": "minecraft:iron_ore",
+    "minecraft:deepslate": "minecraft:deepslate_iron_ore",
+    "minecraft:andesite": "minecraft:iron_ore",
+    "minecraft:diorite": "minecraft:iron_ore",
+    "minecraft:granite": "minecraft:iron_ore",
+    "minecraft:tuff": "minecraft:deepslate_iron_ore"
+  },
+  "rare_block": "minecraft:raw_iron_block",
+  "rare_block_chance": 0.05,
+  "maxY": 80,
+  "minY": -20,
+  "size": 37,
+  "type": "VEIN",
+  "default_weight": 0,
+  "biome_weights": {
+    "terralith:yellowstone": 3,
+    "terralith:rocky_mountains": 3,
+    "terralith:siberian_taiga": 3,
+    "minecraft:snowy_taiga": 3,
+    "terralith:alpine_highlands": 3,
+    "terralith:alpine_grove": 3,
+    "terralith:ice_marsh": 3,
+    "terralith:scarlet_mountains": 3,
+    "terralith:emerald_peaks": 3,
+    "terralith:white_cliffs": 3,
+    "terralith:shield": 3
+  },
+  "enabled": true
+}
