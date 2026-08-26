@@ -1,0 +1,13 @@
+{
+  "detectionRadius": 20.0,
+  "discoveryCheckIntervalTicks": 10,
+  "bufferSize": 25,
+  "approxRadius": 64.0,
+  "coalesceRadius": 24.0,
+  "includeDimensionInBroadcast": true,
+  "sizeThresholds": {
+    "smallMax": 20,
+    "mediumMax": 60,
+    "largeMax": 150
+  }
+}

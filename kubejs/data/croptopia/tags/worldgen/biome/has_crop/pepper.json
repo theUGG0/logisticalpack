@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "terralith:temperate_highlands", "required": false },
+    { "id": "terralith:lush_valley", "required": false },
+    { "id": "terralith:shield_clearing", "required": false },
+    { "id": "terralith:brushland", "required": false },
+    { "id": "terralith:arid_plains", "required": false },
+    { "id": "terralith:savanna_slopes", "required": false },
+    { "id": "terralith:mountain_steppe", "required": false }
+  ]
+}

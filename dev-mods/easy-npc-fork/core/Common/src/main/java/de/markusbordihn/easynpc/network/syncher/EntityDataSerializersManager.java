@@ -1,0 +1,259 @@
+/*
+ * Copyright 2023 Markus Bordihn
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+ * associated documentation files (the "Software"), to deal in the Software without restriction,
+ * including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ * sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or
+ * substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+ * NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+package de.markusbordihn.easynpc.network.syncher;
+
+import de.markusbordihn.easynpc.Constants;
+import de.markusbordihn.easynpc.data.action.ActionEventSet;
+import de.markusbordihn.easynpc.data.attribute.EntityAttributes;
+import de.markusbordihn.easynpc.data.dialog.DialogDataSet;
+import de.markusbordihn.easynpc.data.display.DisplayAttributeDataSet;
+import de.markusbordihn.easynpc.data.model.ModelAnimationData;
+import de.markusbordihn.easynpc.data.model.ModelPartType;
+import de.markusbordihn.easynpc.data.model.ModelPose;
+import de.markusbordihn.easynpc.data.model.RootModelData;
+import de.markusbordihn.easynpc.data.objective.ObjectiveDataSet;
+import de.markusbordihn.easynpc.data.objective.TargetedEntitySet;
+import de.markusbordihn.easynpc.data.objective.TargetedPlayerSet;
+import de.markusbordihn.easynpc.data.position.CustomPosition;
+import de.markusbordihn.easynpc.data.profession.Profession;
+import de.markusbordihn.easynpc.data.progression.ProgressionData;
+import de.markusbordihn.easynpc.data.render.RenderDataEntry;
+import de.markusbordihn.easynpc.data.rotation.CustomRotation;
+import de.markusbordihn.easynpc.data.scale.CustomScale;
+import de.markusbordihn.easynpc.data.skin.SkinDataEntry;
+import de.markusbordihn.easynpc.data.skin.SkinType;
+import de.markusbordihn.easynpc.data.skin.SkinUUID;
+import de.markusbordihn.easynpc.data.sound.SoundDataSet;
+import de.markusbordihn.easynpc.data.trading.TradingDataSet;
+import de.markusbordihn.easynpc.data.trading.TradingType;
+import de.markusbordihn.easynpc.entity.easynpc.data.ModelPositionDataCapable;
+import de.markusbordihn.easynpc.entity.easynpc.data.ModelRotationDataCapable;
+import de.markusbordihn.easynpc.entity.easynpc.data.ModelScaleDataCapable;
+import de.markusbordihn.easynpc.entity.easynpc.data.ModelVisibilityDataCapable;
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.UUID;
+import net.minecraft.core.UUIDUtil;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.syncher.EntityDataSerializer;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.world.item.trading.MerchantOffers;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class EntityDataSerializersManager {
+
+  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  private static final Map<String, EntityDataSerializer<?>> ENTITY_DATA_SERIALIZERS =
+      new LinkedHashMap<>();
+  public static final EntityDataSerializer<ActionEventSet> ACTION_EVENT_SET =
+      defineSerializer(
+          ActionEventSet.class.getSimpleName(),
+          EntityDataSerializer.forValueType(ActionEventSet.STREAM_CODEC));
+  public static final EntityDataSerializer<DialogDataSet> DIALOG_DATA_SET =
+      defineSerializer(
+          DialogDataSet.class.getSimpleName(),
+          EntityDataSerializer.forValueType(DialogDataSet.STREAM_CODEC));
+  public static final EntityDataSerializer<DisplayAttributeDataSet> DISPLAY_ATTRIBUTE =
+      defineSerializer(
+          DisplayAttributeDataSet.class.getSimpleName(),
+          EntityDataSerializer.forValueType(DisplayAttributeDataSet.STREAM_CODEC));
+  public static final EntityDataSerializer<EntityAttributes> ENTITY_ATTRIBUTES =
+      defineSerializer(
+          EntityAttributes.class.getSimpleName(),
+          EntityDataSerializer.forValueType(EntityAttributes.STREAM_CODEC));
+  public static final EntityDataSerializer<ProgressionData> PROGRESSION =
+      defineSerializer(
+          ProgressionData.class.getSimpleName(),
+          EntityDataSerializer.forValueType(ProgressionData.STREAM_CODEC));
+
+  public static final EntityDataSerializer<MerchantOffers> MERCHANT_OFFERS =
+      defineSerializer(
+          MerchantOffers.class.getSimpleName(),
+          EntityDataSerializer.forValueType(MerchantOffers.STREAM_CODEC));
+  public static final EntityDataSerializer<ModelPose> MODEL_POSE =
+      defineSerializer(
+          ModelPose.class.getSimpleName(),
+          EntityDataSerializer.forValueType(ModelPose.STREAM_CODEC));
+  public static final EntityDataSerializer<ModelAnimationData> MODEL_ANIMATION_DATA =
+      defineSerializer(
+          ModelAnimationData.class.getSimpleName(),
+          EntityDataSerializer.forValueType(ModelAnimationData.STREAM_CODEC));
+  public static final EntityDataSerializer<RootModelData> ROOT_MODEL_DATA =
+      defineSerializer(
+          RootModelData.class.getSimpleName(),
+          EntityDataSerializer.forValueType(RootModelData.STREAM_CODEC));
+  public static final EntityDataSerializer<ObjectiveDataSet> OBJECTIVE_DATA_SET =
+      defineSerializer(
+          ObjectiveDataSet.class.getSimpleName(),
+          EntityDataSerializer.forValueType(ObjectiveDataSet.STREAM_CODEC));
+  public static final EntityDataSerializer<CustomPosition> POSITION =
+      defineSerializer(
+          CustomPosition.class.getSimpleName(),
+          EntityDataSerializer.forValueType(CustomPosition.STREAM_CODEC));
+  public static final EntityDataSerializer<Profession> PROFESSION =
+      defineSerializer(
+          Profession.class.getSimpleName(),
+          EntityDataSerializer.forValueType(Profession.STREAM_CODEC));
+  public static final EntityDataSerializer<RenderDataEntry> RENDER_DATA_ENTRY =
+      defineSerializer(
+          RenderDataEntry.class.getSimpleName(),
+          EntityDataSerializer.forValueType(RenderDataEntry.STREAM_CODEC));
+  public static final EntityDataSerializer<CustomScale> SCALE =
+      defineSerializer(
+          CustomScale.class.getSimpleName(),
+          EntityDataSerializer.forValueType(CustomScale.STREAM_CODEC));
+  public static final EntityDataSerializer<SkinDataEntry> SKIN_DATA_ENTRY =
+      defineSerializer(
+          SkinDataEntry.class.getSimpleName(),
+          EntityDataSerializer.forValueType(SkinDataEntry.STREAM_CODEC));
+  public static final EntityDataSerializer<SkinType> SKIN_TYPE =
+      defineSerializer(
+          SkinType.class.getSimpleName(), EntityDataSerializer.forValueType(SkinType.STREAM_CODEC));
+  public static final EntityDataSerializer<UUID> SKIN_UUID =
+      defineSerializer(
+          SkinUUID.class.getSimpleName(), EntityDataSerializer.forValueType(SkinUUID.STREAM_CODEC));
+  public static final EntityDataSerializer<SoundDataSet> SOUND_DATA_SET =
+      defineSerializer(
+          SoundDataSet.class.getSimpleName(),
+          EntityDataSerializer.forValueType(SoundDataSet.STREAM_CODEC));
+  public static final EntityDataSerializer<HashSet<UUID>> TARGETED_ENTITY_HASH_SET =
+      defineSerializer(
+          TargetedEntitySet.class.getSimpleName(),
+          EntityDataSerializer.forValueType(TargetedEntitySet.STREAM_CODEC));
+  public static final EntityDataSerializer<HashSet<String>> TARGETED_PLAYER_HASH_SET =
+      defineSerializer(
+          TargetedPlayerSet.class.getSimpleName(),
+          EntityDataSerializer.forValueType(TargetedPlayerSet.STREAM_CODEC));
+  public static final EntityDataSerializer<TradingDataSet> TRADING_DATA_SET =
+      defineSerializer(
+          TradingDataSet.class.getSimpleName(),
+          EntityDataSerializer.forValueType(TradingDataSet.STREAM_CODEC));
+  public static final EntityDataSerializer<TradingType> TRADING_TYPE =
+      defineSerializer(
+          TradingType.class.getSimpleName(),
+          EntityDataSerializer.forValueType(TradingType.STREAM_CODEC));
+  public static final EntityDataSerializer<UUID> UUID =
+      defineSerializer(
+          UUID.class.getSimpleName(), EntityDataSerializer.forValueType(UUIDUtil.STREAM_CODEC));
+  public static final EntityDataSerializer<Map<ModelPartType, Boolean>> MODEL_PART_VISIBILITY =
+      defineSerializer(
+          ModelVisibilityDataCapable.class.getSimpleName(),
+          EntityDataSerializer.forValueType(
+              ModelVisibilityDataCapable.MODEL_PART_VISIBILITY_STREAM_CODEC));
+  public static final EntityDataSerializer<Map<ModelPartType, CustomRotation>> MODEL_PART_ROTATION =
+      defineSerializer(
+          ModelRotationDataCapable.class.getSimpleName(),
+          EntityDataSerializer.forValueType(
+              ModelRotationDataCapable.MODEL_PART_ROTATION_STREAM_CODEC));
+  public static final EntityDataSerializer<Map<ModelPartType, CustomPosition>> MODEL_PART_POSITION =
+      defineSerializer(
+          ModelPositionDataCapable.class.getSimpleName(),
+          EntityDataSerializer.forValueType(
+              ModelPositionDataCapable.MODEL_PART_POSITION_STREAM_CODEC));
+  public static final EntityDataSerializer<Map<ModelPartType, CustomScale>> MODEL_PART_SCALE =
+      defineSerializer(
+          ModelScaleDataCapable.class.getSimpleName(),
+          EntityDataSerializer.forValueType(ModelScaleDataCapable.MODEL_PART_SCALE_STREAM_CODEC));
+  private static final int RECOMMENDED_NBT_SIZE_BYTES = 8192; // 8 KB recommended
+  private static final int WARNING_NBT_SIZE_BYTES = 32768; // 32 KB warning
+  private static final int MAX_NBT_SIZE_BYTES = 2097152; // 2 MB absolute max
+
+  private EntityDataSerializersManager() {}
+
+  public static CompoundTag validateAndGetNbt(CompoundTag tag, String dataType) {
+    if (tag == null || (!log.isDebugEnabled() && !log.isInfoEnabled())) {
+      return tag;
+    }
+
+    try {
+      ByteBuf tempBuf = Unpooled.buffer();
+      try {
+        FriendlyByteBuf tempBuffer = new FriendlyByteBuf(tempBuf);
+        tempBuffer.writeNbt(tag);
+        int sizeBytes = tempBuffer.writerIndex();
+
+        if (sizeBytes > MAX_NBT_SIZE_BYTES) {
+          log.error(
+              "[Entity Data] CRITICAL: {} NBT data size ({} bytes) exceeds maximum packet size! "
+                  + "This WILL cause network errors and client crashes. "
+                  + "Please reduce the amount of data stored in this field.",
+              dataType,
+              sizeBytes);
+        } else if (sizeBytes > WARNING_NBT_SIZE_BYTES) {
+          log.warn(
+              "[Entity Data] {} NBT data size ({} bytes) is very large and may cause network issues. "
+                  + "Recommended maximum is {} bytes. Consider reducing data amount.",
+              dataType,
+              sizeBytes,
+              RECOMMENDED_NBT_SIZE_BYTES);
+        } else if (sizeBytes > RECOMMENDED_NBT_SIZE_BYTES && log.isDebugEnabled()) {
+          log.debug(
+              "[Entity Data] {} NBT data size ({} bytes) exceeds recommended size of {} bytes.",
+              dataType,
+              sizeBytes,
+              RECOMMENDED_NBT_SIZE_BYTES);
+        }
+      } finally {
+        tempBuf.release();
+      }
+    } catch (Exception e) {
+      if (log.isErrorEnabled()) {
+        log.error("[Entity Data] Failed to validate NBT size for {}", dataType, e);
+      }
+    }
+    return tag;
+  }
+
+  public static <T> EntityDataSerializer<T> defineSerializer(
+      final String className, final EntityDataSerializer<T> serializer) {
+    if (ENTITY_DATA_SERIALIZERS.containsKey(className)) {
+      log.error(
+          "Entity data serializer {} already defined with {}!",
+          className,
+          ENTITY_DATA_SERIALIZERS.get(className));
+      return null;
+    }
+    ENTITY_DATA_SERIALIZERS.put(className, serializer);
+    return serializer;
+  }
+
+  public static void register() {
+    for (Map.Entry<String, EntityDataSerializer<?>> entry : ENTITY_DATA_SERIALIZERS.entrySet()) {
+      EntityDataSerializer<?> serializer = entry.getValue();
+      if (serializer == null) {
+        log.error("Failed to register entity data serializer {}", entry.getKey());
+        continue;
+      }
+      EntityDataSerializers.registerSerializer(serializer);
+      int id = EntityDataSerializers.getSerializedId(serializer);
+      if (id >= 0) {
+        log.debug("Registered entity data serializer {} with id {}", entry.getKey(), id);
+      } else {
+        log.error(
+            "Failed to register entity data serializer {} with {}", entry.getKey(), serializer);
+      }
+    }
+  }
+}

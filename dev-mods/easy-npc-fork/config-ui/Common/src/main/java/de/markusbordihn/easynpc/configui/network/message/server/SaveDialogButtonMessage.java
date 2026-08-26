@@ -1,0 +1,173 @@
+/*
+ * Copyright 2023 Markus Bordihn
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+ * associated documentation files (the "Software"), to deal in the Software without restriction,
+ * including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ * sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or
+ * substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+ * NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+package de.markusbordihn.easynpc.configui.network.message.server;
+
+import de.markusbordihn.easynpc.configui.Constants;
+import de.markusbordihn.easynpc.data.dialog.DialogButtonEntry;
+import de.markusbordihn.easynpc.entity.easynpc.EasyNPC;
+import de.markusbordihn.easynpc.entity.easynpc.data.ActionEventDataCapable;
+import de.markusbordihn.easynpc.entity.easynpc.data.DialogDataCapable;
+import de.markusbordihn.easynpc.network.message.NetworkMessageRecord;
+import de.markusbordihn.easynpc.security.CommandPermissionLevel;
+import de.markusbordihn.easynpc.security.SecurityManager;
+import java.util.UUID;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
+
+public record SaveDialogButtonMessage(
+    UUID uuid, UUID dialogId, UUID dialogButtonId, DialogButtonEntry dialogButtonEntry)
+    implements NetworkMessageRecord {
+
+  public static final ResourceLocation MESSAGE_ID =
+      ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "save_dialog_button");
+  public static final Type<SaveDialogButtonMessage> PAYLOAD_TYPE = new Type<>(MESSAGE_ID);
+  public static final StreamCodec<RegistryFriendlyByteBuf, SaveDialogButtonMessage> STREAM_CODEC =
+      StreamCodec.of((buffer, message) -> message.write(buffer), SaveDialogButtonMessage::create);
+
+  public static SaveDialogButtonMessage create(final FriendlyByteBuf buffer) {
+    return new SaveDialogButtonMessage(
+        buffer.readUUID(),
+        buffer.readUUID(),
+        buffer.readUUID(),
+        new DialogButtonEntry(buffer.readNbt()));
+  }
+
+  @Override
+  public void write(final FriendlyByteBuf buffer) {
+    buffer.writeUUID(this.uuid);
+    buffer.writeUUID(this.dialogId);
+    buffer.writeUUID(this.dialogButtonId);
+    buffer.writeNbt(this.dialogButtonEntry.createTag());
+  }
+
+  @Override
+  public ResourceLocation id() {
+    return MESSAGE_ID;
+  }
+
+  @Override
+  public Type<? extends CustomPacketPayload> type() {
+    return PAYLOAD_TYPE;
+  }
+
+  @Override
+  public void handleServer(final ServerPlayer serverPlayer) {
+    EasyNPC<?> easyNPC = getEasyNPCAndCheckAccess(this.uuid, serverPlayer);
+    if (easyNPC == null) {
+      return;
+    }
+
+    // Validate dialog id.
+    if (this.dialogId == null) {
+      log.error("Invalid dialog id for {} from {}", easyNPC, serverPlayer);
+      return;
+    }
+
+    // Validate dialog button data.
+    if (this.dialogButtonEntry == null) {
+      log.error("Invalid dialog button data for {} from {}", easyNPC, serverPlayer);
+      return;
+    }
+
+    // Validate dialog data.
+    DialogDataCapable<?> dialogData = easyNPC.getEasyNPCDialogData();
+    if (dialogData == null) {
+      log.error("Invalid dialog data for {} from {}", easyNPC, serverPlayer);
+      return;
+    }
+
+    // Validate action event data.
+    ActionEventDataCapable<?> actionEventData = easyNPC.getEasyNPCActionEventData();
+    if (actionEventData == null) {
+      log.error("Invalid action data for {} from {}", easyNPC, serverPlayer);
+      return;
+    }
+
+    // Validate dialog for dialog button.
+    if (!dialogData.hasDialog(this.dialogId)) {
+      log.error(
+          "Unknown dialog button editor request for dialog {} for {} from {}",
+          this.dialogId,
+          easyNPC,
+          serverPlayer);
+      return;
+    }
+
+    // Validate dialog button id.
+    if (this.dialogButtonId != null
+        && !dialogData.hasDialogButton(this.dialogId, this.dialogButtonId)) {
+      log.error(
+          "Invalid dialog button {} for {} from {}", this.dialogButtonId, easyNPC, serverPlayer);
+      return;
+    }
+
+    CommandPermissionLevel currentPermissionLevel =
+        actionEventData.getActionCommandPermissionLevel();
+    CommandPermissionLevel permissionLevel =
+        SecurityManager.applyActionAuthority(easyNPC, serverPlayer);
+    log.debug(
+        "Update owner permission level from {} to {} for {} from {}",
+        currentPermissionLevel,
+        permissionLevel,
+        easyNPC,
+        serverPlayer);
+
+    DialogButtonEntry sanitizedDialogButtonEntry =
+        MessageSecurity.sanitizeDialogButtonEntry(
+            this.dialogButtonEntry, easyNPC, serverPlayer, permissionLevel);
+    if (sanitizedDialogButtonEntry == null) {
+      log.warn(
+          "Blocked dialog button save for dialog {} for {} from {}",
+          dialogId,
+          easyNPC,
+          serverPlayer);
+      return;
+    }
+
+    // Perform action.
+    if (this.dialogButtonId == null) {
+      log.info(
+          "Add new dialog button {} for dialog {} for {} from {}",
+          sanitizedDialogButtonEntry,
+          dialogId,
+          easyNPC,
+          serverPlayer);
+      dialogData
+          .getDialogDataSet()
+          .getDialog(this.dialogId)
+          .setDialogButton(sanitizedDialogButtonEntry);
+    } else {
+      log.info(
+          "Edit existing dialog button {} for dialog {} for {} from {}",
+          sanitizedDialogButtonEntry,
+          dialogId,
+          easyNPC,
+          serverPlayer);
+      dialogData
+          .getDialogDataSet()
+          .getDialog(this.dialogId)
+          .setDialogButton(this.dialogButtonId, sanitizedDialogButtonEntry);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#logisticalpack:temperate_warm_tropical",
+  "features": [
+    "minecraft:ore_lapis",
+    "minecraft:ore_lapis_buried"
+  ],
+  "steps": ["underground_ores"]
+}

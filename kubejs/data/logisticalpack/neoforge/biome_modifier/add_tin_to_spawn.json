@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#logisticalpack:spawn_temperate",
+  "features": "logisticalpack:ore_tin",
+  "step": "underground_ores"
+}

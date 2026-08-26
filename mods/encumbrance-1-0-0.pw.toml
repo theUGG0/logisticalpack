@@ -1,0 +1,9 @@
+filename = 'encumbrance-1.0.0.jar'
+name = 'encumbrance-1.0.0'
+side = 'both'
+
+[download]
+hash-format = 'sha512'
+hash = 'e5baf5f6dd2dbf2f41f2cd27ecb72c79c96bfa5f6385bcb7c9ef9f895c1184c07081dae3ea7511892d826313530770c14d9a1109de19f62981ea986c09bd7e40'
+mode = 'url'
+url = 'https://raw.githubusercontent.com/theUGG0/logisticalpack/main/mods/encumbrance-1.0.0.jar'

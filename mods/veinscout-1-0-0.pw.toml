@@ -1,0 +1,9 @@
+filename = 'veinscout-1.0.0.jar'
+name = 'veinscout-1.0.0'
+side = 'both'
+
+[download]
+hash-format = 'sha512'
+hash = '5d55f48f7be5ff10b5f9552ce96c7822cb85f210c9970494e85eff1303c3f304a99d7079f4c1490d0febdbf5f40b71cc7c911e71dfc7d2db5e02c7d8c147011d'
+mode = 'url'
+url = 'https://raw.githubusercontent.com/theUGG0/logisticalpack/main/mods/veinscout-1.0.0.jar'

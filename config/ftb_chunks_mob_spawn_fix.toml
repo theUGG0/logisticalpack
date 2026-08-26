@@ -1,0 +1,21 @@
+#=== Safe Zone Enter Message ===
+[enter]
+	#Text shown when entering a safe zone
+	message = "Now Entering Safe Zone"
+	#Text color (e.g. green, gold, red, white, aqua)
+	color = "green"
+	#Bold text
+	bold = true
+	#Italic text
+	italic = true
+
+#=== Safe Zone Exit Message ===
+[exit]
+	#Text shown when leaving a safe zone
+	message = "Now Exiting Safe Zone"
+	#Text color (e.g. green, gold, red, white, aqua)
+	color = "red"
+	#Bold text
+	bold = true
+	#Italic text
+	italic = true

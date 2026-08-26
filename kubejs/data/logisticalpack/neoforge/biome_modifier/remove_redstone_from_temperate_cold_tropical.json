@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#logisticalpack:temperate_cold_tropical",
+  "features": [
+    "minecraft:ore_redstone",
+    "minecraft:ore_redstone_lower"
+  ],
+  "steps": ["underground_ores"]
+}

@@ -1,0 +1,9 @@
+filename = 'aeroguard-1.0.0.jar'
+name = 'aeroguard-1.0.0'
+side = 'both'
+
+[download]
+hash-format = 'sha512'
+hash = '666c9e7c74e217dbe055eb968f006f793236c02a9b4cb7b9165f5a057ed3e3464861d73f34644f665acfd721f7b1548b763efe25924029329f7276b40ac13ffd'
+mode = 'url'
+url = 'https://raw.githubusercontent.com/theUGG0/logisticalpack/main/mods/aeroguard-1.0.0.jar'

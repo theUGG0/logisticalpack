@@ -1,0 +1,13 @@
+filename = 'ftb_chunks_mob_spawn_fix-1.jar'
+name = 'FTB Chunks SpawnFix'
+side = 'both'
+
+[download]
+hash-format = 'sha1'
+hash = '69701bea41ef7a7c7bc237106dbae90b0b202a18'
+mode = 'url'
+url = 'https://edge.forgecdn.net/files/7912/857/ftb_chunks_mob_spawn_fix-1.jar'
+
+[update.curseforge]
+file-id = 7912857
+project-id = 1478529

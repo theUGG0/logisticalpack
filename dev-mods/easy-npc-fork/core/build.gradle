@@ -1,0 +1,73 @@
+plugins {
+  id 'idea'
+  id "org.jetbrains.gradle.plugin.idea-ext" version "1.1.8"
+}
+
+subprojects {
+
+  apply plugin: 'java'
+  apply plugin: 'idea'
+
+  java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+  java.withSourcesJar()
+  java.withJavadocJar()
+
+  repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+      url "https://www.cursemaven.com"
+      content {
+        includeGroup "curse.maven"
+      }
+    }
+  }
+
+  dependencies {
+    configurations.configureEach {
+      resolutionStrategy.force 'org.ow2.asm:asm-analysis:9.7'
+      resolutionStrategy.force 'org.ow2.asm:asm-util:9.7'
+    }
+  }
+
+  idea {
+    module {
+      downloadSources = true
+      downloadJavadoc = true
+    }
+  }
+
+  tasks.register('wrapper', Wrapper) {
+    gradleVersion = '8.14.3'
+  }
+
+  tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.incremental = true
+    options.fork = true
+    options.forkOptions.memoryMaximumSize = '2g'
+  }
+
+  tasks.withType(GenerateModuleMetadata).configureEach {
+    enabled = false
+  }
+
+  tasks.withType(Javadoc).configureEach {
+    enabled = false
+  }
+
+  tasks.register("prepareKotlinBuildScriptModel") {}
+
+  configurations.configureEach {
+    resolutionStrategy {
+      cacheChangingModulesFor 5, 'minutes'
+      cacheDynamicVersionsFor 60, 'minutes'
+    }
+  }
+}
+
+tasks.register('allGameTests') {
+  group = 'verification'
+  description = 'Runs Fabric, Forge and NeoForge game tests.'
+  dependsOn ':Fabric:runGameTest', ':Forge:runGameTestServer', ':NeoForge:runGameTestServer'
+}

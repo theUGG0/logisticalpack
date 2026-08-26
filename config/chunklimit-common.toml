@@ -1,0 +1,20 @@
+#TitamMods Limit Configuration
+[limits]
+	#If true, operators (OP) bypass the limits.
+	op_bypass = true
+	#List of block limits (TileEntities).
+	#Format: 'modid:block_id|limit'
+	block_limits = ["minecraft:hopper|8", "mekanism:digital_miner|1"]
+	#List of entity limits (Mobs/Vehicles).
+	#Format: 'modid:entity_id|limit'
+	entity_limits = ["minecraft:villager|20", "minecraft:cow|30"]
+
+#Absolute Protection Settings
+[protection]
+	#Blocks that cannot be broken or interacted with freely.
+	#Format: 'modid:block_id'
+	protected_blocks = ["minecraft:spawner", "minecraft:nether_bricks"]
+	#Allowed items (Whitelist) to interact with protected blocks.
+	#Format: 'modid:item_id' or '#modid:tag_id'.
+	#Example: '#minecraft:wool' allows all wool colors.
+	allowed_interact_items = ["minecraft:comparator", "#minecraft:wool"]

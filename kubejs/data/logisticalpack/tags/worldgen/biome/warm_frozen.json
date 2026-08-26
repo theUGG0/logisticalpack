@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#logisticalpack:warm_dry",
+    "#logisticalpack:frozen_extreme"
+  ]
+}

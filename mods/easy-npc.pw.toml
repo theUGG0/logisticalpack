@@ -1,0 +1,25 @@
+filename = 'easy_npc_bundle-neoforge-1.21.1-6.13.0.jar'
+name = 'Easy NPC'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '6.13.0'
+
+[download]
+hash = '7cd35407cc0e3f5e45c9e659de18b07d801b6bdc3cfd2820a53e1d0392d53a6b64891f5acae2eb757039d419b3a5d7469d0958e20cafa48a4ed426456e62ab47'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/CgGEe1h3/versions/EofNRhv6/easy_npc_bundle-neoforge-1.21.1-6.13.0.jar'
+
+[update.modrinth]
+mod-id = 'CgGEe1h3'
+version = 'EofNRhv6'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'Epm6R3P2'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'uTGjf7vA'
+type = 'REQUIRED'

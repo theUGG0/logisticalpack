@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:desert",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna",
+    "minecraft:badlands",
+    "minecraft:wooded_badlands",
+    "minecraft:eroded_badlands",
+    "minecraft:warm_ocean",
+
+    "terralith:arid_highlands",
+    "terralith:arid_plains",
+    "terralith:brushland",
+    "terralith:rocky_shrubland",
+    "terralith:savanna_slopes",
+    "terralith:red_oasis",
+    "terralith:lush_desert",
+    "terralith:desert_oasis",
+    "terralith:desert_spires",
+    "terralith:ancient_sands",
+    "terralith:red_sandstone_plateau",
+    "terralith:painted_mountains",
+    "terralith:yellowstone",
+    "terralith:steppe",
+    "terralith:shattered_savanna",
+    "terralith:warped_mesa"
+  ]
+}

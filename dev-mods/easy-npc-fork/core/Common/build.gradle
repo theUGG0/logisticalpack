@@ -1,0 +1,62 @@
+plugins {
+  id 'maven-publish'
+  id 'net.neoforged.moddev' version '2.0.72'
+}
+
+base {
+  archivesName = "${project.mod_id}-common-${project.minecraft_version}"
+}
+
+neoForge {
+  neoFormVersion = neo_form_version
+
+  // Add Minecraft classes to test configuration
+  addModdingDependenciesTo(sourceSets.test)
+}
+
+dependencies {
+  compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.7'
+
+  // JUnit 5 for unit testing
+  testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.1'
+  testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.1'
+  testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.1'
+}
+
+test {
+  useJUnitPlatform()
+  testLogging {
+    events "passed", "skipped", "failed"
+  }
+}
+
+apply from: "$projectDir/../gradle/tasks/generateRawNPCs.gradle"
+apply from: "$projectDir/../gradle/tasks/generateDefaultPresetIndex.gradle"
+
+tasks.named('compileJava') {
+  dependsOn tasks.named('generateRawNPCs')
+}
+
+processResources {
+  dependsOn tasks.named('generateDefaultPresetIndex')
+}
+
+tasks.named('sourcesJar') {
+  dependsOn tasks.named('generateDefaultPresetIndex')
+  dependsOn tasks.named('generateRawNPCs')
+}
+
+publishing {
+  publications {
+    mavenJava(MavenPublication) {
+      groupId project.group
+      artifactId project.archivesBaseName
+      version project.version
+      artifact jar
+    }
+  }
+}
+
+tasks.named('build') {
+  finalizedBy tasks.named('publishToMavenLocal')
+}

@@ -1,0 +1,17 @@
+.git/**
+.gitattributes
+.gitignore
+.packwizignore
+.crafty-sync-exclude
+.github/**
+.cache/**
+**/__pycache__/**
+
+README.md
+.env
+.env.example
+
+*.sh
+*.py
+*.zip
+*.mrpack

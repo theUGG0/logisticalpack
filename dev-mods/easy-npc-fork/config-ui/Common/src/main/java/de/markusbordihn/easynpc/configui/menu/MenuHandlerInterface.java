@@ -1,0 +1,246 @@
+/*
+ * Copyright 2023 Markus Bordihn
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+ * associated documentation files (the "Software"), to deal in the Software without restriction,
+ * including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ * sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or
+ * substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+ * NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+package de.markusbordihn.easynpc.configui.menu;
+
+import de.markusbordihn.easynpc.access.AccessManager;
+import de.markusbordihn.easynpc.configui.Constants;
+import de.markusbordihn.easynpc.configui.data.custom.CustomMenuType;
+import de.markusbordihn.easynpc.configui.data.editor.EditorType;
+import de.markusbordihn.easynpc.configui.data.screen.AdditionalScreenData;
+import de.markusbordihn.easynpc.configui.menu.configuration.ConfigurationMenu;
+import de.markusbordihn.easynpc.configui.menu.configuration.ConfigurationMenuHandler;
+import de.markusbordihn.easynpc.configui.menu.custom.CustomMenuHandler;
+import de.markusbordihn.easynpc.configui.menu.editor.EditorMenu;
+import de.markusbordihn.easynpc.configui.menu.editor.EditorMenuHandler;
+import de.markusbordihn.easynpc.data.action.ActionDataType;
+import de.markusbordihn.easynpc.data.action.ActionEventType;
+import de.markusbordihn.easynpc.data.configuration.ConfigurationType;
+import de.markusbordihn.easynpc.data.configuration.ConfigurationTypeHelper;
+import de.markusbordihn.easynpc.data.screen.ScreenData;
+import de.markusbordihn.easynpc.entity.easynpc.EasyNPC;
+import de.markusbordihn.easynpc.security.FeatureSecurity;
+import de.markusbordihn.easynpc.security.NpcFeature;
+import de.markusbordihn.easynpc.security.SecurityManager;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.UUID;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.inventory.MenuType;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public interface MenuHandlerInterface {
+
+  Logger log = LogManager.getLogger(Constants.LOG_NAME);
+
+  default void openConfigurationMenu(
+      final ConfigurationType configurationType,
+      final ServerPlayer serverPlayer,
+      final EasyNPC<?> easyNPC,
+      final int pageIndex) {
+
+    // Check for access rights.
+    if (!AccessManager.hasAccess(serverPlayer, easyNPC)) {
+      return;
+    }
+
+    // Handle configuration type alias.
+    final ConfigurationType configurationTypeAlias =
+        ConfigurationTypeHelper.resolveConfigurationTypeAlias(configurationType, easyNPC);
+
+    // Get menu type for configuration type.
+    final MenuType<? extends ConfigurationMenu> menuType =
+        getMenuTypeByConfigurationType(configurationTypeAlias);
+    if (menuType == null) {
+      log.error(
+          "Unknown configuration {} for {} from {}", configurationTypeAlias, easyNPC, serverPlayer);
+      return;
+    }
+
+    // Additional data for specific configuration menu.
+    final ScreenData screenData =
+        ConfigurationMenuHandler.getScreenData(
+            configurationTypeAlias, easyNPC, serverPlayer, pageIndex);
+
+    // Get menu provider for configuration type and open configuration menu.
+    final MenuProvider menuProvider =
+        ConfigurationMenuHandler.getMenuProvider(
+            configurationTypeAlias, easyNPC, menuType, screenData);
+    final UUID npcUUID = easyNPC.getEntityUUID();
+    MenuManager.openMenu(npcUUID, menuProvider, serverPlayer, screenData.encode());
+  }
+
+  default void openEditorMenu(
+      final EditorType editorType,
+      final ServerPlayer serverPlayer,
+      final EasyNPC<?> easyNPC,
+      final UUID dialogId,
+      final UUID dialogButtonId,
+      final UUID actionDataEntryId,
+      final ActionEventType actionEventType,
+      final ConfigurationType configurationType,
+      final EditorType formerEditorType,
+      final int pageIndex) {
+
+    // Check for access rights.
+    if (!AccessManager.hasAccess(serverPlayer, easyNPC)) {
+      return;
+    }
+
+    // Additional data for specific configuration menu.
+    CompoundTag additionalSyncData = new CompoundTag();
+    AdditionalScreenData.addActionEventType(additionalSyncData, actionEventType);
+    AdditionalScreenData.addConfigurationType(additionalSyncData, configurationType);
+    AdditionalScreenData.addEditorType(additionalSyncData, formerEditorType);
+
+    // Compute blocked action types for this player.
+    Set<ActionDataType> blockedActionTypes = new HashSet<>();
+    for (ActionDataType type : ActionDataType.values()) {
+      NpcFeature feature = FeatureSecurity.getFeature(type);
+      if (feature != null
+          && !SecurityManager.checkFeatureAccess(serverPlayer, easyNPC, feature).allowed()) {
+        blockedActionTypes.add(type);
+      }
+    }
+    AdditionalScreenData.addBlockedActionTypes(additionalSyncData, blockedActionTypes);
+
+    openEditorMenu(
+        editorType,
+        serverPlayer,
+        easyNPC,
+        dialogId,
+        dialogButtonId,
+        actionDataEntryId,
+        null,
+        pageIndex,
+        additionalSyncData);
+  }
+
+  default void openEditorMenu(
+      final EditorType editorType,
+      final ServerPlayer serverPlayer,
+      final EasyNPC<?> easyNPC,
+      final UUID dialogId,
+      final int pageIndex) {
+    openEditorMenu(
+        editorType,
+        serverPlayer,
+        easyNPC,
+        dialogId,
+        null,
+        null,
+        null,
+        pageIndex,
+        new CompoundTag());
+  }
+
+  default void openEditorMenu(
+      final EditorType editorType,
+      final ServerPlayer serverPlayer,
+      final EasyNPC<?> easyNPC,
+      final UUID dialogId,
+      final UUID dialogButtonId,
+      final int pageIndex) {
+    openEditorMenu(
+        editorType,
+        serverPlayer,
+        easyNPC,
+        dialogId,
+        dialogButtonId,
+        null,
+        null,
+        pageIndex,
+        new CompoundTag());
+  }
+
+  default void openEditorMenu(
+      final EditorType editorType,
+      final ServerPlayer serverPlayer,
+      final EasyNPC<?> easyNPC,
+      final UUID dialogId,
+      final UUID dialogButtonId,
+      final UUID actionDataEntryId,
+      final UUID conditionDataEntryId,
+      final int pageIndex,
+      CompoundTag additionalSyncData) {
+
+    // Check for access rights.
+    if (!AccessManager.hasAccess(serverPlayer, easyNPC)) {
+      return;
+    }
+
+    // Get menu type for configuration type.
+    final MenuType<? extends EditorMenu> menuType = getMenuTypeByEditorType(editorType);
+    if (menuType == null) {
+      log.error("Unknown editor {} for {} from {}", editorType, easyNPC, serverPlayer);
+      return;
+    }
+
+    // Additional data for specific configuration menu.
+    final ScreenData screenData =
+        EditorMenuHandler.getScreenData(
+            editorType,
+            easyNPC,
+            dialogId,
+            dialogButtonId,
+            actionDataEntryId,
+            conditionDataEntryId,
+            pageIndex,
+            additionalSyncData);
+
+    // Get menu provider for configuration type and open configuration menu.
+    final MenuProvider menuProvider =
+        EditorMenuHandler.getMenuProvider(editorType, easyNPC, menuType, screenData);
+    final UUID npcUUID = easyNPC.getEntityUUID();
+    MenuManager.openMenu(npcUUID, menuProvider, serverPlayer, screenData.encode());
+  }
+
+  default void openCustomMenu(
+      final CustomMenuType customMenuType, final ServerPlayer serverPlayer) {
+    MenuType<? extends ConfigUIMenu> menuType = getMenuTypeByCustomType(customMenuType);
+    if (menuType == null) {
+      log.error("Unable to get menu type for custom menu type: {}", customMenuType);
+      return;
+    }
+
+    // Get screen data for custom menu
+    final ScreenData screenData = CustomMenuHandler.getScreenData(customMenuType, serverPlayer);
+
+    // Get menu provider for custom menu type and open menu
+    MenuProvider menuProvider =
+        CustomMenuHandler.getMenuProvider(customMenuType, menuType, screenData);
+    if (menuProvider == null) {
+      log.error("Unable to get menu provider for custom menu type: {}", customMenuType);
+      return;
+    }
+
+    final UUID npcUUID = screenData.uuid();
+    MenuManager.openMenu(npcUUID, menuProvider, serverPlayer, screenData.encode());
+  }
+
+  MenuType<? extends ConfigurationMenu> getMenuTypeByConfigurationType(
+      ConfigurationType configurationType);
+
+  MenuType<? extends EditorMenu> getMenuTypeByEditorType(EditorType editorType);
+
+  MenuType<? extends ConfigUIMenu> getMenuTypeByCustomType(CustomMenuType customMenuType);
+}
